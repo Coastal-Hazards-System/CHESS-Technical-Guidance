@@ -182,6 +182,7 @@ def build(out_dir, root_dir=None):
     # (Living | Legacy), and the Legacy "Coastal Engineering Manual" browse page.
     open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(_fill(_LANDING, ""))
     open(os.path.join(out_dir, "cem.html"), "w", encoding="utf-8").write(_fill(cem_tmpl, ""))
+    open(os.path.join(out_dir, "search.html"), "w", encoding="utf-8").write(_fill(_SEARCH, ""))
     open(os.path.join(out_dir, "style.css"), "w", encoding="utf-8").write(_CSS)
     open(os.path.join(out_dir, "chapter.html"), "w", encoding="utf-8").write(_fill(_CHAPTER, ""))
     sz = os.path.getsize(os.path.join(out_dir, "search-index.json")) / 1024
@@ -428,22 +429,11 @@ _LANDING = """<!doctype html><html lang="en"><head>
   </section>
 
   <section class="search-wrap">
-    <div class="search-box">
-      <input id="q" type="search" autocomplete="off" placeholder="Search guidance, e.g. storm surge, dune erosion, overtopping&hellip;">
-    </div>
+    <form class="search-box" action="@@BASE@@search.html" method="get" role="search">
+      <input id="q" name="q" type="search" autocomplete="off" placeholder="Search guidance, e.g. storm surge, dune erosion, overtopping&hellip;">
+    </form>
     <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
       <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
-    <div id="results" class="results-split" hidden>
-      <div class="res-col living">
-        <h3>Living Guidance</h3>
-        <p>Continuously updated guidance is in development.</p>
-        <span class="coming">Coming soon</span>
-      </div>
-      <div class="res-col legacy">
-        <h3>Legacy Guidance</h3>
-        <div id="results-legacy"></div>
-      </div>
-    </div>
   </section>
 </main>
 <footer class="site-footer">
@@ -453,9 +443,49 @@ _LANDING = """<!doctype html><html lang="en"><head>
 </footer>
 <script>
 (function(){
-  var q=document.getElementById("q"), out=document.getElementById("results");
-  var legacy=document.getElementById("results-legacy");
-  var gsplit=document.querySelector(".guidance-split");
+  var base="@@BASE@@";
+  document.querySelectorAll(".search-hint b").forEach(function(b){
+    b.addEventListener("click",function(){ location.href=base+"search.html?q="+encodeURIComponent(b.textContent); });
+  });
+})();
+</script>
+</body></html>
+""".replace("{header}", _HEADER).replace("{theme_js}", _THEME_JS)
+
+_SEARCH = """<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search — CHESS-TG</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='Segoe UI,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="@@BASE@@style.css">
+<script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
+<script>{theme_js}</script>
+</head><body>
+{header}
+<main class="landing">
+  <section class="search-wrap" style="padding-top:24px">
+    <a class="backlink" href="@@BASE@@index.html" style="display:inline-block;margin-bottom:12px;font-weight:600;text-decoration:none">&larr; CHESS-TG home</a>
+    <form class="search-box" role="search" onsubmit="return false">
+      <input id="q" name="q" type="search" autocomplete="off" placeholder="Search guidance, e.g. storm surge, dune erosion, overtopping&hellip;">
+    </form>
+    <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
+      <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
+    <div id="results" class="results-split">
+      <div class="res-col living">
+        <h3>Living Guidance</h3>
+        <p>Continuously updated guidance is in development.</p>
+        <span class="coming">Coming soon</span>
+      </div>
+      <div class="res-col legacy">
+        <h3>Legacy Guidance</h3>
+        <div id="results-legacy"><p class="rcount">Type to search the manual.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+(function(){
+  var q=document.getElementById("q"), legacy=document.getElementById("results-legacy");
   var mini=null, ready=false;
   function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
   function load(){
@@ -493,10 +523,8 @@ _LANDING = """<!doctype html><html lang="en"><head>
   var t;
   function go(){
     clearTimeout(t);
-    var query=q.value.trim(), searching=query.length>=2;
-    if(gsplit) gsplit.style.display=searching?"none":"";
-    out.hidden=!searching;
-    if(!searching){ legacy.innerHTML=""; return; }
+    var query=q.value.trim();
+    if(query.length<2){ legacy.innerHTML='<p class="rcount">Type to search the manual.</p>'; return; }
     t=setTimeout(function(){ load().then(function(){ render(query); }); },120);
   }
   q.addEventListener("input",go);
@@ -504,7 +532,7 @@ _LANDING = """<!doctype html><html lang="en"><head>
     b.addEventListener("click",function(){ q.value=b.textContent; go(); q.focus(); });
   });
   var pq=new URLSearchParams(location.search).get("q");
-  if(pq){ q.value=pq; go(); }
+  if(pq){ q.value=pq; } go(); q.focus();
 })();
 </script>
 </body></html>

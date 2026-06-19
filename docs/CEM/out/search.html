@@ -1,0 +1,109 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search — CHESS-TG</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='Segoe UI,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
+<script>
+    (function(){
+      var KEY="cem-theme";
+      var t=localStorage.getItem(KEY)|| (matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+      document.documentElement.setAttribute("data-theme",t);
+      function sync(){var d=document.documentElement.getAttribute("data-theme")==="dark";
+        var c=document.getElementById("modeToggle"); if(c)c.checked=d;
+        var l=document.getElementById("modeLbl"); if(l)l.textContent=d?"Dark mode":"Light mode";}
+      window.addEventListener("DOMContentLoaded",function(){
+        sync();
+        var c=document.getElementById("modeToggle");
+        if(c)c.addEventListener("change",function(){
+          var t=c.checked?"dark":"light";
+          document.documentElement.setAttribute("data-theme",t);
+          localStorage.setItem(KEY,t); sync();});
+      });
+    })();
+</script>
+</head><body>
+  <header>
+    <a class="title" href="index.html">CHESS-TG</a>
+    <span class="spacer"></span>
+    <span class="muted" id="modeLbl"></span>
+    <label class="switch" title="Light / Dark">
+      <input type="checkbox" id="modeToggle"><span class="track"></span><span class="thumb"></span>
+    </label>
+  </header>
+
+<main class="landing">
+  <section class="search-wrap" style="padding-top:24px">
+    <a class="backlink" href="index.html" style="display:inline-block;margin-bottom:12px;font-weight:600;text-decoration:none">&larr; CHESS-TG home</a>
+    <form class="search-box" role="search" onsubmit="return false">
+      <input id="q" name="q" type="search" autocomplete="off" placeholder="Search guidance, e.g. storm surge, dune erosion, overtopping&hellip;">
+    </form>
+    <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
+      <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
+    <div id="results" class="results-split">
+      <div class="res-col living">
+        <h3>Living Guidance</h3>
+        <p>Continuously updated guidance is in development.</p>
+        <span class="coming">Coming soon</span>
+      </div>
+      <div class="res-col legacy">
+        <h3>Legacy Guidance</h3>
+        <div id="results-legacy"><p class="rcount">Type to search the manual.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+(function(){
+  var q=document.getElementById("q"), legacy=document.getElementById("results-legacy");
+  var mini=null, ready=false;
+  function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
+  function load(){
+    if(ready) return Promise.resolve();
+    return fetch("search-index.json").then(function(r){return r.json();}).then(function(data){
+      mini=new MiniSearch({fields:["heading","text","title"],
+        storeFields:["heading","href","cid","part","title","text"],
+        searchOptions:{boost:{heading:3,title:2},prefix:true,fuzzy:0.2,combineWith:"AND"}});
+      mini.addAll(data.map(function(d,i){return Object.assign({},d,{id:i});}));
+      ready=true;
+    });
+  }
+  function snippet(text,terms){
+    var low=text.toLowerCase(), pos=-1;
+    terms.forEach(function(t){var p=low.indexOf(t); if(p>=0&&(pos<0||p<pos))pos=p;});
+    if(pos<0)pos=0;
+    var start=Math.max(0,pos-70), s=text.slice(start,start+220);
+    s=(start>0?"\u2026":"")+esc(s)+"\u2026";
+    terms.forEach(function(t){ if(t.length>1)
+      s=s.replace(new RegExp("("+t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","ig"),"<mark>$1</mark>"); });
+    return s;
+  }
+  function render(query){
+    var terms=query.toLowerCase().split(/\s+/).filter(Boolean);
+    var res=mini.search(query).slice(0,40);
+    if(!res.length){ legacy.innerHTML='<p class="rcount">No matches for \u201c'+esc(query)+'\u201d.</p>'; return; }
+    var h='<p class="rcount">'+res.length+(res.length===40?"+":"")+' result'+(res.length===1?"":"s")+'</p>';
+    res.forEach(function(r){
+      h+='<a class="result" href="'+esc(r.href)+'"><div><span class="r-where">'+esc(r.cid||r.part)+
+        '</span><span class="r-head">'+esc(r.heading||r.title)+'</span></div>'+
+        '<div class="r-snip">'+snippet(r.text||"",terms)+'</div></a>';
+    });
+    legacy.innerHTML=h;
+  }
+  var t;
+  function go(){
+    clearTimeout(t);
+    var query=q.value.trim();
+    if(query.length<2){ legacy.innerHTML='<p class="rcount">Type to search the manual.</p>'; return; }
+    t=setTimeout(function(){ load().then(function(){ render(query); }); },120);
+  }
+  q.addEventListener("input",go);
+  document.querySelectorAll(".search-hint b").forEach(function(b){
+    b.addEventListener("click",function(){ q.value=b.textContent; go(); q.focus(); });
+  });
+  var pq=new URLSearchParams(location.search).get("q");
+  if(pq){ q.value=pq; } go(); q.focus();
+})();
+</script>
+</body></html>

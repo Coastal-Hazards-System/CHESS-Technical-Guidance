@@ -55,22 +55,11 @@
   </section>
 
   <section class="search-wrap">
-    <div class="search-box">
-      <input id="q" type="search" autocomplete="off" placeholder="Search guidance, e.g. storm surge, dune erosion, overtopping&hellip;">
-    </div>
+    <form class="search-box" action="docs/CEM/out/search.html" method="get" role="search">
+      <input id="q" name="q" type="search" autocomplete="off" placeholder="Search guidance, e.g. storm surge, dune erosion, overtopping&hellip;">
+    </form>
     <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
       <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
-    <div id="results" class="results-split" hidden>
-      <div class="res-col living">
-        <h3>Living Guidance</h3>
-        <p>Continuously updated guidance is in development.</p>
-        <span class="coming">Coming soon</span>
-      </div>
-      <div class="res-col legacy">
-        <h3>Legacy Guidance</h3>
-        <div id="results-legacy"></div>
-      </div>
-    </div>
   </section>
 </main>
 <footer class="site-footer">
@@ -80,58 +69,10 @@
 </footer>
 <script>
 (function(){
-  var q=document.getElementById("q"), out=document.getElementById("results");
-  var legacy=document.getElementById("results-legacy");
-  var gsplit=document.querySelector(".guidance-split");
-  var mini=null, ready=false;
-  function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
-  function load(){
-    if(ready) return Promise.resolve();
-    return fetch("docs/CEM/out/search-index.json").then(function(r){return r.json();}).then(function(data){
-      mini=new MiniSearch({fields:["heading","text","title"],
-        storeFields:["heading","href","cid","part","title","text"],
-        searchOptions:{boost:{heading:3,title:2},prefix:true,fuzzy:0.2,combineWith:"AND"}});
-      mini.addAll(data.map(function(d,i){return Object.assign({},d,{id:i});}));
-      ready=true;
-    });
-  }
-  function snippet(text,terms){
-    var low=text.toLowerCase(), pos=-1;
-    terms.forEach(function(t){var p=low.indexOf(t); if(p>=0&&(pos<0||p<pos))pos=p;});
-    if(pos<0)pos=0;
-    var start=Math.max(0,pos-70), s=text.slice(start,start+220);
-    s=(start>0?"\u2026":"")+esc(s)+"\u2026";
-    terms.forEach(function(t){ if(t.length>1)
-      s=s.replace(new RegExp("("+t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+")","ig"),"<mark>$1</mark>"); });
-    return s;
-  }
-  function render(query){
-    var terms=query.toLowerCase().split(/\s+/).filter(Boolean);
-    var res=mini.search(query).slice(0,40);
-    if(!res.length){ legacy.innerHTML='<p class="rcount">No matches for \u201c'+esc(query)+'\u201d.</p>'; return; }
-    var h='<p class="rcount">'+res.length+(res.length===40?"+":"")+' result'+(res.length===1?"":"s")+'</p>';
-    res.forEach(function(r){
-      h+='<a class="result" href="docs/CEM/out/'+esc(r.href)+'"><div><span class="r-where">'+esc(r.cid||r.part)+
-        '</span><span class="r-head">'+esc(r.heading||r.title)+'</span></div>'+
-        '<div class="r-snip">'+snippet(r.text||"",terms)+'</div></a>';
-    });
-    legacy.innerHTML=h;
-  }
-  var t;
-  function go(){
-    clearTimeout(t);
-    var query=q.value.trim(), searching=query.length>=2;
-    if(gsplit) gsplit.style.display=searching?"none":"";
-    out.hidden=!searching;
-    if(!searching){ legacy.innerHTML=""; return; }
-    t=setTimeout(function(){ load().then(function(){ render(query); }); },120);
-  }
-  q.addEventListener("input",go);
+  var base="docs/CEM/out/";
   document.querySelectorAll(".search-hint b").forEach(function(b){
-    b.addEventListener("click",function(){ q.value=b.textContent; go(); q.focus(); });
+    b.addEventListener("click",function(){ location.href=base+"search.html?q="+encodeURIComponent(b.textContent); });
   });
-  var pq=new URLSearchParams(location.search).get("q");
-  if(pq){ q.value=pq; go(); }
 })();
 </script>
 </body></html>
