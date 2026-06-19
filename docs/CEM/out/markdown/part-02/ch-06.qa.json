@@ -1,0 +1,17 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "II",
+  "chapter": 6,
+  "title": "HYDRODYNAMICS OF TIDAL INLETS",
+  "source_pdf": "P02__EM_1110-2-1100_Ch_06.pdf",
+  "pages": 79,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 75,
+  "equations_verified": 75,
+  "tables_gfm": 6,
+  "tables_image": 0,
+  "figures": 49,
+  "equations_flagged": 0,
+  "eq_agreed": 59,
+  "eq_single_verified": 16
+}

@@ -1,0 +1,16 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "App-A",
+  "chapter": 0,
+  "title": "Glossary",
+  "source_pdf": "App_A.pdf",
+  "pages": 95,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 1,
+  "equations_verified": 1,
+  "tables_gfm": 1,
+  "tables_image": 0,
+  "figures": 1,
+  "equations_flagged": 0,
+  "eq_agreed_gt": 1
+}

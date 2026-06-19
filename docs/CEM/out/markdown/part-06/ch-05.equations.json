@@ -1,0 +1,4162 @@
+[
+  {
+    "n": 1,
+    "eqid": "VI-5-1",
+    "tag": "VI-5-1",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\xi_o = \\frac{\\tan \\alpha}{\\sqrt{s_o}}",
+    "page": 20,
+    "image": "assets/part-06-ch-05/eq-001-VI-5-1.png"
+  },
+  {
+    "n": 2,
+    "eqid": "VI-5-2",
+    "tag": "VI-5-2",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\xi_{om} = \\frac{\\tan \\alpha}{\\sqrt{S_{om}}} \\quad \\text{or} \\quad \\xi_{op} = \\frac{\\tan \\alpha}{\\sqrt{S_{op}}}",
+    "page": 21,
+    "image": "assets/part-06-ch-05/eq-002-VI-5-2.png"
+  },
+  {
+    "n": 3,
+    "eqid": "VI-5-3",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "s_{om} = \\frac{H_s}{L_{om}} = \\frac{2\\pi}{g} \\frac{H_s}{T_m^2}",
+    "page": 21,
+    "image": "assets/part-06-ch-05/eq-003-VI-5.png"
+  },
+  {
+    "n": 4,
+    "eqid": "VI-5-4",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "s_{op} = \\frac{H_s}{L_{op}} = \\frac{2\\pi}{g} \\frac{H_s}{T_p^2}",
+    "page": 21,
+    "image": "assets/part-06-ch-05/eq-004-VI-5.png"
+  },
+  {
+    "n": 5,
+    "eqid": "VI-5-3",
+    "tag": "VI-5-3",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{R_{ui\\%}}{H_s} = (A\\xi + C)\\gamma_r \\gamma_b \\gamma_h \\gamma_\\beta",
+    "page": 22,
+    "image": "assets/part-06-ch-05/eq-005-VI-5-3.png"
+  },
+  {
+    "n": 6,
+    "eqid": "VI-5-4",
+    "tag": "VI-5-4",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{R_{d2\\%}}{H_s} = \\begin{cases}\n0.33\\xi_{op} & \\text{for } 0 < \\xi_{op} \\le 4 \\\\\n1.5 & \\text{for } \\xi_{op} > 4\n\\end{cases}",
+    "page": 24,
+    "image": "assets/part-06-ch-05/eq-006-VI-5-4.png"
+  },
+  {
+    "n": 7,
+    "eqid": "VI-5-5",
+    "tag": "VI-5-5",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{R_{d2\\%}}{H_s} = 0.5\\xi_{op} - 0.2 \\quad \\text{(VI-5-5)}",
+    "page": 24,
+    "image": "assets/part-06-ch-05/eq-007-VI-5-5.png"
+  },
+  {
+    "n": 8,
+    "eqid": "VI-5-6",
+    "tag": "VI-5-6",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{R_{u2\\%}}{H_s} = \\begin{cases}\n1.5\\xi_{op} & \\text{for } 0.5 < \\xi_{op} \\le 2 \\\\\n3.0 & \\text{for } 2 < \\xi_{op} < 3 - 4\n\\end{cases}",
+    "page": 25,
+    "image": "assets/part-06-ch-05/eq-008-VI-5-6.png"
+  },
+  {
+    "n": 9,
+    "eqid": "VI-5-7",
+    "tag": "VI-5-7",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{R_{u2\\%}}{H_s} = \\begin{cases}\n1.5\\xi_{op}\\gamma_r\\gamma_b\\gamma_h\\gamma_\\beta = 1.5\\xi_{eq}\\gamma_r\\gamma_h\\gamma_\\beta & \\text{for } 0.5 < \\xi_{eq} \\le 2 \\\\\n3.0\\gamma_r\\gamma_h\\gamma_\\beta & \\text{for } \\xi_{eq} > 2\n\\end{cases}",
+    "page": 27,
+    "image": "assets/part-06-ch-05/eq-009-VI-5-7.png"
+  },
+  {
+    "n": 10,
+    "eqid": "VI-5-8",
+    "tag": "VI-5-8",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\gamma_b = \\frac{\\xi_{eq}}{\\xi_{op}} = 1 - r_B (1 - r_{dB}), \\quad 0.6 \\le \\gamma_b \\le 1.0",
+    "page": 27,
+    "image": "assets/part-06-ch-05/eq-010-VI-5-8.png"
+  },
+  {
+    "n": 11,
+    "eqid": "VI-5-9",
+    "tag": "VI-5-9",
+    "status": "agreed",
+    "verified": true,
+    "latex": "r_{B} = 1 - \\frac{\\tan \\alpha_{eq}}{\\tan \\alpha}",
+    "page": 27,
+    "image": "assets/part-06-ch-05/eq-011-VI-5-9.png"
+  },
+  {
+    "n": 12,
+    "eqid": "VI-5-10",
+    "tag": "VI-5-10",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\gamma _ { h } = \\frac { H _ { 2 \\% } } { 1 . 4 H _ { s } }",
+    "page": 29,
+    "image": "assets/part-06-ch-05/eq-012-VI-5-10.png"
+  },
+  {
+    "n": 13,
+    "eqid": "VI-5-11",
+    "tag": "VI-5-11",
+    "status": "resolved",
+    "verified": true,
+    "latex": "\\begin{align*}\n&= 1.0 \\qquad \\text{for } 0^{\\circ} \\le \\beta \\le 10^{\\circ} \\\\\n&\\gamma_{\\beta} = \\cos(\\beta - 10^{\\circ}) \\qquad \\text{for } 10^{\\circ} < \\beta \\le 63^{\\circ} \\\\\n&= 0.6 \\qquad \\text{for } \\beta > 63^{\\circ}\n\\end{align*}",
+    "page": 30,
+    "image": "assets/part-06-ch-05/eq-013-VI-5-11.png"
+  },
+  {
+    "n": 14,
+    "eqid": "VI-5-12",
+    "tag": "VI-5-12",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{R_{ui\\%}}{H_s} = \\begin{cases}\nA\\xi_{om} & \\text{for } 1.0 < \\xi_{om} \\le 1.5 \\\\\nB(\\xi_{om})^C & \\text{for } \\xi_{om} > 1.5\n\\end{cases}",
+    "page": 32,
+    "image": "assets/part-06-ch-05/eq-014-VI-5-12.png"
+  },
+  {
+    "n": 15,
+    "eqid": "VI-5-13",
+    "tag": "VI-5-13",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R_{ui} \\%/H_s = A \\xi_{om} \\qquad \\text{for } 1.0 < \\xi_{om} \\le 1.5",
+    "page": 33,
+    "image": "assets/part-06-ch-05/eq-015-VI-5-13.png"
+  },
+  {
+    "n": 16,
+    "eqid": "VI-5-14",
+    "tag": "VI-5-14",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Prob\\left(R_{u} > R_{up\\%}\\right) = \\exp\\left[-\\left(\\frac{R_{up\\%}}{B}\\right)^{C}\\right]",
+    "page": 35,
+    "image": "assets/part-06-ch-05/eq-016-VI-5-14.png"
+  },
+  {
+    "n": 17,
+    "eqid": "VI-5-15",
+    "tag": "VI-5-15",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R_{up\\%} = B(-\\ln p)^{1/C}",
+    "page": 35,
+    "image": "assets/part-06-ch-05/eq-017-VI-5-15.png"
+  },
+  {
+    "n": 18,
+    "eqid": "VI-5-16",
+    "tag": "VI-5-16",
+    "status": "agreed",
+    "verified": true,
+    "latex": "B = H_s \\left[ 0.4 (s_{om})^{-1/4} (\\cot \\alpha)^{-0.2} \\right]",
+    "page": 35,
+    "image": "assets/part-06-ch-05/eq-018-VI-5-16.png"
+  },
+  {
+    "n": 19,
+    "eqid": "VI-5-17",
+    "tag": "VI-5-17",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C = \\begin{cases} 3.0(\\xi_{om})^{-3/4} & \\text{for } \\xi_{om} \\leq \\xi_{omc} \\text{ (plunging waves)} \\\\ 0.52P^{-0.3}(\\xi_{om})^{P} \\sqrt{\\cot \\alpha} & \\text{for } \\xi_{om} > \\xi_{omc} \\text{ (surging waves)} \\end{cases}",
+    "page": 36,
+    "image": "assets/part-06-ch-05/eq-019-VI-5-17.png"
+  },
+  {
+    "n": 20,
+    "eqid": "VI-5-18",
+    "tag": "VI-5-18",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\xi_{omc} = \\left(5.77P^{0.3}\\sqrt{\\tan\\alpha}\\right)^{[1/(P+0.75)]}",
+    "page": 36,
+    "image": "assets/part-06-ch-05/eq-020-VI-5-18.png"
+  },
+  {
+    "n": 21,
+    "eqid": "VI-5-21",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "s_{om} = \\frac{2\\pi H_s}{gT_{om}^2}",
+    "page": 36,
+    "image": "assets/part-06-ch-05/eq-021-VI-5.png"
+  },
+  {
+    "n": 22,
+    "eqid": "VI-5-19",
+    "tag": "VI-5-19",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{R_{d2\\%}}{H_s} = 2.1\\sqrt{\\tan\\alpha} - 1.2P^{0.15} + 1.5e^{-(60s_{om})}",
+    "page": 36,
+    "image": "assets/part-06-ch-05/eq-022-VI-5-19.png"
+  },
+  {
+    "n": 23,
+    "eqid": "VI-5-23",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "q = \\text{function}\\left(H_s, T_{op}, \\sigma, \\beta, R_c, h_s, g, \\text{ structure geometry}\\right)",
+    "page": 39,
+    "image": "assets/part-06-ch-05/eq-023-VI-5.png"
+  },
+  {
+    "n": 24,
+    "eqid": "VI-5-20",
+    "tag": "VI-5-20",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q = a_e^{-(bR)}",
+    "page": 40,
+    "image": "assets/part-06-ch-05/eq-024-VI-5-20.png"
+  },
+  {
+    "n": 25,
+    "eqid": "VI-5-21",
+    "tag": "VI-5-21",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q = a R ^ { - b }",
+    "page": 40,
+    "image": "assets/part-06-ch-05/eq-025-VI-5-21.png"
+  },
+  {
+    "n": 26,
+    "eqid": "VI-5-26",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{q}{g H_s T_{om}} = \\mathbf{a} \\exp\\left(-\\mathbf{b} \\frac{R_c}{H_s} \\sqrt{\\frac{s_{om}}{2 \\pi}} \\frac{1}{\\gamma_r}\\right)",
+    "page": 43,
+    "image": "assets/part-06-ch-05/eq-026-VI-5.png"
+  },
+  {
+    "n": 27,
+    "eqid": "VI-5-23",
+    "tag": "VI-5-23",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{q}{g H_s T_{om}} = \\mathbf{a} \\left[ \\left( \\frac{R_c}{H_s} \\right)^2 \\sqrt{\\frac{s_{om}}{2 \\pi}} \\right]^{-\\mathbf{b}}",
+    "page": 44,
+    "image": "assets/part-06-ch-05/eq-027-VI-5-23.png"
+  },
+  {
+    "n": 28,
+    "eqid": "VI-5-28",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\xi_{op} < 2",
+    "page": 46,
+    "image": "assets/part-06-ch-05/eq-028-VI-5.png"
+  },
+  {
+    "n": 29,
+    "eqid": "VI-5-29",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{q}{\\sqrt{gH_s^3}}\\sqrt{\\frac{s_{op}}{\\tan\\alpha}}=0.06exp\\left(-5.2\\frac{R_c}{H_s}\\frac{\\sqrt{s_{op}}}{\\tan\\alpha}\\frac{1}{\\gamma_r\\gamma_b\\gamma_h\\gamma_\\beta}\\right)",
+    "page": 46,
+    "image": "assets/part-06-ch-05/eq-029-VI-5.png"
+  },
+  {
+    "n": 30,
+    "eqid": "VI-5-30",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "0.3 < \\frac{R_c}{H_s} \\cdot \\frac{\\sqrt{s_{op}}}{\\tan \\alpha} \\cdot \\frac{1}{\\gamma_r \\gamma_b \\gamma_h \\gamma_\\beta} < 2",
+    "page": 46,
+    "image": "assets/part-06-ch-05/eq-030-VI-5.png"
+  },
+  {
+    "n": 31,
+    "eqid": "VI-5-31",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{q}{\\sqrt{g H_s^3}} = 0.2 \\exp\\left(-2.6 \\frac{R_c}{H_s} \\frac{1}{\\gamma_r \\gamma_b \\gamma_h \\gamma_\\beta}\\right)",
+    "page": 46,
+    "image": "assets/part-06-ch-05/eq-031-VI-5.png"
+  },
+  {
+    "n": 32,
+    "eqid": "VI-5-32",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\gamma_r",
+    "page": 46,
+    "image": "assets/part-06-ch-05/eq-032-VI-5.png"
+  },
+  {
+    "n": 33,
+    "eqid": "VI-5-33",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\gamma_b",
+    "page": 46,
+    "image": "assets/part-06-ch-05/eq-033-VI-5.png"
+  },
+  {
+    "n": 34,
+    "eqid": "VI-5-34",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\gamma_h",
+    "page": 46,
+    "image": "assets/part-06-ch-05/eq-034-VI-5.png"
+  },
+  {
+    "n": 35,
+    "eqid": "VI-5-35",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\text{Short-crested waves}",
+    "page": 46,
+    "image": "assets/part-06-ch-05/eq-035-VI-5.png"
+  },
+  {
+    "n": 36,
+    "eqid": "VI-5-36",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\gamma_{\\beta} = 1 - 0.0033 \\,\\beta",
+    "page": 46,
+    "image": "assets/part-06-ch-05/eq-036-VI-5.png"
+  },
+  {
+    "n": 37,
+    "eqid": "VI-5-27",
+    "tag": "VI-5-27",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{qT_{om}}{L_{om}^2} = 3.2 \\cdot 10^{-5} \\left(\\frac{H_s}{R_c}\\right)^3 \\frac{H_s^2}{A_c B \\cot \\alpha}",
+    "page": 47,
+    "image": "assets/part-06-ch-05/eq-037-VI-5-27.png"
+  },
+  {
+    "n": 38,
+    "eqid": "VI-5-38",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{q}{\\sqrt{gH_s^3}} = 0.082 \\exp\\left(-3.0 \\frac{R_c}{H_s} \\frac{1}{\\gamma_\\beta \\gamma_s}\\right)",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-038-VI-5.png"
+  },
+  {
+    "n": 39,
+    "eqid": "VI-5-39",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "H _ { s } = 1 2 . 5 - 1 4 . 0",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-039-VI-5.png"
+  },
+  {
+    "n": 40,
+    "eqid": "VI-5-40",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "H_{s} - 12.5 = s_{op} = 0.04 \\quad \\beta = 0^\\circ \\quad 60^\\circ",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-040-VI-5.png"
+  },
+  {
+    "n": 41,
+    "eqid": "VI-5-41",
+    "tag": null,
+    "status": "resolved",
+    "verified": true,
+    "latex": "\\beta = 0^\\circ + \\sigma_{op} - 0.04^\\circ + \\alpha_{app} - 22^\\circ + \\vartheta",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-041-VI-5.png"
+  },
+  {
+    "n": 42,
+    "eqid": "VI-5-42",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\sigma = \\mathrm{app.} 22^\\circ",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-042-VI-5.png"
+  },
+  {
+    "n": 43,
+    "eqid": "VI-5-43",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "2 8 ^ { \\circ }",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-043-VI-5.png"
+  },
+  {
+    "n": 44,
+    "eqid": "VI-5-44",
+    "tag": null,
+    "status": "resolved",
+    "verified": true,
+    "latex": "\\sigma = \\text{app. } 2z \\quad a \\quad R_c / H_s = 1.2 \\quad b_{\\mathrm{\\,o\\,}} / H_s = 0.35",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-044-VI-5.png"
+  },
+  {
+    "n": 45,
+    "eqid": "VI-5-45",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "R_c/H_s = 1.2 \\text{ and } h_s/H_s = \\text{ app.} 4.4 \\quad b_c/b_s = 0.21",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-045-VI-5.png"
+  },
+  {
+    "n": 46,
+    "eqid": "VI-5-46",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "n_s/\\Pi_s - app.\\quad h_b/h_s = 0.21",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-046-VI-5.png"
+  },
+  {
+    "n": 47,
+    "eqid": "VI-5-47",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\left. { \\begin{array} { l } { 0 ^ { \\circ } \\leq \\beta \\leq 3 7 ^ { \\circ } } \\\\ { \\beta > 3 7 ^ { \\circ } } \\end{array} } \\right\\}",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-047-VI-5.png"
+  },
+  {
+    "n": 48,
+    "eqid": "VI-5-48",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\beta",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-048-VI-5.png"
+  },
+  {
+    "n": 49,
+    "eqid": "VI-5-49",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "0^\\circ \\leq \\beta \\leq 20^\\circ \\quad \\text{or} \\quad \\beta > 20^\\circ",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-049-VI-5.png"
+  },
+  {
+    "n": 50,
+    "eqid": "VI-5-50",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "0 . 8 3 \\cos ( 2 0 ^ { \\circ } - \\beta )",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-050-VI-5.png"
+  },
+  {
+    "n": 51,
+    "eqid": "VI-5-51",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "2 8 ^ { \\circ }",
+    "page": 48,
+    "image": "assets/part-06-ch-05/eq-051-VI-5.png"
+  },
+  {
+    "n": 52,
+    "eqid": "VI-5-30",
+    "tag": "VI-5-30",
+    "status": "agreed",
+    "verified": true,
+    "latex": "prob(v > V) = \\exp\\left[-\\left(\\frac{V}{B}\\right)^{3/4}\\right]",
+    "page": 51,
+    "image": "assets/part-06-ch-05/eq-052-VI-5-30.png"
+  },
+  {
+    "n": 53,
+    "eqid": "VI-5-31",
+    "tag": "VI-5-31",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V = B { \\left( - \\ln \\left[ p r o b \\left( \\nu > V \\right) \\right] \\right) } ^ { 4 / 3 }",
+    "page": 51,
+    "image": "assets/part-06-ch-05/eq-053-VI-5-31.png"
+  },
+  {
+    "n": 54,
+    "eqid": "VI-5-32",
+    "tag": "VI-5-32",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "B = 0.84 \\frac{T_m q}{P_{ow}}",
+    "page": 51,
+    "image": "assets/part-06-ch-05/eq-054-VI-5-32.png"
+  },
+  {
+    "n": 55,
+    "eqid": "VI-5-33",
+    "tag": "VI-5-33",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "P_{ow} = \\exp\\left[-\\left(\\frac{R_c}{cH_s}\\right)^2\\right]",
+    "page": 52,
+    "image": "assets/part-06-ch-05/eq-055-VI-5-33.png"
+  },
+  {
+    "n": 56,
+    "eqid": "VI-5-35",
+    "tag": "VI-5-35",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V_{\\text{max}} = B(\\ln N_{ow})^{4/3}",
+    "page": 52,
+    "image": "assets/part-06-ch-05/eq-056-VI-5-35.png"
+  },
+  {
+    "n": 57,
+    "eqid": "VI-5-36",
+    "tag": "VI-5-36",
+    "status": "agreed",
+    "verified": true,
+    "latex": "E_i = E_d + E_t + E_r",
+    "page": 53,
+    "image": "assets/part-06-ch-05/eq-057-VI-5-36.png"
+  },
+  {
+    "n": 58,
+    "eqid": "VI-5-37",
+    "tag": "VI-5-37",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_r = \\frac{H_{sr}}{H_s} = \\left(\\frac{E_r}{E_i}\\right)^{1/2}",
+    "page": 53,
+    "image": "assets/part-06-ch-05/eq-058-VI-5-37.png"
+  },
+  {
+    "n": 59,
+    "eqid": "VI-5-59",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "C_r = \\frac{a\\,\\xi^2}{(b+\\xi^2)} \\qquad \\qquad \\xi \\; = \\; \\frac{\\tan\\alpha}{\\sqrt{\\frac{2\\pi H}{gT^2}}} \\qquad \\qquad (\\text{VI}-5-38)",
+    "page": 54,
+    "image": "assets/part-06-ch-05/eq-059-VI-5.png"
+  },
+  {
+    "n": 60,
+    "eqid": "VI-5-39",
+    "tag": "VI-5-39",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_r = 0.071(P)^{-0.082} (\\cot \\alpha)^{-0.62} (s_{op})^{-0.46}",
+    "page": 55,
+    "image": "assets/part-06-ch-05/eq-060-VI-5-39.png"
+  },
+  {
+    "n": 61,
+    "eqid": "VI-5-42",
+    "tag": "VI-5-42",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\eta = \\sum_{i=1}^{\\infty} a_i \\sqrt{1 + C_{ri}^2 + 2C_{ri}\\cos(2k_i x + \\theta_i)}\\cos(\\sigma_i t - \\varepsilon_i)",
+    "page": 57,
+    "image": "assets/part-06-ch-05/eq-061-VI-5-42.png"
+  },
+  {
+    "n": 62,
+    "eqid": "VI-5-43",
+    "tag": "VI-5-43",
+    "status": "agreed",
+    "verified": true,
+    "latex": "u = \\sum_{i=1}^{\\infty} a_i \\left( \\frac{gk_i}{\\sigma_i} \\right) \\frac{\\cosh\\left[k_i \\left(h+z\\right)\\right]}{\\cosh\\left(k_i h\\right)} \\sqrt{1 + C_{ri}^2 - 2C_{ri}\\cos\\left(2k_i x + \\theta_i\\right)} \\cos\\left(\\sigma_i t - \\varepsilon_i\\right)",
+    "page": 57,
+    "image": "assets/part-06-ch-05/eq-062-VI-5-43.png"
+  },
+  {
+    "n": 63,
+    "eqid": "VI-5-44",
+    "tag": "VI-5-44",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\eta_{rms}^2 = \\sum_{i=1}^{\\infty} \\left[ 1 + C_{ri}^2 + 2C_{ri} \\cos(2k_i x + \\theta_i) \\right] \\frac{a_i^2}{2}",
+    "page": 61,
+    "image": "assets/part-06-ch-05/eq-063-VI-5-44.png"
+  },
+  {
+    "n": 64,
+    "eqid": "VI-5-45",
+    "tag": "VI-5-45",
+    "status": "agreed",
+    "verified": true,
+    "latex": "u_{rms}^{2} = \\sum_{i=1}^{\\infty} \\left( \\frac{gk_{i}}{\\sigma_{i}} \\right) \\frac{\\cosh^{2} \\left[ k_{i} \\left( h + z \\right) \\right]}{\\cosh^{2} \\left( k_{i} h \\right)} \\left[ 1 + C_{ri}^{2} - 2C_{ri} \\cos \\left( 2k_{i} x + \\theta_{i} \\right) \\right] \\frac{a_{i}^{2}}{2}",
+    "page": 61,
+    "image": "assets/part-06-ch-05/eq-064-VI-5-45.png"
+  },
+  {
+    "n": 65,
+    "eqid": "VI-5-46",
+    "tag": "VI-5-46",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\theta_i = -8.84\\pi\\chi^{5/4}",
+    "page": 63,
+    "image": "assets/part-06-ch-05/eq-065-VI-5-46.png"
+  },
+  {
+    "n": 66,
+    "eqid": "VI-5-47",
+    "tag": "VI-5-47",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\chi = \\frac { \\sigma _ { i } } { 2 \\pi \\tan \\alpha } \\sqrt { \\frac { d _ { t } } { g } }",
+    "page": 63,
+    "image": "assets/part-06-ch-05/eq-066-VI-5-47.png"
+  },
+  {
+    "n": 67,
+    "eqid": "VI-5-48",
+    "tag": "VI-5-48",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C _ { r i } = \\frac { \\xi _ { \\sigma } ^ { 2 . 5 8 } } { 7 . 6 4 + \\xi _ { \\sigma } ^ { 2 . 5 8 } } \\mathrm { f o r \\, s m o o t h \\, i m p e r m e a b l e \\, s l o p e s }",
+    "page": 63,
+    "image": "assets/part-06-ch-05/eq-067-VI-5-48.png"
+  },
+  {
+    "n": 68,
+    "eqid": "VI-5-49",
+    "tag": "VI-5-49",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C _ { r i } = \\frac { 0 . 8 2 \\xi _ { \\sigma } ^ { 2 } } { 2 2 . 8 5 + \\xi _ { \\sigma } ^ { 2 } } \\mathrm { \\, f o r \\, r u b b l e \\mathrm { - } m o u n d \\ s l o p e s }",
+    "page": 63,
+    "image": "assets/part-06-ch-05/eq-068-VI-5-49.png"
+  },
+  {
+    "n": 69,
+    "eqid": "VI-5-50",
+    "tag": "VI-5-50",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\xi_{\\sigma} = \\frac{\\tan \\alpha}{\\sigma_i} \\sqrt{\\frac{2\\pi g}{H_s}}",
+    "page": 63,
+    "image": "assets/part-06-ch-05/eq-069-VI-5-50.png"
+  },
+  {
+    "n": 70,
+    "eqid": "VI-5-51",
+    "tag": "VI-5-51",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_t = \\frac{H_{st}}{H_s} = \\left(\\frac{E_t}{E_i}\\right)^{1/2}",
+    "page": 64,
+    "image": "assets/part-06-ch-05/eq-070-VI-5-51.png"
+  },
+  {
+    "n": 71,
+    "eqid": "VI-5-52",
+    "tag": "VI-5-52",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "C_{to} = \\frac{H_{st}^{overtop}}{H_{s}}",
+    "page": 64,
+    "image": "assets/part-06-ch-05/eq-071-VI-5-52.png"
+  },
+  {
+    "n": 72,
+    "eqid": "VI-5-53",
+    "tag": "VI-5-53",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "C_{tp} = \\frac{H_{st}^{penetr.}}{H_{s}}",
+    "page": 65,
+    "image": "assets/part-06-ch-05/eq-072-VI-5-53.png"
+  },
+  {
+    "n": 73,
+    "eqid": "VI-5-73",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_t = \\left( 0.031\\frac{H_s}{D_{n50}} - 0.24 \\right) \\frac{R_c}{D_{n50}} + b",
+    "page": 67,
+    "image": "assets/part-06-ch-05/eq-073-VI-5.png"
+  },
+  {
+    "n": 74,
+    "eqid": "VI-5-74",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "b = \\begin{cases} -5.42 \\, s_{op} + 0.0323 \\, \\frac{H_s}{D_{n50}} - 0.0017 \\left(\\frac{B}{D_{n50}}\\right)^{1.84} + 0.51 & \\text{conventional structure} \\\\ -2.6 \\, s_{op} - 0.05 \\, \\frac{H_s}{D_{n50}} + 0.85 & \\text{reef type structure} \\end{cases}",
+    "page": 67,
+    "image": "assets/part-06-ch-05/eq-074-VI-5.png"
+  },
+  {
+    "n": 75,
+    "eqid": "VI-5-75",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "1 < \\frac{H_s}{D_{n50}} < 6 \\qquad 0.01 < s_{op} < 0.05 \\qquad -2 < R_c/D_{n50} < 6",
+    "page": 67,
+    "image": "assets/part-06-ch-05/eq-075-VI-5.png"
+  },
+  {
+    "n": 76,
+    "eqid": "VI-5-76",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_t = \n\\begin{cases} \n0.25 \\left(1 - \\sin \\left(\\frac{\\pi}{2\\alpha}\\right) \\left(\\frac{R_c}{H} + \\beta\\right)\\right)^2 + 0.01 \\left(1 - \\frac{h_c}{h_s}\\right)^2 & \\text{if } \\beta - \\alpha < \\frac{R_c}{H} < \\alpha - \\beta \\\\\n0.1 \\left(1 - \\frac{h_c}{h_s}\\right) & \\text{if } \\frac{R_c}{H} \\geq \\alpha - \\beta\n\\end{cases}",
+    "page": 69,
+    "image": "assets/part-06-ch-05/eq-076-VI-5.png"
+  },
+  {
+    "n": 77,
+    "eqid": "VI-5-77",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_{t} = \\left[0.25 \\left[ \\left(1 - \\sin \\frac{\\pi}{4.4}\\right) \\left(\\frac{R_{c}}{H_{1/3}} + \\beta + \\beta_{s}\\right) \\right]^{2} + 0.01 \\left(1 - \\frac{h_{c}}{h_{s}}\\right)^{2} \\right]^{0.5}",
+    "page": 70,
+    "image": "assets/part-06-ch-05/eq-077-VI-5.png"
+  },
+  {
+    "n": 78,
+    "eqid": "VI-5-78",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\mathrm { v a l i d \\, f o r \\, } \\beta + \\beta _ { s } - 2 . 2 < \\frac { R _ { c } } { H _ { 1 / 3 } } < 2 . 2 - \\beta - \\beta _ { s }",
+    "page": 70,
+    "image": "assets/part-06-ch-05/eq-078-VI-5.png"
+  },
+  {
+    "n": 79,
+    "eqid": "VI-5-79",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_t = 0.1\\left(1 - \\frac{h_c}{h_s}\\right)",
+    "page": 70,
+    "image": "assets/part-06-ch-05/eq-079-VI-5.png"
+  },
+  {
+    "n": 80,
+    "eqid": "VI-5-80",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "{ \\mathrm { v a l i d \\, f o r \\, } } { \\frac { R _ { c } } { H _ { 1 / 3 } } } \\geq 2 . 2 - \\beta - \\beta { \\mathrm { } }",
+    "page": 70,
+    "image": "assets/part-06-ch-05/eq-080-VI-5.png"
+  },
+  {
+    "n": 81,
+    "eqid": "VI-5-81",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\beta_s = -0.3 \\left[ \\left( R_c - 2 \\, d_c \\right) / \\left( H_{1/3} \\, tan \\theta \\right) \\right]^{0.5}",
+    "page": 70,
+    "image": "assets/part-06-ch-05/eq-081-VI-5.png"
+  },
+  {
+    "n": 82,
+    "eqid": "VI-5-57",
+    "tag": "VI-5-57",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{F_D + F_L}{F_G} \\approx \\frac{\\rho_w D_n^2 v^2}{g(\\rho_s - \\rho_w) D_n^3} = \\frac{v^2}{g\\Delta D_n}",
+    "page": 74,
+    "image": "assets/part-06-ch-05/eq-082-VI-5-57.png"
+  },
+  {
+    "n": 83,
+    "eqid": "VI-5-58",
+    "tag": "VI-5-58",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_s = \\frac{H}{\\Delta D_n}",
+    "page": 75,
+    "image": "assets/part-06-ch-05/eq-083-VI-5-58.png"
+  },
+  {
+    "n": 84,
+    "eqid": "VI-5-59",
+    "tag": "VI-5-59",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_{s} = \\frac{H}{\\Delta D_{n}} \\le K_{1}^{a} K_{2}^{b} K_{c}^{3} \\dots",
+    "page": 75,
+    "image": "assets/part-06-ch-05/eq-084-VI-5-59.png"
+  },
+  {
+    "n": 85,
+    "eqid": "VI-5-85",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac { H } { \\Delta D _ { n } } { = } K \\cos \\alpha",
+    "page": 75,
+    "image": "assets/part-06-ch-05/eq-085-VI-5.png"
+  },
+  {
+    "n": 86,
+    "eqid": "VI-5-86",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "{ \\frac { H } { \\Delta D _ { n } } } \\mathrm { = } \\big ( K \\cot \\alpha \\big ) ^ { 1 / 3 }",
+    "page": 75,
+    "image": "assets/part-06-ch-05/eq-086-VI-5.png"
+  },
+  {
+    "n": 87,
+    "eqid": "VI-5-87",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac { H } { \\Delta D _ { n } } = K \\left( \\tan \\varphi \\cos \\alpha - \\sin \\alpha \\right)",
+    "page": 75,
+    "image": "assets/part-06-ch-05/eq-087-VI-5.png"
+  },
+  {
+    "n": 88,
+    "eqid": "VI-5-88",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Delta = \\frac{\\rho_s}{\\rho_w} - 1,\nN_s = \\frac{H_s}{\\Delta D_n},\nN_s^* = N_s s_p^{-1/3},\nH_0 T_0 = N_s T_m \\sqrt{\\frac{g}{D_n}},\n\\xi_m = \\frac{\\tan \\alpha}{\\sqrt{s_{om}}}",
+    "page": 76,
+    "image": "assets/part-06-ch-05/eq-088-VI-5.png"
+  },
+  {
+    "n": 89,
+    "eqid": "VI-5-60",
+    "tag": "VI-5-60",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "S = \\frac{A_e}{D_{n50}^2}",
+    "page": 78,
+    "image": "assets/part-06-ch-05/eq-089-VI-5-60.png"
+  },
+  {
+    "n": 90,
+    "eqid": "VI-5-61",
+    "tag": "VI-5-61",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_{od} = G(1-p)S",
+    "page": 80,
+    "image": "assets/part-06-ch-05/eq-090-VI-5-61.png"
+  },
+  {
+    "n": 91,
+    "eqid": "VI-5-62",
+    "tag": "VI-5-62",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\overline{S}(t) = \\overline{S}(t_n) + 0.025 \\frac{(N_s)_n^5}{(T_m)_n^{1/4}} (t^{1/4} - t_n^{1/4}) \\qquad \\text{for } t_n \\le t \\le t_{n+1}",
+    "page": 80,
+    "image": "assets/part-06-ch-05/eq-091-VI-5-62.png"
+  },
+  {
+    "n": 92,
+    "eqid": "VI-5-63",
+    "tag": "VI-5-63",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\overline{S}(t) = \\overline{S}(t_n) + 0.0202 \\frac{\\left(N_{mo}\\right)_n^5}{\\left(T_p\\right)_n^{1/4}} \\left(t^{1/4} - t_n^{1/4}\\right) \\quad \\text{for} \\quad t_n \\le t \\le t_{n+1}",
+    "page": 80,
+    "image": "assets/part-06-ch-05/eq-092-VI-5-63.png"
+  },
+  {
+    "n": 93,
+    "eqid": "VI-5-64",
+    "tag": "VI-5-64",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\overline{S} = \\frac{A_e}{D_{n50}^2}, \\quad N_s = \\frac{H_s}{\\Delta D_{n50}}, \\quad N_{mo} = \\frac{H_{mo}}{\\Delta D_{n50}}, \\quad \\Delta = \\frac{\\rho_a - 1}{\\rho_w}",
+    "page": 80,
+    "image": "assets/part-06-ch-05/eq-093-VI-5-64.png"
+  },
+  {
+    "n": 94,
+    "eqid": "VI-5-94",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\left\\{\n\\begin{array}{ll}\n\\text{Cubes, slope 1:1.5} & N_{od} = (S - 0.4) / 1.8 \\\\\n\\text{Tetrapod, slope 1:1.5} & N_{od} = (S - 1) / 2 \\\\\n\\text{Accropode, slope 1:1.33} & N_{od} = (S - 1) / 2\n\\end{array}\n\\right.",
+    "page": 81,
+    "image": "assets/part-06-ch-05/eq-094-VI-5.png"
+  },
+  {
+    "n": 95,
+    "eqid": "VI-5-65",
+    "tag": "VI-5-65",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\sigma_s = 0.5\\overline{S}^{0.65}",
+    "page": 81,
+    "image": "assets/part-06-ch-05/eq-095-VI-5-65.png"
+  },
+  {
+    "n": 96,
+    "eqid": "VI-5-66",
+    "tag": "VI-5-66",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\overline{E} = 0.46\\overline{S}^{0.5}, \\quad \\sigma_E = 0.26 - 0.000007(\\overline{S}-7.8)^4, \\quad \\overline{C} = C_o - 0.1\\overline{S}, \\quad \\sigma_C = \\sigma_{C_o} + 0.098 - 0.002(\\overline{S}-7)^2, \\quad \\overline{L} = 4.4\\overline{S}^{0.5}",
+    "page": 83,
+    "image": "assets/part-06-ch-05/eq-096-VI-5-66.png"
+  },
+  {
+    "n": 97,
+    "eqid": "VI-5-67",
+    "tag": "VI-5-67",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac{H}{\\Delta D_{n50}} = (K_D \\cot \\alpha)^{1/3} \\quad \\text{or} \\quad M_{50} = \\frac{\\rho_s H^3}{K_D \\left(\\frac{\\rho_s}{\\rho_{cr}} - 1\\right)^3 \\cot \\alpha}",
+    "page": 87,
+    "image": "assets/part-06-ch-05/eq-097-VI-5-67.png"
+  },
+  {
+    "n": 98,
+    "eqid": "VI-5-98",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{H_s}{\\Delta D_{n^{50}}} = 6.2 \\cdot S^{0.2} P^{0.18} N_z^{-0.1} \\xi_m^{-0.5} \\qquad \\text{Plunging waves}: \\ \\xi_m < \\xi_{mc} \\qquad (\\text{VI}-5-68)",
+    "page": 88,
+    "image": "assets/part-06-ch-05/eq-098-VI-5.png"
+  },
+  {
+    "n": 99,
+    "eqid": "VI-5-99",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{H_s}{\\Delta D_{n50}} = 1.0 \\cdot S^{0.2} P^{-0.13} N_z^{-0.1} (\\cot \\alpha)^{0.5} \\xi_m^P \\quad \\text{Surging waves: } \\xi_m > \\xi_{mc}",
+    "page": 88,
+    "image": "assets/part-06-ch-05/eq-099-VI-5.png"
+  },
+  {
+    "n": 100,
+    "eqid": "VI-5-100",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\xi_m = s_m^{-0.5} \\tan \\alpha",
+    "page": 88,
+    "image": "assets/part-06-ch-05/eq-100-VI-5.png"
+  },
+  {
+    "n": 101,
+    "eqid": "VI-5-101",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{N_{od}}{N_a} = a \\exp \\left[ b \\, s_p^{-1/3} \\, H_s / \\left( \\Delta \\, D_{n50} \\right) \\right] \\quad \\text{or} \\quad \\frac{H_s}{\\Delta D_{n50}} = \\frac{s_p^{1/3}}{b} \\ln \\left( \\frac{1}{a} \\frac{N_{od}}{N_a} \\right)",
+    "page": 89,
+    "image": "assets/part-06-ch-05/eq-101-VI-5.png"
+  },
+  {
+    "n": 102,
+    "eqid": "VI-5-102",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "f_i = \\left(1.25 - 4.8 \\, \\frac{R_c}{H_s} \\, \\sqrt{\\frac{s_{op}}{2\\pi}}\\right)^{-1} - 5 - 71)",
+    "page": 89,
+    "image": "assets/part-06-ch-05/eq-102-VI-5.png"
+  },
+  {
+    "n": 103,
+    "eqid": "VI-5-103",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "0 \\, < \\, \\frac { R _ { c } } { H _ { s } } \\sqrt { \\frac { s _ { o p } } { 2 \\pi } } \\, < \\, 0 . 0 5 2",
+    "page": 89,
+    "image": "assets/part-06-ch-05/eq-103-VI-5.png"
+  },
+  {
+    "n": 104,
+    "eqid": "VI-5-104",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac{h'_c}{h} = (2.1 + 0.1 \\ S) \\ \\exp(-0.14 \\ N_s^*) - 5 - 72)",
+    "page": 90,
+    "image": "assets/part-06-ch-05/eq-104-VI-5.png"
+  },
+  {
+    "n": 105,
+    "eqid": "VI-5-73",
+    "tag": "VI-5-73",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "h _ { c } \\ = \\ \\sqrt { \\frac { A _ { t } } { \\exp \\left( a N _ { s } ^ { * } \\right) } } \\quad \\mathrm { \\, w i t h \\, a \\, m a x i m u m \\, o f \\, } h _ { c } ^ { \\prime }",
+    "page": 92,
+    "image": "assets/part-06-ch-05/eq-105-VI-5-73.png"
+  },
+  {
+    "n": 106,
+    "eqid": "VI-5-106",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "N_s^* = \\frac{H_s}{\\Delta D_{n50}} s_p^{-1/3}",
+    "page": 92,
+    "image": "assets/part-06-ch-05/eq-106-VI-5.png"
+  },
+  {
+    "n": 107,
+    "eqid": "VI-5-107",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "a = -0.028 + 0.045 \\frac{A_t}{(h'_c)^2} + 0.034 \\frac{h'_c}{h} - 6 \\times 10^{-9} \\frac{A_t^2}{D_{n \\, 50}^4}",
+    "page": 92,
+    "image": "assets/part-06-ch-05/eq-107-VI-5.png"
+  },
+  {
+    "n": 108,
+    "eqid": "VI-5-108",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{N_{od}}{N_a} = a \\exp\\left[b H_s / (\\Delta D_{n50})\\right] \\quad \\text{or} \\quad \\frac{H_s}{\\Delta D_{n50}} = \\frac{1}{b} \\ln\\left(\\frac{1}{a} \\frac{N_{od}}{N_a}\\right)",
+    "page": 92,
+    "image": "assets/part-06-ch-05/eq-108-VI-5.png"
+  },
+  {
+    "n": 109,
+    "eqid": "VI-5-75",
+    "tag": "VI-5-75",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_s = \\frac{H_s}{\\Delta D_n} = \\left(6.7 N_{od}^{0.4} / N_z^{0.3} + 1.0\\right) s_m^{-0.1}",
+    "page": 94,
+    "image": "assets/part-06-ch-05/eq-109-VI-5-75.png"
+  },
+  {
+    "n": 110,
+    "eqid": "VI-5-110",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_s = \\frac{H_s}{\\Delta D_n} = \\left(3.75 \\, N_{od}^{0.5} / N_z^{0.25} + 0.85\\right) \\, s_{om}^{-0.2}",
+    "page": 95,
+    "image": "assets/part-06-ch-05/eq-110-VI-5.png"
+  },
+  {
+    "n": 111,
+    "eqid": "VI-5-111",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "N _ { s } = \\frac { H _ { 2 } \\% } { \\Delta D _ { n } } = 1 . 4 \\left( 3 . 7 5 N _ { o d } ^ { 0 . 5 } / N _ { z } ^ { 0 . 2 5 } + 0 . 8 5 \\right) s _ { o m } ^ { - 0 . 2 }",
+    "page": 95,
+    "image": "assets/part-06-ch-05/eq-111-VI-5.png"
+  },
+  {
+    "n": 112,
+    "eqid": "VI-5-78",
+    "tag": "VI-5-78",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_s = \\frac{H_s}{\\Delta D_n} = (47 - 72r) \\varphi_{n=2} D^{1/3} N_z^{-0.1} = (17 - 26r) \\varphi_{n=2}^{2/3} N_{od}^{1/3} N_z^{-0.1}",
+    "page": 96,
+    "image": "assets/part-06-ch-05/eq-112-VI-5-78.png"
+  },
+  {
+    "n": 113,
+    "eqid": "VI-5-79",
+    "tag": "VI-5-79",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_s = \\frac{H_s}{\\Delta D_n} = \n\\begin{cases}\n3.7 & \\text{no damage} \\\\\n4.1 & \\text{failure}\n\\end{cases}",
+    "page": 98,
+    "image": "assets/part-06-ch-05/eq-113-VI-5-79.png"
+  },
+  {
+    "n": 114,
+    "eqid": "VI-5-80",
+    "tag": "VI-5-80",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_s = \\frac{H_s}{\\Delta D_n} = A \\left( D^{0.2} + 7.70 \\right) \\quad \\text{or} \\quad D = 50 \\left( \\frac{H_s}{\\Delta D_n} - 3.54 \\right)^5",
+    "page": 99,
+    "image": "assets/part-06-ch-05/eq-114-VI-5-80.png"
+  },
+  {
+    "n": 115,
+    "eqid": "VI-5-115",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "K_D = \\begin{cases} 15 & \\text{Nonbreaking waves} \\\\ 12 & \\text{Breaking waves} \\end{cases}",
+    "page": 99,
+    "image": "assets/part-06-ch-05/eq-115-VI-5.png"
+  },
+  {
+    "n": 116,
+    "eqid": "VI-5-81",
+    "tag": "VI-5-81",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{H}{\\Delta D_{n50}} = (K_D \\cot \\alpha)^{1/3} \\quad \\text{or} \\quad M_{50} = \\frac{\\rho_c H^3}{K_D (\\frac{\\rho_c}{\\rho_w} - 1)^3 \\cot \\alpha}",
+    "page": 100,
+    "image": "assets/part-06-ch-05/eq-116-VI-5-81.png"
+  },
+  {
+    "n": 117,
+    "eqid": "VI-5-117",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_s = \\frac{H_s}{\\Delta D_n} = 2.32 \\left( N_{od} / N_z^{0.5} \\right)^{0.2} + 1.33",
+    "page": 101,
+    "image": "assets/part-06-ch-05/eq-117-VI-5.png"
+  },
+  {
+    "n": 118,
+    "eqid": "VI-5-83",
+    "tag": "VI-5-83",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{H}{\\Delta D_{n50}} = \\left(K_D \\cot \\alpha\\right)^{1/3} \\qquad \\text{or} \\qquad M_{50} = \\frac{\\rho_s H^3}{K_D \\left(\\frac{\\rho_s}{\\rho_w} - 1\\right)^3 \\cot \\alpha}",
+    "page": 102,
+    "image": "assets/part-06-ch-05/eq-118-VI-5-83.png"
+  },
+  {
+    "n": 119,
+    "eqid": "VI-5-84",
+    "tag": "VI-5-84",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{H}{\\Delta D_{n50}} = A\\xi^2 + B\\xi + C_C",
+    "page": 105,
+    "image": "assets/part-06-ch-05/eq-119-VI-5-84.png"
+  },
+  {
+    "n": 120,
+    "eqid": "VI-5-120",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\xi = \\frac{\\tan \\alpha}{\\left(H/L\\right)^{1/2}}",
+    "page": 105,
+    "image": "assets/part-06-ch-05/eq-120-VI-5.png"
+  },
+  {
+    "n": 121,
+    "eqid": "VI-5-85",
+    "tag": "VI-5-85",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{H}{\\Delta D_{n50}} = (K_D \\cot \\alpha)^{1/3} \\quad \\text{or} \\quad M_{50} = \\frac{\\rho_s H^3}{K_D \\left(\\frac{\\rho_s}{\\rho_w} - 1\\right)^3 \\cot \\alpha}",
+    "page": 106,
+    "image": "assets/part-06-ch-05/eq-121-VI-5-85.png"
+  },
+  {
+    "n": 122,
+    "eqid": "VI-5-122",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_{\\text{max}} = 4.0 W_{50} \\qquad W_{\\text{min}} = 0.125 W_{50}",
+    "page": 107,
+    "image": "assets/part-06-ch-05/eq-122-VI-5.png"
+  },
+  {
+    "n": 123,
+    "eqid": "VI-5-86",
+    "tag": "VI-5-86",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_{50} = \\frac{\\rho_r H_{10\\%}^3}{K_{RR} \\left(\\frac{\\rho_r}{\\rho_w} - 1\\right)^3 \\cot \\alpha}",
+    "page": 107,
+    "image": "assets/part-06-ch-05/eq-123-VI-5-86.png"
+  },
+  {
+    "n": 124,
+    "eqid": "VI-5-87",
+    "tag": "VI-5-87",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{d_{15(\\text{filter})}}{d_{85(\\text{foundation})}} < (4 \\text{ to } 5)",
+    "page": 110,
+    "image": "assets/part-06-ch-05/eq-124-VI-5-87.png"
+  },
+  {
+    "n": 125,
+    "eqid": "VI-5-88",
+    "tag": "VI-5-88",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac{W_{50(\\text{filter})}}{W_{50(\\text{foundation})}} < (15 \\text{ to } 20)",
+    "page": 111,
+    "image": "assets/part-06-ch-05/eq-125-VI-5-88.png"
+  },
+  {
+    "n": 126,
+    "eqid": "VI-5-89",
+    "tag": "VI-5-89",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac{d_{15(\\text{filter})}}{d_{15(\\text{foundation})}} > (4 \\text{ to } 5)",
+    "page": 111,
+    "image": "assets/part-06-ch-05/eq-126-VI-5-89.png"
+  },
+  {
+    "n": 127,
+    "eqid": "VI-5-90",
+    "tag": "VI-5-90",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{d_{60(\\text{filter})}}{d_{10(\\text{filter})}} < 10",
+    "page": 111,
+    "image": "assets/part-06-ch-05/eq-127-VI-5-90.png"
+  },
+  {
+    "n": 128,
+    "eqid": "VI-5-92",
+    "tag": "VI-5-92",
+    "status": "agreed",
+    "verified": true,
+    "latex": "n { \\left( \\sigma _ { s } \\right) } _ { p } < f _ { T }",
+    "page": 118,
+    "image": "assets/part-06-ch-05/eq-128-VI-5-92.png"
+  },
+  {
+    "n": 129,
+    "eqid": "VI-5-93",
+    "tag": "VI-5-93",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\left(\\sigma_{s}\\right)_{p} = 10^{\\left(\\log\\left(\\sigma_{s}\\right)_{est} + 0.31\\left[\\Phi^{-1}(p)\\right]\\right)}",
+    "page": 118,
+    "image": "assets/part-06-ch-05/eq-129-VI-5-93.png"
+  },
+  {
+    "n": 130,
+    "eqid": "VI-5-94",
+    "tag": "VI-5-94",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\log(\\sigma_s)_{est} = -2.28 + 0.91\\alpha + 0.30\\left(\\frac{D_v}{n} - 0.45\\right) + 0.34l",
+    "page": 118,
+    "image": "assets/part-06-ch-05/eq-130-VI-5-94.png"
+  },
+  {
+    "n": 131,
+    "eqid": "VI-5-95",
+    "tag": "VI-5-95",
+    "status": "agreed",
+    "verified": true,
+    "latex": "n = 9.43 \\left( \\frac{W}{0.1549 w_a} \\right)^{1/3}",
+    "page": 118,
+    "image": "assets/part-06-ch-05/eq-131-VI-5-95.png"
+  },
+  {
+    "n": 132,
+    "eqid": "VI-5-96",
+    "tag": "VI-5-96",
+    "status": "agreed",
+    "verified": true,
+    "latex": "n { \\bigl ( } \\sigma _ { t } { \\bigr ) } _ { p } < f _ { T }",
+    "page": 119,
+    "image": "assets/part-06-ch-05/eq-132-VI-5-96.png"
+  },
+  {
+    "n": 133,
+    "eqid": "VI-5-97",
+    "tag": "VI-5-97",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\left( \\sigma _ { t } \\right) _ { p } = \\left( \\sigma _ { t } \\right) _ { e s t } + 0 . 0 0 1 { \\left[ \\Phi ^ { - 1 } \\left( p \\right) \\right] }",
+    "page": 119,
+    "image": "assets/part-06-ch-05/eq-133-VI-5-97.png"
+  },
+  {
+    "n": 134,
+    "eqid": "VI-5-98",
+    "tag": "VI-5-98",
+    "status": "agreed",
+    "verified": true,
+    "latex": "(\\sigma_t)_{est} = 0.905 (\\sigma_s)_{est} + 0.639 (\\sigma_q)_{est}",
+    "page": 119,
+    "image": "assets/part-06-ch-05/eq-134-VI-5-98.png"
+  },
+  {
+    "n": 135,
+    "eqid": "VI-5-99",
+    "tag": "VI-5-99",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\log(\\sigma_q)_{est} = -2.36 + 0.15\\alpha + 0.01\\left(\\frac{T}{\\sqrt{n}}\\right) + 0.29\\left(\\frac{D_{swl}}{n}\\right) + 2.20\\left(\\frac{H}{n}\\right)",
+    "page": 119,
+    "image": "assets/part-06-ch-05/eq-135-VI-5-99.png"
+  },
+  {
+    "n": 136,
+    "eqid": "VI-5-100",
+    "tag": "VI-5-100",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\gamma Q_n = \\phi R_n",
+    "page": 121,
+    "image": "assets/part-06-ch-05/eq-136-VI-5-100.png"
+  },
+  {
+    "n": 137,
+    "eqid": "VI-5-101",
+    "tag": "VI-5-101",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\gamma S_M k_M \\sigma_1 < \\phi(0.7M_{cr})",
+    "page": 121,
+    "image": "assets/part-06-ch-05/eq-137-VI-5-101.png"
+  },
+  {
+    "n": 138,
+    "eqid": "VI-5-102",
+    "tag": "VI-5-102",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\gamma S_T k_T \\sigma_1 < \\phi \\left( 0.7 T_{cr} + T_s \\right)",
+    "page": 121,
+    "image": "assets/part-06-ch-05/eq-138-VI-5-102.png"
+  },
+  {
+    "n": 139,
+    "eqid": "VI-5-103",
+    "tag": "VI-5-103",
+    "status": "agreed",
+    "verified": true,
+    "latex": "A_s > \\frac{\\gamma(S_T k_T \\sigma_1) - \\phi(0.7T_{cr})}{\\phi f_y R_h}",
+    "page": 121,
+    "image": "assets/part-06-ch-05/eq-139-VI-5-103.png"
+  },
+  {
+    "n": 140,
+    "eqid": "VI-5-104",
+    "tag": "VI-5-104",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\xi = 0.5 \\left( \\left( k_M - \\lambda \\right) + \\sqrt{\\left( k_M - \\lambda \\right)^2 + 4k_T^2} \\right)",
+    "page": 122,
+    "image": "assets/part-06-ch-05/eq-140-VI-5-104.png"
+  },
+  {
+    "n": 141,
+    "eqid": "VI-5-105",
+    "tag": "VI-5-105",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\gamma \\xi k_T \\sigma_1 = 0.5 \\phi \\sqrt{\\frac{f_c}{1 + 4 \\left(\\frac{k_M S_M}{k_T S_T}\\right)^2}}",
+    "page": 122,
+    "image": "assets/part-06-ch-05/eq-141-VI-5-105.png"
+  },
+  {
+    "n": 142,
+    "eqid": "VI-5-106",
+    "tag": "VI-5-106",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\gamma \\xi k_{M} \\sigma_{1} = 0.5 \\phi \\sqrt{\\frac{f_{c}}{1 + 0.25 \\left(\\frac{k_{T} S_{T}}{k_{M} S_{M}}\\right)^{2}}}",
+    "page": 122,
+    "image": "assets/part-06-ch-05/eq-142-VI-5-106.png"
+  },
+  {
+    "n": 143,
+    "eqid": "VI-5-107",
+    "tag": "VI-5-107",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_s = \\frac{H_s}{\\Delta D_{n50}} = \\left(0.24 \\frac{h_b}{D_{n50}} + 1.6\\right) N_{od}^{0.15}",
+    "page": 132,
+    "image": "assets/part-06-ch-05/eq-143-VI-5-107.png"
+  },
+  {
+    "n": 144,
+    "eqid": "VI-5-144",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_{od} = \\begin{cases} 0.5 & \\text{no damage} \\\\ 2 & \\text{acceptable damage} \\\\ 4 & \\text{severe damage} \\end{cases}",
+    "page": 132,
+    "image": "assets/part-06-ch-05/eq-144-VI-5.png"
+  },
+  {
+    "n": 145,
+    "eqid": "VI-5-108",
+    "tag": "VI-5-108",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_s = \\frac{H_s}{\\Delta D_{n50}} = \\left(0.4 \\frac{h_b}{\\Delta D_{n50}} + 1.6\\right) N_{od}^{0.15} \\quad \\text{or} \\quad \\frac{H_s}{\\Delta D_{n50}} = \\frac{1.6}{N_{od}^{-0.15} - 0.4 h_b/H_s}",
+    "page": 134,
+    "image": "assets/part-06-ch-05/eq-145-VI-5-108.png"
+  },
+  {
+    "n": 146,
+    "eqid": "VI-5-109",
+    "tag": "VI-5-109",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_s = \\frac{H_s}{\\Delta D_{n50}} = \\left(5.8 \\frac{h'}{h_s} - 0.6\\right) N_{od}^{0.19}",
+    "page": 135,
+    "image": "assets/part-06-ch-05/eq-146-VI-5-109.png"
+  },
+  {
+    "n": 147,
+    "eqid": "VI-5-147",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_{od} = \\begin{cases} 0.5 & \\text{start of damage (1-3\\% of units displaced)} \\\\ 2 & \\text{acceptable damage (5-10\\% of units displaced)} \\\\ 5 & \\text{severe damage (20-30\\% of units displaced)} \\end{cases}",
+    "page": 135,
+    "image": "assets/part-06-ch-05/eq-147-VI-5.png"
+  },
+  {
+    "n": 148,
+    "eqid": "VI-5-110",
+    "tag": "VI-5-110",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_s = \\frac{H_s}{\\Delta D_{n50}} = \\max \\left\\{ 1.8, \\ 1.3 \\ \\frac{1-\\kappa}{\\kappa^{1/3}} \\frac{h'}{H_s} + 1.8 \\exp\\left(-1.5 \\frac{(1-\\kappa)^2}{\\kappa^{1/3}} \\frac{h'}{H_s}\\right) \\right\\}",
+    "page": 136,
+    "image": "assets/part-06-ch-05/eq-148-VI-5-110.png"
+  },
+  {
+    "n": 149,
+    "eqid": "VI-5-149",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\kappa = \\kappa_1 \\kappa_2",
+    "page": 136,
+    "image": "assets/part-06-ch-05/eq-149-VI-5.png"
+  },
+  {
+    "n": 150,
+    "eqid": "VI-5-150",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\kappa_1 = 2kh'/\\sinh(2kh')",
+    "page": 136,
+    "image": "assets/part-06-ch-05/eq-150-VI-5.png"
+  },
+  {
+    "n": 151,
+    "eqid": "VI-5-151",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\kappa_2 = \\max \\left\\{ 0.45 \\sin^2 \\theta \\cos^2(kB \\cos \\theta), \\cos^2 \\theta \\sin^2(kB \\cos \\theta) \\right\\}",
+    "page": 136,
+    "image": "assets/part-06-ch-05/eq-151-VI-5.png"
+  },
+  {
+    "n": 152,
+    "eqid": "VI-5-114",
+    "tag": "VI-5-114",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "D _ { 1 5 } \\mathrm { ( c o v e r ) } \\leq 5 D _ { 8 5 } \\mathrm { ( u n d e r ) }",
+    "page": 139,
+    "image": "assets/part-06-ch-05/eq-152-VI-5-114.png"
+  },
+  {
+    "n": 153,
+    "eqid": "VI-5-115",
+    "tag": "VI-5-115",
+    "status": "agreed",
+    "verified": true,
+    "latex": "D_{sieve} \\approx 1.15 \\left(\\frac{W}{w_a}\\right)^{1/3}",
+    "page": 139,
+    "image": "assets/part-06-ch-05/eq-153-VI-5-115.png"
+  },
+  {
+    "n": 154,
+    "eqid": "VI-5-111",
+    "tag": "VI-5-111",
+    "status": "agreed",
+    "verified": true,
+    "latex": "(N_s)_c = a \\left( \\frac{U + u}{\\sqrt{gh_s}} \\right)",
+    "page": 140,
+    "image": "assets/part-06-ch-05/eq-154-VI-5-111.png"
+  },
+  {
+    "n": 155,
+    "eqid": "VI-5-112",
+    "tag": "VI-5-112",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "u = \\frac{g H T}{2L}",
+    "page": 140,
+    "image": "assets/part-06-ch-05/eq-155-VI-5-112.png"
+  },
+  {
+    "n": 156,
+    "eqid": "VI-5-113",
+    "tag": "VI-5-113",
+    "status": "agreed",
+    "verified": true,
+    "latex": "a = 51.0 \\left(\\frac{h_b}{h_s}\\right) - 26.4",
+    "page": 140,
+    "image": "assets/part-06-ch-05/eq-156-VI-5-113.png"
+  },
+  {
+    "n": 157,
+    "eqid": "VI-5-116",
+    "tag": "VI-5-116",
+    "status": "agreed",
+    "verified": true,
+    "latex": "B = nk_{\\Delta} \\left(\\frac{W}{w_a}\\right)^{1/3}",
+    "page": 145,
+    "image": "assets/part-06-ch-05/eq-157-VI-5-116.png"
+  },
+  {
+    "n": 158,
+    "eqid": "VI-5-117",
+    "tag": "VI-5-117",
+    "status": "agreed",
+    "verified": true,
+    "latex": "r = nk_{\\Delta} \\left(\\frac{W}{w_a}\\right)^{1/3}",
+    "page": 149,
+    "image": "assets/part-06-ch-05/eq-158-VI-5-117.png"
+  },
+  {
+    "n": 159,
+    "eqid": "VI-5-118",
+    "tag": "VI-5-118",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{N_a}{A} = nk_{\\Delta} \\left( 1 - \\frac{P}{100} \\right) \\left( \\frac{w_a}{W} \\right)^{2/3}",
+    "page": 149,
+    "image": "assets/part-06-ch-05/eq-159-VI-5-118.png"
+  },
+  {
+    "n": 160,
+    "eqid": "VI-5-119",
+    "tag": "VI-5-119",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "r = 2.0 \\left(\\frac{W_{50}}{W_a}\\right)^{1/3}",
+    "page": 151,
+    "image": "assets/part-06-ch-05/eq-160-VI-5-119.png"
+  },
+  {
+    "n": 161,
+    "eqid": "VI-5-120",
+    "tag": "VI-5-120",
+    "status": "agreed",
+    "verified": true,
+    "latex": "r = 1.25 \\left(\\frac{W_{\\text{max}}}{w_a}\\right)^{1/3}",
+    "page": 151,
+    "image": "assets/part-06-ch-05/eq-161-VI-5-120.png"
+  },
+  {
+    "n": 162,
+    "eqid": "VI-5-121",
+    "tag": "VI-5-121",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{W_T}{A} = rw_a \\left( 1 - \\frac{P}{100} \\right)",
+    "page": 151,
+    "image": "assets/part-06-ch-05/eq-162-VI-5-121.png"
+  },
+  {
+    "n": 163,
+    "eqid": "VI-5-122",
+    "tag": "VI-5-122",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "D_{15}(\\text{cover}) \\le 5D_{85}(\\text{under})",
+    "page": 154,
+    "image": "assets/part-06-ch-05/eq-163-VI-5-122.png"
+  },
+  {
+    "n": 164,
+    "eqid": "VI-5-123",
+    "tag": "VI-5-123",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{u}{v_*} = \\frac{1}{\\kappa} \\ln \\left( \\frac{y}{k_s} \\right) + B",
+    "page": 155,
+    "image": "assets/part-06-ch-05/eq-164-VI-5-123.png"
+  },
+  {
+    "n": 165,
+    "eqid": "VI-5-124",
+    "tag": "VI-5-124",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\overline{u}}{v_*} = \\frac{1}{h} \\int_0^h \\frac{u}{v_*} dy = \\frac{1}{\\kappa} \\ln\\left(\\frac{h}{k_s}\\right) + B - \\frac{1}{\\kappa}",
+    "page": 155,
+    "image": "assets/part-06-ch-05/eq-165-VI-5-124.png"
+  },
+  {
+    "n": 166,
+    "eqid": "VI-5-125",
+    "tag": "VI-5-125",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\overline{u}}{v_*} = 2.5 \\ln \\left( \\frac{11h}{k_s} \\right)",
+    "page": 155,
+    "image": "assets/part-06-ch-05/eq-166-VI-5-125.png"
+  },
+  {
+    "n": 167,
+    "eqid": "VI-5-126",
+    "tag": "VI-5-126",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\tau_o = \\frac{w_w}{g} \\left[ \\frac{\\overline{u}}{2.5 \\ln\\left(\\frac{11h}{C_1 d_a}\\right)} \\right]^2",
+    "page": 156,
+    "image": "assets/part-06-ch-05/eq-167-VI-5-126.png"
+  },
+  {
+    "n": 168,
+    "eqid": "VI-5-127",
+    "tag": "VI-5-127",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Psi = \\frac{\\tau}{(\\rho_a - \\rho_w)gd_a} \\approx 0.04",
+    "page": 156,
+    "image": "assets/part-06-ch-05/eq-168-VI-5-127.png"
+  },
+  {
+    "n": 169,
+    "eqid": "VI-5-128",
+    "tag": "VI-5-128",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\tau = 0.04K_1(w_a - w_w)d_a",
+    "page": 156,
+    "image": "assets/part-06-ch-05/eq-169-VI-5-128.png"
+  },
+  {
+    "n": 170,
+    "eqid": "VI-5-129",
+    "tag": "VI-5-129",
+    "status": "agreed",
+    "verified": true,
+    "latex": "K_1 = \\sqrt{1 - \\frac{\\sin^2 \\theta}{\\sin^2 \\varphi}}",
+    "page": 156,
+    "image": "assets/part-06-ch-05/eq-170-VI-5-129.png"
+  },
+  {
+    "n": 171,
+    "eqid": "VI-5-171",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\ln\\left(\\frac{11h}{C_1d_a}\\right) \\approx C_2 \\left(\\frac{h}{d_a}\\right)^{\\beta}",
+    "page": 157,
+    "image": "assets/part-06-ch-05/eq-171-VI-5.png"
+  },
+  {
+    "n": 172,
+    "eqid": "VI-5-130",
+    "tag": "VI-5-130",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{d_a}{h} = C_T \\left[ \\left( \\frac{w_w}{w_a - w_w} \\right)^{\\frac{1}{2}} \\left( \\frac{\\bar{u}}{\\sqrt{K_1 g h}} \\right) \\right]^{\\frac{2}{(1 - 2\\beta)}}",
+    "page": 157,
+    "image": "assets/part-06-ch-05/eq-172-VI-5-130.png"
+  },
+  {
+    "n": 173,
+    "eqid": "VI-5-131",
+    "tag": "VI-5-131",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{d_{30}}{h} = S_f C_s \\left[ \\left( \\frac{w_w}{w_a - w_w} \\right)^{\\frac{1}{2}} \\left( \\frac{-u}{\\sqrt{K_1 g h}} \\right) \\right]^{\\frac{5}{2}}",
+    "page": 157,
+    "image": "assets/part-06-ch-05/eq-173-VI-5-131.png"
+  },
+  {
+    "n": 174,
+    "eqid": "VI-5-132",
+    "tag": "VI-5-132",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\overline{u} = \\left(\\frac{1}{s_f C_s}\\right)^{\\frac{2}{5}} \\left(\\frac{h}{d_{30}}\\right)^{\\frac{1}{10}} \\left[gK_1\\left(\\frac{w_a - w_w}{w_w}\\right) d_{30}\\right]^{\\frac{1}{2}}",
+    "page": 158,
+    "image": "assets/part-06-ch-05/eq-174-VI-5-132.png"
+  },
+  {
+    "n": 175,
+    "eqid": "VI-5-133",
+    "tag": "VI-5-133",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_{30} = \\frac{\\pi}{6} w_a d_{30}^3",
+    "page": 158,
+    "image": "assets/part-06-ch-05/eq-175-VI-5-133.png"
+  },
+  {
+    "n": 176,
+    "eqid": "VI-5-134",
+    "tag": "VI-5-134",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{W_{30}}{w_a h^3} = \\frac{\\pi}{6} \\left( S_f C_s \\right)^3 \\left[ \\left( \\frac{w_w}{w_a - w_w} \\right)^{\\frac{1}{2}} \\left( \\frac{\\overline{u}}{\\sqrt{K_1 gh}} \\right) \\right]^{\\frac{15}{2}}",
+    "page": 158,
+    "image": "assets/part-06-ch-05/eq-176-VI-5-134.png"
+  },
+  {
+    "n": 177,
+    "eqid": "VI-5-135",
+    "tag": "VI-5-135",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "W_{50 \\,\\text{min}} = 1.7 \\, W_{30}",
+    "page": 158,
+    "image": "assets/part-06-ch-05/eq-177-VI-5-135.png"
+  },
+  {
+    "n": 178,
+    "eqid": "VI-5-136",
+    "tag": "VI-5-136",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_{100\\,\\text{max}} = 5W_{50\\,\\text{min}} = 8.5W_{30}",
+    "page": 158,
+    "image": "assets/part-06-ch-05/eq-178-VI-5-136.png"
+  },
+  {
+    "n": 179,
+    "eqid": "VI-5-137",
+    "tag": "VI-5-137",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_{100\\,\\text{min}} = 2\\,W_{50\\,\\text{min}} = 3.4\\,W_{30}",
+    "page": 158,
+    "image": "assets/part-06-ch-05/eq-179-VI-5-137.png"
+  },
+  {
+    "n": 180,
+    "eqid": "VI-5-138",
+    "tag": "VI-5-138",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_{50 \\text{ max}} = 1.5 W_{50 \\text{ min}} = 2.6 W_{30}",
+    "page": 158,
+    "image": "assets/part-06-ch-05/eq-180-VI-5-138.png"
+  },
+  {
+    "n": 181,
+    "eqid": "VI-5-139",
+    "tag": "VI-5-139",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_{15 \\text{ max}} = 0.5 W_{50 \\text{ max}} = 0.75 W_{50 \\text{ min}} = 1.3 W_{30}",
+    "page": 159,
+    "image": "assets/part-06-ch-05/eq-181-VI-5-139.png"
+  },
+  {
+    "n": 182,
+    "eqid": "VI-5-140",
+    "tag": "VI-5-140",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_{15\\,\\text{min}} = 0.31\\,W_{50\\,\\text{min}} = 0.5\\,W_{30}",
+    "page": 159,
+    "image": "assets/part-06-ch-05/eq-182-VI-5-140.png"
+  },
+  {
+    "n": 183,
+    "eqid": "VI-5-141",
+    "tag": "VI-5-141",
+    "status": "agreed",
+    "verified": true,
+    "latex": "r = 2.1 \\left(\\frac{W_{50\\,\\text{min}}}{w_a}\\right)^{\\frac{1}{3}} = 2.5 \\left(\\frac{W_{30}}{w_a}\\right)^{\\frac{1}{3}}",
+    "page": 159,
+    "image": "assets/part-06-ch-05/eq-183-VI-5-141.png"
+  },
+  {
+    "n": 184,
+    "eqid": "VI-5-142",
+    "tag": "VI-5-142",
+    "status": "agreed",
+    "verified": true,
+    "latex": "r = 3.2 \\left(\\frac{W_{50\\,\\text{min}}}{w_a}\\right)^{\\frac{1}{3}} = 3.8 \\left(\\frac{W_{30}}{w_a}\\right)^{\\frac{1}{3}}",
+    "page": 159,
+    "image": "assets/part-06-ch-05/eq-184-VI-5-142.png"
+  },
+  {
+    "n": 185,
+    "eqid": "VI-5-185",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{W_{30}}{w_a h^3} = \\frac{\\pi}{6} \\left[ (1.1)(0.38) \\right]^3 \\left[ \\left( \\frac{10.05 kN / m^3}{\\left[ 25.9 - 10.05 \\right] kN / m^3} \\right)^{\\frac{1}{2}} \\left( \\frac{2.5 m / s}{\\sqrt{(1.0)(9.81 m / s^2)(6m)}} \\right) \\right]^{\\frac{15}{2}} = 1.54(10)^{-6}",
+    "page": 161,
+    "image": "assets/part-06-ch-05/eq-185-VI-5.png"
+  },
+  {
+    "n": 186,
+    "eqid": "VI-5-186",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_{30} = 1.54(10)^{-6} w_a h^3 = 1.54(10)^{-6} (25.9kN/m^3)(6m)^3 = 0.0086kN = \\underline{8.6N}(1.9lb)",
+    "page": 161,
+    "image": "assets/part-06-ch-05/eq-186-VI-5.png"
+  },
+  {
+    "n": 187,
+    "eqid": "VI-5-187",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_{50 \\text{ max}} = 2.6 (8.6 \\text{ N}) = 22.4 \\text{ N} (5.0 \\text{ lb})",
+    "page": 161,
+    "image": "assets/part-06-ch-05/eq-187-VI-5.png"
+  },
+  {
+    "n": 188,
+    "eqid": "VI-5-188",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "r = 3.8 \\left( \\frac{0.0086kN}{25.9kN/m^3} \\right)^{\\frac{1}{3}} = 0.26m(0.86ft)",
+    "page": 161,
+    "image": "assets/part-06-ch-05/eq-188-VI-5.png"
+  },
+  {
+    "n": 189,
+    "eqid": "VI-5-143",
+    "tag": "VI-5-143",
+    "status": "agreed",
+    "verified": true,
+    "latex": "p_1 = (p_2 + \\rho_w g h_s) \\frac{H + \\delta_o}{h_s + H + \\delta_o}",
+    "page": 167,
+    "image": "assets/part-06-ch-05/eq-189-VI-5-143.png"
+  },
+  {
+    "n": 190,
+    "eqid": "VI-5-190",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "p_2 = \\frac{\\rho_w g H}{\\cosh(2\\pi h_s/L)}",
+    "page": 167,
+    "image": "assets/part-06-ch-05/eq-190-VI-5.png"
+  },
+  {
+    "n": 191,
+    "eqid": "VI-5-191",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "p_3 = \\rho_w g(H - \\delta_o)",
+    "page": 167,
+    "image": "assets/part-06-ch-05/eq-191-VI-5.png"
+  },
+  {
+    "n": 192,
+    "eqid": "VI-5-192",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\delta_o = \\frac{\\pi H^2}{L} \\coth \\frac{2\\pi h_s}{L}",
+    "page": 167,
+    "image": "assets/part-06-ch-05/eq-192-VI-5.png"
+  },
+  {
+    "n": 193,
+    "eqid": "VI-5-193",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\eta^* = 0.75(1 + \\cos\\beta) \\lambda_1 H_{design}",
+    "page": 168,
+    "image": "assets/part-06-ch-05/eq-193-VI-5.png"
+  },
+  {
+    "n": 194,
+    "eqid": "VI-5-148",
+    "tag": "VI-5-148",
+    "status": "agreed",
+    "verified": true,
+    "latex": "p_1 = 0.5(1 + \\cos\\beta)(\\lambda_1 \\alpha_1 + \\lambda_2 \\alpha_* \\cos^2\\beta) \\rho_w g H_{design}",
+    "page": 168,
+    "image": "assets/part-06-ch-05/eq-194-VI-5-148.png"
+  },
+  {
+    "n": 195,
+    "eqid": "VI-5-149",
+    "tag": "VI-5-149",
+    "status": "resolved",
+    "verified": true,
+    "latex": "p_2 = \\left\\{\n\\begin{array}{ll}\n\\left(1 - \\frac{h_c}{\\eta^*}\\right) p_1 & \\text{for } \\eta^* > h_c \\\\\n0 & \\text{for } \\eta^* \\le h_c\n\\end{array}\n\\right.",
+    "page": 168,
+    "image": "assets/part-06-ch-05/eq-195-VI-5-149.png"
+  },
+  {
+    "n": 196,
+    "eqid": "VI-5-150",
+    "tag": "VI-5-150",
+    "status": "agreed",
+    "verified": true,
+    "latex": "p_3 = \\alpha_3 p_1",
+    "page": 168,
+    "image": "assets/part-06-ch-05/eq-196-VI-5-150.png"
+  },
+  {
+    "n": 197,
+    "eqid": "VI-5-151",
+    "tag": "VI-5-151",
+    "status": "agreed",
+    "verified": true,
+    "latex": "p_u = 0.5(1 + \\cos\\beta)\\lambda_3\\alpha_1\\alpha_3\\rho_w g H_{design}",
+    "page": 168,
+    "image": "assets/part-06-ch-05/eq-197-VI-5-151.png"
+  },
+  {
+    "n": 198,
+    "eqid": "VI-5-198",
+    "tag": null,
+    "status": "resolved",
+    "verified": true,
+    "latex": "\\alpha_{*} = \\alpha_{2}, \\quad \\alpha_{1} = 0.6 + 0.5 \\left[ \\frac{4\\pi h_{s}/L}{\\sinh (4\\pi h_{s}/L)} \\right]^{2}, \\quad \\alpha_{3} = 1 - \\frac{h_{w} - h_{c}}{h_{s}} \\left[ 1 - \\frac{1}{\\cosh (2\\pi h_{s}/L)} \\right]",
+    "page": 168,
+    "image": "assets/part-06-ch-05/eq-198-VI-5.png"
+  },
+  {
+    "n": 199,
+    "eqid": "VI-5-199",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\alpha_3 = 1 - \\frac{h_w - h_c}{h_s} \\left[ 1 - \\frac{3h_b \\cdot d}{\\cosh{(2\\pi h_s / L)}} \\right]",
+    "page": 168,
+    "image": "assets/part-06-ch-05/eq-199-VI-5.png"
+  },
+  {
+    "n": 200,
+    "eqid": "VI-5-200",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\alpha_* = \\max(\\alpha_2,\\alpha_I), \\quad \\alpha_2 = \\min\\left(\\frac{h_b-d}{3h_b}\\left(\\frac{H_{design}}{d}\\right)^2, \\frac{2d}{H_{design}}\\right), \\quad \\alpha_I = \\alpha_{I0} \\cdot \\alpha_{I1}, \\quad \n\\begin{cases}\nH_{design}/d & \\text{for } H_{design}/d \\leq 2 \\\\\n2.0 & \\text{for } H_{design}/d > 2\n\\end{cases}, \\quad \n\\alpha_{I1} = \n\\begin{cases}\n\\frac{\\cos\\delta_2}{\\cosh\\delta_1} & \\delta_2 \\leq 0 \\\\\n\\frac{1}{\\cosh\\delta_1(\\cosh\\delta_2)^{1/2}} & \\delta_2 > 0\n\\end{cases}, \\quad \n\\begin{cases}\n20 \\cdot \\delta_{11} & \\text{for } \\delta_{11} \\leq 0 \\\\\n15 \\cdot \\delta_{11} & \\text{for } \\delta_{11} > 0\n\\end{cases}, \\quad \n\\delta_{11} = 0.93\\left(\\frac{B_m}{L}-0.12\\right) + 0.36\\left(\\frac{h_s-d}{h_s}-0.6\\right), \\quad \n\\begin{cases}\n4.9 \\cdot \\delta_{22} & \\text{for } \\delta_{22} \\leq 0 \\\\\n3 \\cdot \\delta_{22} & \\text{for } \\delta_{22} > 0\n\\end{cases}, \\quad \n\\delta_{22} = -0.36\\left(\\frac{B_m}{L}-0.12\\right) + 0.93\\left(\\frac{h_s-d}{h_s}-0.6\\right)",
+    "page": 169,
+    "image": "assets/part-06-ch-05/eq-200-VI-5.png"
+  },
+  {
+    "n": 201,
+    "eqid": "VI-5-152",
+    "tag": "VI-5-152",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_H = U_{F_H} \\left[ \\frac{1}{2} (p_1 + p_2) h_c + \\frac{1}{2} (p_1 + p_3) h' \\right]",
+    "page": 170,
+    "image": "assets/part-06-ch-05/eq-201-VI-5-152.png"
+  },
+  {
+    "n": 202,
+    "eqid": "VI-5-153",
+    "tag": "VI-5-153",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_U = U_{F_U} \\cdot \\frac{1}{2} p_u \\cdot B",
+    "page": 170,
+    "image": "assets/part-06-ch-05/eq-202-VI-5-153.png"
+  },
+  {
+    "n": 203,
+    "eqid": "VI-5-203",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_G = \\rho_c \\cdot g B \\cdot h_w - \\rho_w \\cdot g B \\cdot h'",
+    "page": 170,
+    "image": "assets/part-06-ch-05/eq-203-VI-5.png"
+  },
+  {
+    "n": 204,
+    "eqid": "VI-5-204",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "M _ { H } = U _ { M _ { H } } \\left[ \\frac { 1 } { 6 } ( 2 p _ { 1 } + p _ { 3 } ) h ^ { \\prime 2 } + \\right.",
+    "page": 170,
+    "image": "assets/part-06-ch-05/eq-204-VI-5.png"
+  },
+  {
+    "n": 205,
+    "eqid": "VI-5-205",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "+ \\frac { 1 } { 2 } ( p _ { 1 } + p _ { 2 } ) h ^ { \\prime } h _ { c } + \\frac { 1 } { 6 } ( p _ { 1 } + 2 p _ { 2 } ) h _ { c } ^ { 2 } \\Biggr ]",
+    "page": 170,
+    "image": "assets/part-06-ch-05/eq-205-VI-5.png"
+  },
+  {
+    "n": 206,
+    "eqid": "VI-5-156",
+    "tag": "VI-5-156",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_U = U_{M_U} \\cdot \\frac{1}{3} p_u \\cdot B^2",
+    "page": 170,
+    "image": "assets/part-06-ch-05/eq-206-VI-5-156.png"
+  },
+  {
+    "n": 207,
+    "eqid": "VI-5-207",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_G = \\frac{1}{2} B^2 g \\left( \\rho_c h_w - \\rho_w h' \\right)",
+    "page": 170,
+    "image": "assets/part-06-ch-05/eq-207-VI-5.png"
+  },
+  {
+    "n": 208,
+    "eqid": "VI-5-158",
+    "tag": "VI-5-158",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\lambda_{3} = exp\\left[-2.26(7.2\\ell_{d}/L)^{3}\\right]",
+    "page": 171,
+    "image": "assets/part-06-ch-05/eq-208-VI-5-158.png"
+  },
+  {
+    "n": 209,
+    "eqid": "VI-5-209",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "p_1' = \\lambda_{SL} p_1 \\sin \\alpha, \\; p_2' = \\lambda_{SL} p_2 \\sin \\alpha, \\; p_{dc}' = \\lambda_{SL} p_{dc} \\sin \\alpha",
+    "page": 172,
+    "image": "assets/part-06-ch-05/eq-209-VI-5.png"
+  },
+  {
+    "n": 210,
+    "eqid": "VI-5-210",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "p_{d_c}^{\\prime\\prime} = \\lambda_V p_{d_c} \\quad , \\quad p_3^\\prime = \\lambda_V p_3",
+    "page": 172,
+    "image": "assets/part-06-ch-05/eq-210-VI-5.png"
+  },
+  {
+    "n": 211,
+    "eqid": "VI-5-211",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\lambda_{SL} = \\frac{1}{\\sin^2\\alpha}\\min[1.0,\\max(\\sin^2\\alpha, 1 + 0.46\\cos^2\\alpha - 23\\cos^2\\alpha H/L)]",
+    "page": 172,
+    "image": "assets/part-06-ch-05/eq-211-VI-5.png"
+  },
+  {
+    "n": 212,
+    "eqid": "VI-5-212",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\lambda_{V} = min[1.0 , max(1.1., 1.1 + 11d_{c}/L) - 5.0H/L]",
+    "page": 172,
+    "image": "assets/part-06-ch-05/eq-212-VI-5.png"
+  },
+  {
+    "n": 213,
+    "eqid": "VI-5-160",
+    "tag": "VI-5-160",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\lambda_1 = \\lambda_3 = \\begin{cases} 1.0 & H_{design}/h_s < 0.3 \\\\ 1.2 - 0.67 (H_{design}/h_s) & 0.3 \\le H_{design}/h_s \\le 0.6 \\\\ 0.8 & H_{design}/h_s > 0.6 \\end{cases}",
+    "page": 173,
+    "image": "assets/part-06-ch-05/eq-213-VI-5-160.png"
+  },
+  {
+    "n": 214,
+    "eqid": "VI-5-161",
+    "tag": "VI-5-161",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\mu_{\\lambda_1} = \\begin{cases} 0.90 & H_{design}/h_s < 0.4 \\\\ 0.90 - (H_{design}/h_s - 0.4) & 0.4 \\le H_{design}/h_s \\le 0.7 \\\\ 0.60 & 0.7 < H_{design}/h_s < 0.8 \\end{cases}",
+    "page": 173,
+    "image": "assets/part-06-ch-05/eq-214-VI-5-161.png"
+  },
+  {
+    "n": 215,
+    "eqid": "VI-5-215",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\sigma_{\\lambda_1}}{\\mu_{\\lambda_1}} = 5\\% - 10\\%",
+    "page": 173,
+    "image": "assets/part-06-ch-05/eq-215-VI-5.png"
+  },
+  {
+    "n": 216,
+    "eqid": "VI-5-162",
+    "tag": "VI-5-162",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_{mo} = \\frac{1}{2} \\left( 4 \\sqrt{m_o} \\right) \\frac{1}{B}",
+    "page": 177,
+    "image": "assets/part-06-ch-05/eq-216-VI-5-162.png"
+  },
+  {
+    "n": 217,
+    "eqid": "VI-5-163",
+    "tag": "VI-5-163",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_o = \\rho g H_{mo} \\frac{\\sinh k_p h}{k_p \\cosh k_p h}",
+    "page": 177,
+    "image": "assets/part-06-ch-05/eq-217-VI-5-163.png"
+  },
+  {
+    "n": 218,
+    "eqid": "VI-5-164",
+    "tag": "VI-5-164",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_{mo} = F_o \\left( w/h \\right)^{0.386 \\left( h/L_p \\right)^{-0.7}}",
+    "page": 178,
+    "image": "assets/part-06-ch-05/eq-218-VI-5-164.png"
+  },
+  {
+    "n": 219,
+    "eqid": "VI-5-165",
+    "tag": "VI-5-165",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "F_{design} = 1.8F_{mo}",
+    "page": 180,
+    "image": "assets/part-06-ch-05/eq-219-VI-5-165.png"
+  },
+  {
+    "n": 220,
+    "eqid": "VI-5-166",
+    "tag": "VI-5-166",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{H}{H_I} = \\sqrt{(C+S+1)^2 + (C-S)^2}",
+    "page": 180,
+    "image": "assets/part-06-ch-05/eq-220-VI-5-166.png"
+  },
+  {
+    "n": 221,
+    "eqid": "VI-5-167",
+    "tag": "VI-5-167",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C = \\partial_0^u \\cos\\left(\\frac{\\pi}{2}t^2\\right) dt, \\ S = \\partial_0^u \\sin\\left(\\frac{\\pi}{2}t^2\\right) dt, \\ u = 2\\sqrt{\\frac{2x}{L}} \\sin\\left(\\frac{\\alpha}{2}\\right)",
+    "page": 180,
+    "image": "assets/part-06-ch-05/eq-221-VI-5-167.png"
+  },
+  {
+    "n": 222,
+    "eqid": "VI-5-168",
+    "tag": "VI-5-168",
+    "status": "agreed",
+    "verified": true,
+    "latex": "r_{F}(L,\\theta) = \\frac{\\text{max. force, wave incident angle } \\theta}{\\text{max. force, head-on wave}(\\theta = 0^{\\circ})} = \\frac{\\sin\\left(\\frac{\\pi L_{s}}{L}\\sin\\theta\\right)}{\\frac{\\pi L_{s}}{L}\\sin\\theta}",
+    "page": 181,
+    "image": "assets/part-06-ch-05/eq-222-VI-5-168.png"
+  },
+  {
+    "n": 223,
+    "eqid": "VI-5-169",
+    "tag": "VI-5-169",
+    "status": "agreed",
+    "verified": true,
+    "latex": "r_F\\left(L_p,\\theta\\right)=\\frac{\\sin\\left(\\frac{\\pi L_s}{L_p}\\sin\\theta\\right)}{\\frac{\\pi L_s}{L_p}\\sin\\theta}",
+    "page": 182,
+    "image": "assets/part-06-ch-05/eq-223-VI-5-169.png"
+  },
+  {
+    "n": 224,
+    "eqid": "VI-5-170",
+    "tag": "VI-5-170",
+    "status": "agreed",
+    "verified": true,
+    "latex": "r_F(\\sigma,\\theta_m) = \\frac{\\text{characteristic wave force, short-crested wave}}{\\text{characteristic wave force, head-on long-crested wave}} \\approx \\left( \\int_{-\\pi}^{\\pi} r_F(L_p,\\theta) D(\\sigma,\\theta_m) d\\theta \\right)^{1/2}",
+    "page": 183,
+    "image": "assets/part-06-ch-05/eq-224-VI-5-170.png"
+  },
+  {
+    "n": 225,
+    "eqid": "VI-5-171",
+    "tag": "VI-5-171",
+    "status": "agreed",
+    "verified": true,
+    "latex": "r_M = \\frac{\\max.\\text{ moment, wave incident angle } \\theta}{(\\text{head-on max. force}) \\times (\\text{structure length})} = \\frac{1}{2}\\left| \\cos\\left( \\frac{\\pi L_s}{L} \\sin \\theta \\right) - \\sin\\left( \\frac{\\pi L_s}{L} \\sin \\theta \\right) \\right|",
+    "page": 184,
+    "image": "assets/part-06-ch-05/eq-225-VI-5-171.png"
+  },
+  {
+    "n": 226,
+    "eqid": "VI-5-172",
+    "tag": "VI-5-172",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_{\\text{max}} = 0.22 F_{\\theta=0^{\\circ}} L_{s}",
+    "page": 184,
+    "image": "assets/part-06-ch-05/eq-226-VI-5-172.png"
+  },
+  {
+    "n": 227,
+    "eqid": "VI-5-173",
+    "tag": "VI-5-173",
+    "status": "agreed",
+    "verified": true,
+    "latex": "r _ { _ { F } } = { \\frac { F _ { _ { 1 / 2 5 0 } } , { \\mathrm { s h o r t - c r e s t e d \\, w a v e , m e a n \\, w a v e \\, i n c i d e n t \\, a n g l e } } \\theta _ { m } } { \\mathrm { F } _ { _ { 1 / 2 5 0 } } , { \\mathrm { l o n g - c r e s t e d \\, h e a d - o n \\, w a v e } } } }",
+    "page": 185,
+    "image": "assets/part-06-ch-05/eq-227-VI-5-173.png"
+  },
+  {
+    "n": 228,
+    "eqid": "VI-5-174",
+    "tag": "VI-5-174",
+    "status": "agreed",
+    "verified": true,
+    "latex": "H_{w} = \\left(0.2 + 0.58 \\frac{h_{s}}{h_{b}}\\right) H_{b}",
+    "page": 186,
+    "image": "assets/part-06-ch-05/eq-228-VI-5-174.png"
+  },
+  {
+    "n": 229,
+    "eqid": "VI-5-175",
+    "tag": "VI-5-175",
+    "status": "agreed",
+    "verified": true,
+    "latex": "p_d = \\frac{1}{2}\\rho C^2 = \\frac{1}{2}\\rho g h_b",
+    "page": 187,
+    "image": "assets/part-06-ch-05/eq-229-VI-5-175.png"
+  },
+  {
+    "n": 230,
+    "eqid": "VI-5-176",
+    "tag": "VI-5-176",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R_d = p_d H_w = \\frac{\\rho g h_b H_w}{2}",
+    "page": 187,
+    "image": "assets/part-06-ch-05/eq-230-VI-5-176.png"
+  },
+  {
+    "n": 231,
+    "eqid": "VI-5-177",
+    "tag": "VI-5-177",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_d = R_d \\left( h_s + \\frac{H_w}{2} \\right)",
+    "page": 187,
+    "image": "assets/part-06-ch-05/eq-231-VI-5-177.png"
+  },
+  {
+    "n": 232,
+    "eqid": "VI-5-178",
+    "tag": "VI-5-178",
+    "status": "agreed",
+    "verified": true,
+    "latex": "P_{s} = \\rho g \\left( h_{s} + H_{w} \\right)",
+    "page": 187,
+    "image": "assets/part-06-ch-05/eq-232-VI-5-178.png"
+  },
+  {
+    "n": 233,
+    "eqid": "VI-5-179",
+    "tag": "VI-5-179",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R_{s} = \\frac{\\rho g}{2} (h_{s} + H_{w})^{2}",
+    "page": 187,
+    "image": "assets/part-06-ch-05/eq-233-VI-5-179.png"
+  },
+  {
+    "n": 234,
+    "eqid": "VI-5-180",
+    "tag": "VI-5-180",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_s = R_s \\left(\\frac{h_s + H_w}{3}\\right) = \\frac{\\rho g}{6} (h_s + H_w)^3",
+    "page": 187,
+    "image": "assets/part-06-ch-05/eq-234-VI-5-180.png"
+  },
+  {
+    "n": 235,
+    "eqid": "VI-5-181",
+    "tag": "VI-5-181",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R_T = R_d + R_s",
+    "page": 187,
+    "image": "assets/part-06-ch-05/eq-235-VI-5-181.png"
+  },
+  {
+    "n": 236,
+    "eqid": "VI-5-182",
+    "tag": "VI-5-182",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_T = M_d + M_s",
+    "page": 187,
+    "image": "assets/part-06-ch-05/eq-236-VI-5-182.png"
+  },
+  {
+    "n": 237,
+    "eqid": "VI-5-183",
+    "tag": "VI-5-183",
+    "status": "agreed",
+    "verified": true,
+    "latex": "H_{w} = H_{SWL} \\left( 1 - \\frac{X_{1}}{X_{2}} \\right) = 0.2H_{b} \\left( 1 - \\frac{X_{1} \\tan \\beta}{R_{a}} \\right)",
+    "page": 188,
+    "image": "assets/part-06-ch-05/eq-237-VI-5-183.png"
+  },
+  {
+    "n": 238,
+    "eqid": "VI-5-184",
+    "tag": "VI-5-184",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_{\\text{surge}} \\approx 4.5 \\rho g H_w^2",
+    "page": 188,
+    "image": "assets/part-06-ch-05/eq-238-VI-5-184.png"
+  },
+  {
+    "n": 239,
+    "eqid": "VI-5-185",
+    "tag": "VI-5-185",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_{surge} \\approx 0.18\\rho g H_b^2 \\left( 1 - \\frac{X_1 \\tan \\beta}{R_a} \\right)^2",
+    "page": 188,
+    "image": "assets/part-06-ch-05/eq-239-VI-5-185.png"
+  },
+  {
+    "n": 240,
+    "eqid": "VI-5-187",
+    "tag": "VI-5-187",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_{h,0.1\\%} = 0.21 \\sqrt{\\frac{L_{om}}{B}} \\left( 1.6 p_m y_{eff} + A \\frac{p_m}{2} h' \\right)",
+    "page": 193,
+    "image": "assets/part-06-ch-05/eq-240-VI-5-187.png"
+  },
+  {
+    "n": 241,
+    "eqid": "VI-5-188",
+    "tag": "VI-5-188",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_{0.1\\%} = a \\times F_{h,0.1\\%} = 0.55(h' + y_{eff})F_{h,0.1\\%}",
+    "page": 193,
+    "image": "assets/part-06-ch-05/eq-241-VI-5-188.png"
+  },
+  {
+    "n": 242,
+    "eqid": "VI-5-189",
+    "tag": "VI-5-189",
+    "status": "agreed",
+    "verified": true,
+    "latex": "p_{b.0.1\\%} = 1.00 A p_m",
+    "page": 193,
+    "image": "assets/part-06-ch-05/eq-242-VI-5-189.png"
+  },
+  {
+    "n": 243,
+    "eqid": "VI-5-243",
+    "tag": null,
+    "status": "resolved",
+    "verified": true,
+    "latex": "\\begin{array} { r l r } { R _ { u , 0 , 1 \\% } } & { - } & { \\left\\{ \\begin{array} { l l } { 1 . 1 2 H _ { s } \\zeta _ { m } } & { \\zeta _ { m } \\le 1 . 5 } \\\\ { 1 . 3 4 H _ { s } \\zeta _ { m } ^ { 0 . 5 5 } } & { \\zeta _ { m } > 1 . 5 } \\end{array} \\right. } \\end{array}",
+    "page": 193,
+    "image": "assets/part-06-ch-05/eq-243-VI-5.png"
+  },
+  {
+    "n": 244,
+    "eqid": "VI-5-244",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "y = \\left\\{ \\begin{array} { l l } { \\frac { R _ { u , 0 . 1 9 } - A _ { c } } { \\sin \\alpha } \\frac { \\sin 1 5 ^ { 0 } } { \\cos ( \\alpha - 1 5 ^ { 0 } ) } } & { y > 0 } \\\\ { 0 } & { y \\leq 0 } \\end{array} \\right.",
+    "page": 193,
+    "image": "assets/part-06-ch-05/eq-244-VI-5.png"
+  },
+  {
+    "n": 245,
+    "eqid": "VI-5-190",
+    "tag": "VI-5-190",
+    "status": "agreed",
+    "verified": true,
+    "latex": "(F_G - F_U) \\mu \\ge F_H",
+    "page": 195,
+    "image": "assets/part-06-ch-05/eq-245-VI-5-190.png"
+  },
+  {
+    "n": 246,
+    "eqid": "VI-5-191",
+    "tag": "VI-5-191",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_{FG} \\ge M_{FU} + M_{FH}",
+    "page": 195,
+    "image": "assets/part-06-ch-05/eq-246-VI-5-191.png"
+  },
+  {
+    "n": 247,
+    "eqid": "VI-5-192",
+    "tag": "VI-5-192",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_M = \\frac{C}{\\sin \\alpha}",
+    "page": 199,
+    "image": "assets/part-06-ch-05/eq-247-VI-5-192.png"
+  },
+  {
+    "n": 248,
+    "eqid": "VI-5-193",
+    "tag": "VI-5-193",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{H_c}{H_i} = \\frac{2\\pi}{\\beta}",
+    "page": 201,
+    "image": "assets/part-06-ch-05/eq-248-VI-5-193.png"
+  },
+  {
+    "n": 249,
+    "eqid": "VI-5-194",
+    "tag": "VI-5-194",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_B = \\int_V (\\rho_w g) dV",
+    "page": 202,
+    "image": "assets/part-06-ch-05/eq-249-VI-5-194.png"
+  },
+  {
+    "n": 250,
+    "eqid": "VI-5-250",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_B = \\gamma_w \\left(\\frac{\\pi D^3}{6}\\right) = \\left(10.1 \\, kN \\, / \\, m^3\\right) \\left(0.524 \\, m^3\\right) = 5.29 \\, kN",
+    "page": 202,
+    "image": "assets/part-06-ch-05/eq-250-VI-5.png"
+  },
+  {
+    "n": 251,
+    "eqid": "VI-5-195",
+    "tag": "VI-5-195",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_L = -\\int_S p_s (dA \\cdot n_z)",
+    "page": 203,
+    "image": "assets/part-06-ch-05/eq-251-VI-5-195.png"
+  },
+  {
+    "n": 252,
+    "eqid": "VI-5-196",
+    "tag": "VI-5-196",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_L = C_L A_n \\gamma_w \\left( \\frac{u^2}{2g} \\right)",
+    "page": 204,
+    "image": "assets/part-06-ch-05/eq-252-VI-5-196.png"
+  },
+  {
+    "n": 253,
+    "eqid": "VI-5-197",
+    "tag": "VI-5-197",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_U = C_U A_z \\gamma_w \\left(\\frac{w^2}{2g}\\right)",
+    "page": 204,
+    "image": "assets/part-06-ch-05/eq-253-VI-5-197.png"
+  },
+  {
+    "n": 254,
+    "eqid": "VI-5-198",
+    "tag": "VI-5-198",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\rho = m / V",
+    "page": 209,
+    "image": "assets/part-06-ch-05/eq-254-VI-5-198.png"
+  },
+  {
+    "n": 255,
+    "eqid": "VI-5-255",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\gamma = \\rho g = \\rho (9.81 \\, kN / m^3)",
+    "page": 209,
+    "image": "assets/part-06-ch-05/eq-255-VI-5.png"
+  },
+  {
+    "n": 256,
+    "eqid": "VI-5-199",
+    "tag": "VI-5-199",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\text{porosity } n = V_p / V \\quad \\text{or} \\quad \\text{void ratio } e = V_p / V_s",
+    "page": 209,
+    "image": "assets/part-06-ch-05/eq-256-VI-5-199.png"
+  },
+  {
+    "n": 257,
+    "eqid": "VI-5-200",
+    "tag": "VI-5-200",
+    "status": "agreed",
+    "verified": true,
+    "latex": "D_r = \\frac{e_{\\max} - e}{e_{\\max} - e_{\\min}} \\times 100\\%",
+    "page": 210,
+    "image": "assets/part-06-ch-05/eq-257-VI-5-200.png"
+  },
+  {
+    "n": 258,
+    "eqid": "VI-5-201",
+    "tag": "VI-5-201",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "I_p = w_l - w_p",
+    "page": 210,
+    "image": "assets/part-06-ch-05/eq-258-VI-5-201.png"
+  },
+  {
+    "n": 259,
+    "eqid": "VI-5-202",
+    "tag": "VI-5-202",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\sigma = \\sigma' + u",
+    "page": 211,
+    "image": "assets/part-06-ch-05/eq-259-VI-5-202.png"
+  },
+  {
+    "n": 260,
+    "eqid": "VI-5-203",
+    "tag": "VI-5-203",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\tau = \\tau'",
+    "page": 211,
+    "image": "assets/part-06-ch-05/eq-260-VI-5-203.png"
+  },
+  {
+    "n": 261,
+    "eqid": "VI-5-204",
+    "tag": "VI-5-204",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\sigma_v = z \\gamma",
+    "page": 211,
+    "image": "assets/part-06-ch-05/eq-261-VI-5-204.png"
+  },
+  {
+    "n": 262,
+    "eqid": "VI-5-205",
+    "tag": "VI-5-205",
+    "status": "agreed",
+    "verified": true,
+    "latex": "K = \\frac{\\sigma_h - u}{\\sigma_v - u} = \\frac{\\sigma'_h}{\\sigma'_v}",
+    "page": 212,
+    "image": "assets/part-06-ch-05/eq-262-VI-5-205.png"
+  },
+  {
+    "n": 263,
+    "eqid": "VI-5-263",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "E = \\frac{\\sigma_1}{\\varepsilon_1}",
+    "page": 213,
+    "image": "assets/part-06-ch-05/eq-263-VI-5.png"
+  },
+  {
+    "n": 264,
+    "eqid": "VI-5-264",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\nu = -\\frac{\\varepsilon_2}{\\varepsilon_1}",
+    "page": 213,
+    "image": "assets/part-06-ch-05/eq-264-VI-5.png"
+  },
+  {
+    "n": 265,
+    "eqid": "VI-5-265",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "G = \\frac{\\tau}{\\gamma} = \\frac{E}{2(1+\\nu)}",
+    "page": 213,
+    "image": "assets/part-06-ch-05/eq-265-VI-5.png"
+  },
+  {
+    "n": 266,
+    "eqid": "VI-5-266",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "K = \\frac{\\sigma}{\\varepsilon_{vol}} = \\frac{2G(1+\\nu)}{3(1-2\\nu)}",
+    "page": 213,
+    "image": "assets/part-06-ch-05/eq-266-VI-5.png"
+  },
+  {
+    "n": 267,
+    "eqid": "VI-5-267",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "M = \\frac{\\sigma_1}{\\varepsilon_1} = \\frac{2G(1-\\nu)}{1-2\\nu}",
+    "page": 213,
+    "image": "assets/part-06-ch-05/eq-267-VI-5.png"
+  },
+  {
+    "n": 268,
+    "eqid": "VI-5-206",
+    "tag": "VI-5-206",
+    "status": "agreed",
+    "verified": true,
+    "latex": "G_{\\text{max}} = \\begin{cases} \\frac{6908 (2.17 - e)^{2}}{1 + e} \\sqrt{p'} & round - grained \\\\ \\frac{3230 (2.97 - e)^{2}}{1 + e} \\sqrt{p'} & angular - grained \\end{cases}",
+    "page": 216,
+    "image": "assets/part-06-ch-05/eq-268-VI-5-206.png"
+  },
+  {
+    "n": 269,
+    "eqid": "VI-5-207",
+    "tag": "VI-5-207",
+    "status": "agreed",
+    "verified": true,
+    "latex": "G_{\\text{max}} = \\frac{3230 (2.97 - e)^2}{1 + e} (OCR)^K \\sqrt{p'}",
+    "page": 217,
+    "image": "assets/part-06-ch-05/eq-269-VI-5-207.png"
+  },
+  {
+    "n": 270,
+    "eqid": "VI-5-208",
+    "tag": "VI-5-208",
+    "status": "agreed",
+    "verified": true,
+    "latex": "G_{\\text{max}} = \\frac{625}{0.3 + 0.7 \\, e^2} (OCR)^K \\sqrt{p_a \\, p'}",
+    "page": 218,
+    "image": "assets/part-06-ch-05/eq-270-VI-5-208.png"
+  },
+  {
+    "n": 271,
+    "eqid": "VI-5-209",
+    "tag": "VI-5-209",
+    "status": "agreed",
+    "verified": true,
+    "latex": "D = \\frac{\\delta}{2\\pi} = \\frac{1}{2\\pi} \\ln \\left( \\frac{z_n}{z_n + 1} \\right)",
+    "page": 218,
+    "image": "assets/part-06-ch-05/eq-271-VI-5-209.png"
+  },
+  {
+    "n": 272,
+    "eqid": "VI-5-210",
+    "tag": "VI-5-210",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\tau _ { f } = c ^ { \\prime } + \\sigma _ { f ^ { \\prime } } \\tan \\Phi _ { t ^ { \\prime } }",
+    "page": 218,
+    "image": "assets/part-06-ch-05/eq-272-VI-5-210.png"
+  },
+  {
+    "n": 273,
+    "eqid": "VI-5-211",
+    "tag": "VI-5-211",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\tau_f = \\sigma_{f'} \\tan \\varphi_{s'}",
+    "page": 219,
+    "image": "assets/part-06-ch-05/eq-273-VI-5-211.png"
+  },
+  {
+    "n": 274,
+    "eqid": "VI-5-212",
+    "tag": "VI-5-212",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\sin{\\psi} = -\\frac{\\&_{1} + \\&_{3}}{\\&_{1} - \\&_{3}} = \\frac{\\&_{vol}}{\\&_{vol} - 2\\&_{1}}",
+    "page": 223,
+    "image": "assets/part-06-ch-05/eq-274-VI-5-212.png"
+  },
+  {
+    "n": 275,
+    "eqid": "VI-5-213",
+    "tag": "VI-5-213",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\varphi_{m'ax} - \\varphi_{c'rit} = 0.8 \\, \\psi_{max} = \\begin{cases} 5^{\\circ} \\, I_r & plane \\, strain \\\\ 3^{\\circ} \\, I_r & triaxial \\, strain \\end{cases}",
+    "page": 224,
+    "image": "assets/part-06-ch-05/eq-275-VI-5-213.png"
+  },
+  {
+    "n": 276,
+    "eqid": "VI-5-214",
+    "tag": "VI-5-214",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\mathcal{I } _ \\mathcal{R } = D _ { r } \\ \\left( \\mathcal{A } - \\ln \\mathbf{\\rho } p ^ { \\prime } \\right) - 1",
+    "page": 224,
+    "image": "assets/part-06-ch-05/eq-276-VI-5-214.png"
+  },
+  {
+    "n": 277,
+    "eqid": "VI-5-215",
+    "tag": "VI-5-215",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "i = \\frac { \\varDelta h } { \\varDelta l }",
+    "page": 226,
+    "image": "assets/part-06-ch-05/eq-277-VI-5-215.png"
+  },
+  {
+    "n": 278,
+    "eqid": "VI-5-216",
+    "tag": "VI-5-216",
+    "status": "agreed",
+    "verified": true,
+    "latex": "h = z + \\frac{u}{\\gamma_w}",
+    "page": 226,
+    "image": "assets/part-06-ch-05/eq-278-VI-5-216.png"
+  },
+  {
+    "n": 279,
+    "eqid": "VI-5-217",
+    "tag": "VI-5-217",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\gamma_{s'} = \\gamma - \\gamma_w \\pm i \\gamma_w",
+    "page": 226,
+    "image": "assets/part-06-ch-05/eq-279-VI-5-217.png"
+  },
+  {
+    "n": 280,
+    "eqid": "VI-5-218",
+    "tag": "VI-5-218",
+    "status": "agreed",
+    "verified": true,
+    "latex": "i = Av + B |v|v + C \\frac{\\delta v}{\\delta t}",
+    "page": 227,
+    "image": "assets/part-06-ch-05/eq-280-VI-5-218.png"
+  },
+  {
+    "n": 281,
+    "eqid": "VI-5-220",
+    "tag": "VI-5-220",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "v = k i",
+    "page": 228,
+    "image": "assets/part-06-ch-05/eq-281-VI-5-220.png"
+  },
+  {
+    "n": 282,
+    "eqid": "VI-5-221",
+    "tag": "VI-5-221",
+    "status": "agreed",
+    "verified": true,
+    "latex": "k = \\frac { n ^ { 3 } } { \\alpha \\left( 1 - n \\right) ^ { 2 } } \\frac { g _ { d } ^ { 2 } } { \\nu }",
+    "page": 228,
+    "image": "assets/part-06-ch-05/eq-282-VI-5-221.png"
+  },
+  {
+    "n": 283,
+    "eqid": "VI-5-219",
+    "tag": "VI-5-219",
+    "status": "agreed",
+    "verified": true,
+    "latex": "i = \\alpha \\frac{(1-n)^2}{n^3} \\frac{\\nu}{gd^2} v + \\beta \\frac{1-n}{n^3} \\frac{1}{gd} v^2",
+    "page": 228,
+    "image": "assets/part-06-ch-05/eq-283-VI-5-219.png"
+  },
+  {
+    "n": 284,
+    "eqid": "VI-5-284",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac{d_{85}}{d_{15}} = 1.3 - 1.9",
+    "page": 228,
+    "image": "assets/part-06-ch-05/eq-284-VI-5.png"
+  },
+  {
+    "n": 285,
+    "eqid": "VI-5-285",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "s/D = \\sqrt{(1+\\xi\\ F)} - 1",
+    "page": 230,
+    "image": "assets/part-06-ch-05/eq-285-VI-5.png"
+  },
+  {
+    "n": 286,
+    "eqid": "VI-5-286",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "s/H = \\sqrt{(1+\\xi\\ F)} - 1",
+    "page": 230,
+    "image": "assets/part-06-ch-05/eq-286-VI-5.png"
+  },
+  {
+    "n": 287,
+    "eqid": "VI-5-222",
+    "tag": "VI-5-222",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "I_{x} = \\frac{1}{\\rho_{w} g} \\frac{d_{p}}{dx}",
+    "page": 231,
+    "image": "assets/part-06-ch-05/eq-287-VI-5-222.png"
+  },
+  {
+    "n": 288,
+    "eqid": "VI-5-223",
+    "tag": "VI-5-223",
+    "status": "agreed",
+    "verified": true,
+    "latex": "U = \\frac{S_t}{S_{\\infty}}",
+    "page": 232,
+    "image": "assets/part-06-ch-05/eq-288-VI-5-223.png"
+  },
+  {
+    "n": 289,
+    "eqid": "VI-5-224",
+    "tag": "VI-5-224",
+    "status": "agreed",
+    "verified": true,
+    "latex": "T_c = \\frac{k M}{\\gamma_w H^2} t = \\frac{C_V}{H^2} t",
+    "page": 232,
+    "image": "assets/part-06-ch-05/eq-289-VI-5-224.png"
+  },
+  {
+    "n": 290,
+    "eqid": "VI-5-225",
+    "tag": "VI-5-225",
+    "status": "agreed",
+    "verified": true,
+    "latex": "t_{U(100\\%)} = \\frac{2 \\gamma_w H^2}{k M}",
+    "page": 233,
+    "image": "assets/part-06-ch-05/eq-290-VI-5-225.png"
+  },
+  {
+    "n": 291,
+    "eqid": "VI-5-291",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "M = \\begin{cases} 15 & MPa & loose sand \\\\ 150 & MPa & dense sand \\end{cases}",
+    "page": 234,
+    "image": "assets/part-06-ch-05/eq-291-VI-5.png"
+  },
+  {
+    "n": 292,
+    "eqid": "VI-5-292",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "M = \\begin{cases} 80 & MPa & loose sand \\\\ 500 & MPa & dense sand \\end{cases}",
+    "page": 234,
+    "image": "assets/part-06-ch-05/eq-292-VI-5.png"
+  },
+  {
+    "n": 293,
+    "eqid": "VI-5-226",
+    "tag": "VI-5-226",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\tau_s = \\tau_i + \\Delta \\tau_s",
+    "page": 236,
+    "image": "assets/part-06-ch-05/eq-293-VI-5-226.png"
+  },
+  {
+    "n": 294,
+    "eqid": "VI-5-227",
+    "tag": "VI-5-227",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\tau = \\frac{\\sqrt{3}}{2}\\sqrt{J_2}",
+    "page": 238,
+    "image": "assets/part-06-ch-05/eq-294-VI-5-227.png"
+  },
+  {
+    "n": 295,
+    "eqid": "VI-5-228",
+    "tag": "VI-5-228",
+    "status": "agreed",
+    "verified": true,
+    "latex": "J_2 = \\frac{1}{6} \\left[ (\\sigma_{1'} - \\sigma_{2'})^2 + (\\sigma_{2'} - \\sigma_{3'})^2 + (\\sigma_{1'} - \\sigma_{3'})^2 \\right]",
+    "page": 239,
+    "image": "assets/part-06-ch-05/eq-295-VI-5-228.png"
+  },
+  {
+    "n": 296,
+    "eqid": "VI-5-229",
+    "tag": "VI-5-229",
+    "status": "agreed",
+    "verified": true,
+    "latex": "p' = \\frac{\\sigma_1 + \\sigma_2 + \\sigma_3}{3} - u",
+    "page": 239,
+    "image": "assets/part-06-ch-05/eq-296-VI-5-229.png"
+  },
+  {
+    "n": 297,
+    "eqid": "VI-5-230",
+    "tag": "VI-5-230",
+    "status": "agreed",
+    "verified": true,
+    "latex": "q' = \\sigma_{1'} - \\sigma_{3'} = \\sigma_1 - \\sigma_3 = 2\\tau",
+    "page": 239,
+    "image": "assets/part-06-ch-05/eq-297-VI-5-230.png"
+  },
+  {
+    "n": 298,
+    "eqid": "VI-5-231",
+    "tag": "VI-5-231",
+    "status": "agreed",
+    "verified": true,
+    "latex": "q' = \\frac{6 \\sin \\varphi_{c'rit}}{3 - \\sin \\varphi_{c'rit}} p'",
+    "page": 239,
+    "image": "assets/part-06-ch-05/eq-298-VI-5-231.png"
+  },
+  {
+    "n": 299,
+    "eqid": "VI-5-232",
+    "tag": "VI-5-232",
+    "status": "agreed",
+    "verified": true,
+    "latex": "CL^{-}: q' = \\frac{-6\\sin\\varphi_{c'rit}}{3 + \\sin\\varphi_{c'rit}} p'",
+    "page": 239,
+    "image": "assets/part-06-ch-05/eq-299-VI-5-232.png"
+  },
+  {
+    "n": 300,
+    "eqid": "VI-5-233",
+    "tag": "VI-5-233",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\tau_{f,cy} = (\\tau_s + \\tau_{cy})",
+    "page": 240,
+    "image": "assets/part-06-ch-05/eq-300-VI-5-233.png"
+  },
+  {
+    "n": 301,
+    "eqid": "VI-5-301",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Omega_{x} = \\frac{\\max \\ dynamic \\ translation}{\\max \\ static \\ translation} = \\frac{\\max\\{x\\}}{F_{x,\\max} / kx} = \\frac{F_{x,equiv}}{F_{x,\\max}}",
+    "page": 247,
+    "image": "assets/part-06-ch-05/eq-301-VI-5.png"
+  },
+  {
+    "n": 302,
+    "eqid": "VI-5-302",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Omega_{\\varphi} = \\frac{\\max \\text{ dynamic rotation}}{\\max \\text{ static rotation}} = \\frac{\\max \\{\\varphi\\}}{M_{\\mathrm{max}} / k_{\\varphi}} = \\frac{M_{\\mathrm{equiv}}}{M_{\\mathrm{max}}}",
+    "page": 247,
+    "image": "assets/part-06-ch-05/eq-302-VI-5.png"
+  },
+  {
+    "n": 303,
+    "eqid": "VI-5-235",
+    "tag": "VI-5-235",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\tan \\varphi_d = \\frac{\\sin \\varphi \\cos \\psi}{I - \\sin \\varphi \\sin \\psi}",
+    "page": 249,
+    "image": "assets/part-06-ch-05/eq-303-VI-5-235.png"
+  },
+  {
+    "n": 304,
+    "eqid": "VI-5-236",
+    "tag": "VI-5-236",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\min\\left(\\frac{W_s}{W_d}\\right) \\ge 1",
+    "page": 249,
+    "image": "assets/part-06-ch-05/eq-304-VI-5-236.png"
+  },
+  {
+    "n": 305,
+    "eqid": "VI-5-305",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "u_p = \\rho_w g(z+d) + \\Delta u_p",
+    "page": 252,
+    "image": "assets/part-06-ch-05/eq-305-VI-5.png"
+  },
+  {
+    "n": 306,
+    "eqid": "VI-5-238",
+    "tag": "VI-5-238",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Delta u_p = u_0 e^{-Az} \\cos(\\frac{2\\pi X}{L} + \\frac{2\\pi t}{T} - Az)",
+    "page": 252,
+    "image": "assets/part-06-ch-05/eq-306-VI-5-238.png"
+  },
+  {
+    "n": 307,
+    "eqid": "VI-5-239",
+    "tag": "VI-5-239",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F = \\frac{M_s}{M_D} = \\frac{moment\\ of\\ stabilizing\\ forces}{moment\\ of\\ driving\\ forces}",
+    "page": 253,
+    "image": "assets/part-06-ch-05/eq-307-VI-5-239.png"
+  },
+  {
+    "n": 308,
+    "eqid": "VI-5-240",
+    "tag": "VI-5-240",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "F = \\frac{available shear strength}{shear strength required for stability}",
+    "page": 253,
+    "image": "assets/part-06-ch-05/eq-308-VI-5-240.png"
+  },
+  {
+    "n": 309,
+    "eqid": "VI-5-241",
+    "tag": "VI-5-241",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "F = \\frac{moment \\ of \\ shear \\ strength \\ along \\ failure \\ circle}{moment \\ of \\ weight \\ of \\ failure \\ mass \\ and \\ surface \\ loads}",
+    "page": 254,
+    "image": "assets/part-06-ch-05/eq-309-VI-5-241.png"
+  },
+  {
+    "n": 310,
+    "eqid": "VI-5-242",
+    "tag": "VI-5-242",
+    "status": "agreed",
+    "verified": true,
+    "latex": "r = r_1 \\exp(\\omega \\tan^{-1})",
+    "page": 255,
+    "image": "assets/part-06-ch-05/eq-310-VI-5-242.png"
+  },
+  {
+    "n": 311,
+    "eqid": "VI-5-243",
+    "tag": "VI-5-243",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_s = \\frac{1}{2}c'(r_1^2 - r_2^2)\\cot\\varphi'",
+    "page": 255,
+    "image": "assets/part-06-ch-05/eq-311-VI-5-243.png"
+  },
+  {
+    "n": 312,
+    "eqid": "VI-5-244",
+    "tag": "VI-5-244",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F = \\frac{\\sum_{i=1}^{n} \\left[ c_{i'} l_i + \\left( W_i \\cos \\alpha_i - u_{pi} l_i \\right) \\tan \\varphi_{i'} \\right]}{\\sum_{i=1}^{n} W_i \\sin \\alpha_i}",
+    "page": 257,
+    "image": "assets/part-06-ch-05/eq-312-VI-5-244.png"
+  },
+  {
+    "n": 313,
+    "eqid": "VI-5-245",
+    "tag": "VI-5-245",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F = \\frac{c'L + \\tan \\varphi' \\sum_{i=1}^{n} \\left( W_i \\cos \\alpha_i - u_{pi} l_i \\right)}{\\sum_{i=1}^{n} W_i \\sin \\alpha_i}",
+    "page": 257,
+    "image": "assets/part-06-ch-05/eq-313-VI-5-245.png"
+  },
+  {
+    "n": 314,
+    "eqid": "VI-5-246",
+    "tag": "VI-5-246",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F = \\frac { R \\displaystyle \\sum _ { i = 1 } ^ { n } \\Bigl [ c _ { 1 } , b _ { i } + \\left( W _ { i } - u _ { p i } b _ { i } \\right) \\tan \\varphi _ { i } ^ { } \\Bigr ] \\Bigl / \\left[ \\left( 1 + \\tan \\alpha _ { i } \\tan \\varphi _ { i ^ { \\prime } } / F \\right) \\cos \\alpha _ { i } ^ { } \\right] } { M _ { D } + R \\displaystyle \\sum _ { i = 1 } ^ { n } W _ { i } \\sin \\alpha _ { i } }",
+    "page": 257,
+    "image": "assets/part-06-ch-05/eq-314-VI-5-246.png"
+  },
+  {
+    "n": 315,
+    "eqid": "VI-5-247",
+    "tag": "VI-5-247",
+    "status": "agreed",
+    "verified": true,
+    "latex": "q _ { u } = \\frac { Q ^ { N _ { u } } } { B L } = \\frac { 1 } { 2 } \\, \\bar { \\gamma } ^ { \\prime } \\, B \\, N _ { \\gamma } \\, s _ { \\gamma } \\, d _ { \\gamma } \\, i _ { \\gamma } + q ^ { \\prime } \\, N _ { q } \\, s _ { q } \\, d _ { q } \\, i _ { q } + c \\, N _ { c } \\, s _ { c } \\, d _ { c } \\, i _ { \\alpha }",
+    "page": 259,
+    "image": "assets/part-06-ch-05/eq-315-VI-5-247.png"
+  },
+  {
+    "n": 316,
+    "eqid": "VI-5-316",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_{\\gamma} = (N_q - 1) \\tan(1.4 \\varphi') \\quad N_q = \\exp(\\pi \\tan \\varphi') \\tan^2(45^\\circ + \\varphi'/2) = \\exp(\\pi \\tan \\varphi')(1 + \\sin \\varphi')/(1 - \\sin \\varphi')",
+    "page": 259,
+    "image": "assets/part-06-ch-05/eq-316-VI-5.png"
+  },
+  {
+    "n": 317,
+    "eqid": "VI-5-317",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_c = \\left\\{ \\begin{array}{ll} (N_q - 1) \\cot \\varphi' & \\\\ \\pi + 2 & \\text{for undrained conditions } (\\varphi' = 0) \\end{array} \\right.",
+    "page": 259,
+    "image": "assets/part-06-ch-05/eq-317-VI-5.png"
+  },
+  {
+    "n": 318,
+    "eqid": "VI-5-318",
+    "tag": null,
+    "status": "resolved",
+    "verified": true,
+    "latex": "s_{\\gamma} = s_q = \\begin{cases} \n1.0 & \\text{for } \\varphi' = 0^\\circ \\\\\n1 + 0.1 \\cdot (B/L) \\cdot \\tan^2 \\left(45^\\circ + \\frac{\\varphi'}{2}\\right) & \\text{for } \\varphi' \\geq 10^\\circ \n\\end{cases}",
+    "page": 259,
+    "image": "assets/part-06-ch-05/eq-318-VI-5.png"
+  },
+  {
+    "n": 319,
+    "eqid": "VI-5-319",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "s_c = 1 + 0.2 \\ (B/L) \\ \\mathrm{tan} \\ (45^0 + \\varphi'/2)",
+    "page": 259,
+    "image": "assets/part-06-ch-05/eq-319-VI-5.png"
+  },
+  {
+    "n": 320,
+    "eqid": "VI-5-320",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "d_{\\gamma} = d_{q} = \\begin{cases} 1.0 & \\text{for } \\varphi' = 0\\\\ 1 + 0.1 \\; (D/B) \\; \\text{tan } (45^{0} \\; + \\; \\varphi'/2) & \\text{for } \\varphi' \\geq \\; 10^{0} \\end{cases}",
+    "page": 259,
+    "image": "assets/part-06-ch-05/eq-320-VI-5.png"
+  },
+  {
+    "n": 321,
+    "eqid": "VI-5-321",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "d_c = 1.0 + 0.2 \\; (D/B) \\; \\mathrm{tan} \\; \\left(45^0 + \\varphi'/2\\right)",
+    "page": 259,
+    "image": "assets/part-06-ch-05/eq-321-VI-5.png"
+  },
+  {
+    "n": 322,
+    "eqid": "VI-5-322",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "i_{\\gamma} = \\left\\{ \\begin{array}{ll} 1.0 & \\text{for } \\varphi' = 0 \\\\ (1 - \\alpha/\\varphi')^2 & \\text{for } \\varphi' \\geq 10^0 \\end{array} \\right. \\quad \\alpha = \\arctan(H/V)",
+    "page": 259,
+    "image": "assets/part-06-ch-05/eq-322-VI-5.png"
+  },
+  {
+    "n": 323,
+    "eqid": "VI-5-323",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "i_q = i_c = (1 - \\alpha/90^0)^2",
+    "page": 259,
+    "image": "assets/part-06-ch-05/eq-323-VI-5.png"
+  },
+  {
+    "n": 324,
+    "eqid": "VI-5-248",
+    "tag": "VI-5-248",
+    "status": "agreed",
+    "verified": true,
+    "latex": "q_u = \\frac{Q_u}{B'L'} = \\frac{1}{2} \\bar{\\gamma}' B' N_{\\gamma} s_{\\gamma} d_{\\gamma} i_{\\gamma} + q' N_q s_q d_q i_q + c N_c s_c d_c i_c",
+    "page": 260,
+    "image": "assets/part-06-ch-05/eq-324-VI-5-248.png"
+  },
+  {
+    "n": 325,
+    "eqid": "VI-5-325",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_{\\gamma} = 1.5(N_q - 1)\\tan\\varphi'",
+    "page": 260,
+    "image": "assets/part-06-ch-05/eq-325-VI-5.png"
+  },
+  {
+    "n": 326,
+    "eqid": "VI-5-326",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "N_q = \\exp(\\pi\\tan\\varphi')\\tan^2(45^\\circ + \\varphi'/2) = \\exp(\\pi\\tan\\varphi')(1+\\sin\\varphi')/(1-\\sin\\varphi'), \\quad N_c = \\begin{cases} (N_q - 1)\\cot\\varphi' \\\\ \\pi+2, & \\text{for undrained conditions } (\\varphi'=0) \\end{cases}",
+    "page": 260,
+    "image": "assets/part-06-ch-05/eq-326-VI-5.png"
+  },
+  {
+    "n": 327,
+    "eqid": "VI-5-327",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "s_{\\gamma} = 1 - 0.4 B' / L', \\text{ must always be } \\geq 0.6",
+    "page": 260,
+    "image": "assets/part-06-ch-05/eq-327-VI-5.png"
+  },
+  {
+    "n": 328,
+    "eqid": "VI-5-328",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "s_q = 1 + \\sin \\varphi' B'/L'",
+    "page": 260,
+    "image": "assets/part-06-ch-05/eq-328-VI-5.png"
+  },
+  {
+    "n": 329,
+    "eqid": "VI-5-329",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "s_c = 1 + 0.2 \\ B'/L'",
+    "page": 260,
+    "image": "assets/part-06-ch-05/eq-329-VI-5.png"
+  },
+  {
+    "n": 330,
+    "eqid": "VI-5-330",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "d_{\\gamma} = 1",
+    "page": 260,
+    "image": "assets/part-06-ch-05/eq-330-VI-5.png"
+  },
+  {
+    "n": 331,
+    "eqid": "VI-5-331",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "d_q = 1 + 2\\tan\\varphi'(1 - \\sin\\varphi')^2 \\arctan(D/B')",
+    "page": 260,
+    "image": "assets/part-06-ch-05/eq-331-VI-5.png"
+  },
+  {
+    "n": 332,
+    "eqid": "VI-5-332",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "d_c = 1 + 0.4 \\arctan(D/B')",
+    "page": 260,
+    "image": "assets/part-06-ch-05/eq-332-VI-5.png"
+  },
+  {
+    "n": 333,
+    "eqid": "VI-5-333",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "i_{\\gamma} = \\left(1 - \\frac{0.7 H_B}{V + B'} \\frac{L'}{c'} \\cot \\varphi'\\right)^5,\n\\quad i_q = \\left(1 - \\frac{0.5 H_B}{V + B'} \\frac{L'}{c'} \\cot \\varphi'\\right)^5\n\nif the quantity inside the bracket becomes negative then the bearing capacity is negligible.",
+    "page": 260,
+    "image": "assets/part-06-ch-05/eq-333-VI-5.png"
+  },
+  {
+    "n": 334,
+    "eqid": "VI-5-334",
+    "tag": null,
+    "status": "resolved",
+    "verified": true,
+    "latex": "i_{c} = \\left\\{ \\begin{array}{ll}\ni_{q}-\\frac{1-i_{q}}{N_{q}-1}\\simeq i_{c} & \\text{for } \\varphi^{\\prime }\\neq 0 \\\\\n0.5(1+(1-\\frac{H_{B}}{B^{\\prime }L^{\\prime }}\\cot \\varphi ^{\\prime })^{0.5}) & \\text{for } \\varphi^{\\prime }=0\n\\end{array} \\right.",
+    "page": 260,
+    "image": "assets/part-06-ch-05/eq-334-VI-5.png"
+  },
+  {
+    "n": 335,
+    "eqid": "VI-5-249",
+    "tag": "VI-5-249",
+    "status": "agreed",
+    "verified": true,
+    "latex": "B ^ { \\prime } = B - 2 e _ { B } \\qquad a n d \\qquad L ^ { \\prime } = L - 2 e _ { L }",
+    "page": 261,
+    "image": "assets/part-06-ch-05/eq-335-VI-5-249.png"
+  },
+  {
+    "n": 336,
+    "eqid": "VI-5-250",
+    "tag": "VI-5-250",
+    "status": "agreed",
+    "verified": true,
+    "latex": "q_{u} = \\frac{Q_{u}^{N}}{B' L'} = \\frac{1}{2} \\bar{\\gamma'} B' N_{\\gamma} s_{\\gamma} d_{\\gamma} i_{\\gamma b} b_{\\gamma} g_{\\gamma} + q' N_{q} s_{q} d_{q} i_{q} b_{q} g_{q}",
+    "page": 262,
+    "image": "assets/part-06-ch-05/eq-336-VI-5-250.png"
+  },
+  {
+    "n": 337,
+    "eqid": "VI-5-337",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "b _ { \\gamma } = \\exp ( - 2 . 7 \\nu \\ \\tan \\varphi ^ { \\prime } )",
+    "page": 262,
+    "image": "assets/part-06-ch-05/eq-337-VI-5.png"
+  },
+  {
+    "n": 338,
+    "eqid": "VI-5-338",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "b_a = \\exp(-2 \\nu \\tan \\varphi')",
+    "page": 262,
+    "image": "assets/part-06-ch-05/eq-338-VI-5.png"
+  },
+  {
+    "n": 339,
+    "eqid": "VI-5-339",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "g_{\\gamma} = g_q = (1 - 0.5 \\tan \\beta)^5",
+    "page": 262,
+    "image": "assets/part-06-ch-05/eq-339-VI-5.png"
+  },
+  {
+    "n": 340,
+    "eqid": "VI-5-340",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "i_{\\gamma_h} = (1 - (0.7 - \\nu^0/450^0) \\ H/V)^{\\delta}",
+    "page": 262,
+    "image": "assets/part-06-ch-05/eq-340-VI-5.png"
+  },
+  {
+    "n": 341,
+    "eqid": "VI-5-251",
+    "tag": "VI-5-251",
+    "status": "agreed",
+    "verified": true,
+    "latex": "g = W_s - W_d \\ge 0",
+    "page": 262,
+    "image": "assets/part-06-ch-05/eq-341-VI-5-251.png"
+  },
+  {
+    "n": 342,
+    "eqid": "VI-5-252",
+    "tag": "VI-5-252",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "F = \\frac{W_s}{W_d}",
+    "page": 263,
+    "image": "assets/part-06-ch-05/eq-342-VI-5-252.png"
+  },
+  {
+    "n": 343,
+    "eqid": "VI-5-253",
+    "tag": "VI-5-253",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{S_m}{H} = \\frac{0.4}{\\left[\\sinh(kh)\\right]^{1.35}}",
+    "page": 272,
+    "image": "assets/part-06-ch-05/eq-343-VI-5-253.png"
+  },
+  {
+    "n": 344,
+    "eqid": "VI-5-254",
+    "tag": "VI-5-254",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{S_m}{(u_{rms})_m T_p} = \\frac{0.05}{\\left[\\sinh(k_p h)\\right]^{0.35}}",
+    "page": 273,
+    "image": "assets/part-06-ch-05/eq-344-VI-5-254.png"
+  },
+  {
+    "n": 345,
+    "eqid": "VI-5-255",
+    "tag": "VI-5-255",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{(u_{rms})_{m}}{g k_{p} T_{p} H_{mo}} = \\frac{\\sqrt{2}}{4\\pi \\cosh(k_{p}h)} \\left[ 0.54 \\cosh\\left(\\frac{1.5 - k_{p}h}{2.8}\\right) \\right]",
+    "page": 273,
+    "image": "assets/part-06-ch-05/eq-345-VI-5-255.png"
+  },
+  {
+    "n": 346,
+    "eqid": "VI-5-256",
+    "tag": "VI-5-256",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "K C = \\frac { U _ { m } T } { B }",
+    "page": 275,
+    "image": "assets/part-06-ch-05/eq-346-VI-5-256.png"
+  },
+  {
+    "n": 347,
+    "eqid": "VI-5-257",
+    "tag": "VI-5-257",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{S_m}{B} = 0.5 C_u \\left[ 1 - e^{-0.175(KC-1)} \\right]",
+    "page": 275,
+    "image": "assets/part-06-ch-05/eq-347-VI-5-257.png"
+  },
+  {
+    "n": 348,
+    "eqid": "VI-5-258",
+    "tag": "VI-5-258",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{S_m}{B} = -0.09 + 0.123 \\, KC",
+    "page": 275,
+    "image": "assets/part-06-ch-05/eq-348-VI-5-258.png"
+  },
+  {
+    "n": 349,
+    "eqid": "VI-5-259",
+    "tag": "VI-5-259",
+    "status": "agreed",
+    "verified": true,
+    "latex": "S_m = H_{\\text{max}} \\quad \\text{or} \\quad S_m \\approx h",
+    "page": 276,
+    "image": "assets/part-06-ch-05/eq-349-VI-5-259.png"
+  },
+  {
+    "n": 350,
+    "eqid": "VI-5-260",
+    "tag": "VI-5-260",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{S_m}{(H_{mo})_o} = \\sqrt{22.72 \\frac{h}{(L_p)_o} + 0.25}",
+    "page": 277,
+    "image": "assets/part-06-ch-05/eq-350-VI-5-260.png"
+  },
+  {
+    "n": 351,
+    "eqid": "VI-5-261",
+    "tag": "VI-5-261",
+    "status": "agreed",
+    "verified": true,
+    "latex": "0 . 0 1 1 < \\frac { h } { \\left( L _ { p } \\right) _ { o } } < 0 . 0 4 5 \\qquad a n d \\qquad 0 . 0 1 5 < \\frac { \\left( H _ { m o } \\right) _ { o } } { \\left( L _ { p } \\right) _ { o } } < 0 . 0 4 0",
+    "page": 278,
+    "image": "assets/part-06-ch-05/eq-351-VI-5-261.png"
+  },
+  {
+    "n": 352,
+    "eqid": "VI-5-262",
+    "tag": "VI-5-262",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{S_m}{B} = 0.04 C_u \\left[ 1 - e^{-4.0 (KC - 0.05)} \\right]",
+    "page": 279,
+    "image": "assets/part-06-ch-05/eq-352-VI-5-262.png"
+  },
+  {
+    "n": 353,
+    "eqid": "VI-5-263",
+    "tag": "VI-5-263",
+    "status": "agreed",
+    "verified": true,
+    "latex": "H = \\frac{1}{\\sqrt{2}} H_s",
+    "page": 279,
+    "image": "assets/part-06-ch-05/eq-353-VI-5-263.png"
+  },
+  {
+    "n": 354,
+    "eqid": "VI-5-264",
+    "tag": "VI-5-264",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{S_m}{H_s} = 0.01 C_u \\left( \\frac{T_p \\sqrt{g H_s}}{h} \\right)^{3/2}",
+    "page": 280,
+    "image": "assets/part-06-ch-05/eq-354-VI-5-264.png"
+  },
+  {
+    "n": 355,
+    "eqid": "VI-5-265",
+    "tag": "VI-5-265",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{S_m}{h} = 2.0 K_1 K_2 \\left(\\frac{b}{h}\\right)^{0.65} F_r^{0.43}",
+    "page": 281,
+    "image": "assets/part-06-ch-05/eq-355-VI-5-265.png"
+  },
+  {
+    "n": 356,
+    "eqid": "VI-5-266",
+    "tag": "VI-5-266",
+    "status": "agreed",
+    "verified": true,
+    "latex": "K_2 = (\\cos \\theta + \\frac{L}{b}\\sin \\theta)^{0.62}",
+    "page": 281,
+    "image": "assets/part-06-ch-05/eq-356-VI-5-266.png"
+  },
+  {
+    "n": 357,
+    "eqid": "VI-5-267",
+    "tag": "VI-5-267",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{S_m}{D} = 1.3 \\left[ 1 - e^{-0.03 (KC - 6)} \\right]",
+    "page": 282,
+    "image": "assets/part-06-ch-05/eq-357-VI-5-267.png"
+  },
+  {
+    "n": 358,
+    "eqid": "VI-5-268",
+    "tag": "VI-5-268",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{S_m}{D} = 2.0 \\left[ 1 - e^{-0.015(KC-11)} \\right] \\qquad \\text{for } KC = 11",
+    "page": 283,
+    "image": "assets/part-06-ch-05/eq-358-VI-5-268.png"
+  },
+  {
+    "n": 359,
+    "eqid": "VI-5-269",
+    "tag": "VI-5-269",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{S_m}{D} = 2.0 \\left[ 1 - e^{-0.019 (KC-3)} \\right] \\qquad \\text{for } KC = 3",
+    "page": 283,
+    "image": "assets/part-06-ch-05/eq-359-VI-5-269.png"
+  },
+  {
+    "n": 360,
+    "eqid": "VI-5-270",
+    "tag": "VI-5-270",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{S_m}{D} = \\frac{\\mu}{2} \\left( \\frac{U}{U_c} \\right)",
+    "page": 285,
+    "image": "assets/part-06-ch-05/eq-360-VI-5-270.png"
+  },
+  {
+    "n": 361,
+    "eqid": "VI-5-271",
+    "tag": "VI-5-271",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\mu = \\left(\\frac{k_s}{12\\,D}\\right) \\ln\\left(\\frac{6\\,D}{k_s}\\right)",
+    "page": 285,
+    "image": "assets/part-06-ch-05/eq-361-VI-5-271.png"
+  },
+  {
+    "n": 362,
+    "eqid": "VI-5-272",
+    "tag": "VI-5-272",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{S_m}{D} = 0.6 \\pm 0.1",
+    "page": 285,
+    "image": "assets/part-06-ch-05/eq-362-VI-5-272.png"
+  },
+  {
+    "n": 363,
+    "eqid": "VI-5-273",
+    "tag": "VI-5-273",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{e_{cr}}{D} = 0.1 \\ln(KC)",
+    "page": 286,
+    "image": "assets/part-06-ch-05/eq-363-VI-5-273.png"
+  },
+  {
+    "n": 364,
+    "eqid": "VI-5-274",
+    "tag": "VI-5-274",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{S_m}{D} = 0.1\\sqrt{KC}",
+    "page": 287,
+    "image": "assets/part-06-ch-05/eq-364-VI-5-274.png"
+  },
+  {
+    "n": 365,
+    "eqid": "VI-5-275",
+    "tag": "VI-5-275",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{S_m}{D} = 0.1\\sqrt{KC} \\left( 1 - 1.4 \\frac{e}{D} \\right) + \\frac{e}{D}",
+    "page": 287,
+    "image": "assets/part-06-ch-05/eq-365-VI-5-275.png"
+  },
+  {
+    "n": 366,
+    "eqid": "VI-5-276",
+    "tag": "VI-5-276",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W = \\frac { d _ { e } } { \\tan \\left( 4 5 ^ { o } - \\phi / 2 \\right) } \\approx 2 . 0 d _ { e }",
+    "page": 288,
+    "image": "assets/part-06-ch-05/eq-366-VI-5-276.png"
+  },
+  {
+    "n": 367,
+    "eqid": "VI-5-277",
+    "tag": "VI-5-277",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W = 2 . 0 H _ { i } \\qquad o r \\qquad W = 0 . 4 d _ { s }",
+    "page": 288,
+    "image": "assets/part-06-ch-05/eq-367-VI-5-277.png"
+  },
+  {
+    "n": 368,
+    "eqid": "VI-5-278",
+    "tag": "VI-5-278",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{W}{B} = 1.75 (KC - 1)^{1/2}",
+    "page": 289,
+    "image": "assets/part-06-ch-05/eq-368-VI-5-278.png"
+  },
+  {
+    "n": 369,
+    "eqid": "VI-5-279",
+    "tag": "VI-5-279",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{W}{B} = A_1(KC)",
+    "page": 290,
+    "image": "assets/part-06-ch-05/eq-369-VI-5-279.png"
+  },
+  {
+    "n": 370,
+    "eqid": "VI-5-280",
+    "tag": "VI-5-280",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{W}{S_m} = \\frac{F_s}{\\tan \\phi}",
+    "page": 290,
+    "image": "assets/part-06-ch-05/eq-370-VI-5-280.png"
+  },
+  {
+    "n": 371,
+    "eqid": "VI-5-371",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{H}{gT^2} = \\text{dimensionless wave steepness}, \\quad \\frac{d}{gT^2} = \\text{dimensionless water depth}, \\quad \\frac{D}{L} = \\text{ratio of pile diameter to wavelength (assumed small)}, \\quad \\frac{k}{D} = \\text{relative pile roughness}, \\quad \\frac{HD}{Tv} = \\text{a form of the Reynolds number}",
+    "page": 293,
+    "image": "assets/part-06-ch-05/eq-371-VI-5.png"
+  },
+  {
+    "n": 372,
+    "eqid": "VI-5-281",
+    "tag": "VI-5-281",
+    "status": "agreed",
+    "verified": true,
+    "latex": "f = f_i + f_D = C_M \\rho \\frac{\\pi D^2}{4} \\frac{du}{dt} + C_D \\frac{1}{2} \\rho D u | u |",
+    "page": 294,
+    "image": "assets/part-06-ch-05/eq-372-VI-5-281.png"
+  },
+  {
+    "n": 373,
+    "eqid": "VI-5-282",
+    "tag": "VI-5-282",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac { D } { L } < 0 . 0 5",
+    "page": 295,
+    "image": "assets/part-06-ch-05/eq-373-VI-5-282.png"
+  },
+  {
+    "n": 374,
+    "eqid": "VI-5-283",
+    "tag": "VI-5-283",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F = \\int_{-d}^{\\eta} f_i dz + \\int_{-d}^{\\eta} f_D dz = F_i + F_D",
+    "page": 295,
+    "image": "assets/part-06-ch-05/eq-374-VI-5-283.png"
+  },
+  {
+    "n": 375,
+    "eqid": "VI-5-284",
+    "tag": "VI-5-284",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M = \\int_{-\\eta_d}^{\\eta_d} (z + d) f_i \\, dz + \\int_{-\\eta_d}^{\\eta_d} (z + d) f_D \\, dz = M_i + M_D",
+    "page": 295,
+    "image": "assets/part-06-ch-05/eq-375-VI-5-284.png"
+  },
+  {
+    "n": 376,
+    "eqid": "VI-5-285",
+    "tag": "VI-5-285",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_i = C_M \\rho g \\frac{\\pi D^2}{4} H K_i",
+    "page": 296,
+    "image": "assets/part-06-ch-05/eq-376-VI-5-285.png"
+  },
+  {
+    "n": 377,
+    "eqid": "VI-5-286",
+    "tag": "VI-5-286",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_D = C_D \\frac{1}{2} \\rho g D H^2 K_D",
+    "page": 296,
+    "image": "assets/part-06-ch-05/eq-377-VI-5-286.png"
+  },
+  {
+    "n": 378,
+    "eqid": "VI-5-287",
+    "tag": "VI-5-287",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_{i} = C_{M} \\rho g \\frac{\\pi D^{2}}{4} H K_{i} d S_{i} = F_{i} d S_{i}",
+    "page": 296,
+    "image": "assets/part-06-ch-05/eq-378-VI-5-287.png"
+  },
+  {
+    "n": 379,
+    "eqid": "VI-5-288",
+    "tag": "VI-5-288",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_D = C_D \\frac{1}{2} \\rho g D H^2 K_D d S_D = F_D d S_D",
+    "page": 296,
+    "image": "assets/part-06-ch-05/eq-379-VI-5-288.png"
+  },
+  {
+    "n": 380,
+    "eqid": "VI-5-289",
+    "tag": "VI-5-289",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\eta = \\frac{H}{2} \\cos\\left(\\frac{2\\pi t}{T}\\right)",
+    "page": 296,
+    "image": "assets/part-06-ch-05/eq-380-VI-5-289.png"
+  },
+  {
+    "n": 381,
+    "eqid": "VI-5-290",
+    "tag": "VI-5-290",
+    "status": "agreed",
+    "verified": true,
+    "latex": "u = \\frac { H } { 2 } \\frac { g T } { L } \\frac { \\cosh \\left[ 2 \\pi ( z + d \\mathbf{\\beta } ) / L \\right] } { \\cosh \\left[ 2 \\pi d / L \\right] } \\cos \\left( \\frac { 2 \\pi t } { T } \\right)",
+    "page": 296,
+    "image": "assets/part-06-ch-05/eq-381-VI-5-290.png"
+  },
+  {
+    "n": 382,
+    "eqid": "VI-5-291",
+    "tag": "VI-5-291",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{du}{dt} \\approx \\frac{\\partial u}{\\partial t} \\approx \\frac{g\\pi H}{L} \\frac{\\cosh\\left[2\\pi(z+d)/L\\right]}{\\cosh\\left[2\\pi d/L\\right]} \\sin\\left(-\\frac{2pit}{T}\\right)",
+    "page": 296,
+    "image": "assets/part-06-ch-05/eq-382-VI-5-291.png"
+  },
+  {
+    "n": 383,
+    "eqid": "VI-5-292",
+    "tag": "VI-5-292",
+    "status": "agreed",
+    "verified": true,
+    "latex": "f_i = C_M \\rho g \\frac{\\pi D^2}{4} H \\left[ \\frac{\\pi}{L} \\frac{\\cosh\\left[2\\pi(z+d)/L\\right]}{\\cosh\\left[2\\pi d/L\\right]} \\right] \\sin\\left(-\\frac{2pit}{T}\\right)",
+    "page": 296,
+    "image": "assets/part-06-ch-05/eq-383-VI-5-292.png"
+  },
+  {
+    "n": 384,
+    "eqid": "VI-5-293",
+    "tag": "VI-5-293",
+    "status": "agreed",
+    "verified": true,
+    "latex": "f_D = C_D \\frac{1}{2} \\rho g D H^2 \\left[ \\frac{gT^2}{4L^2} \\left( \\frac{\\cosh \\left[ 2\\pi (z+d)/L \\right]}{\\cosh \\left[ 2pid/L \\right]} \\right)^2 \\right] \\cos \\left( \\frac{2\\pi t}{T} \\right) \\left| \\cos \\left( \\frac{2\\pi t}{T} \\right) \\right|",
+    "page": 297,
+    "image": "assets/part-06-ch-05/eq-384-VI-5-293.png"
+  },
+  {
+    "n": 385,
+    "eqid": "VI-5-294",
+    "tag": "VI-5-294",
+    "status": "agreed",
+    "verified": true,
+    "latex": "K_i = \\frac{1}{2} \\tanh\\left(\\frac{2\\pi d}{L}\\right) \\sin\\left(-\\frac{2\\pi t}{T}\\right)",
+    "page": 297,
+    "image": "assets/part-06-ch-05/eq-385-VI-5-294.png"
+  },
+  {
+    "n": 386,
+    "eqid": "VI-5-295",
+    "tag": "VI-5-295",
+    "status": "agreed",
+    "verified": true,
+    "latex": "K_D = \\frac{1}{8} \\left( 1 + \\frac{4\\pi d/L}{\\sinh[4\\pi d/L]} \\right) \\cos\\left(\\frac{2\\pi t}{T}\\right)\\bigg|\\cos\\left(\\frac{2\\pi t}{T}\\right)\\bigg| = \\frac{1}{4} n \\cos\\left(\\frac{2\\pi t}{T}\\right)\\bigg|\\cos\\left(\\frac{2\\pi t}{T}\\right)\\bigg|",
+    "page": 297,
+    "image": "assets/part-06-ch-05/eq-386-VI-5-295.png"
+  },
+  {
+    "n": 387,
+    "eqid": "VI-5-296",
+    "tag": "VI-5-296",
+    "status": "agreed",
+    "verified": true,
+    "latex": "S_i = 1 + \\frac{1 - \\cosh\\left[2\\pi d/L\\right]}{(2\\pi d/L)\\sinh\\left[2\\pi d/L\\right]}",
+    "page": 297,
+    "image": "assets/part-06-ch-05/eq-387-VI-5-296.png"
+  },
+  {
+    "n": 388,
+    "eqid": "VI-5-297",
+    "tag": "VI-5-297",
+    "status": "agreed",
+    "verified": true,
+    "latex": "S_D = \\frac{1}{2} + \\frac{1}{2n} \\left( \\frac{1}{2} + \\frac{1 - \\cosh\\left[4\\pi d/L\\right]}{(4\\pi d/L)\\sinh\\left[4\\pi d/L\\right]} \\right)",
+    "page": 297,
+    "image": "assets/part-06-ch-05/eq-388-VI-5-297.png"
+  },
+  {
+    "n": 389,
+    "eqid": "VI-5-298",
+    "tag": "VI-5-298",
+    "status": "agreed",
+    "verified": true,
+    "latex": "n = \\frac{C_g}{C} = \\frac{1}{2} \\left( 1 + \\frac{4\\pi d/L}{\\sinh[4\\pi d/L]} \\right)",
+    "page": 297,
+    "image": "assets/part-06-ch-05/eq-389-VI-5-298.png"
+  },
+  {
+    "n": 390,
+    "eqid": "VI-5-299",
+    "tag": "VI-5-299",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "W = \\frac{C_M D}{C_D H}",
+    "page": 299,
+    "image": "assets/part-06-ch-05/eq-390-VI-5-299.png"
+  },
+  {
+    "n": 391,
+    "eqid": "VI-5-300",
+    "tag": "VI-5-300",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_m = \\phi_m C_D \\rho g H^2 D",
+    "page": 309,
+    "image": "assets/part-06-ch-05/eq-391-VI-5-300.png"
+  },
+  {
+    "n": 392,
+    "eqid": "VI-5-301",
+    "tag": "VI-5-301",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M _ { m } = \\alpha _ { m } C _ { D } \\rho g H ^ { 2 } D d",
+    "page": 309,
+    "image": "assets/part-06-ch-05/eq-392-VI-5-301.png"
+  },
+  {
+    "n": 393,
+    "eqid": "VI-5-302",
+    "tag": "VI-5-302",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "r_a = \\frac{M_m}{F_m}",
+    "page": 309,
+    "image": "assets/part-06-ch-05/eq-393-VI-5-302.png"
+  },
+  {
+    "n": 394,
+    "eqid": "VI-5-303",
+    "tag": "VI-5-303",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_{m'} = (r_a + S_m) F_m",
+    "page": 309,
+    "image": "assets/part-06-ch-05/eq-394-VI-5-303.png"
+  },
+  {
+    "n": 395,
+    "eqid": "VI-5-304",
+    "tag": "VI-5-304",
+    "status": "agreed",
+    "verified": true,
+    "latex": "{ { F } } _ { L } = { { F } } _ { L m } \\cos 2 \\theta = C _ { L } \\frac { \\rho g } { 2 } D H ^ { 2 } K _ { D m } \\cos 2 \\theta",
+    "page": 315,
+    "image": "assets/part-06-ch-05/eq-395-VI-5-304.png"
+  },
+  {
+    "n": 396,
+    "eqid": "VI-5-305",
+    "tag": "VI-5-305",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "KC_{ave} = \\frac{(u_{\\text{max}})_{ave} T}{D}",
+    "page": 315,
+    "image": "assets/part-06-ch-05/eq-396-VI-5-305.png"
+  },
+  {
+    "n": 397,
+    "eqid": "VI-5-306",
+    "tag": "VI-5-306",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "KC = \\frac{u_m T}{D}",
+    "page": 315,
+    "image": "assets/part-06-ch-05/eq-397-VI-5-306.png"
+  },
+  {
+    "n": 398,
+    "eqid": "VI-5-307",
+    "tag": "VI-5-307",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R _ { e } = \\frac { u _ { m } D } { \\nu }",
+    "page": 315,
+    "image": "assets/part-06-ch-05/eq-398-VI-5-307.png"
+  },
+  {
+    "n": 399,
+    "eqid": "VI-5-308",
+    "tag": "VI-5-308",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\beta = \\frac { R _ { e } } { K C } = \\frac { D ^ { 2 } } { \\nu T }",
+    "page": 316,
+    "image": "assets/part-06-ch-05/eq-399-VI-5-308.png"
+  },
+  {
+    "n": 400,
+    "eqid": "VI-5-400",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_D = \\begin{cases} 1.2 - \\frac{(R_e - 2(10)^5)}{6(10)^5} & for \\ 2(10)^5 < R_e - 5(10)^5 \\\\ 0.7 & for \\ 5(10)^5 < R_e \\end{cases}",
+    "page": 321,
+    "image": "assets/part-06-ch-05/eq-400-VI-5.png"
+  },
+  {
+    "n": 401,
+    "eqid": "VI-5-401",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_{M} = \\begin{cases} 2.5 - \\frac{R_{e}}{5(10)^{5}} & for \\ 2.52(10)^{5} < R_{e} - 5(10)^{5} \\\\ 1.5 & for \\ 5(10)^{5} < R_{e} \\end{cases}",
+    "page": 321,
+    "image": "assets/part-06-ch-05/eq-401-VI-5.png"
+  },
+  {
+    "n": 402,
+    "eqid": "VI-5-309",
+    "tag": "VI-5-309",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_d = C_{sf} \\rho A (u - u_i)^2",
+    "page": 324,
+    "image": "assets/part-06-ch-05/eq-402-VI-5-309.png"
+  },
+  {
+    "n": 403,
+    "eqid": "VI-5-310",
+    "tag": "VI-5-310",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{F_c}{bh_i} = m I k x \\sigma_c",
+    "page": 325,
+    "image": "assets/part-06-ch-05/eq-403-VI-5-310.png"
+  },
+  {
+    "n": 404,
+    "eqid": "VI-5-311",
+    "tag": "VI-5-311",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{F_c}{bh_i} = C \\, m \\, \\sigma_c",
+    "page": 326,
+    "image": "assets/part-06-ch-05/eq-404-VI-5-311.png"
+  },
+  {
+    "n": 405,
+    "eqid": "VI-5-312",
+    "tag": "VI-5-312",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C = \n\\begin{cases} \n\\left(5\\frac{h_i}{b} + 1\\right)^{1/2} & \\text{for } 1 < \\frac{b}{h_i} \\\\\n4.17 - 1.72\\left(\\frac{b}{h_i}\\right) & \\text{for } 0.1 < \\frac{b}{h_i} < 1\n\\end{cases}",
+    "page": 326,
+    "image": "assets/part-06-ch-05/eq-405-VI-5-312.png"
+  },
+  {
+    "n": 406,
+    "eqid": "VI-5-313",
+    "tag": "VI-5-313",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{F_c}{bh_i} = \\sigma_c",
+    "page": 326,
+    "image": "assets/part-06-ch-05/eq-406-VI-5-313.png"
+  },
+  {
+    "n": 407,
+    "eqid": "VI-5-314",
+    "tag": "VI-5-314",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{F_h}{b} = C_1 \\sigma_f \\left( \\frac{\\rho_w g \\, h_i^5}{E} \\right)^{1/4} + C_2 Z \\, \\rho_i g \\, h_i",
+    "page": 328,
+    "image": "assets/part-06-ch-05/eq-407-VI-5-314.png"
+  },
+  {
+    "n": 408,
+    "eqid": "VI-5-315",
+    "tag": "VI-5-315",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_1 = 0.68 \\left[ \\frac{\\sin \\alpha + \\mu \\cos \\alpha}{\\cos \\alpha - \\mu \\sin \\alpha} \\right]",
+    "page": 328,
+    "image": "assets/part-06-ch-05/eq-408-VI-5-315.png"
+  },
+  {
+    "n": 409,
+    "eqid": "VI-5-316",
+    "tag": "VI-5-316",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_2 = \\left[ \\frac{\\left( \\sin \\alpha + \\mu \\cos \\alpha \\right)^2}{\\cos \\alpha - \\mu \\sin \\alpha} + \\frac{\\sin \\alpha + \\mu \\cos \\alpha}{\\tan \\alpha} \\right]",
+    "page": 328,
+    "image": "assets/part-06-ch-05/eq-409-VI-5-316.png"
+  },
+  {
+    "n": 410,
+    "eqid": "VI-5-317",
+    "tag": "VI-5-317",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{F_h}{b} = K_h h_i \\sigma_c",
+    "page": 329,
+    "image": "assets/part-06-ch-05/eq-410-VI-5-317.png"
+  },
+  {
+    "n": 411,
+    "eqid": "VI-5-318",
+    "tag": "VI-5-318",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "K_h = 1 - 0.654 f^{0.38}",
+    "page": 329,
+    "image": "assets/part-06-ch-05/eq-411-VI-5-318.png"
+  },
+  {
+    "n": 412,
+    "eqid": "VI-5-319",
+    "tag": "VI-5-319",
+    "status": "agreed",
+    "verified": true,
+    "latex": "f = \\frac{1 - \\mu \\tan \\alpha}{\\mu + \\tan \\alpha}",
+    "page": 329,
+    "image": "assets/part-06-ch-05/eq-412-VI-5-319.png"
+  },
+  {
+    "n": 413,
+    "eqid": "VI-5-320",
+    "tag": "VI-5-320",
+    "status": "agreed",
+    "verified": true,
+    "latex": "P = f (a, h, E_{av}, \\Delta, \\nu)",
+    "page": 330,
+    "image": "assets/part-06-ch-05/eq-413-VI-5-320.png"
+  },
+  {
+    "n": 414,
+    "eqid": "VI-5-414",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "P_{\\text{max}} = 3.7 \\Delta = 3.7 (5 \\text{ cm}) = 18.5 \\text{ tonnes}",
+    "page": 331,
+    "image": "assets/part-06-ch-05/eq-414-VI-5.png"
+  },
+  {
+    "n": 415,
+    "eqid": "VI-5-321",
+    "tag": "VI-5-321",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{F_v}{b} = \\rho_w g \\Delta h L_c",
+    "page": 332,
+    "image": "assets/part-06-ch-05/eq-415-VI-5-321.png"
+  },
+  {
+    "n": 416,
+    "eqid": "VI-5-322",
+    "tag": "VI-5-322",
+    "status": "agreed",
+    "verified": true,
+    "latex": "L_{c} = \\left[ \\frac{Eh_{i}^{3}}{12\\rho_{w}g(1-\\nu^{2})} \\right]^{1/4}",
+    "page": 332,
+    "image": "assets/part-06-ch-05/eq-416-VI-5-322.png"
+  }
+]

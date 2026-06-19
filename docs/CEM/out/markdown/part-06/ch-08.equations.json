@@ -1,0 +1,52 @@
+[
+  {
+    "n": 1,
+    "eqid": "VI-8-1",
+    "tag": "VI-8-1",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "CR_{SE}CH = R_5 + 0.3(R_1 - R_5)\\left(\\frac{R_2 + R_3 + R_4}{300}\\right)",
+    "page": 27,
+    "image": "assets/part-06-ch-08/eq-001-VI-8-1.png"
+  },
+  {
+    "n": 2,
+    "eqid": "VI-8-2",
+    "tag": "VI-8-2",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "SI_R = I_L + 0.3(I_H - I_L)\\frac{I_M}{100}",
+    "page": 27,
+    "image": "assets/part-06-ch-08/eq-002-VI-8-2.png"
+  },
+  {
+    "n": 3,
+    "eqid": "VI-8-3",
+    "tag": "VI-8-3",
+    "status": "agreed",
+    "verified": true,
+    "latex": "SI = I_L + 0.3 (I_H - I_L) \\left[ \\frac{\\%I}{100} \\left( \\frac{SI}{100} \\right) + \\frac{\\%2}{100} \\left( \\frac{S2}{100} \\right) + \\frac{\\%3}{100} \\left( \\frac{S3}{100} \\right) + \\bullet \\bullet \\bullet \\right]",
+    "page": 28,
+    "image": "assets/part-06-ch-08/eq-003-VI-8-3.png"
+  },
+  {
+    "n": 4,
+    "eqid": "VI-8-4",
+    "tag": "VI-8-4",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "FI_R = R_L + 0.3(R_H - R_L) \\left[ \\frac{\\left( R_2 / 100 + R_3 / 100 + R_4 / 100 + \\bullet \\bullet \\bullet \\right)}{N} \\right]",
+    "page": 28,
+    "image": "assets/part-06-ch-08/eq-004-VI-8-4.png"
+  },
+  {
+    "n": 5,
+    "eqid": "VI-8-5",
+    "tag": "VI-8-5",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "FI = I_L + 0.3 (I_H - I_L) \\left[ \\frac{(I_2/100 + I_3/100 + I_4/100 + \\bullet \\bullet \\bullet)}{N} \\right]",
+    "page": 28,
+    "image": "assets/part-06-ch-08/eq-005-VI-8-5.png"
+  }
+]

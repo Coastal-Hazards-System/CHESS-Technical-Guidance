@@ -1,0 +1,17 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "II",
+  "chapter": 5,
+  "title": "WATER LEVELS AND LONG WAVES",
+  "source_pdf": "P02__EM_1110-2-1100_Ch_05.pdf",
+  "pages": 76,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 27,
+  "equations_verified": 27,
+  "tables_gfm": 18,
+  "tables_image": 0,
+  "figures": 33,
+  "equations_flagged": 0,
+  "eq_single_verified": 6,
+  "eq_agreed": 21
+}

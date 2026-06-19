@@ -1,0 +1,18 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "VI",
+  "chapter": 8,
+  "title": "Monitoring, Maintenance, and Repair of Coastal Projects",
+  "source_pdf": "P06__EM_1110-2-1100_Ch8.pdf",
+  "pages": 71,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 5,
+  "equations_verified": 5,
+  "tables_gfm": 16,
+  "tables_image": 0,
+  "figures": 10,
+  "equations_flagged": 0,
+  "eq_single_verified": 2,
+  "eq_agreed_gt": 2,
+  "eq_agreed": 1
+}

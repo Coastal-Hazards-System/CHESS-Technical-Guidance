@@ -1,0 +1,102 @@
+[
+  {
+    "n": 1,
+    "eqid": "V-3-1",
+    "tag": "V-3-1",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "(BCR)_{F} = \\frac{\\text{Storm damage reduction benefits}}{\\text{Total, life-cycle cost}}",
+    "page": 17,
+    "image": "assets/part-05-ch-03/eq-001-V-3-1.png"
+  },
+  {
+    "n": 2,
+    "eqid": "V-3-2",
+    "tag": "V-3-2",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "(BCR)_{T} = \\frac{\\text{Total benefits}}{\\text{Total, life-cycle cost}}",
+    "page": 17,
+    "image": "assets/part-05-ch-03/eq-002-V-3-2.png"
+  },
+  {
+    "n": 3,
+    "eqid": "V-3-3",
+    "tag": "V-3-3",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R _ { p } ( x , t ) \\ = \\ \\frac { P _ { A } } { P _ { N } }",
+    "page": 37,
+    "image": "assets/part-05-ch-03/eq-003-V-3-3.png"
+  },
+  {
+    "n": 4,
+    "eqid": "V-3-4",
+    "tag": "V-3-4",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R _ { \\nu } ( x , t ) \\, = \\, { \\frac { V _ { A } } { V _ { N } } }",
+    "page": 37,
+    "image": "assets/part-05-ch-03/eq-004-V-3-4.png"
+  },
+  {
+    "n": 5,
+    "eqid": "V-3-5",
+    "tag": "V-3-5",
+    "status": "agreed",
+    "verified": true,
+    "latex": "WTR = \\frac{Wall Trap Volume}{Active Sediment Volume}",
+    "page": 39,
+    "image": "assets/part-05-ch-03/eq-005-V-3-5.png"
+  },
+  {
+    "n": 6,
+    "eqid": "V-3-6",
+    "tag": "V-3-6",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac { L _ { s } } { Y } \\, = \\, 1 . 5 \\, { \\ t o \\ 2 }",
+    "page": 55,
+    "image": "assets/part-05-ch-03/eq-006-V-3-6.png"
+  },
+  {
+    "n": 7,
+    "eqid": "V-3-7",
+    "tag": "V-3-7",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{L_s}{Y} = 1.5 \\quad L \\leq L_g \\leq L_s \\text{ segmented breakwater}",
+    "page": 55,
+    "image": "assets/part-05-ch-03/eq-007-V-3-7.png"
+  },
+  {
+    "n": 8,
+    "eqid": "V-3-8",
+    "tag": "V-3-8",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{L_s}{Y} = 0.5 \\text{ to } 0.67",
+    "page": 58,
+    "image": "assets/part-05-ch-03/eq-008-V-3-8.png"
+  },
+  {
+    "n": 9,
+    "eqid": "V-3-9",
+    "tag": "V-3-9",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{L_s}{Y} = 0.125 \\text{ (long systems)}",
+    "page": 58,
+    "image": "assets/part-05-ch-03/eq-009-V-3-9.png"
+  },
+  {
+    "n": 10,
+    "eqid": "V-3-10",
+    "tag": "V-3-10",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "I_s = \\exp(1.72 - 0.41 L_s/Y)",
+    "page": 58,
+    "image": "assets/part-05-ch-03/eq-010-V-3-10.png"
+  }
+]

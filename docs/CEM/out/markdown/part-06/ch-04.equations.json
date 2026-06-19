@@ -1,0 +1,72 @@
+[
+  {
+    "n": 1,
+    "eqid": "VI-4-1",
+    "tag": "VI-4-1",
+    "status": "agreed",
+    "verified": true,
+    "latex": "D_r = \\frac{e_{\\max} - e}{e_{\\max} - e_{\\min}} \\times 100\\%",
+    "page": 15,
+    "image": "assets/part-06-ch-04/eq-001-VI-4-1.png"
+  },
+  {
+    "n": 2,
+    "eqid": "VI-4-2",
+    "tag": "VI-4-2",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R_c = \\frac{\\gamma_d}{\\gamma_{d_{\\text{max}}}} \\times 100\\%",
+    "page": 15,
+    "image": "assets/part-06-ch-04/eq-002-VI-4-2.png"
+  },
+  {
+    "n": 3,
+    "eqid": "VI-4-3",
+    "tag": "VI-4-3",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "Q = K A \\frac{\\Delta h}{L}",
+    "page": 16,
+    "image": "assets/part-06-ch-04/eq-003-VI-4-3.png"
+  },
+  {
+    "n": 4,
+    "eqid": "VI-4-4",
+    "tag": "VI-4-4",
+    "status": "agreed",
+    "verified": true,
+    "latex": "D_s = 1.24 \\left(\\frac{W_s}{\\gamma_s}\\right)^{1/3}",
+    "page": 22,
+    "image": "assets/part-06-ch-04/eq-004-VI-4-4.png"
+  },
+  {
+    "n": 5,
+    "eqid": "VI-4-5",
+    "tag": "VI-4-5",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "E _ { c } = 3 3 \\left( w _ { c } \\right) ^ { 3 / 2 } \\left( f _ { _ c } \\right) ^ { 1 / 2 } \\qquad \\mathrm { E n g l i s h U n i t s }",
+    "page": 35,
+    "image": "assets/part-06-ch-04/eq-005-VI-4-5.png"
+  },
+  {
+    "n": 6,
+    "eqid": "VI-4-6",
+    "tag": "VI-4-6",
+    "status": "agreed",
+    "verified": true,
+    "latex": "E_{cm} = 1392 \\left(w_{cm}\\right)^{3/2} \\left(f_{cm}\\right)^{1/2}",
+    "page": 35,
+    "image": "assets/part-06-ch-04/eq-006-VI-4-6.png"
+  },
+  {
+    "n": 7,
+    "eqid": "VI-4-7",
+    "tag": "VI-4-7",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "PR = \\frac{D_{85} of \\ protected \\ soil}{EOS}",
+    "page": 63,
+    "image": "assets/part-06-ch-04/eq-007-VI-4-7.png"
+  }
+]

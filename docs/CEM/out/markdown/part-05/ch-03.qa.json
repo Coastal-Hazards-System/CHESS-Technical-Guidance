@@ -1,0 +1,17 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "V",
+  "chapter": 3,
+  "title": "SHORE PROTECTION PROJECTS",
+  "source_pdf": "P05__EM_1110-2-1100_Ch3.pdf",
+  "pages": 116,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 10,
+  "equations_verified": 10,
+  "tables_gfm": 13,
+  "tables_image": 0,
+  "figures": 44,
+  "equations_flagged": 0,
+  "eq_agreed_gt": 3,
+  "eq_agreed": 7
+}

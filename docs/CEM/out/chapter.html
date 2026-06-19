@@ -1,0 +1,88 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CEM — chapter</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script>
+    (function(){
+      var KEY="cem-theme";
+      var t=localStorage.getItem(KEY)|| (matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+      document.documentElement.setAttribute("data-theme",t);
+      function sync(){var d=document.documentElement.getAttribute("data-theme")==="dark";
+        var c=document.getElementById("modeToggle"); if(c)c.checked=d;
+        var l=document.getElementById("modeLbl"); if(l)l.textContent=d?"Dark":"Light";}
+      window.addEventListener("DOMContentLoaded",function(){
+        sync();
+        var c=document.getElementById("modeToggle");
+        if(c)c.addEventListener("change",function(){
+          var t=c.checked?"dark":"light";
+          document.documentElement.setAttribute("data-theme",t);
+          localStorage.setItem(KEY,t); sync();});
+      });
+    })();
+</script>
+</head><body>
+  <header>
+    <a class="title" href="index.html">CHESS-TG</a>
+    <nav class="topnav">
+      <a href="index.html">Chapters</a>
+      <a href="chapter.html?c=qa_report.md">QA report</a>
+    </nav>
+    <span class="spacer"></span>
+    <span class="muted" id="modeLbl"></span>
+    <label class="switch" title="Light / Dark">
+      <input type="checkbox" id="modeToggle"><span class="track"></span><span class="thumb"></span>
+    </label>
+  </header>
+
+<main class="doc">
+  <a class="backlink" href="index.html">&larr; All chapters</a>
+  <div id="content" class="markdown"><p class="muted">Loading&hellip;</p></div>
+</main>
+<script>
+(function(){
+  function qs(k){return new URLSearchParams(location.search).get(k);}
+  var c = qs("c");
+  var el = document.getElementById("content");
+  if(!c){el.innerHTML="<p>No chapter specified.</p>";return;}
+  var base = c.replace(/[^\/]*$/, "");           // directory of the .md
+  fetch(c).then(function(r){ if(!r.ok) throw new Error(r.status); return r.text(); })
+   .then(function(md){
+      md = md.replace(/\r\n?/g, "\n");          // normalize CRLF -> LF
+      // strip YAML front-matter, show a small meta line
+      var fm="";
+      md = md.replace(/^---\n([\s\S]*?)\n---\n?/, function(m,y){ fm=y; return ""; });
+      // rewrite relative asset paths to be relative to the .md's directory
+      md = md.replace(/\]\((assets\/)/g, "](" + base + "$1");
+      // protect math from the markdown parser
+      var math=[];
+      md = md.replace(/```math\n([\s\S]*?)\n```/g, function(m,t){ math.push({d:true,t:t}); return "@@M"+(math.length-1)+"@@"; });
+      md = md.replace(/\$\$([\s\S]*?)\$\$/g, function(m,t){ math.push({d:true,t:t}); return "@@M"+(math.length-1)+"@@"; });
+      md = md.replace(/(^|[^\\$])\$([^$\n]+?)\$/g, function(m,p,t){ math.push({d:false,t:t}); return p+"@@M"+(math.length-1)+"@@"; });
+      var htmlout = marked.parse(md);
+      htmlout = htmlout.replace(/@@M(\d+)@@/g, function(m,i){ return '<span class="kx" data-i="'+i+'"></span>'; });
+      var titleLine = (fm.match(/title:\s*"?([^"\n]+)"?/)||[])[1] || "";
+      var partLine = (fm.match(/part:\s*"?([^"\n]+)"?/)||[])[1] || "";
+      var chLine = (fm.match(/chapter:\s*([^\n]+)/)||[])[1] || "";
+      if(titleLine){ document.title = "CEM — " + titleLine; }
+      el.innerHTML = (partLine?('<div class="fm">Part '+partLine+(chLine?', Chapter '+chLine.trim():'')+' &middot; EM 1110-2-1100</div>'):"") + htmlout;
+      el.querySelectorAll(".kx").forEach(function(s){
+        var e=math[+s.dataset.i];
+        try{ katex.render(e.t, s, {displayMode:e.d, throwOnError:false}); }
+        catch(err){ s.textContent=e.t; }
+      });
+      // heading anchors (match the search-index slugs) + scroll to the linked section
+      el.querySelectorAll("h1,h2,h3,h4").forEach(function(h){
+        if(!h.id) h.id=h.textContent.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
+      });
+      if(location.hash){ var tgt=document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        if(tgt) setTimeout(function(){ tgt.scrollIntoView(); },0); }
+   })
+   .catch(function(err){ el.innerHTML='<p class="muted">Could not load chapter ('+err+'). '+
+      'On GitHub Pages this loads <code>'+c+'</code>.</p>'; });
+})();
+</script>
+</body></html>

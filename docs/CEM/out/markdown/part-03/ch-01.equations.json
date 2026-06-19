@@ -1,0 +1,412 @@
+[
+  {
+    "n": 1,
+    "eqid": "III-1-1a",
+    "tag": "III-1-1a",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\varphi = -\\log_2 D",
+    "page": 12,
+    "image": "assets/part-03-ch-01/eq-001-III-1-1a.png"
+  },
+  {
+    "n": 2,
+    "eqid": "III-1-1b",
+    "tag": "III-1-1b",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "D = 2^{-\\varphi}",
+    "page": 12,
+    "image": "assets/part-03-ch-01/eq-002-III-1-1b.png"
+  },
+  {
+    "n": 3,
+    "eqid": "III-1-2",
+    "tag": "III-1-2",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "M _ { \\ L _ { \\Phi } } = \\frac { ( \\Phi _ { 1 6 } + \\Phi _ { 5 0 } + \\Phi _ { 8 4 } ) } { 3 }",
+    "page": 13,
+    "image": "assets/part-03-ch-01/eq-003-III-1-2.png"
+  },
+  {
+    "n": 4,
+    "eqid": "III-1-3",
+    "tag": "III-1-3",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\sigma_{\\varphi} = \\frac{(\\varphi_{84} - \\varphi_{16})}{4} + \\frac{(\\varphi_{95} - \\varphi_{5})}{6}",
+    "page": 13,
+    "image": "assets/part-03-ch-01/eq-004-III-1-3.png"
+  },
+  {
+    "n": 5,
+    "eqid": "III-1-4",
+    "tag": "III-1-4",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\alpha_{\\varphi} = \\frac{\\varphi_{16} + \\varphi_{84} - 2(\\varphi_{50})}{2(\\varphi_{84} - \\varphi_{16})} + \\frac{\\varphi_{5} + \\varphi_{95} - 2(\\varphi_{50})}{2(\\varphi_{95} - \\varphi_{5})}",
+    "page": 13,
+    "image": "assets/part-03-ch-01/eq-005-III-1-4.png"
+  },
+  {
+    "n": 6,
+    "eqid": "III-1-5",
+    "tag": "III-1-5",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\beta_{\\varphi} = \\frac{\\varphi_{95} - \\varphi_{5}}{2.44 \\ (\\varphi_{75} - \\varphi_{25})}",
+    "page": 13,
+    "image": "assets/part-03-ch-01/eq-006-III-1-5.png"
+  },
+  {
+    "n": 7,
+    "eqid": "III-1-7",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\varphi_{50} = M_{d\\varphi} = 1.37\\varphi",
+    "page": 16,
+    "image": "assets/part-03-ch-01/eq-007-III-1.png"
+  },
+  {
+    "n": 8,
+    "eqid": "III-1-8",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "M_\\mathrm{d} = 2^{-1.37} = 0.39 \\text{ mm}",
+    "page": 16,
+    "image": "assets/part-03-ch-01/eq-008-III-1.png"
+  },
+  {
+    "n": 9,
+    "eqid": "III-1-9",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "M_{\\varphi} = (0.80 + 1.37 + 2.08) / 3 = 1.42 \\varphi",
+    "page": 16,
+    "image": "assets/part-03-ch-01/eq-009-III-1.png"
+  },
+  {
+    "n": 10,
+    "eqid": "III-1-10",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "D = 2^{-1.42} = 0.37 \\text{ mm}",
+    "page": 16,
+    "image": "assets/part-03-ch-01/eq-010-III-1.png"
+  },
+  {
+    "n": 11,
+    "eqid": "III-1-11",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\sigma_{\\phi} = (2.08 - 0.80)/4 + (2.48 - 0.56)/6.0 = 0.32 + 0.32 = 0.64 \\ \\phi",
+    "page": 16,
+    "image": "assets/part-03-ch-01/eq-011-III-1.png"
+  },
+  {
+    "n": 12,
+    "eqid": "III-1-12",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\alpha_{\\phi} = 0.055 + 0.078 = 0.13",
+    "page": 16,
+    "image": "assets/part-03-ch-01/eq-012-III-1.png"
+  },
+  {
+    "n": 13,
+    "eqid": "III-1-13",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\beta_{\\varphi} = 1.92 / 2.29 = 0.84",
+    "page": 16,
+    "image": "assets/part-03-ch-01/eq-013-III-1.png"
+  },
+  {
+    "n": 14,
+    "eqid": "III-1-14",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\rho_s = 18.1 \\text{ gm} / 6.8 \\text{ cm}^3 = 2.66 \\text{ gm/cm}^3 = 2,660 \\text{ kg/m}^3",
+    "page": 22,
+    "image": "assets/part-03-ch-01/eq-014-III-1.png"
+  },
+  {
+    "n": 15,
+    "eqid": "III-1-15",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\text{Sp wt of the grains} = 2.66 \\, \\text{gm/cm}^3 * 980 \\, \\text{cm/sec}^2 = 2,610 \\, \\text{gm/(cm}^2 * \\text{sec}^2) = 26,100 \\, \\text{kg/(m}^2 * \\text{sec}^2)",
+    "page": 22,
+    "image": "assets/part-03-ch-01/eq-015-III-1.png"
+  },
+  {
+    "n": 16,
+    "eqid": "III-1-6",
+    "tag": "III-1-6",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "C_D \\frac{\\pi D^2}{4} \\frac{\\rho W_f^2}{2} = \\frac{\\pi D^3}{6} (\\rho_s - \\rho) g",
+    "page": 24,
+    "image": "assets/part-03-ch-01/eq-016-III-1-6.png"
+  },
+  {
+    "n": 17,
+    "eqid": "III-1-7",
+    "tag": "III-1-7",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "W_f = \\left(\\frac{4}{3} \\frac{gD}{C_D} \\left[\\frac{\\rho_s}{\\rho} - 1\\right]\\right)^{\\frac{1}{2}}",
+    "page": 24,
+    "image": "assets/part-03-ch-01/eq-017-III-1-7.png"
+  },
+  {
+    "n": 18,
+    "eqid": "III-1-8",
+    "tag": "III-1-8",
+    "status": "agreed",
+    "verified": true,
+    "latex": "c_D = \\frac{24}{Re} = \\frac{24 \\text{ v}}{W_f D}",
+    "page": 26,
+    "image": "assets/part-03-ch-01/eq-018-III-1-8.png"
+  },
+  {
+    "n": 19,
+    "eqid": "III-1-9",
+    "tag": "III-1-9",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_f = \\frac{g D^2}{18 v} \\left( \\frac{\\rho_s}{\\rho} - 1 \\right)",
+    "page": 26,
+    "image": "assets/part-03-ch-01/eq-019-III-1-9.png"
+  },
+  {
+    "n": 20,
+    "eqid": "III-1-10",
+    "tag": "III-1-10",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "W_f = 1.6 \\left( g D \\left[ \\frac{\\rho_s}{\\rho} - 1 \\right] \\right)^{\\frac{1}{2}}",
+    "page": 26,
+    "image": "assets/part-03-ch-01/eq-020-III-1-10.png"
+  },
+  {
+    "n": 21,
+    "eqid": "III-1-11",
+    "tag": "III-1-11",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\mathbf{w}_f = 2.6 \\left( g D \\left[ \\frac{\\rho_s}{\\rho} - 1 \\right] \\right)^{\\frac{1}{2}}",
+    "page": 26,
+    "image": "assets/part-03-ch-01/eq-021-III-1-11.png"
+  },
+  {
+    "n": 22,
+    "eqid": "III-1-12",
+    "tag": "III-1-12",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\pi}{8} C_D Re^2 = \\frac{\\pi D^3 \\left(\\frac{\\rho_s}{\\rho} - 1\\right) g}{6 v^2}",
+    "page": 27,
+    "image": "assets/part-03-ch-01/eq-022-III-1-12.png"
+  },
+  {
+    "n": 23,
+    "eqid": "III-1-13a",
+    "tag": "III-1-13a",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "e = \\frac{P}{N}",
+    "page": 29,
+    "image": "assets/part-03-ch-01/eq-023-III-1-13a.png"
+  },
+  {
+    "n": 24,
+    "eqid": "III-1-13b",
+    "tag": "III-1-13b",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "N = 1 - P = \\frac{1}{1 + e}",
+    "page": 29,
+    "image": "assets/part-03-ch-01/eq-024-III-1-13b.png"
+  },
+  {
+    "n": 25,
+    "eqid": "III-1-14",
+    "tag": "III-1-14",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\text{Dry Bulk Density} = N \\rho_s",
+    "page": 30,
+    "image": "assets/part-03-ch-01/eq-025-III-1-14.png"
+  },
+  {
+    "n": 26,
+    "eqid": "III-1-15",
+    "tag": "III-1-15",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "S a t u r a t e d \\, B u l k \\, D e n s i t y \\, = \\, ( N \\, \\rho _ { s } ) \\, + \\, ( P \\, \\rho )",
+    "page": 30,
+    "image": "assets/part-03-ch-01/eq-026-III-1-15.png"
+  },
+  {
+    "n": 27,
+    "eqid": "III-1-27",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "Re = (2.3 * 0.02)/0.011 = 4.2",
+    "page": 31,
+    "image": "assets/part-03-ch-01/eq-027-III-1.png"
+  },
+  {
+    "n": 28,
+    "eqid": "III-1-28",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "C_D = (4/3) * 980*0.02/(2.3)^2 * ((2.65/1) - 1) = 8.1",
+    "page": 31,
+    "image": "assets/part-03-ch-01/eq-028-III-1.png"
+  },
+  {
+    "n": 29,
+    "eqid": "III-1-29",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_f=2.3*0.977=2.2\\text{ cm/sec}\\quad Re=(2.2*0.02)/0.011=4.0\\quad C_D=\\frac{4}{3}*980*0.02/(2.2)^2*(2.65/1-1)=8.9",
+    "page": 31,
+    "image": "assets/part-03-ch-01/eq-029-III-1.png"
+  },
+  {
+    "n": 30,
+    "eqid": "III-1-30",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "Re = (150 * 0.02)/0.15 = 20",
+    "page": 32,
+    "image": "assets/part-03-ch-01/eq-030-III-1.png"
+  },
+  {
+    "n": 31,
+    "eqid": "III-1-31",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "C_D = 4/3 * 980*0.02/(150)^2 * ((2.65/0.0012)-1) = 2.5",
+    "page": 32,
+    "image": "assets/part-03-ch-01/eq-031-III-1.png"
+  },
+  {
+    "n": 32,
+    "eqid": "III-1-32",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "R e = 7 . 9 \\mathrm { { x } 1 0 ^ { - 5 } * 0 . 0 0 0 1 / 0 . 0 1 1 = 7 . 2 \\mathrm { { x } 1 0 ^ { - 7 } } }",
+    "page": 32,
+    "image": "assets/part-03-ch-01/eq-032-III-1.png"
+  },
+  {
+    "n": 33,
+    "eqid": "III-1-33",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "C _ { D } = 2 4 / 7 . 2 \\mathrm { \\, x \\, } 1 \\hat { 0 } ^ { - 7 } = 3 . 3 \\mathrm { \\, x \\, } 1 0 ^ { 7 }",
+    "page": 32,
+    "image": "assets/part-03-ch-01/eq-033-III-1.png"
+  },
+  {
+    "n": 34,
+    "eqid": "III-1-34",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "W_f = 1.6 \\left(980 * 0.45 \\left(\\frac{7.8}{0.0012} - 1\\right)\\right)^{1/2} = 2,700 \\text{ cm/sec}\n\n\nRe = .45 * 2700 / 0.15 = 8100",
+    "page": 32,
+    "image": "assets/part-03-ch-01/eq-034-III-1.png"
+  },
+  {
+    "n": 35,
+    "eqid": "III-1-35",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_f = \\left(\\frac{4}{3} * 980 * 0.45/0.4 * (7.8/0.0012-1)\\right)^{1/2} = 3,100 \\text{ cm/sec},\\quad Re = .45 * 3,100 / 0.15 = 9,300",
+    "page": 32,
+    "image": "assets/part-03-ch-01/eq-035-III-1.png"
+  },
+  {
+    "n": 36,
+    "eqid": "III-1-36",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\pi/8 C_D Re^2 = 3.14*(0.45)^3*(7.8/0.0012-1)*980/(6*(0.15)^2)=1.3x10^7",
+    "page": 32,
+    "image": "assets/part-03-ch-01/eq-036-III-1.png"
+  },
+  {
+    "n": 37,
+    "eqid": "III-1-37",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_f = 2.6 (980 * 16.5 ((0.48/1)-1))^{1/2} = -240 \\text{ cm/sec}",
+    "page": 32,
+    "image": "assets/part-03-ch-01/eq-037-III-1.png"
+  },
+  {
+    "n": 38,
+    "eqid": "III-1-38",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "N = 6.8 \\text{ cm}^3 / 10.0 \\text{ cm}^3 = 0.68",
+    "page": 35,
+    "image": "assets/part-03-ch-01/eq-038-III-1.png"
+  },
+  {
+    "n": 39,
+    "eqid": "III-1-39",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "P = 1 - N = 1 - 0.68 = 0.32",
+    "page": 35,
+    "image": "assets/part-03-ch-01/eq-039-III-1.png"
+  },
+  {
+    "n": 40,
+    "eqid": "III-1-40",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "e = P/N = 0.32/0.68 = 0.47",
+    "page": 35,
+    "image": "assets/part-03-ch-01/eq-040-III-1.png"
+  },
+  {
+    "n": 41,
+    "eqid": "III-1-41",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\text{Dry Bulk Density} = 0.68 * 2,660 \\, \\text{kg/m}^3 = 1,800 \\, \\text{kg/m}^3",
+    "page": 35,
+    "image": "assets/part-03-ch-01/eq-041-III-1.png"
+  }
+]

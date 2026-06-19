@@ -1,0 +1,18 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "III",
+  "chapter": 1,
+  "title": "COASTAL SEDIMENT PROPERTIES",
+  "source_pdf": "P03__EM_1110-2-1100_Ch_01.pdf",
+  "pages": 45,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 41,
+  "equations_verified": 41,
+  "tables_gfm": 10,
+  "tables_image": 0,
+  "figures": 6,
+  "equations_flagged": 0,
+  "eq_agreed_gt": 20,
+  "eq_single_verified": 15,
+  "eq_agreed": 6
+}

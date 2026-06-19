@@ -1,0 +1,9 @@
+{
+  "name": "cem-pipeline-katex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KaTeX structural validity gate for the CEM PDF->Markdown pipeline",
+  "dependencies": {
+    "katex": "^0.16.47"
+  }
+}

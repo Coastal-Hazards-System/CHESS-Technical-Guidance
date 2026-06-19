@@ -1,0 +1,552 @@
+[
+  {
+    "n": 1,
+    "eqid": "V-4-3",
+    "tag": "V-4-3",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\sigma_{\\phi b}}{\\sigma_{\\phi n}} = \\frac{\\left[\\frac{(\\phi_{84} - \\phi_{16})}{4} + \\frac{(\\phi_{95} - \\phi_{5})}{6}\\right]_{b}}{\\left[\\frac{(\\phi_{84} - \\phi_{16})}{4} + \\frac{(\\phi_{95} - \\phi_{5})}{6}\\right]_{n}}",
+    "page": 28,
+    "image": "assets/part-05-ch-04/eq-001-V-4-3.png"
+  },
+  {
+    "n": 2,
+    "eqid": "V-4-4",
+    "tag": "V-4-4",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{M_{\\phi b} - M_{\\phi n}}{\\sigma_{\\phi n}} = \\left[\\frac{(\\phi_{16} + \\phi_{50} + \\phi_{84})}{3}\\right]_b - \\left[\\frac{(\\phi_{16} + \\phi_{50} + \\phi_{84})}{3}\\right]_n = \\left[\\frac{(\\phi_{84} - \\phi_{16})}{4} + \\frac{(\\phi_{95} - \\phi_{5})}{6}\\right]_n",
+    "page": 28,
+    "image": "assets/part-05-ch-04/eq-002-V-4-4.png"
+  },
+  {
+    "n": 3,
+    "eqid": "V-4-3",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\text{native beach: } \\phi_{05}=0.95, \\phi_{16}=1.31, \\phi_{50}=1.91, \\phi_{84}=2.66, \\phi_{95}=2.90 \\\\\n\\text{borrow area: } \\phi_{05}=1.42, \\phi_{16}=1.63, \\phi_{50}=2.49, \\phi_{84}=3.08, \\phi_{95}=3.55",
+    "page": 30,
+    "image": "assets/part-05-ch-04/eq-003-V-4.png"
+  },
+  {
+    "n": 4,
+    "eqid": "III-1-2",
+    "tag": "III-1-2",
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_{\\phi} = (\\phi_{16} + \\phi_{50} + \\phi_{84}) / 3",
+    "page": 30,
+    "image": "assets/part-05-ch-04/eq-004-III-1-2.png"
+  },
+  {
+    "n": 5,
+    "eqid": "V-4-5",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "M_{\\phi n} = (1.31 + 1.91 + 2.66) / 3 = 1.96 \\\\\nM_{\\phi b} = (1.63 + 2.49 + 3.08) / 3 = 2.40",
+    "page": 30,
+    "image": "assets/part-05-ch-04/eq-005-V-4.png"
+  },
+  {
+    "n": 6,
+    "eqid": "III-1-3",
+    "tag": "III-1-3",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\sigma_{\\phi} = (\\phi_{84} - \\phi_{16}) / 4 + (\\phi_{95} - \\phi_{05}) / 6",
+    "page": 30,
+    "image": "assets/part-05-ch-04/eq-006-III-1-3.png"
+  },
+  {
+    "n": 7,
+    "eqid": "V-4-7",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\sigma_{\\phi n} = (2.66 - 1.31) / 4 + (2.90 - 0.95) / 6 = 0.66, \\quad \\sigma_{\\phi b} = (3.08 - 1.63) / 4 + (3.55 - 1.42) / 6 = 0.72",
+    "page": 30,
+    "image": "assets/part-05-ch-04/eq-007-V-4.png"
+  },
+  {
+    "n": 8,
+    "eqid": "V-4-8",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\sigma_{\\varphi b} \\: / \\: \\sigma_{\\varphi n} = 0.72 \\: / \\: 0.66 = 1.09",
+    "page": 30,
+    "image": "assets/part-05-ch-04/eq-008-V-4.png"
+  },
+  {
+    "n": 9,
+    "eqid": "V-4-9",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "(M_{\\phi b} - M_{\\phi n}) / \\sigma_{\\phi n} = (2.40 - 1.96) / 0.66 = 0.67",
+    "page": 30,
+    "image": "assets/part-05-ch-04/eq-009-V-4.png"
+  },
+  {
+    "n": 10,
+    "eqid": "V-4-5",
+    "tag": "V-4-5",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W_{add}(y) = y^{3/2} \\left[ \\left( \\frac{1}{A_F} \\right)^{3/2} - \\left( \\frac{1}{A_N} \\right)^{3/2} \\right]",
+    "page": 38,
+    "image": "assets/part-05-ch-04/eq-010-V-4-5.png"
+  },
+  {
+    "n": 11,
+    "eqid": "V-4-6",
+    "tag": "V-4-6",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "V = \\mathbf{\\nabla } W \\left( B + D _ { C } \\right)",
+    "page": 42,
+    "image": "assets/part-05-ch-04/eq-011-V-4-6.png"
+  },
+  {
+    "n": 12,
+    "eqid": "V-4-12",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "V = 30(2.5 + 6) = 255 m^3/m",
+    "page": 46,
+    "image": "assets/part-05-ch-04/eq-012-V-4.png"
+  },
+  {
+    "n": 13,
+    "eqid": "V-4-7",
+    "tag": "V-4-7",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W\\left(\\frac{A_N}{D_C}\\right)^{3/2} + \\left(\\frac{A_N}{A_F}\\right)^{3/2} < 1, \\text{ Intersecting profile}",
+    "page": 46,
+    "image": "assets/part-05-ch-04/eq-013-V-4-7.png"
+  },
+  {
+    "n": 14,
+    "eqid": "V-4-8",
+    "tag": "V-4-8",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V = \\frac{3}{5} \\left( \\frac{D_C}{A_F} \\right)^{5/2} \\left( A_N - A_F \\right)",
+    "page": 48,
+    "image": "assets/part-05-ch-04/eq-014-V-4-8.png"
+  },
+  {
+    "n": 15,
+    "eqid": "V-4-9",
+    "tag": "V-4-9",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V = WB + \\frac{3}{5} \\left(\\frac{D_C}{A_F}\\right)^{5/2} \\left(A_N \\left[1 + W\\left(\\frac{A_F}{D_C}\\right)^{3/2}\\right]^{5/3} - A_F\\right)",
+    "page": 48,
+    "image": "assets/part-05-ch-04/eq-015-V-4-9.png"
+  },
+  {
+    "n": 16,
+    "eqid": "V-4-10",
+    "tag": "V-4-10",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V = WB + \\frac{\\frac{3}{5}W^{5/3}A_NA_F}{\\left(A_F^{3/2} - A_N^{3/2}\\right)^{2/3}}",
+    "page": 48,
+    "image": "assets/part-05-ch-04/eq-016-V-4-10.png"
+  },
+  {
+    "n": 17,
+    "eqid": "V-4-17",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "A_N = 0.117 \\text{ m}^{1/3}, A_F = 0.097 \\text{ m}^{1/3}",
+    "page": 49,
+    "image": "assets/part-05-ch-04/eq-017-V-4.png"
+  },
+  {
+    "n": 18,
+    "eqid": "V-4-18",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "V = \\frac{3}{5} \\cdot \\left( \\frac{6}{0.097} \\right)^{5/2} \\cdot \\left( 0.117 - 0.097 \\right) = 361 \\text{ m}^{3}/\\text{m}^{2}",
+    "page": 49,
+    "image": "assets/part-05-ch-04/eq-018-V-4.png"
+  },
+  {
+    "n": 19,
+    "eqid": "V-4-19",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "A_N = 0.119 \\text{ m}^{1/3}, A_F = 0.094 \\text{ m}^{1/3}",
+    "page": 50,
+    "image": "assets/part-05-ch-04/eq-019-V-4.png"
+  },
+  {
+    "n": 20,
+    "eqid": "V-4-20",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "V = 30 \\cdot 2.5 + \\frac{3}{5} \\left( \\frac{6}{0.094} \\right)^{5/2} \\left( 0.119 \\left[ 1 + 30 \\left( \\frac{0.094}{6} \\right)^{3/2} \\right]^{5/3} - 0.094 \\right) = 796 \\, \\text{m}^3/\\text{m}",
+    "page": 50,
+    "image": "assets/part-05-ch-04/eq-020-V-4.png"
+  },
+  {
+    "n": 21,
+    "eqid": "V-4-21",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "A_N = 0.119 \\text{ m}^{1/3}, A_F = 0.137 \\text{ m}^{1/3}",
+    "page": 51,
+    "image": "assets/part-05-ch-04/eq-021-V-4.png"
+  },
+  {
+    "n": 22,
+    "eqid": "V-4-22",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "30 \\cdot \\left(\\frac{0.119}{6}\\right)^{3/2} + \\left(\\frac{0.119}{0.137}\\right)^{3/2} = 0.893 < 1",
+    "page": 51,
+    "image": "assets/part-05-ch-04/eq-022-V-4.png"
+  },
+  {
+    "n": 23,
+    "eqid": "V-4-23",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "V = 30 \\cdot 2.5 + \\frac{\\frac{3}{5} \\cdot 30^{5/3} \\cdot 0.119 \\cdot 0.137}{\\left(0.137^{3/2} - 0.119^{3/2}\\right)^{2/3}} = 137 \\text{ m}^{3}/\\text{m}",
+    "page": 51,
+    "image": "assets/part-05-ch-04/eq-023-V-4.png"
+  },
+  {
+    "n": 24,
+    "eqid": "V-4-11",
+    "tag": "V-4-11",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac { a } { 2 { \\sqrt { \\mathfrak { e } } } t }",
+    "page": 52,
+    "image": "assets/part-05-ch-04/eq-024-V-4-11.png"
+  },
+  {
+    "n": 25,
+    "eqid": "V-4-12",
+    "tag": "V-4-12",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "p ( t ) \\, = \\, 1 \\, - \\, \\frac { \\sqrt { \\mathfrak { c } } t } { a \\sqrt { \\pi } }",
+    "page": 53,
+    "image": "assets/part-05-ch-04/eq-025-V-4-12.png"
+  },
+  {
+    "n": 26,
+    "eqid": "V-4-13",
+    "tag": "V-4-13",
+    "status": "agreed",
+    "verified": true,
+    "latex": "H_{eff} = \\left(\\frac{\\frac{1}{N} \\sum_{n=1}^{N} (K_s H_s^n)^{2.4} \\frac{\\left(C_{go}^n\\right)^{1.2}}{C_*^n}}{\\frac{1}{N} \\sum_{n=1}^{N} \\frac{\\left(C_{go}^n\\right)^{1.2}}{C_*^n}}\\right)^{\\frac{1}{2.4}}",
+    "page": 53,
+    "image": "assets/part-05-ch-04/eq-026-V-4-13.png"
+  },
+  {
+    "n": 27,
+    "eqid": "V-4-27",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "K = 0.77",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-027-V-4.png"
+  },
+  {
+    "n": 28,
+    "eqid": "V-4-28",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\rho_s/\\rho = 2.65 \\\\\nn=0.4",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-028-V-4.png"
+  },
+  {
+    "n": 29,
+    "eqid": "V-4-29",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "H _ { b } = 0 . 9 5 { \\mathrm { m } }",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-029-V-4.png"
+  },
+  {
+    "n": 30,
+    "eqid": "V-4-30",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\rho_s/\\rho=2.\\quad n=0.4\\quad d=3.5",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-030-V-4.png"
+  },
+  {
+    "n": 31,
+    "eqid": "V-4-31",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\dot { C _ { g b } } = ( \\mathrm { g h } _ { \\mathrm { b } } ) ^ { 1 / 2 }",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-031-V-4.png"
+  },
+  {
+    "n": 32,
+    "eqid": "V-4-32",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "d _ { b } = 2 . 5 \\mathrm { m }",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-032-V-4.png"
+  },
+  {
+    "n": 33,
+    "eqid": "V-4-33",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "c_{gb} = (g h_b)^2, \\quad h_b = H_b / 0.78, \\quad g = 9.81 \\text{ m/s}^2",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-033-V-4.png"
+  },
+  {
+    "n": 34,
+    "eqid": "V-4-34",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "d _ { c } = 6 . 0 \\mathrm { m }",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-034-V-4.png"
+  },
+  {
+    "n": 35,
+    "eqid": "V-4-35",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "h_b = H_b / 0.78 \\\\\ng = 9.81 \\text{ m/s}^2",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-035-V-4.png"
+  },
+  {
+    "n": 36,
+    "eqid": "V-4-36",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\epsilon = \\frac { 0 . 7 7 ( 0 . 9 5 ) ^ { 2 . 5 } \\sqrt { 9 . 8 1 / 0 . 7 8 } } { 8 } \\cdot \\frac { 1 } { ( 2 . 6 5 - 1 ) } \\cdot \\frac { 1 } { ( 1 - 0 . 4 ) } \\cdot \\frac { 1 } { ( 2 . 5 + 6 . 0 ) } = 0 . 0 3 5 6 8 \\frac { { \\mathrm { m } } ^ { 2 } } { \\mathrm { s e c } }",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-036-V-4.png"
+  },
+  {
+    "n": 37,
+    "eqid": "V-4-37",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "t_{50\\%} = \\frac{a^2 \\pi}{4 \\epsilon}",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-037-V-4.png"
+  },
+  {
+    "n": 38,
+    "eqid": "V-4-38",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "t_{50\\%} = \\frac{(1500)^2 (3.14)}{(4) (0.03568)} = 49.526 \\times 10^6 \\text{ sec} \\approx 1.57 \\text{ years}",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-038-V-4.png"
+  },
+  {
+    "n": 39,
+    "eqid": "V-4-39",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "t_{50\\%} = \\frac{(3000)^2 (3.14)}{(4) (0.03568)} = 198.102 \\times 10^6 \\text{ sec} \\approx 6.28 \\text{ years}",
+    "page": 54,
+    "image": "assets/part-05-ch-04/eq-039-V-4.png"
+  },
+  {
+    "n": 40,
+    "eqid": "V-4-14",
+    "tag": "V-4-14",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "p ( t ) \\ = \\ 1 - \\left( \\frac { \\sqrt { \\epsilon t } } { a \\sqrt { \\pi } } + \\frac { E t } { \\Delta y _ { o } } \\right)",
+    "page": 55,
+    "image": "assets/part-05-ch-04/eq-040-V-4-14.png"
+  },
+  {
+    "n": 41,
+    "eqid": "V-4-15",
+    "tag": "V-4-15",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "t_p = \\frac{-m - \\sqrt{m^2 - 4\\ln}}{2l}",
+    "page": 55,
+    "image": "assets/part-05-ch-04/eq-041-V-4-15.png"
+  },
+  {
+    "n": 42,
+    "eqid": "V-4-42",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "l = \\left(\\frac{E}{\\Delta y_o}\\right)^2",
+    "page": 55,
+    "image": "assets/part-05-ch-04/eq-042-V-4.png"
+  },
+  {
+    "n": 43,
+    "eqid": "V-4-43",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "m \\ = \\ \\frac { 2 E ( p - 1 ) } { \\Delta y _ { o } } \\ - \\ \\frac { \\epsilon } { \\pi a ^ { 2 } }",
+    "page": 55,
+    "image": "assets/part-05-ch-04/eq-043-V-4.png"
+  },
+  {
+    "n": 44,
+    "eqid": "V-4-44",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "n = (1 - p)^2",
+    "page": 55,
+    "image": "assets/part-05-ch-04/eq-044-V-4.png"
+  },
+  {
+    "n": 45,
+    "eqid": "V-4-45",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "K=0.77,\\quad\\rho_s/\\rho=2.65,\\quad C_{gb}=(g\\ h_b)^{1/2},\\quad n=0.4,\\\\ \nh_b=H_b/0.78,\\quad g=9.81\\ \\text{m/s}^2,\\quad d_b=2.5\\ \\text{m},\\quad d_c=6.0\\ \\text{m}",
+    "page": 56,
+    "image": "assets/part-05-ch-04/eq-045-V-4.png"
+  },
+  {
+    "n": 46,
+    "eqid": "V-4-46",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\epsilon = \\frac { 0 . 7 7 ( 0 . 8 0 ) ^ { 2 . 5 } \\sqrt { 9 . 8 1 / 0 . 7 8 } } { 8 } \\cdot \\frac { 1 } { ( 2 . 6 5 - 1 ) } \\cdot \\frac { 1 } { ( 1 - 0 . 4 ) } \\cdot \\frac { 1 } { ( 2 . 5 + 6 . 0 ) } = 0 . 0 2 3 2 2 \\frac { { \\mathrm { m } } ^ { 2 } } { \\mathrm { s e c } }",
+    "page": 56,
+    "image": "assets/part-05-ch-04/eq-046-V-4.png"
+  },
+  {
+    "n": 47,
+    "eqid": "V-4-47",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\epsilon = 0.03568 \\text{ m}^2/\\text{sec}",
+    "page": 56,
+    "image": "assets/part-05-ch-04/eq-047-V-4.png"
+  },
+  {
+    "n": 48,
+    "eqid": "V-4-48",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "t_{50\\%} = \\frac{a^2 \\pi}{4 \\epsilon}",
+    "page": 56,
+    "image": "assets/part-05-ch-04/eq-048-V-4.png"
+  },
+  {
+    "n": 49,
+    "eqid": "V-4-49",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "t_{50\\%} = \\frac{(3000)^2 (3.14)}{(4) (0.02322)} = 304.420 \\times 10^6 \\text{ sec} \\approx 9.65 \\text{ years}",
+    "page": 56,
+    "image": "assets/part-05-ch-04/eq-049-V-4.png"
+  },
+  {
+    "n": 50,
+    "eqid": "V-4-50",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "t_{50\\%} = \\frac{(3000)^2 (3.14)}{(4) (0.03568)} = 198.102 \\times 10^6 \\text{ sec} \\approx 6.28 \\text{ years}",
+    "page": 56,
+    "image": "assets/part-05-ch-04/eq-050-V-4.png"
+  },
+  {
+    "n": 51,
+    "eqid": "V-4-51",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "K=0.77,\\quad h_b=\\frac{H_b}{0.78},\\quad n=0.4,\\quad H_b=0.95\\text{ m},\\quad g=9.81\\text{ m/s}^2,\\quad d_b=1.5\\text{ m},\\quad C_{gb}=(g h_b)^{\\frac{1}{2}},\\quad \\rho_s/\\rho=2.65,\\quad d_c=6.0\\text{ m}",
+    "page": 57,
+    "image": "assets/part-05-ch-04/eq-051-V-4.png"
+  },
+  {
+    "n": 52,
+    "eqid": "V-4-52",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "l = \\left(\\frac{E}{\\Delta y_o}\\right)^2 = \\left(\\frac{0.5}{50}\\right)^2 = 0.0001 \\text{ years}^{-2}",
+    "page": 57,
+    "image": "assets/part-05-ch-04/eq-052-V-4.png"
+  },
+  {
+    "n": 53,
+    "eqid": "V-4-53",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "m = \\frac{2E(p-1)}{\\Delta y_o} - \\frac{\\epsilon}{\\pi a^2} = \\frac{(2)(0.5)(.5-1)}{50} - \\frac{0.03568}{(3.14)(3000)^2} (31.536 \\times 10^6) = -0.04980 \\text{ years}^{-1}",
+    "page": 57,
+    "image": "assets/part-05-ch-04/eq-053-V-4.png"
+  },
+  {
+    "n": 54,
+    "eqid": "V-4-54",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "n = (1-p) = (1-.5)^2 = 0.2500",
+    "page": 57,
+    "image": "assets/part-05-ch-04/eq-054-V-4.png"
+  },
+  {
+    "n": 55,
+    "eqid": "V-4-55",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "t _ { 5 0 9 6 } = { \\frac { - m - { \\sqrt { m ^ { 2 } - 4 l n } } } { 2 l } } = { \\frac { 0 . 0 4 9 8 0 - { \\sqrt { ( 0 . 0 4 9 8 0 ) ^ { 2 } - ( 4 ) ( 0 . 0 0 0 1 ) ( 0 . 2 5 0 0 ) } } } { ( 2 ) ( 0 . 0 0 0 1 ) } } = 5 . 0 7 { \\mathrm { y e a r s } }",
+    "page": 57,
+    "image": "assets/part-05-ch-04/eq-055-V-4.png"
+  }
+]

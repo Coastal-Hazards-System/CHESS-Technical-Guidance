@@ -1,0 +1,19 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "V",
+  "chapter": 6,
+  "title": "SEDIMENT MANAGEMENT AT INLETS",
+  "source_pdf": "P05__EM_1110-2-1100_Ch6.pdf",
+  "pages": 209,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 228,
+  "equations_verified": 228,
+  "tables_gfm": 23,
+  "tables_image": 0,
+  "figures": 94,
+  "equations_flagged": 0,
+  "eq_agreed_gt": 117,
+  "eq_single_verified": 52,
+  "eq_agreed": 58,
+  "eq_resolved": 1
+}

@@ -1,0 +1,18 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "II",
+  "chapter": 2,
+  "title": "METEOROLOGY AND WAVE CLIMATE",
+  "source_pdf": "P02__EM_1110-2-1100_Ch_02.pdf",
+  "pages": 82,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 60,
+  "equations_verified": 60,
+  "tables_gfm": 7,
+  "tables_image": 0,
+  "figures": 30,
+  "equations_flagged": 0,
+  "eq_agreed_gt": 19,
+  "eq_agreed": 33,
+  "eq_single_verified": 8
+}

@@ -1,0 +1,742 @@
+[
+  {
+    "n": 1,
+    "eqid": "II-7-1",
+    "tag": "II-7-1",
+    "status": "agreed",
+    "verified": true,
+    "latex": "K_e' = \\left[ \\frac{1}{M_o} \\int_0^\\infty \\int_{\\theta_{\\text{min}}}^{\\theta_{\\text{max}}} S(f,\\theta) (K')^2 \\, d\\theta \\, df \\right]^{\\frac{1}{2}}",
+    "page": 15,
+    "image": "assets/part-02-ch-07/eq-001-II-7-1.png"
+  },
+  {
+    "n": 2,
+    "eqid": "II-7-2",
+    "tag": "II-7-2",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_t = C\\left(1 - \\frac{F}{R}\\right)",
+    "page": 25,
+    "image": "assets/part-02-ch-07/eq-002-II-7-2.png"
+  },
+  {
+    "n": 3,
+    "eqid": "II-7-3",
+    "tag": "II-7-3",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C = 0 . 5 1 \\, - \\, \\frac { 0 . 1 1 B } { h }",
+    "page": 25,
+    "image": "assets/part-02-ch-07/eq-003-II-7-3.png"
+  },
+  {
+    "n": 4,
+    "eqid": "II-7-4",
+    "tag": "II-7-4",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_t = \\sqrt{C_{tt}^2 + C_{t0}^2}",
+    "page": 27,
+    "image": "assets/part-02-ch-07/eq-004-II-7-4.png"
+  },
+  {
+    "n": 5,
+    "eqid": "II-7-5",
+    "tag": "II-7-5",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_{t} = \\left[ \\frac{\\frac{2k(d-y)}{\\sinh 2kd} + \\frac{\\sinh 2k(d-y)}{\\sinh 2kd}}{1 + \\frac{2kd}{\\sinh 2kd}} \\right]^{\\frac{1}{2}}",
+    "page": 31,
+    "image": "assets/part-02-ch-07/eq-005-II-7-5.png"
+  },
+  {
+    "n": 6,
+    "eqid": "II-7-6",
+    "tag": "II-7-6",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "I_r = \\frac{\\tan\\alpha}{\\sqrt{\\frac{H_i}{L_o}}}",
+    "page": 31,
+    "image": "assets/part-02-ch-07/eq-006-II-7-6.png"
+  },
+  {
+    "n": 7,
+    "eqid": "II-7-7",
+    "tag": "II-7-7",
+    "status": "agreed",
+    "verified": true,
+    "latex": "N = H _ { i } \\cos { \\frac { 2 \\pi x } { L } } \\cos { \\frac { 2 \\pi t } { T } }",
+    "page": 32,
+    "image": "assets/part-02-ch-07/eq-007-II-7-7.png"
+  },
+  {
+    "n": 8,
+    "eqid": "II-7-8",
+    "tag": "II-7-8",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_r = \\frac{aI_r^2}{b + I_r^2}",
+    "page": 33,
+    "image": "assets/part-02-ch-07/eq-008-II-7-8.png"
+  },
+  {
+    "n": 9,
+    "eqid": "II-7-9",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "I _ { r } = { \\frac { \\tan 2 9 . 7 ^ { o } } { \\sqrt { 1 . 7 0 / 5 6 . 2 } } } = 3 . 2 8",
+    "page": 33,
+    "image": "assets/part-02-ch-07/eq-009-II-7.png"
+  },
+  {
+    "n": 10,
+    "eqid": "II-7-10",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "C _ { r } \\ = \\ { \\frac { 0 . 6 ( 3 . 2 8 ) ^ { 2 } } { 6 . 6 \\ + \\ ( 3 . 2 8 ) ^ { 2 } } } \\ = \\ 0 . 3 7",
+    "page": 33,
+    "image": "assets/part-02-ch-07/eq-010-II-7.png"
+  },
+  {
+    "n": 11,
+    "eqid": "II-7-9",
+    "tag": "II-7-9",
+    "status": "agreed",
+    "verified": true,
+    "latex": "T _ { n } \\ = \\ { \\frac { 2 \\ l _ { B } } { n \\ { \\sqrt { g d } } } }",
+    "page": 40,
+    "image": "assets/part-02-ch-07/eq-011-II-7-9.png"
+  },
+  {
+    "n": 12,
+    "eqid": "II-7-10",
+    "tag": "II-7-10",
+    "status": "agreed",
+    "verified": true,
+    "latex": "T _ { 1 } \\quad = \\quad \\frac { 2 \\ l _ { B } } { \\sqrt { g d } }",
+    "page": 40,
+    "image": "assets/part-02-ch-07/eq-012-II-7-10.png"
+  },
+  {
+    "n": 13,
+    "eqid": "II-7-11",
+    "tag": "II-7-11",
+    "status": "agreed",
+    "verified": true,
+    "latex": "T_{n,m} = \\frac{2}{\\sqrt{gd}} \\left[ \\left( \\frac{n}{\\ell_1} \\right)^2 + \\left( \\frac{m}{\\ell_2} \\right)^2 \\right]^{\\left( -\\frac{1}{2} \\right)}",
+    "page": 40,
+    "image": "assets/part-02-ch-07/eq-013-II-7-11.png"
+  },
+  {
+    "n": 14,
+    "eqid": "II-7-12",
+    "tag": "II-7-12",
+    "status": "agreed",
+    "verified": true,
+    "latex": "T_n = \\frac{4 \\ell_B}{(1 + 2n) \\sqrt{gd}} \\qquad \\text{Open basin}",
+    "page": 42,
+    "image": "assets/part-02-ch-07/eq-014-II-7-12.png"
+  },
+  {
+    "n": 15,
+    "eqid": "II-7-13",
+    "tag": "II-7-13",
+    "status": "agreed",
+    "verified": true,
+    "latex": "T _ { 0 } \\, = \\, { \\frac { 4 \\, \\ell _ { B } } { \\sqrt { g d } } }",
+    "page": 42,
+    "image": "assets/part-02-ch-07/eq-015-II-7-13.png"
+  },
+  {
+    "n": 16,
+    "eqid": "II-7-14",
+    "tag": "II-7-14",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "V _ { \\mathrm { m a x } } \\ = \\ { \\frac { H } { 2 } } \\ { \\sqrt { \\frac { g } { d } } }",
+    "page": 42,
+    "image": "assets/part-02-ch-07/eq-016-II-7-14.png"
+  },
+  {
+    "n": 17,
+    "eqid": "II-7-15",
+    "tag": "II-7-15",
+    "status": "agreed",
+    "verified": true,
+    "latex": "X = \\frac{H T_n}{2\\pi} \\sqrt{\\frac{g}{d}}",
+    "page": 42,
+    "image": "assets/part-02-ch-07/eq-017-II-7-15.png"
+  },
+  {
+    "n": 18,
+    "eqid": "II-7-16",
+    "tag": "II-7-16",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\overline{V} = \\frac{HL}{\\pi d T_n}",
+    "page": 42,
+    "image": "assets/part-02-ch-07/eq-018-II-7-16.png"
+  },
+  {
+    "n": 19,
+    "eqid": "II-7-17",
+    "tag": "II-7-17",
+    "status": "agreed",
+    "verified": true,
+    "latex": "T = \\left(\\frac{2\\pi \\ell}{\\sqrt{gd}}\\right) \\left(\\frac{1}{k\\ell}\\right)",
+    "page": 45,
+    "image": "assets/part-02-ch-07/eq-019-II-7-17.png"
+  },
+  {
+    "n": 20,
+    "eqid": "II-7-18",
+    "tag": "II-7-18",
+    "status": "agreed",
+    "verified": true,
+    "latex": "T_H = 2\\pi \\sqrt{\\frac{(\\ell_c + \\ell'_c) A_b}{g A_c}}",
+    "page": 50,
+    "image": "assets/part-02-ch-07/eq-020-II-7-18.png"
+  },
+  {
+    "n": 21,
+    "eqid": "II-7-19",
+    "tag": "II-7-19",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\ell'_c = \\frac{-W}{\\pi} \\ln \\left( \\frac{\\pi W}{\\sqrt{g d_c} T_H} \\right)",
+    "page": 53,
+    "image": "assets/part-02-ch-07/eq-021-II-7-19.png"
+  },
+  {
+    "n": 22,
+    "eqid": "II-7-20",
+    "tag": "II-7-20",
+    "status": "agreed",
+    "verified": true,
+    "latex": "E = 1 - \\left(\\frac{C_i}{C_o}\\right)^{\\frac{1}{i}}",
+    "page": 54,
+    "image": "assets/part-02-ch-07/eq-022-II-7-20.png"
+  },
+  {
+    "n": 23,
+    "eqid": "II-7-21",
+    "tag": "II-7-21",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C = V _ { s } \\cos \\theta",
+    "page": 59,
+    "image": "assets/part-02-ch-07/eq-023-II-7-21.png"
+  },
+  {
+    "n": 24,
+    "eqid": "II-7-22",
+    "tag": "II-7-22",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F = \\frac{V_s}{\\sqrt{gd}}",
+    "page": 60,
+    "image": "assets/part-02-ch-07/eq-024-II-7-22.png"
+  },
+  {
+    "n": 25,
+    "eqid": "II-7-23",
+    "tag": "II-7-23",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\theta = 35.27 (1 - e^{12(F-1)})",
+    "page": 60,
+    "image": "assets/part-02-ch-07/eq-025-II-7-23.png"
+  },
+  {
+    "n": 26,
+    "eqid": "II-7-26",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "F = \\frac{5.157}{\\sqrt{9.81 (5)}} = 0.73",
+    "page": 61,
+    "image": "assets/part-02-ch-07/eq-026-II-7.png"
+  },
+  {
+    "n": 27,
+    "eqid": "II-7-27",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\theta = 35.27 \\left[1 - e^{12(0.73-1)}\\right] = 33.88^{\\circ}",
+    "page": 61,
+    "image": "assets/part-02-ch-07/eq-027-II-7.png"
+  },
+  {
+    "n": 28,
+    "eqid": "II-7-28",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "C = 5 . 1 5 7 \\cos ( 3 3 . 8 8 ^ { \\circ } ) = 4 . 2 8 \\mathrm { m / s }",
+    "page": 61,
+    "image": "assets/part-02-ch-07/eq-028-II-7.png"
+  },
+  {
+    "n": 29,
+    "eqid": "II-7-29",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "C = \\frac{gT}{2\\pi} \\tanh \\frac{2\\pi d}{CT}",
+    "page": 61,
+    "image": "assets/part-02-ch-07/eq-029-II-7.png"
+  },
+  {
+    "n": 30,
+    "eqid": "II-7-24",
+    "tag": "II-7-24",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F = \\sqrt{\\frac{2D(1-D-S)^2}{1-(1-D-S)^2}}",
+    "page": 65,
+    "image": "assets/part-02-ch-07/eq-030-II-7-24.png"
+  },
+  {
+    "n": 31,
+    "eqid": "II-7-31",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "F = \\frac{V_S}{\\sqrt{gd}} \\qquad \\qquad D = \\frac{\\Delta d}{d} \\qquad \\qquad S = \\frac{A_n}{bd}",
+    "page": 65,
+    "image": "assets/part-02-ch-07/eq-031-II-7.png"
+  },
+  {
+    "n": 32,
+    "eqid": "II-7-32",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "F = \\frac{3.09}{\\sqrt{9.81 \\ (15)}} = 0.26",
+    "page": 67,
+    "image": "assets/part-02-ch-07/eq-032-II-7.png"
+  },
+  {
+    "n": 33,
+    "eqid": "II-7-33",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "S = \\frac{384}{137(15)} = 0.19",
+    "page": 67,
+    "image": "assets/part-02-ch-07/eq-033-II-7.png"
+  },
+  {
+    "n": 34,
+    "eqid": "II-7-34",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Delta d = 15(0.02) = 0.30 \\,\\mathrm{m}",
+    "page": 67,
+    "image": "assets/part-02-ch-07/eq-034-II-7.png"
+  },
+  {
+    "n": 35,
+    "eqid": "II-7-35",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "V_r = 3.09 \\left[ \\frac{137(15)}{137(15 - 0.3) - 384} - 1 \\right] = 0.81 \\text{ m/s}",
+    "page": 67,
+    "image": "assets/part-02-ch-07/eq-035-II-7.png"
+  },
+  {
+    "n": 36,
+    "eqid": "II-7-25",
+    "tag": "II-7-25",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V _ { r } \\ = \\ V _ { s } \\left[ \\frac { b d } { b \\left( d \\ - \\ \\Delta d \\right) \\ - \\ A _ { m } } \\ - \\ 1 \\right]",
+    "page": 67,
+    "image": "assets/part-02-ch-07/eq-036-II-7-25.png"
+  },
+  {
+    "n": 37,
+    "eqid": "II-7-26",
+    "tag": "II-7-26",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "T _ { n } \\, = \\, 2 \\, \\pi \\, \\sqrt { \\frac { m _ { \\nu } } { k _ { t o t } } }",
+    "page": 70,
+    "image": "assets/part-02-ch-07/eq-037-II-7-26.png"
+  },
+  {
+    "n": 38,
+    "eqid": "II-7-27",
+    "tag": "II-7-27",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "m _ { \\nu } = m \\ + \\ m _ { _ a } = \\ 1 . 1 5 \\ : \\mathrm { m }",
+    "page": 71,
+    "image": "assets/part-02-ch-07/eq-038-II-7-27.png"
+  },
+  {
+    "n": 39,
+    "eqid": "II-7-28",
+    "tag": "II-7-28",
+    "status": "agreed",
+    "verified": true,
+    "latex": "k_{tot} = \\sum_{n} k_n \\sin \\theta_n \\cos \\phi_n",
+    "page": 71,
+    "image": "assets/part-02-ch-07/eq-039-II-7-28.png"
+  },
+  {
+    "n": 40,
+    "eqid": "II-7-29",
+    "tag": "II-7-29",
+    "status": "agreed",
+    "verified": true,
+    "latex": "k_n = \\frac{T_n}{\\Delta l_n}",
+    "page": 71,
+    "image": "assets/part-02-ch-07/eq-040-II-7-29.png"
+  },
+  {
+    "n": 41,
+    "eqid": "II-7-30",
+    "tag": "II-7-30",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\varepsilon_n = 100 \\left( \\frac{\\Delta l_n}{l_n} \\right)",
+    "page": 71,
+    "image": "assets/part-02-ch-07/eq-041-II-7-30.png"
+  },
+  {
+    "n": 42,
+    "eqid": "II-7-31",
+    "tag": "II-7-31",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_{w} = \\frac{1}{2} \\rho_{a} C_{D} A V_{10}^{2}",
+    "page": 72,
+    "image": "assets/part-02-ch-07/eq-042-II-7-31.png"
+  },
+  {
+    "n": 43,
+    "eqid": "II-7-43",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "m _ { \\nu } \\ = \\ 1 . 1 5 ( 5 5 , 8 6 0 , 2 0 0 ) \\ = \\ 6 4 , 2 3 9 , 2 0 0 \\mathrm { k g }",
+    "page": 73,
+    "image": "assets/part-02-ch-07/eq-043-II-7.png"
+  },
+  {
+    "n": 44,
+    "eqid": "II-7-44",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Load = 100 \\left[ \\frac{177,900}{526,000} \\right] = 33.8\\%",
+    "page": 73,
+    "image": "assets/part-02-ch-07/eq-044-II-7.png"
+  },
+  {
+    "n": 45,
+    "eqid": "II-7-45",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Delta l_{Hd} = \\Delta l_{St} = \\frac{8.7(30.5)}{100} = 2.7 \\text{ m}",
+    "page": 73,
+    "image": "assets/part-02-ch-07/eq-045-II-7.png"
+  },
+  {
+    "n": 46,
+    "eqid": "II-7-46",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Delta l_{Sp} = \\frac{8.7(45.7)}{100} = 4.0 \\text{ m}",
+    "page": 73,
+    "image": "assets/part-02-ch-07/eq-046-II-7.png"
+  },
+  {
+    "n": 47,
+    "eqid": "II-7-47",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "k_{Hd} = k_{St} = \\frac{177,900}{2.7} = 65,900 \\text{ N/m}",
+    "page": 74,
+    "image": "assets/part-02-ch-07/eq-047-II-7.png"
+  },
+  {
+    "n": 48,
+    "eqid": "II-7-48",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "k _ { S p } = \\frac { 1 7 7 , 9 0 0 } { 4 . 0 } = 4 4 , 5 0 0 \\mathrm { N / m }",
+    "page": 74,
+    "image": "assets/part-02-ch-07/eq-048-II-7.png"
+  },
+  {
+    "n": 49,
+    "eqid": "II-7-49",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Phi_{Hd} = \\arcsin\\left[\\frac{7.0}{30.5}\\right] = 13^{\\circ}",
+    "page": 74,
+    "image": "assets/part-02-ch-07/eq-049-II-7.png"
+  },
+  {
+    "n": 50,
+    "eqid": "II-7-50",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\phi_{St} = \\arcsin\\left[\\frac{4.5}{30.5}\\right] = 8^{\\circ}",
+    "page": 74,
+    "image": "assets/part-02-ch-07/eq-050-II-7.png"
+  },
+  {
+    "n": 51,
+    "eqid": "II-7-51",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\phi_{Sp} = \\arcsin\\left[\\frac{4.5}{45.7}\\right] = 6^{\\circ}",
+    "page": 74,
+    "image": "assets/part-02-ch-07/eq-051-II-7.png"
+  },
+  {
+    "n": 52,
+    "eqid": "II-7-52",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "k_{tot} = 2(65,900) \\sin70^\\circ \\cos8^\\circ + 44,500 \\sin85^\\circ \\cos6^\\circ = 122,600 + 44,100 = 166,700 \\text{ N/m}",
+    "page": 74,
+    "image": "assets/part-02-ch-07/eq-052-II-7.png"
+  },
+  {
+    "n": 53,
+    "eqid": "II-7-53",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "k_{tot} = 2(65,900) \\sin 70^\\circ \\cos 13^\\circ + 44,500 \\sin 85^\\circ \\cos 6^\\circ = 120,700 + 44,100 = 164,800 \\text{ N/m}",
+    "page": 74,
+    "image": "assets/part-02-ch-07/eq-053-II-7.png"
+  },
+  {
+    "n": 54,
+    "eqid": "II-7-54",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "k_{tot} = \\frac{166,700 + 164,800}{2} = 165,750 \\,\\text{N/m}",
+    "page": 74,
+    "image": "assets/part-02-ch-07/eq-054-II-7.png"
+  },
+  {
+    "n": 55,
+    "eqid": "II-7-55",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "T _ { s } \\ = \\ 2 ( 3 . 1 4 ) \\sqrt { \\frac { 6 4 , 2 3 9 , 2 0 0 } { 1 6 5 , 7 5 0 } } \\ = \\ 1 2 4 \\mathrm { s e c }",
+    "page": 74,
+    "image": "assets/part-02-ch-07/eq-055-II-7.png"
+  },
+  {
+    "n": 56,
+    "eqid": "II-7-32",
+    "tag": "II-7-32",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V_z = V_{10} \\left(\\frac{z}{10}\\right)^{0.11}",
+    "page": 75,
+    "image": "assets/part-02-ch-07/eq-056-II-7-32.png"
+  },
+  {
+    "n": 57,
+    "eqid": "II-7-57",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "A_{aft} = \\frac{246}{2} 10.9 = 1,340 \\,\\mathrm{m}^2",
+    "page": 76,
+    "image": "assets/part-02-ch-07/eq-057-II-7.png"
+  },
+  {
+    "n": 58,
+    "eqid": "II-7-58",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "A_{forward} = 123[10.9 + 5(2.7)] = 3,000 \\,\\mathrm{m}^2",
+    "page": 76,
+    "image": "assets/part-02-ch-07/eq-058-II-7.png"
+  },
+  {
+    "n": 59,
+    "eqid": "II-7-59",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "A_{eff} = [1,340 + 3,000] \\sin 30^{\\circ} = 2,170 \\,\\mathrm{m}^2",
+    "page": 76,
+    "image": "assets/part-02-ch-07/eq-059-II-7.png"
+  },
+  {
+    "n": 60,
+    "eqid": "II-7-60",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "V _ { w } \\, = \\, 1 . 2 0 ( 1 0 . 3 1 ) \\, = \\, 1 2 . 4 \\mathrm { m / s }",
+    "page": 76,
+    "image": "assets/part-02-ch-07/eq-060-II-7.png"
+  },
+  {
+    "n": 61,
+    "eqid": "II-7-61",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "F _ { w } \\ = \\ { \\frac { 1 } { 2 } } ( 1 . 2 ) ( 1 . 0 ) ( 2 , 1 7 0 ) ( 1 2 . 4 ) ^ { 2 } \\ = \\ 2 0 0 \\mathrm { k N }",
+    "page": 76,
+    "image": "assets/part-02-ch-07/eq-061-II-7.png"
+  },
+  {
+    "n": 62,
+    "eqid": "II-7-33",
+    "tag": "II-7-33",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "F_{c,tot} = F_{c,fric} + F_{c,fric} + F_{c,prop}",
+    "page": 76,
+    "image": "assets/part-02-ch-07/eq-062-II-7-33.png"
+  },
+  {
+    "n": 63,
+    "eqid": "II-7-34",
+    "tag": "II-7-34",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_{c,form} = -\\frac{1}{2} \\rho_w C_{c,form} B T V_c^2 \\cos \\theta_c",
+    "page": 76,
+    "image": "assets/part-02-ch-07/eq-063-II-7-34.png"
+  },
+  {
+    "n": 64,
+    "eqid": "II-7-35",
+    "tag": "II-7-35",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_{c,fric} = -\\frac{1}{2} \\rho_w C_{c,fric} S V_c^2 \\cos \\theta_c",
+    "page": 77,
+    "image": "assets/part-02-ch-07/eq-064-II-7-35.png"
+  },
+  {
+    "n": 65,
+    "eqid": "II-7-36",
+    "tag": "II-7-36",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_{c,friction} = \\frac{0.075}{(\\log_{10} R_n - 2)^2}",
+    "page": 77,
+    "image": "assets/part-02-ch-07/eq-065-II-7-36.png"
+  },
+  {
+    "n": 66,
+    "eqid": "II-7-37",
+    "tag": "II-7-37",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R_n = \\frac{V_c L_{wl} \\cos \\theta_c}{v}",
+    "page": 77,
+    "image": "assets/part-02-ch-07/eq-066-II-7-37.png"
+  },
+  {
+    "n": 67,
+    "eqid": "II-7-38",
+    "tag": "II-7-38",
+    "status": "agreed",
+    "verified": true,
+    "latex": "S = \\left( 1 . 7 T L _ { w l } \\right) \\mathrm { \\, + \\, } \\frac { D } { T \\gamma _ { w } }",
+    "page": 77,
+    "image": "assets/part-02-ch-07/eq-067-II-7-38.png"
+  },
+  {
+    "n": 68,
+    "eqid": "II-7-39",
+    "tag": "II-7-39",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_{c,prop} = -\\frac{1}{2} \\rho_w C_{c,prop} A_p V_c^2 \\cos \\theta_c",
+    "page": 77,
+    "image": "assets/part-02-ch-07/eq-068-II-7-39.png"
+  },
+  {
+    "n": 69,
+    "eqid": "II-7-40",
+    "tag": "II-7-40",
+    "status": "agreed",
+    "verified": true,
+    "latex": "A_{p} = \\frac{L_{wl}B}{0.838 A_{r}}",
+    "page": 77,
+    "image": "assets/part-02-ch-07/eq-069-II-7-40.png"
+  },
+  {
+    "n": 70,
+    "eqid": "II-7-70",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\Delta = \\nabla * \\frac{\\gamma_w lb / ft^3}{2240 lb / ton} = \\frac{\\nabla}{r}",
+    "page": 96,
+    "image": "assets/part-02-ch-07/eq-070-II-7.png"
+  },
+  {
+    "n": 71,
+    "eqid": "II-7-71",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "r = \\frac{2240}{\\gamma_w}",
+    "page": 96,
+    "image": "assets/part-02-ch-07/eq-071-II-7.png"
+  },
+  {
+    "n": 72,
+    "eqid": "II-7-72",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\nabla = L * B * T * C_B",
+    "page": 96,
+    "image": "assets/part-02-ch-07/eq-072-II-7.png"
+  },
+  {
+    "n": 73,
+    "eqid": "II-7-73",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "S = 2 * L * T + \\frac{\\nabla}{T} = 2 * L * T + L * B * C_B",
+    "page": 96,
+    "image": "assets/part-02-ch-07/eq-073-II-7.png"
+  },
+  {
+    "n": 74,
+    "eqid": "II-7-74",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "s = 1.7 * L * T + \\frac{\\nabla}{T} = 1.7 * L * T + L * B * C_B",
+    "page": 97,
+    "image": "assets/part-02-ch-07/eq-074-II-7.png"
+  }
+]

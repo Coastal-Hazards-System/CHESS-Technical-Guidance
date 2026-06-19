@@ -1,0 +1,102 @@
+[
+  {
+    "n": 1,
+    "eqid": "V-5-1",
+    "tag": "V-5-1",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F _ { h } = { \\frac { V } { \\sqrt { g h } } }",
+    "page": 22,
+    "image": "assets/part-05-ch-05/eq-001-V-5-1.png"
+  },
+  {
+    "n": 2,
+    "eqid": "V-5-2",
+    "tag": "V-5-2",
+    "status": "agreed",
+    "verified": true,
+    "latex": "B_R = \\frac{A_C}{A_S}",
+    "page": 23,
+    "image": "assets/part-05-ch-05/eq-002-V-5-2.png"
+  },
+  {
+    "n": 3,
+    "eqid": "V-5-3",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\text{Water depth}}{\\text{Ship draft}} \\geq 1.3 \\quad \\text{when } H \\leq 1 \\text{m (3.3 ft)}",
+    "page": 35,
+    "image": "assets/part-05-ch-05/eq-003-V-5.png"
+  },
+  {
+    "n": 4,
+    "eqid": "V-5-4",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac{\\text{Water depth}}{\\text{Ship draft}} \\geq 1.5 \\quad \\text{when } H > 1 \\text{m (3.3 ft)} \\text{ and wave periods and directions are unfavorable}",
+    "page": 35,
+    "image": "assets/part-05-ch-05/eq-004-V-5.png"
+  },
+  {
+    "n": 5,
+    "eqid": "V-5-3",
+    "tag": "V-5-3",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Z = 0.2125 C_B \\frac{B}{L} \\frac{T}{h} V^2 \\qquad V \\text{ in knots}, Z \\text{ in ft}",
+    "page": 37,
+    "image": "assets/part-05-ch-05/eq-005-V-5-3.png"
+  },
+  {
+    "n": 6,
+    "eqid": "V-5-4",
+    "tag": "V-5-4",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "F_L = \\frac{V_L}{\\sqrt{gh}}",
+    "page": 38,
+    "image": "assets/part-05-ch-05/eq-006-V-5-4.png"
+  },
+  {
+    "n": 7,
+    "eqid": "V-5-5",
+    "tag": "V-5-5",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "Z_L = h \\left[ \\frac{F_L^2}{2} \\left( F_L^{1/3} - 1 \\right) \\right] \\qquad \\text{(rectangular canal)}",
+    "page": 38,
+    "image": "assets/part-05-ch-05/eq-007-V-5-5.png"
+  },
+  {
+    "n": 8,
+    "eqid": "V-5-6",
+    "tag": "V-5-6",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Z_T = \\left( \\frac{h_1 + h_2}{2h} \\right) Z + \\left( 1 - \\frac{h_1 + h_2}{2h} \\right) Z_L \\quad (\\text{trench})",
+    "page": 39,
+    "image": "assets/part-05-ch-05/eq-008-V-5-6.png"
+  },
+  {
+    "n": 9,
+    "eqid": "V-5-7",
+    "tag": "V-5-7",
+    "status": "resolved",
+    "verified": true,
+    "latex": "W = W_{\\mathrm{min}} + 0.10 \\ N_B \\qquad \\text{in feet}",
+    "page": 50,
+    "image": "assets/part-05-ch-05/eq-009-V-5-7.png"
+  },
+  {
+    "n": 10,
+    "eqid": "V-5-8",
+    "tag": "V-5-8",
+    "status": "agreed",
+    "verified": true,
+    "latex": "W = 90 + 0.03 (N_B - 1000)",
+    "page": 52,
+    "image": "assets/part-05-ch-05/eq-010-V-5-8.png"
+  }
+]

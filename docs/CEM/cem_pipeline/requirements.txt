@@ -1,0 +1,20 @@
+# Core glue / verification
+pymupdf>=1.24
+pypdf
+pillow
+scikit-image
+matplotlib
+pyyaml
+numpy
+lxml
+regex
+
+# Primary engines (ensemble)
+marker-pdf
+mineru[core]
+
+# Cheap extra vote (optional, off by default)
+pix2tex
+
+# torch / torchvision are installed separately from the CUDA index, e.g.:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121

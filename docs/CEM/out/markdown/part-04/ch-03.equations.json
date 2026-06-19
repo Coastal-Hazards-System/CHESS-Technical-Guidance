@@ -1,0 +1,112 @@
+[
+  {
+    "n": 1,
+    "eqid": "IV-3-1",
+    "tag": "IV-3-1",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "F' = \\frac{U^2}{\\gamma g h'}",
+    "page": 28,
+    "image": "assets/part-04-ch-03/eq-001-IV-3-1.png"
+  },
+  {
+    "n": 2,
+    "eqid": "IV-3-2",
+    "tag": "IV-3-2",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\gamma \\, = \\, 1 \\, - \\, ( \\rho _ { f } / \\rho _ { s } )",
+    "page": 28,
+    "image": "assets/part-04-ch-03/eq-002-IV-3-2.png"
+  },
+  {
+    "n": 3,
+    "eqid": "IV-3-3",
+    "tag": "IV-3-3",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Omega = \\frac{H_b}{\\overline{W_s}T}",
+    "page": 56,
+    "image": "assets/part-04-ch-03/eq-003-IV-3-3.png"
+  },
+  {
+    "n": 4,
+    "eqid": "IV-3-4",
+    "tag": "IV-3-4",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\varepsilon = \\frac{a_b \\omega^2}{g \\tan^2 \\beta}",
+    "page": 60,
+    "image": "assets/part-04-ch-03/eq-004-IV-3-4.png"
+  },
+  {
+    "n": 5,
+    "eqid": "IV-3-5",
+    "tag": "IV-3-5",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R = \\frac{L_*}{B + H_*} S",
+    "page": 66,
+    "image": "assets/part-04-ch-03/eq-005-IV-3-5.png"
+  },
+  {
+    "n": 6,
+    "eqid": "IV-3-6",
+    "tag": "IV-3-6",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "x = \\frac{zX}{Z}",
+    "page": 67,
+    "image": "assets/part-04-ch-03/eq-006-IV-3-6.png"
+  },
+  {
+    "n": 7,
+    "eqid": "IV-3-7",
+    "tag": "IV-3-7",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "h = Ay^{2/3}",
+    "page": 70,
+    "image": "assets/part-04-ch-03/eq-007-IV-3-7.png"
+  },
+  {
+    "n": 8,
+    "eqid": "IV-3-8",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "A = 0.41(d_{50})^{0.94} \\quad , \\quad d_{50} < 0.4 \\\\\nA = 0.23(d_{50})^{0.32} \\quad , \\quad 0.4 \\leq d_{50} < 10.0",
+    "page": 70,
+    "image": "assets/part-04-ch-03/eq-008-IV-3.png"
+  },
+  {
+    "n": 9,
+    "eqid": "IV-3-9",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "A = 0.23(d_{50})^{0.28} \\quad , \\quad 10.0 \\leq d_{50} < 40.0 \\\\\nA = 0.46(d_{50})^{0.11} \\quad , \\quad 40.0 \\leq d_{50}",
+    "page": 70,
+    "image": "assets/part-04-ch-03/eq-009-IV-3.png"
+  },
+  {
+    "n": 10,
+    "eqid": "IV-3-9",
+    "tag": "IV-3-9",
+    "status": "agreed",
+    "verified": true,
+    "latex": "d_{\\ell} = 2.28H_e - 68.5 \\left(\\frac{H_e^2}{gT_e^2}\\right)",
+    "page": 73,
+    "image": "assets/part-04-ch-03/eq-010-IV-3-9.png"
+  },
+  {
+    "n": 11,
+    "eqid": "IV-3-10",
+    "tag": "IV-3-10",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "Z \\simeq 2H_5",
+    "page": 74,
+    "image": "assets/part-04-ch-03/eq-011-IV-3-10.png"
+  }
+]

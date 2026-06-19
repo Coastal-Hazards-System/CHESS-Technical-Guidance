@@ -1,0 +1,18 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "III",
+  "chapter": 5,
+  "title": "EROSION, TRANSPORT, AND DEPOSITION",
+  "source_pdf": "P03__EM_1110-2-1100_Ch_05.pdf",
+  "pages": 67,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 16,
+  "equations_verified": 16,
+  "tables_gfm": 5,
+  "tables_image": 0,
+  "figures": 28,
+  "equations_flagged": 0,
+  "eq_agreed_gt": 6,
+  "eq_single_verified": 7,
+  "eq_agreed": 3
+}

@@ -1,0 +1,542 @@
+[
+  {
+    "n": 1,
+    "eqid": "II-4-1",
+    "tag": "II-4-1",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\xi_o = \\tan\\beta \\left(\\frac{H_o}{L_o}\\right)^{-\\frac{1}{2}}",
+    "page": 2,
+    "image": "assets/part-02-ch-04/eq-001-II-4-1.png"
+  },
+  {
+    "n": 2,
+    "eqid": "II-4-2",
+    "tag": "II-4-2",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\text{Surging/collapsing} \\quad \\xi_o > 3.3 \\\\\n\\text{Plunging} \\quad 0.5 < \\xi_o < 3.3 \\\\\n\\text{Spilling} \\quad \\xi_o < 0.5",
+    "page": 4,
+    "image": "assets/part-02-ch-04/eq-002-II-4-2.png"
+  },
+  {
+    "n": 3,
+    "eqid": "II-4-3",
+    "tag": "II-4-3",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\gamma_b = \\frac{H_b}{d_b}",
+    "page": 4,
+    "image": "assets/part-02-ch-04/eq-003-II-4-3.png"
+  },
+  {
+    "n": 4,
+    "eqid": "II-4-4",
+    "tag": "II-4-4",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Omega_b = \\frac{H_b}{H_o}",
+    "page": 4,
+    "image": "assets/part-02-ch-04/eq-004-II-4-4.png"
+  },
+  {
+    "n": 5,
+    "eqid": "II-4-5",
+    "tag": "II-4-5",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\gamma_b = b - a \\frac{H_b}{g T^2}",
+    "page": 5,
+    "image": "assets/part-02-ch-04/eq-005-II-4-5.png"
+  },
+  {
+    "n": 6,
+    "eqid": "II-4-6",
+    "tag": "II-4-6",
+    "status": "agreed",
+    "verified": true,
+    "latex": "a = 43.8 \\left(1 - e^{-19\\tan\\beta}\\right)",
+    "page": 5,
+    "image": "assets/part-02-ch-04/eq-006-II-4-6.png"
+  },
+  {
+    "n": 7,
+    "eqid": "II-4-7",
+    "tag": "II-4-7",
+    "status": "agreed",
+    "verified": true,
+    "latex": "b = \\frac{1.56}{\\left(1 + e^{-19.5 \\tan \\beta}\\right)}",
+    "page": 5,
+    "image": "assets/part-02-ch-04/eq-007-II-4-7.png"
+  },
+  {
+    "n": 8,
+    "eqid": "II-4-8",
+    "tag": "II-4-8",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Omega_b = 0.56 \\left(\\frac{H_o}{L_o}\\right)^{-\\frac{1}{5}}",
+    "page": 5,
+    "image": "assets/part-02-ch-04/eq-008-II-4-8.png"
+  },
+  {
+    "n": 9,
+    "eqid": "II-4-9",
+    "tag": "II-4-9",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "H_{rms,b} = 0.42 d",
+    "page": 5,
+    "image": "assets/part-02-ch-04/eq-009-II-4-9.png"
+  },
+  {
+    "n": 10,
+    "eqid": "II-4-10",
+    "tag": "II-4-10",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "H_{mo,b} = 0.6 d",
+    "page": 5,
+    "image": "assets/part-02-ch-04/eq-010-II-4-10.png"
+  },
+  {
+    "n": 11,
+    "eqid": "II-4-11",
+    "tag": "II-4-11",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "H_{mo,b} = 0.1 \\text{ L tan h } kd",
+    "page": 5,
+    "image": "assets/part-02-ch-04/eq-011-II-4-11.png"
+  },
+  {
+    "n": 12,
+    "eqid": "II-4-12",
+    "tag": "II-4-12",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "H_b = \\gamma_b \\ d_b",
+    "page": 6,
+    "image": "assets/part-02-ch-04/eq-012-II-4-12.png"
+  },
+  {
+    "n": 13,
+    "eqid": "II-4-13",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "H_o = K_R H_o = 1.05 (2.0) = 2.1 \\text{ m}",
+    "page": 7,
+    "image": "assets/part-02-ch-04/eq-013-II-4.png"
+  },
+  {
+    "n": 14,
+    "eqid": "II-4-14",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "L_o = g T^2/(2\\pi) = 9.81 (10^2)/(2\\pi) = 156 \\text{ m}",
+    "page": 7,
+    "image": "assets/part-02-ch-04/eq-014-II-4.png"
+  },
+  {
+    "n": 15,
+    "eqid": "II-4-15",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Omega_b = 0.56 (H_o'/L_o)^{-1/5} = 0.56 (2.1/156.)^{-1/5} = 1.3, \\quad H_b (\\text{estimated}) = \\Omega_b H_o' = 2.7 \\text{ m}",
+    "page": 7,
+    "image": "assets/part-02-ch-04/eq-015-II-4.png"
+  },
+  {
+    "n": 16,
+    "eqid": "II-4-16",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "a = 43.8(1 - e^{-19 (1/100)}) = 7.58 \\\\\nb = 1.56 / (1 + e^{-19.5 (1/100)}) = 0.86",
+    "page": 7,
+    "image": "assets/part-02-ch-04/eq-016-II-4.png"
+  },
+  {
+    "n": 17,
+    "eqid": "II-4-17",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\gamma_b = b - a H_b / (gT^2) = 0.86 - 7.58(2.7)/(9.81 \\times 10^2) = 0.84, \\quad d_b = H_b / \\gamma_b = 2.7/0.84 = 3.2 \\text{ m}",
+    "page": 7,
+    "image": "assets/part-02-ch-04/eq-017-II-4.png"
+  },
+  {
+    "n": 18,
+    "eqid": "II-4-13",
+    "tag": "II-4-13",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{d(EC_g)}{dx} = -\\delta",
+    "page": 7,
+    "image": "assets/part-02-ch-04/eq-018-II-4-13.png"
+  },
+  {
+    "n": 19,
+    "eqid": "II-4-14",
+    "tag": "II-4-14",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\delta = \\frac{\\kappa}{d} \\left( E C_g - E C_{g,s} \\right)",
+    "page": 9,
+    "image": "assets/part-02-ch-04/eq-019-II-4-14.png"
+  },
+  {
+    "n": 20,
+    "eqid": "II-4-15",
+    "tag": "II-4-15",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "H_{stable} = \\Gamma d",
+    "page": 9,
+    "image": "assets/part-02-ch-04/eq-020-II-4-15.png"
+  },
+  {
+    "n": 21,
+    "eqid": "II-4-16",
+    "tag": "II-4-16",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{d(H^2 d^{1/2})}{dx} = -\\frac{\\kappa}{d}\\left( H^{2}d^{1/2}-\\Gamma^{2}d^{5/2}\\right) \\quad \\text{for} \\quad H > H_{\\mathrm{stable}} \\\\\n= 0 \\quad \\text{for} \\quad H < H_{\\mathrm{stable}}",
+    "page": 9,
+    "image": "assets/part-02-ch-04/eq-021-II-4-16.png"
+  },
+  {
+    "n": 22,
+    "eqid": "II-4-17",
+    "tag": "II-4-17",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\delta = 0.25 \\rho g Q_b f_m (H_{\\text{max}})^2",
+    "page": 10,
+    "image": "assets/part-02-ch-04/eq-022-II-4-17.png"
+  },
+  {
+    "n": 23,
+    "eqid": "II-4-18",
+    "tag": "II-4-18",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "H_{\\text{max}} = 0.14L \\tanh(kd)",
+    "page": 11,
+    "image": "assets/part-02-ch-04/eq-023-II-4-18.png"
+  },
+  {
+    "n": 24,
+    "eqid": "II-4-19",
+    "tag": "II-4-19",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "d = h + \\overline{\\eta}",
+    "page": 13,
+    "image": "assets/part-02-ch-04/eq-024-II-4-19.png"
+  },
+  {
+    "n": 25,
+    "eqid": "II-4-20",
+    "tag": "II-4-20",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{d\\overline{\\eta}}{dx} = -\\frac{1}{\\rho g d} \\frac{dS_{xx}}{dx}",
+    "page": 14,
+    "image": "assets/part-02-ch-04/eq-025-II-4-20.png"
+  },
+  {
+    "n": 26,
+    "eqid": "II-4-21",
+    "tag": "II-4-21",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\overline{\\eta} = -\\frac{1}{8} \\frac{H^2 \\frac{2\\pi}{L}}{\\sinh\\left(\\frac{4\\pi}{L} d\\right)}",
+    "page": 14,
+    "image": "assets/part-02-ch-04/eq-026-II-4-21.png"
+  },
+  {
+    "n": 27,
+    "eqid": "II-4-22",
+    "tag": "II-4-22",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{d\\overline{\\eta}}{dx} = -\\frac{3}{16} \\frac{1}{h + \\overline{\\eta}} \\frac{d(H^2)}{dx}",
+    "page": 14,
+    "image": "assets/part-02-ch-04/eq-027-II-4-22.png"
+  },
+  {
+    "n": 28,
+    "eqid": "II-4-23",
+    "tag": "II-4-23",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac{d\\bar{\\eta}}{dx} = \\frac{1}{1 + \\frac{8}{3\\gamma_b^2}} \\tan\\beta",
+    "page": 14,
+    "image": "assets/part-02-ch-04/eq-028-II-4-23.png"
+  },
+  {
+    "n": 29,
+    "eqid": "II-4-24",
+    "tag": "II-4-24",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\overline{\\eta}_s = \\overline{\\eta}_b + \\left[ \\frac{1}{1 + \\frac{8}{3\\gamma_b^2}} \\right] h_b",
+    "page": 15,
+    "image": "assets/part-02-ch-04/eq-029-II-4-24.png"
+  },
+  {
+    "n": 30,
+    "eqid": "II-4-25",
+    "tag": "II-4-25",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\Delta x = \\frac{\\overline{\\eta}_s}{\\tan\\beta - \\frac{d\\overline{\\eta}}{dx}}",
+    "page": 15,
+    "image": "assets/part-02-ch-04/eq-030-II-4-25.png"
+  },
+  {
+    "n": 31,
+    "eqid": "II-4-31",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\bar{\\eta}_{\\max} = \\bar{\\eta}_s + \\frac{d\\bar{\\eta}}{dx}\\Delta x",
+    "page": 15,
+    "image": "assets/part-02-ch-04/eq-031-II-4.png"
+  },
+  {
+    "n": 32,
+    "eqid": "II-4-32",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\overline { { \\eta _ { b } } } = - 1 / 1 6 \\left( 0 . 8 4 \\right) ^ { 2 } ( 3 . 2 ) = - 0 . 1 4 \\mathrm { m }",
+    "page": 17,
+    "image": "assets/part-02-ch-04/eq-032-II-4.png"
+  },
+  {
+    "n": 33,
+    "eqid": "II-4-33",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\overline { { \\eta _ { s } } } = - 0 . 1 4 + ( 3 . 2 + 0 . 1 4 ) + 1 / ( 1 + 8 / ( 3 \\, ( . 8 4 ) ^ { 2 } ) ) = 0 . 5 6 \\, \\mathrm { m }",
+    "page": 17,
+    "image": "assets/part-02-ch-04/eq-033-II-4.png"
+  },
+  {
+    "n": 34,
+    "eqid": "II-4-34",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "d\\overline{\\eta}/dx = 1/(1 + 8/(3(0.84)^2))(1/100) = 0.0021",
+    "page": 17,
+    "image": "assets/part-02-ch-04/eq-034-II-4.png"
+  },
+  {
+    "n": 35,
+    "eqid": "II-4-35",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\overline{\\eta}_{max} = 0.56 + 0.0021(64.6) = 0.65 \\text{ m}",
+    "page": 17,
+    "image": "assets/part-02-ch-04/eq-035-II-4.png"
+  },
+  {
+    "n": 36,
+    "eqid": "II-4-26",
+    "tag": "II-4-26",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{R}{H_o} = \\xi_o \\quad \\text{for } 0.1 < \\xi_o < 2.3",
+    "page": 18,
+    "image": "assets/part-02-ch-04/eq-036-II-4-26.png"
+  },
+  {
+    "n": 37,
+    "eqid": "II-4-27",
+    "tag": "II-4-27",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{R}{H_o} = (2\\pi)^{\\frac{1}{2}} \\left(\\frac{\\pi}{2\\beta}\\right)^{\\frac{1}{4}}",
+    "page": 19,
+    "image": "assets/part-02-ch-04/eq-037-II-4-27.png"
+  },
+  {
+    "n": 38,
+    "eqid": "II-4-28",
+    "tag": "II-4-28",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac { R _ { \\mathrm { m a x } } } { H _ { o } } \\, = \\, 2 . 3 2 \\, \\xi _ { o } ^ { \\, 0 . 7 7 }",
+    "page": 19,
+    "image": "assets/part-02-ch-04/eq-038-II-4-28.png"
+  },
+  {
+    "n": 39,
+    "eqid": "II-4-29",
+    "tag": "II-4-29",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{R_{2\\%}}{H_o} = 1.86 \\, \\xi_o^{0.71}",
+    "page": 19,
+    "image": "assets/part-02-ch-04/eq-039-II-4-29.png"
+  },
+  {
+    "n": 40,
+    "eqid": "II-4-30",
+    "tag": "II-4-30",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{R_{1/10}}{H_o} = 1.70 \\, \\xi_o^{0.71}",
+    "page": 19,
+    "image": "assets/part-02-ch-04/eq-040-II-4-30.png"
+  },
+  {
+    "n": 41,
+    "eqid": "II-4-31",
+    "tag": "II-4-31",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{R_{1/3}}{H_o} = 1.38 \\, \\xi_o^{0.70}",
+    "page": 19,
+    "image": "assets/part-02-ch-04/eq-041-II-4-31.png"
+  },
+  {
+    "n": 42,
+    "eqid": "II-4-32",
+    "tag": "II-4-32",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{\\overline{R}}{H_o} = 0.88 \\, \\xi_o^{0.69}",
+    "page": 19,
+    "image": "assets/part-02-ch-04/eq-042-II-4-32.png"
+  },
+  {
+    "n": 43,
+    "eqid": "II-4-43",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "L_o = g T^2/(2\\pi) = 9.81 (9^2)/(2\\pi) = 126 \\text{ m}",
+    "page": 20,
+    "image": "assets/part-02-ch-04/eq-043-II-4.png"
+  },
+  {
+    "n": 44,
+    "eqid": "II-4-44",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\xi_o = \\tan \\beta \\ (H_o/L_o)^{-1/2} = (1/80) \\ (4.0/126.)^{-1/2} = 0.070",
+    "page": 20,
+    "image": "assets/part-02-ch-04/eq-044-II-4.png"
+  },
+  {
+    "n": 45,
+    "eqid": "II-4-45",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "R_{max} = 2.32 H_o \\xi_o^{0.77} = 2.32 (4.0)(0.070)^{0.77} = 1.2 \\text{ m}",
+    "page": 20,
+    "image": "assets/part-02-ch-04/eq-045-II-4.png"
+  },
+  {
+    "n": 46,
+    "eqid": "II-4-46",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "R_{1/3} = 1.38 H_o \\xi_o^{0.70} = 1.38 (4.0)(0.070)^{0.70} = 0.86 \\text{ m}",
+    "page": 20,
+    "image": "assets/part-02-ch-04/eq-046-II-4.png"
+  },
+  {
+    "n": 47,
+    "eqid": "II-4-33",
+    "tag": "II-4-33",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "u = u_w + u_t + u_a + u_o + u_i",
+    "page": 21,
+    "image": "assets/part-02-ch-04/eq-047-II-4-33.png"
+  },
+  {
+    "n": 48,
+    "eqid": "II-4-34",
+    "tag": "II-4-34",
+    "status": "agreed",
+    "verified": true,
+    "latex": "U\\frac{\\partial U}{\\partial x} + V\\frac{\\partial U}{\\partial y} = -g\\frac{\\partial \\overline{\\eta}}{\\partial x} + F_{bx} + L_x + R_{bx} + R_{sx}",
+    "page": 21,
+    "image": "assets/part-02-ch-04/eq-048-II-4-34.png"
+  },
+  {
+    "n": 49,
+    "eqid": "II-4-35",
+    "tag": "II-4-35",
+    "status": "agreed",
+    "verified": true,
+    "latex": "U\\frac{\\partial V}{\\partial x} + V\\frac{\\partial V}{\\partial y} = -g\\frac{\\partial \\overline{\\eta}}{\\partial y} + F_{by} + L_y + R_{by} + R_{sy}",
+    "page": 21,
+    "image": "assets/part-02-ch-04/eq-049-II-4-35.png"
+  },
+  {
+    "n": 50,
+    "eqid": "II-4-36",
+    "tag": "II-4-36",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\partial(Ud)}{\\partial x} + \\frac{\\partial(Vd)}{\\partial y} = 0",
+    "page": 22,
+    "image": "assets/part-02-ch-04/eq-050-II-4-36.png"
+  },
+  {
+    "n": 51,
+    "eqid": "II-4-37",
+    "tag": "II-4-37",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R_{by} = -\\frac{1}{\\rho d} \\frac{\\partial S_{xy}}{\\partial x}",
+    "page": 24,
+    "image": "assets/part-02-ch-04/eq-051-II-4-37.png"
+  },
+  {
+    "n": 52,
+    "eqid": "II-4-38",
+    "tag": "II-4-38",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "S_{xy} = \\frac{n}{8} \\rho g H^2 \\cos \\alpha \\sin \\alpha",
+    "page": 24,
+    "image": "assets/part-02-ch-04/eq-052-II-4-38.png"
+  },
+  {
+    "n": 53,
+    "eqid": "II-4-39",
+    "tag": "II-4-39",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V = \\frac{5\\pi}{16} \\cdot \\frac{\\tan\\beta^*}{C_f} \\cdot \\gamma_b \\cdot \\sqrt{gd} \\cdot \\sin\\alpha \\cdot \\cos\\alpha",
+    "page": 24,
+    "image": "assets/part-02-ch-04/eq-053-II-4-39.png"
+  },
+  {
+    "n": 54,
+    "eqid": "II-4-40",
+    "tag": "II-4-40",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "V _ { m i d } \\, = \\, 1 . 1 7 \\, \\sqrt { g \\, H _ { r m s , b } } \\, \\sin { \\, \\alpha _ { b } } \\, \\cos { \\, \\alpha _ { b } }",
+    "page": 24,
+    "image": "assets/part-02-ch-04/eq-054-II-4-40.png"
+  }
+]

@@ -1,0 +1,14 @@
+jobs: 48
+engines: { marker: true, mineru: true, vlm: false, pix2tex: false }
+selfcorrect: { max_passes: 3, enable_vlm_on_fail: true }
+verify:
+  symbol_match_required: true       # GT symbol multiset must match
+  symbol_edit_tolerance: 1          # allowed multiset edit distance
+  katex_required: true
+  render_diff_min_ssim: 0.55        # soft signal only; not a sole gate
+tables: { confidence_min: 0.45 }
+vlm:
+  backend: ollama                   # ollama | vllm | none
+  model: qwen2.5vl:7b
+  endpoint: http://localhost:11434
+device: auto                        # auto | cuda | cpu

@@ -1,0 +1,442 @@
+[
+  {
+    "n": 1,
+    "eqid": "II-3-1",
+    "tag": "II-3-1",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\partial E(x,y,t,f,\\theta)}{\\partial t} + \\nabla \\cdot \\left[ C_g(x,y,f) \\ E(x,y,t,f,\\theta) \\right] = S_w + S_n + S_D + S_F + S_P",
+    "page": 7,
+    "image": "assets/part-02-ch-03/eq-001-II-3-1.png"
+  },
+  {
+    "n": 2,
+    "eqid": "II-3-2",
+    "tag": "II-3-2",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "C_A = \\frac{g}{\\omega} \\tanh k h_A < \\frac{g}{\\omega} \\tanh k h_B = C_B",
+    "page": 9,
+    "image": "assets/part-02-ch-03/eq-002-II-3-2.png"
+  },
+  {
+    "n": 3,
+    "eqid": "II-3-3",
+    "tag": "II-3-3",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Omega (x,y,t) = (k \\cos\\theta + k \\sin\\theta - \\omega t)",
+    "page": 12,
+    "image": "assets/part-02-ch-03/eq-003-II-3-3.png"
+  },
+  {
+    "n": 4,
+    "eqid": "II-3-4",
+    "tag": "II-3-4",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\vec{k} = \\nabla \\Omega",
+    "page": 12,
+    "image": "assets/part-02-ch-03/eq-004-II-3-4.png"
+  },
+  {
+    "n": 5,
+    "eqid": "II-3-5",
+    "tag": "II-3-5",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\nabla \\times \\vec{k} = 0",
+    "page": 12,
+    "image": "assets/part-02-ch-03/eq-005-II-3-5.png"
+  },
+  {
+    "n": 6,
+    "eqid": "II-3-6",
+    "tag": "II-3-6",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\partial (k \\sin \\theta)}{\\partial x} - \\frac{\\partial (k \\cos \\theta)}{\\partial y} = 0",
+    "page": 12,
+    "image": "assets/part-02-ch-03/eq-006-II-3-6.png"
+  },
+  {
+    "n": 7,
+    "eqid": "II-3-7",
+    "tag": "II-3-7",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac{d}{dx}\\left(\\frac{\\sin\\theta}{C}\\right) = 0",
+    "page": 12,
+    "image": "assets/part-02-ch-03/eq-007-II-3-7.png"
+  },
+  {
+    "n": 8,
+    "eqid": "II-3-8",
+    "tag": "II-3-8",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac{\\sin \\theta}{C} = constant",
+    "page": 12,
+    "image": "assets/part-02-ch-03/eq-008-II-3-8.png"
+  },
+  {
+    "n": 9,
+    "eqid": "II-3-9",
+    "tag": "II-3-9",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{\\sin \\theta}{C} = \\frac{\\sin \\theta_0}{C_0}",
+    "page": 12,
+    "image": "assets/part-02-ch-03/eq-009-II-3-9.png"
+  },
+  {
+    "n": 10,
+    "eqid": "II-3-10",
+    "tag": "II-3-10",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "(ECn)_0 b_0 = (ECn)_1 b_1",
+    "page": 13,
+    "image": "assets/part-02-ch-03/eq-010-II-3-10.png"
+  },
+  {
+    "n": 11,
+    "eqid": "II-3-11",
+    "tag": "II-3-11",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "E = \\frac{1}{8} \\rho g H^2",
+    "page": 13,
+    "image": "assets/part-02-ch-03/eq-011-II-3-11.png"
+  },
+  {
+    "n": 12,
+    "eqid": "II-3-12",
+    "tag": "II-3-12",
+    "status": "agreed",
+    "verified": true,
+    "latex": "H_1 = H_0 \\sqrt{\\frac{C_{g_0}}{C_{g_1}}} \\sqrt{\\frac{b_0}{b_1}}",
+    "page": 13,
+    "image": "assets/part-02-ch-03/eq-012-II-3-12.png"
+  },
+  {
+    "n": 13,
+    "eqid": "II-3-13",
+    "tag": "II-3-13",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "H_1 = H_0 K_s K_r",
+    "page": 13,
+    "image": "assets/part-02-ch-03/eq-013-II-3-13.png"
+  },
+  {
+    "n": 14,
+    "eqid": "II-3-14",
+    "tag": "II-3-14",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "K_{r} = \\left(\\frac{b_{o}}{b_{1}}\\right)^{\\frac{1}{2}} = \\left(\\frac{\\cos \\theta_{0}}{\\cos \\theta_{1}}\\right)^{\\frac{1}{2}} = \\left(\\frac{1 - \\sin^{2} \\theta_{0}}{1 - \\sin^{2} \\theta_{1}}\\right)^{\\frac{1}{4}}",
+    "page": 13,
+    "image": "assets/part-02-ch-03/eq-014-II-3-14.png"
+  },
+  {
+    "n": 15,
+    "eqid": "II-3-15",
+    "tag": "II-3-15",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\partial \\theta}{\\partial s} = \\frac{1}{k} \\frac{\\partial k}{\\partial n} = -\\frac{1}{C} \\frac{\\partial C}{\\partial n}",
+    "page": 14,
+    "image": "assets/part-02-ch-03/eq-015-II-3-15.png"
+  },
+  {
+    "n": 16,
+    "eqid": "II-3-16",
+    "tag": "II-3-16",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{ds}{dt} = C",
+    "page": 14,
+    "image": "assets/part-02-ch-03/eq-016-II-3-16.png"
+  },
+  {
+    "n": 17,
+    "eqid": "II-3-17",
+    "tag": "II-3-17",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{dx}{dt} = C \\cos \\theta",
+    "page": 14,
+    "image": "assets/part-02-ch-03/eq-017-II-3-17.png"
+  },
+  {
+    "n": 18,
+    "eqid": "II-3-18",
+    "tag": "II-3-18",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{dy}{dt} = C \\sin\\theta",
+    "page": 14,
+    "image": "assets/part-02-ch-03/eq-018-II-3-18.png"
+  },
+  {
+    "n": 19,
+    "eqid": "II-3-19",
+    "tag": "II-3-19",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "K_r = \\left(\\frac{1}{\\beta}\\right)^{\\frac{1}{2}}",
+    "page": 14,
+    "image": "assets/part-02-ch-03/eq-019-II-3-19.png"
+  },
+  {
+    "n": 20,
+    "eqid": "II-3-20",
+    "tag": "II-3-20",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{d^2\\beta}{ds^2} + p \\frac{d\\beta}{ds} + q\\beta = 0",
+    "page": 14,
+    "image": "assets/part-02-ch-03/eq-020-II-3-20.png"
+  },
+  {
+    "n": 21,
+    "eqid": "II-3-21",
+    "tag": "II-3-21",
+    "status": "agreed",
+    "verified": true,
+    "latex": "p(s) = -\\frac{\\cos\\theta}{C} \\frac{\\partial C}{\\partial x} - \\frac{\\sin\\theta}{C} \\frac{\\partial C}{\\partial y}",
+    "page": 14,
+    "image": "assets/part-02-ch-03/eq-021-II-3-21.png"
+  },
+  {
+    "n": 22,
+    "eqid": "II-3-22",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "L_0 = 1.56 \\ T^2 = 1.56 \\ (15)^2 = 351 \\ m",
+    "page": 16,
+    "image": "assets/part-02-ch-03/eq-022-II-3.png"
+  },
+  {
+    "n": 23,
+    "eqid": "II-3-23",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "L = \\frac{g T^2}{2 \\pi} \\tanh \\left( \\frac{2 \\pi d}{L} \\right)",
+    "page": 16,
+    "image": "assets/part-02-ch-03/eq-023-II-3.png"
+  },
+  {
+    "n": 24,
+    "eqid": "II-3-24",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "K_s = \\left( \\frac{C_{g0}}{C_{gl}} \\right)^{\\frac{1}{2}}",
+    "page": 16,
+    "image": "assets/part-02-ch-03/eq-024-II-3.png"
+  },
+  {
+    "n": 25,
+    "eqid": "II-3-25",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac{1}{2} C_0 = \\frac{1}{2} (1.56 \\ T) = \\frac{23.4}{2} = 11.7 \\ \\text{m/s}",
+    "page": 16,
+    "image": "assets/part-02-ch-03/eq-025-II-3.png"
+  },
+  {
+    "n": 26,
+    "eqid": "II-3-26",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "C_g = nC = \\frac{1}{2} \\left( 1 + \\frac{4\\pi d/L}{\\sinh(4\\pi d/L)} \\right) \\frac{gT}{2\\pi} \\tanh\\left(\\frac{2\\pi d}{L}\\right)",
+    "page": 16,
+    "image": "assets/part-02-ch-03/eq-026-II-3.png"
+  },
+  {
+    "n": 27,
+    "eqid": "II-3-27",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "K_s = \\left(\\frac{11.70}{9.05}\\right)^{\\frac{1}{2}} = 1.14",
+    "page": 16,
+    "image": "assets/part-02-ch-03/eq-027-II-3.png"
+  },
+  {
+    "n": 28,
+    "eqid": "II-3-28",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "K_r = \\left(\\frac{1 - \\sin^2 \\theta_0}{1 - \\sin^2 \\theta_1}\\right)^{\\frac{1}{4}}",
+    "page": 16,
+    "image": "assets/part-02-ch-03/eq-028-II-3.png"
+  },
+  {
+    "n": 29,
+    "eqid": "II-3-29",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\sin \\theta = \\frac{C_1 \\sin \\theta_0}{C_0}",
+    "page": 17,
+    "image": "assets/part-02-ch-03/eq-029-II-3.png"
+  },
+  {
+    "n": 30,
+    "eqid": "II-3-30",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\sin \\theta = \\frac{9.6 \\sin (45^0)}{23.4} = \\frac{9.6 (7.07)}{23.4} = 0.29",
+    "page": 17,
+    "image": "assets/part-02-ch-03/eq-030-II-3.png"
+  },
+  {
+    "n": 31,
+    "eqid": "II-3-31",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "K_r = \\left(\\frac{1 - \\sin^2\\theta_0}{1 - \\sin^2\\theta}\\right)^{\\frac{1}{4}} = \\left(\\frac{1 - (0.707)^2}{1 - (0.29)^2}\\right)^{\\frac{1}{4}} = \\left(\\frac{0.50}{0.91}\\right)^{\\frac{1}{4}} = 0.86",
+    "page": 17,
+    "image": "assets/part-02-ch-03/eq-031-II-3.png"
+  },
+  {
+    "n": 32,
+    "eqid": "II-3-22",
+    "tag": "II-3-22",
+    "status": "agreed",
+    "verified": true,
+    "latex": "q(s) = \\frac{\\sin^2 \\theta}{C} \\frac{\\partial^2 C}{\\partial x^2} - 2 \\frac{\\sin \\theta \\cos \\theta}{C} \\frac{\\partial^2 C}{\\partial x \\partial y} + \\cos^2 \\theta \\frac{\\partial^2 C}{\\partial y^2}",
+    "page": 18,
+    "image": "assets/part-02-ch-03/eq-032-II-3-22.png"
+  },
+  {
+    "n": 33,
+    "eqid": "II-3-23",
+    "tag": "II-3-23",
+    "status": "agreed",
+    "verified": true,
+    "latex": "E(f,\\theta) = \\sum_{s} K_s^2(f,\\theta) \\quad K_r^2(f,\\theta) \\quad E_o(f,\\theta) \\quad \\Delta f \\Delta \\theta",
+    "page": 20,
+    "image": "assets/part-02-ch-03/eq-033-II-3-23.png"
+  },
+  {
+    "n": 34,
+    "eqid": "II-3-24",
+    "tag": "II-3-24",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\nabla \\left( CC_g \\Phi \\right) + \\omega^2 \\left( \\frac{C_g}{C} \\right) \\Phi = 0",
+    "page": 20,
+    "image": "assets/part-02-ch-03/eq-034-II-3-24.png"
+  },
+  {
+    "n": 35,
+    "eqid": "II-3-25",
+    "tag": "II-3-25",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\varphi(x,y,z) = \\Phi \\frac{\\cosh k(h+z)}{\\cosh kh}",
+    "page": 20,
+    "image": "assets/part-02-ch-03/eq-035-II-3-25.png"
+  },
+  {
+    "n": 36,
+    "eqid": "II-3-26",
+    "tag": "II-3-26",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\nabla = \\left(\\frac{\\partial}{\\partial x_i}, \\frac{\\partial}{\\partial y_j}\\right)",
+    "page": 20,
+    "image": "assets/part-02-ch-03/eq-036-II-3-26.png"
+  },
+  {
+    "n": 37,
+    "eqid": "II-3-27",
+    "tag": "II-3-27",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{D^2 \\varphi}{Dt^2} + \\nabla \\cdot U \\frac{D \\varphi}{Dt} - \\nabla \\cdot (C C_g \\nabla \\varphi) + (\\sigma^2 - k^2 C C_g) \\varphi = 0",
+    "page": 27,
+    "image": "assets/part-02-ch-03/eq-037-II-3-27.png"
+  },
+  {
+    "n": 38,
+    "eqid": "II-3-28",
+    "tag": "II-3-28",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{D}{Dt} = \\frac{\\partial}{\\partial t} + U \\cdot \\nabla",
+    "page": 27,
+    "image": "assets/part-02-ch-03/eq-038-II-3-28.png"
+  },
+  {
+    "n": 39,
+    "eqid": "II-3-29",
+    "tag": "II-3-29",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\nabla = \\left(\\frac{\\partial}{\\partial x} , \\frac{\\partial}{\\partial y}\\right)",
+    "page": 27,
+    "image": "assets/part-02-ch-03/eq-039-II-3-29.png"
+  },
+  {
+    "n": 40,
+    "eqid": "II-3-30",
+    "tag": "II-3-30",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "U = (U(x,y), V(x,y)) = \\text{ambient current vector}",
+    "page": 27,
+    "image": "assets/part-02-ch-03/eq-040-II-3-30.png"
+  },
+  {
+    "n": 41,
+    "eqid": "II-3-31",
+    "tag": "II-3-31",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\sigma = \\omega - k \\cdot U",
+    "page": 27,
+    "image": "assets/part-02-ch-03/eq-041-II-3-31.png"
+  },
+  {
+    "n": 42,
+    "eqid": "II-3-32",
+    "tag": "II-3-32",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "C = \\frac{\\sigma}{k}",
+    "page": 27,
+    "image": "assets/part-02-ch-03/eq-042-II-3-32.png"
+  },
+  {
+    "n": 43,
+    "eqid": "II-3-33",
+    "tag": "II-3-33",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_g = \\frac{\\partial \\sigma}{\\partial k}",
+    "page": 27,
+    "image": "assets/part-02-ch-03/eq-043-II-3-33.png"
+  },
+  {
+    "n": 44,
+    "eqid": "II-3-34",
+    "tag": "II-3-34",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\sigma^2 = gk \\tanh(kh)",
+    "page": 27,
+    "image": "assets/part-02-ch-03/eq-044-II-3-34.png"
+  }
+]

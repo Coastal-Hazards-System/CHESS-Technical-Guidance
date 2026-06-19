@@ -1,0 +1,18 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "II",
+  "chapter": 4,
+  "title": "SURF ZONE HYDRODYNAMICS",
+  "source_pdf": "P02__EM_1110-2-1100_Ch_04.pdf",
+  "pages": 42,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 54,
+  "equations_verified": 54,
+  "tables_gfm": 4,
+  "tables_image": 0,
+  "figures": 18,
+  "equations_flagged": 0,
+  "eq_single_verified": 17,
+  "eq_agreed_gt": 25,
+  "eq_agreed": 12
+}

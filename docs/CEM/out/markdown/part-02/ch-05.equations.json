@@ -1,0 +1,272 @@
+[
+  {
+    "n": 1,
+    "eqid": "II-5-1",
+    "tag": "II-5-1",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "C ^ { 2 } \\ = \\ { \\frac { g } { k } } \\ \\operatorname { t a n h } ( k h )",
+    "page": 7,
+    "image": "assets/part-02-ch-05/eq-001-II-5-1.png"
+  },
+  {
+    "n": 2,
+    "eqid": "II-5-2",
+    "tag": "II-5-2",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "L \\ = \\ { \\frac { g T ^ { 2 } } { 2 \\pi } } \\ \\operatorname { t a n h } \\ ( k h )",
+    "page": 7,
+    "image": "assets/part-02-ch-05/eq-002-II-5-2.png"
+  },
+  {
+    "n": 3,
+    "eqid": "II-5-3",
+    "tag": "II-5-3",
+    "status": "agreed",
+    "verified": true,
+    "latex": "u \\, = \\, { \\frac { a g k } { \\sigma } } \\, { \\frac { \\cosh \\, k ( h + z ) } { \\cosh k h } } \\, \\sin ( k x - \\sigma t )",
+    "page": 7,
+    "image": "assets/part-02-ch-05/eq-003-II-5-3.png"
+  },
+  {
+    "n": 4,
+    "eqid": "II-5-4",
+    "tag": "II-5-4",
+    "status": "agreed",
+    "verified": true,
+    "latex": "w \\ = \\ - \\ \\frac { a g k } { \\sigma } \\ \\frac { \\sinh \\ k ( h + z ) } { \\cosh k h } \\ \\cos ( k x - \\sigma t )",
+    "page": 7,
+    "image": "assets/part-02-ch-05/eq-004-II-5-4.png"
+  },
+  {
+    "n": 5,
+    "eqid": "II-5-5",
+    "tag": "II-5-5",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C = \\sqrt{gh}",
+    "page": 8,
+    "image": "assets/part-02-ch-05/eq-005-II-5-5.png"
+  },
+  {
+    "n": 6,
+    "eqid": "II-5-6",
+    "tag": "II-5-6",
+    "status": "agreed",
+    "verified": true,
+    "latex": "L \\ = \\ T \\sqrt { g h }",
+    "page": 8,
+    "image": "assets/part-02-ch-05/eq-006-II-5-6.png"
+  },
+  {
+    "n": 7,
+    "eqid": "II-5-7",
+    "tag": "II-5-7",
+    "status": "agreed",
+    "verified": true,
+    "latex": "F_g = f \\frac{m_1 \\ m_2}{r^2}",
+    "page": 10,
+    "image": "assets/part-02-ch-05/eq-007-II-5-7.png"
+  },
+  {
+    "n": 8,
+    "eqid": "II-5-8",
+    "tag": "II-5-8",
+    "status": "agreed",
+    "verified": true,
+    "latex": "f = g \\frac{a^2}{E}",
+    "page": 10,
+    "image": "assets/part-02-ch-05/eq-008-II-5-8.png"
+  },
+  {
+    "n": 9,
+    "eqid": "II-5-9",
+    "tag": "II-5-9",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "V _ { M } = \\frac { f M } { r _ { M X } } \\qquad , \\qquad V _ { S } = \\frac { f S } { r _ { S X } }",
+    "page": 10,
+    "image": "assets/part-02-ch-05/eq-009-II-5-9.png"
+  },
+  {
+    "n": 10,
+    "eqid": "II-5-10",
+    "tag": "II-5-10",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\vec{b}_X = \\nabla \\left[ V_M(X) + V_S(X) \\right]",
+    "page": 11,
+    "image": "assets/part-02-ch-05/eq-010-II-5-10.png"
+  },
+  {
+    "n": 11,
+    "eqid": "II-5-11",
+    "tag": "II-5-11",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\vec{\\nabla} = (\\partial_{\\overline{\\partial x}} + \\partial_{\\overline{\\partial y}} + \\partial_{\\overline{\\partial z}})",
+    "page": 11,
+    "image": "assets/part-02-ch-05/eq-011-II-5-11.png"
+  },
+  {
+    "n": 12,
+    "eqid": "II-5-12",
+    "tag": "II-5-12",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V_{M} = fM \\left[ \\frac{1}{r_{MX}} - \\frac{1}{r_{M}} - \\frac{a \\cos \\theta_{MX}}{r_{M}^{2}} \\right]",
+    "page": 11,
+    "image": "assets/part-02-ch-05/eq-012-II-5-12.png"
+  },
+  {
+    "n": 13,
+    "eqid": "II-5-13",
+    "tag": "II-5-13",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V_{S} = fS \\left[ \\frac{1}{r_{SX}} - \\frac{1}{r_{S}} - \\frac{a\\cos\\theta_{SX}}{r_{S}^{2}} \\right]",
+    "page": 12,
+    "image": "assets/part-02-ch-05/eq-013-II-5-13.png"
+  },
+  {
+    "n": 14,
+    "eqid": "II-5-14",
+    "tag": "II-5-14",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V_{M} = fM \\left(\\frac{a^{2}}{r_{M}^{3}}\\right) P_{M}",
+    "page": 12,
+    "image": "assets/part-02-ch-05/eq-014-II-5-14.png"
+  },
+  {
+    "n": 15,
+    "eqid": "II-5-15",
+    "tag": "II-5-15",
+    "status": "agreed",
+    "verified": true,
+    "latex": "V_S = fS\\left(\\frac{a^2}{r_S^3}\\right) P_S",
+    "page": 12,
+    "image": "assets/part-02-ch-05/eq-015-II-5-15.png"
+  },
+  {
+    "n": 16,
+    "eqid": "II-5-16",
+    "tag": "II-5-16",
+    "status": "agreed",
+    "verified": true,
+    "latex": "H(t) = H_0 + \\sum_{n=1}^{N} f_n H_n \\cos \\left[ a_n t + (V_0 + u)_n - \\kappa_n \\right]",
+    "page": 18,
+    "image": "assets/part-02-ch-05/eq-016-II-5-16.png"
+  },
+  {
+    "n": 17,
+    "eqid": "II-5-17",
+    "tag": "II-5-17",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "(t_0) = local(t_0) + \\frac{S}{15}",
+    "page": 24,
+    "image": "assets/part-02-ch-05/eq-017-II-5-17.png"
+  },
+  {
+    "n": 18,
+    "eqid": "II-5-18",
+    "tag": "II-5-18",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\mathrm { l o c a l } \\ \\left( V _ { 0 } \\ + \\ u \\right) \\ = \\ \\mathrm { G r e e n w i c h } \\ \\left( V _ { 0 } \\ + \\ u \\right) \\ - \\ p L",
+    "page": 24,
+    "image": "assets/part-02-ch-05/eq-018-II-5-18.png"
+  },
+  {
+    "n": 19,
+    "eqid": "II-5-19",
+    "tag": "II-5-19",
+    "status": "agreed",
+    "verified": true,
+    "latex": "H(t)_{local} = H_0 + \\sum_{n=1}^{N} f_n H_n \\cos \\left[ a_n t + \\text{Greenwich } V_0 + u \\right) - pL + \\frac{a_n S}{15} - \\kappa_n",
+    "page": 24,
+    "image": "assets/part-02-ch-05/eq-019-II-5-19.png"
+  },
+  {
+    "n": 20,
+    "eqid": "II-5-20",
+    "tag": "II-5-20",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\kappa' = \\kappa + pL - \\frac{aS}{15}",
+    "page": 27,
+    "image": "assets/part-02-ch-05/eq-020-II-5-20.png"
+  },
+  {
+    "n": 21,
+    "eqid": "II-5-21",
+    "tag": "II-5-21",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "H(t)_{local} = H_0 + \\sum_{n=1}^{N} f_n H_n \\cos [a_n t + \\text{Greenwich} (V_0 + u) - \\kappa_n]",
+    "page": 27,
+    "image": "assets/part-02-ch-05/eq-021-II-5-21.png"
+  },
+  {
+    "n": 22,
+    "eqid": "II-5-22",
+    "tag": "II-5-22",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R = \\frac{A(K_1) + A(O_1)}{A(M_2) + A(s_2)}",
+    "page": 28,
+    "image": "assets/part-02-ch-05/eq-022-II-5-22.png"
+  },
+  {
+    "n": 23,
+    "eqid": "II-5-23",
+    "tag": "II-5-23",
+    "status": "agreed",
+    "verified": true,
+    "latex": "R \\ = \\ \\frac { A ( K _ { 1 } ) \\ + \\ A ( O _ { 1 } ) } { A ( M _ { 2 } ) \\ + \\ A ( s _ { 2 } ) } \\ = \\ \\frac { 0 . 3 1 9 \\ + \\ 0 . 1 7 2 } { 2 . 1 5 1 \\ + \\ 0 . 4 4 8 } \\ = \\ 0 . 1 8 9",
+    "page": 28,
+    "image": "assets/part-02-ch-05/eq-023-II-5-23.png"
+  },
+  {
+    "n": 24,
+    "eqid": "II-5-24",
+    "tag": "II-5-24",
+    "status": "agreed",
+    "verified": true,
+    "latex": "f = f _ { D } f _ { R } f _ { \\theta } f _ { \\nu } f _ { L }",
+    "page": 51,
+    "image": "assets/part-02-ch-05/eq-024-II-5-24.png"
+  },
+  {
+    "n": 25,
+    "eqid": "II-5-25",
+    "tag": "II-5-25",
+    "status": "agreed",
+    "verified": true,
+    "latex": "P[N=n] = \\frac{e^{-\\lambda T}(\\lambda T)^n}{n!}",
+    "page": 53,
+    "image": "assets/part-02-ch-05/eq-025-II-5-25.png"
+  },
+  {
+    "n": 26,
+    "eqid": "II-5-26",
+    "tag": "II-5-26",
+    "status": "agreed",
+    "verified": true,
+    "latex": "T _ { n } \\, = \\, { \\frac { 2 l _ { B } } { n { \\sqrt { g h } } } }",
+    "page": 55,
+    "image": "assets/part-02-ch-05/eq-026-II-5-26.png"
+  },
+  {
+    "n": 27,
+    "eqid": "II-5-27",
+    "tag": "II-5-27",
+    "status": "agreed",
+    "verified": true,
+    "latex": "T _ { n } \\, = \\, { \\frac { 4 l _ { B } } { \\left( 1 \\, + \\, 2 n \\right) { \\sqrt { g h } } } }",
+    "page": 56,
+    "image": "assets/part-02-ch-05/eq-027-II-5-27.png"
+  }
+]

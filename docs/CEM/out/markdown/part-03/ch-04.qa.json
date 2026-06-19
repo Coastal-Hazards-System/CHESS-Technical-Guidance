@@ -1,0 +1,19 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "III",
+  "chapter": 4,
+  "title": "WIND-BLOWN SEDIMENT TRANSPORT",
+  "source_pdf": "P03__EM_1110-2-1100_Ch_04.pdf",
+  "pages": 84,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 137,
+  "equations_verified": 137,
+  "tables_gfm": 29,
+  "tables_image": 0,
+  "figures": 29,
+  "equations_flagged": 0,
+  "eq_agreed": 39,
+  "eq_agreed_gt": 68,
+  "eq_single_verified": 28,
+  "eq_resolved": 2
+}

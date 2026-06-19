@@ -1,0 +1,17 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "II",
+  "chapter": 1,
+  "title": "WATER WAVE MECHANICS",
+  "source_pdf": "P02__EM_1110-2-1100_Ch_01.pdf",
+  "pages": 127,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 280,
+  "equations_verified": 280,
+  "tables_gfm": 8,
+  "tables_image": 0,
+  "figures": 40,
+  "equations_flagged": 0,
+  "eq_single_verified": 63,
+  "eq_agreed": 217
+}

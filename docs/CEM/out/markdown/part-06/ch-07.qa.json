@@ -1,0 +1,19 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "VI",
+  "chapter": 7,
+  "title": "Example Problems",
+  "source_pdf": "P06__EM_1110-2-1100_Ch7.pdf",
+  "pages": 93,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 290,
+  "equations_verified": 290,
+  "tables_gfm": 32,
+  "tables_image": 0,
+  "figures": 5,
+  "equations_flagged": 0,
+  "eq_agreed": 176,
+  "eq_single_verified": 83,
+  "eq_agreed_gt": 27,
+  "eq_resolved": 4
+}

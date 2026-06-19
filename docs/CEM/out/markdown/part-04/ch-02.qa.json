@@ -1,0 +1,16 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "IV",
+  "chapter": 2,
+  "title": "COASTAL CLASSIFICATION AND MORPHOLOGY",
+  "source_pdf": "P04__EM_1110-2-1100_Ch2.pdf",
+  "pages": 83,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 1,
+  "equations_verified": 1,
+  "tables_gfm": 7,
+  "tables_image": 0,
+  "figures": 36,
+  "equations_flagged": 0,
+  "eq_agreed_gt": 1
+}

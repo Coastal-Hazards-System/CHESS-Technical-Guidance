@@ -1,0 +1,18 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "VI",
+  "chapter": 6,
+  "title": "Reliability Based Design of Coastal Structures",
+  "source_pdf": "P06__EM_1110-2-1100_Ch6.pdf",
+  "pages": 56,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 102,
+  "equations_verified": 102,
+  "tables_gfm": 47,
+  "tables_image": 0,
+  "figures": 12,
+  "equations_flagged": 0,
+  "eq_agreed": 73,
+  "eq_agreed_gt": 5,
+  "eq_single_verified": 24
+}

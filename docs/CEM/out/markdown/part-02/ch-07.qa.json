@@ -1,0 +1,18 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "II",
+  "chapter": 7,
+  "title": "HARBOR HYDRODYNAMICS",
+  "source_pdf": "P02__EM_1110-2-1100_Ch_07.pdf",
+  "pages": 98,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 74,
+  "equations_verified": 74,
+  "tables_gfm": 14,
+  "tables_image": 0,
+  "figures": 42,
+  "equations_flagged": 0,
+  "eq_agreed": 61,
+  "eq_single_verified": 9,
+  "eq_agreed_gt": 4
+}

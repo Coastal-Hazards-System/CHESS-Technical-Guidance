@@ -1,0 +1,18 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "II",
+  "chapter": 3,
+  "title": "ESTIMATION OF NEARSHORE WAVES",
+  "source_pdf": "P02__EM_1110-2-1100_Ch_03.pdf",
+  "pages": 45,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 44,
+  "equations_verified": 44,
+  "tables_gfm": 3,
+  "tables_image": 0,
+  "figures": 14,
+  "equations_flagged": 0,
+  "eq_agreed": 16,
+  "eq_single_verified": 11,
+  "eq_agreed_gt": 17
+}

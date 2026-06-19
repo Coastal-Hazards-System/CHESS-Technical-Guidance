@@ -1,0 +1,19 @@
+{
+  "manual": "EM 1110-2-1100 (Coastal Engineering Manual)",
+  "part": "VI",
+  "chapter": 5,
+  "title": "Fundamentals of Design",
+  "source_pdf": "P06__EM_1110-2-1100_Ch5.pdf",
+  "pages": 378,
+  "revision": "Change 3 (incl. errata)",
+  "equations_total": 416,
+  "equations_verified": 416,
+  "tables_gfm": 77,
+  "tables_image": 0,
+  "figures": 209,
+  "equations_flagged": 0,
+  "eq_agreed": 340,
+  "eq_resolved": 8,
+  "eq_single_verified": 39,
+  "eq_agreed_gt": 29
+}

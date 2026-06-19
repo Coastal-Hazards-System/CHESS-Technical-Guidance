@@ -1,0 +1,12 @@
+[
+  {
+    "n": 1,
+    "eqid": "App-A-1",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "R_e = \\frac{LV}{\\overline{\\gamma}}",
+    "page": 64,
+    "image": "assets/appendix-appendix-a-glossary/eq-001-App-A.png"
+  }
+]

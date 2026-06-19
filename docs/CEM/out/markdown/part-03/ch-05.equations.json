@@ -1,0 +1,162 @@
+[
+  {
+    "n": 1,
+    "eqid": "III-5-1",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "SHEAR + LIFT + DRAG < GRAVITY + FRICTION + COHESION",
+    "page": 25,
+    "image": "assets/part-03-ch-05/eq-001-III-5.png"
+  },
+  {
+    "n": 2,
+    "eqid": "III-5-2",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "SHEAR + LIFT + DRAG = GRAVITY + FRICTION + COHESION",
+    "page": 25,
+    "image": "assets/part-03-ch-05/eq-002-III-5.png"
+  },
+  {
+    "n": 3,
+    "eqid": "III-5-3",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\mathrm { D i m e n s i o n l e s s \\, E x c e s s \\, S h e a r } = \\left( \\tau _ { \\mathrm { c } } - \\tau \\right) / \\ \\tau _ { \\mathrm { c } } ; \\mathrm { n e g a t i v e } \\ \\left( \\tau _ { \\mathrm { c } } < \\tau \\right) \\mathrm { f o r \\, e r o s i o n }",
+    "page": 25,
+    "image": "assets/part-03-ch-05/eq-003-III-5.png"
+  },
+  {
+    "n": 4,
+    "eqid": "III-5-1",
+    "tag": "III-5-1",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{dm}{dt} = M_p \\frac{(\\tau_c - \\tau)}{\\tau_c}",
+    "page": 37,
+    "image": "assets/part-03-ch-05/eq-004-III-5-1.png"
+  },
+  {
+    "n": 5,
+    "eqid": "III-5-2",
+    "tag": "III-5-2",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "F_{r} = \\sqrt{\\frac{(V_{w} - V_{fm})^{2} \\rho_{fm}}{g h_{fm} (\\rho_{fm} - \\rho_{w})}}",
+    "page": 37,
+    "image": "assets/part-03-ch-05/eq-005-III-5-2.png"
+  },
+  {
+    "n": 6,
+    "eqid": "III-5-3",
+    "tag": "III-5-3",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "S - Cw = -D_z \\frac{dC}{dz}",
+    "page": 42,
+    "image": "assets/part-03-ch-05/eq-006-III-5-3.png"
+  },
+  {
+    "n": 7,
+    "eqid": "III-5-4",
+    "tag": "III-5-4",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{dm}{dt} = Cw \\frac{(\\tau_s - \\tau)}{\\tau_s}",
+    "page": 43,
+    "image": "assets/part-03-ch-05/eq-007-III-5-4.png"
+  },
+  {
+    "n": 8,
+    "eqid": "III-5-5",
+    "tag": "III-5-5",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\tau_c = N\\rho_s^M",
+    "page": 44,
+    "image": "assets/part-03-ch-05/eq-008-III-5-5.png"
+  },
+  {
+    "n": 9,
+    "eqid": "III-5-6",
+    "tag": "III-5-6",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "u = 0.964 \\left(\\frac{tC_{v}}{P^{2}}\\right)^{0.415}",
+    "page": 44,
+    "image": "assets/part-03-ch-05/eq-009-III-5-6.png"
+  },
+  {
+    "n": 10,
+    "eqid": "III-5-10",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\mathrm{d}m}{\\mathrm{d}t} = \\left(\\mathrm{V}\\times\\Delta C\\right) / \\left(\\mathrm{A}\\times\\Delta T\\right) = (0.2\\,\\mathrm{m^3}\\times-1\\,\\mathrm{kg/m^3}) / (1\\,\\mathrm{m^2}\\times600\\,\\mathrm{sec}) = -3.33 \\times 10^{-4}\\,\\mathrm{kg/m^2\\cdot sec}",
+    "page": 46,
+    "image": "assets/part-03-ch-05/eq-010-III-5.png"
+  },
+  {
+    "n": 11,
+    "eqid": "III-5-11",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "0.2 \\text{ Pa and } C_{avg} = 4.0 \\text{ kg/m}^3, \\text{ dm/dt} = 2 \\text{ x } 10^{-3} \\text{ kg/m}^2\\text{-sec}",
+    "page": 46,
+    "image": "assets/part-03-ch-05/eq-011-III-5.png"
+  },
+  {
+    "n": 12,
+    "eqid": "III-5-12",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "w = \\left( dm/dt \\right) / \\left( C_\\mathrm{avg} \\; x \\; \\tau_\\mathrm{s} / \\; \\tau_\\mathrm{s} \\right) = \\left( 4 \\; x \\; 10^{\\text{-3}} \\; kg/m^2\\text{-sec} \\right) / \\left( 0.5 \\; kg/m^3 \\right) = 8 \\; x \\; 10^{\\text{-3}} \\; m/\\text{sec}",
+    "page": 46,
+    "image": "assets/part-03-ch-05/eq-012-III-5.png"
+  },
+  {
+    "n": 13,
+    "eqid": "III-5-13",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\tau_s = \\frac{(0.2 \\text{ Pa} \\times 4.0 \\text{ kg/m}^3 \\times 8 \\times 10^{-3} \\text{ m/sec})}{(4.0 \\text{ kg/m}^3 \\times 8 \\times 10^{-3} \\text{ m/sec} - 2 \\times 10^{-3} \\text{ kg/m}^2\\text{-sec})} = 0.21 \\text{ Pa}",
+    "page": 46,
+    "image": "assets/part-03-ch-05/eq-013-III-5.png"
+  },
+  {
+    "n": 14,
+    "eqid": "III-5-7",
+    "tag": "III-5-7",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "H _ { y } = H _ { 0 } e ^ { - k _ { i } y }",
+    "page": 48,
+    "image": "assets/part-03-ch-05/eq-014-III-5-7.png"
+  },
+  {
+    "n": 15,
+    "eqid": "III-5-15",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "h = A y^{2/3}",
+    "page": 56,
+    "image": "assets/part-03-ch-05/eq-015-III-5.png"
+  },
+  {
+    "n": 16,
+    "eqid": "III-5-16",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "h = A y^{0.67} = (0.1) 114^{0.67} = 2.39 m",
+    "page": 56,
+    "image": "assets/part-03-ch-05/eq-016-III-5.png"
+  }
+]

@@ -1,0 +1,1222 @@
+[
+  {
+    "n": 1,
+    "eqid": "III-2-1a",
+    "tag": "III-2-1a",
+    "status": "agreed",
+    "verified": true,
+    "latex": "I_{\\ell} = (\\rho_s - \\rho) g (1 - n) Q_{\\ell}",
+    "page": 12,
+    "image": "assets/part-03-ch-02/eq-001-III-2-1a.png"
+  },
+  {
+    "n": 2,
+    "eqid": "III-2-1b",
+    "tag": "III-2-1b",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = \\frac{I_{\\ell}}{(\\rho_s - \\rho) g (1 - n)}",
+    "page": 12,
+    "image": "assets/part-03-ch-02/eq-002-III-2-1b.png"
+  },
+  {
+    "n": 3,
+    "eqid": "III-2-2",
+    "tag": "III-2-2",
+    "status": "agreed",
+    "verified": true,
+    "latex": "P_{\\ell} = (EC_g)_b \\sin \\alpha_b \\cos \\alpha_b",
+    "page": 15,
+    "image": "assets/part-03-ch-02/eq-003-III-2-2.png"
+  },
+  {
+    "n": 4,
+    "eqid": "III-2-3",
+    "tag": "III-2-3",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "E_b = \\frac{\\rho g H_b^2}{8}",
+    "page": 15,
+    "image": "assets/part-03-ch-02/eq-004-III-2-3.png"
+  },
+  {
+    "n": 5,
+    "eqid": "III-2-4",
+    "tag": "III-2-4",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "C_{gb} = \\sqrt{gd_b} = \\left(g \\frac{H_b}{\\kappa}\\right)^{\\frac{1}{2}}",
+    "page": 15,
+    "image": "assets/part-03-ch-02/eq-005-III-2-4.png"
+  },
+  {
+    "n": 6,
+    "eqid": "III-2-5",
+    "tag": "III-2-5",
+    "status": "agreed",
+    "verified": true,
+    "latex": "I_{\\ell} = KP_{\\ell}",
+    "page": 15,
+    "image": "assets/part-03-ch-02/eq-006-III-2-5.png"
+  },
+  {
+    "n": 7,
+    "eqid": "III-2-6a",
+    "tag": "III-2-6a",
+    "status": "agreed",
+    "verified": true,
+    "latex": "I_{\\ell} = KP_{\\ell} = K(EC_g)_b \\sin \\alpha_b \\cos \\alpha_b",
+    "page": 16,
+    "image": "assets/part-03-ch-02/eq-007-III-2-6a.png"
+  },
+  {
+    "n": 8,
+    "eqid": "III-2-6b",
+    "tag": "III-2-6b",
+    "status": "agreed",
+    "verified": true,
+    "latex": "I_{\\ell} = K \\left( \\frac{\\rho g H_b^2}{8} \\right) \\left( \\frac{g H_b}{\\kappa} \\right)^{\\frac{1}{2}} \\sin \\alpha_b \\cos \\alpha_b",
+    "page": 16,
+    "image": "assets/part-03-ch-02/eq-008-III-2-6b.png"
+  },
+  {
+    "n": 9,
+    "eqid": "III-2-6c",
+    "tag": "III-2-6c",
+    "status": "agreed",
+    "verified": true,
+    "latex": "I_{\\ell} = K \\left( \\frac{\\rho g^{3/2}}{8 \\kappa^{1/2}} \\right) H_b^{5/2} \\sin \\alpha_b \\cos \\alpha_b",
+    "page": 16,
+    "image": "assets/part-03-ch-02/eq-009-III-2-6c.png"
+  },
+  {
+    "n": 10,
+    "eqid": "III-2-6d",
+    "tag": "III-2-6d",
+    "status": "agreed",
+    "verified": true,
+    "latex": "I_{\\ell} = K \\left( \\frac{\\rho g^{\\frac{3}{2}}}{16 \\kappa^{\\frac{1}{2}}} \\right) H_b^{\\frac{5}{2}} \\sin(2\\alpha_b)",
+    "page": 16,
+    "image": "assets/part-03-ch-02/eq-010-III-2-6d.png"
+  },
+  {
+    "n": 11,
+    "eqid": "III-2-7a",
+    "tag": "III-2-7a",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = \\frac{K}{(\\rho_s - \\rho)g(1 - n)} P_{\\ell}",
+    "page": 16,
+    "image": "assets/part-03-ch-02/eq-011-III-2-7a.png"
+  },
+  {
+    "n": 12,
+    "eqid": "III-2-7b",
+    "tag": "III-2-7b",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = K \\left( \\frac{\\rho \\sqrt{g}}{16 \\kappa^{\\frac{1}{2}} (\\rho_s - \\rho) (1 - n)} \\right) H_b^{\\frac{5}{2}} \\sin(2\\alpha_b)",
+    "page": 16,
+    "image": "assets/part-03-ch-02/eq-012-III-2-7b.png"
+  },
+  {
+    "n": 13,
+    "eqid": "III-2-8",
+    "tag": "III-2-8",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "K = 0.05 + 2.6 \\sin^2(2\\alpha_b) + 0.007 \\frac{u_{mb}}{w_f}",
+    "page": 18,
+    "image": "assets/part-03-ch-02/eq-013-III-2-8.png"
+  },
+  {
+    "n": 14,
+    "eqid": "III-2-9",
+    "tag": "III-2-9",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "u_{mb} = \\frac{\\kappa}{2} \\sqrt{g d_b}",
+    "page": 18,
+    "image": "assets/part-03-ch-02/eq-014-III-2-9.png"
+  },
+  {
+    "n": 15,
+    "eqid": "III-2-10",
+    "tag": "III-2-10",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "K = 1.4 \\ e^{(-2.5 \\ D_{50})}",
+    "page": 18,
+    "image": "assets/part-03-ch-02/eq-015-III-2-10.png"
+  },
+  {
+    "n": 16,
+    "eqid": "III-2-11",
+    "tag": "III-2-11",
+    "status": "agreed",
+    "verified": true,
+    "latex": "P_{\\ell} = \\frac{\\rho g H_b W V_{\\ell} C_f}{\\left(\\frac{5\\pi}{2}\\right) \\left(\\frac{V}{V_o}\\right)}",
+    "page": 20,
+    "image": "assets/part-03-ch-02/eq-016-III-2-11.png"
+  },
+  {
+    "n": 17,
+    "eqid": "III-2-17",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "u_{mb} = \\frac{\\kappa (g d_b)^{1/2}}{2} = \\frac{1 (9.81 \\times 2.0)^{1/2}}{2}",
+    "page": 21,
+    "image": "assets/part-03-ch-02/eq-017-III-2.png"
+  },
+  {
+    "n": 18,
+    "eqid": "III-2-18",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "K = 0.05 + 2.6\\sin^2(2\\alpha_b) + 0.007\\frac{u_{mb}}{w_f} = 0.05 + 2.6\\sin^2(2(4.5^\\circ)) + 0.007\\left(\\frac{2.21}{0.131}\\right) \\Rightarrow K = 0.23",
+    "page": 21,
+    "image": "assets/part-03-ch-02/eq-018-III-2.png"
+  },
+  {
+    "n": 19,
+    "eqid": "III-2-19",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "K = 1.4 e^{(-2.5 D_{50})} = 0.12",
+    "page": 21,
+    "image": "assets/part-03-ch-02/eq-019-III-2.png"
+  },
+  {
+    "n": 20,
+    "eqid": "III-2-20",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = K \\left( \\frac{\\rho \\sqrt{g}}{16 \\kappa^{1/2} (\\rho_s - \\rho)(1 - n)} \\right) H_{b rms}^{5/2} \\sin(2\\alpha_b)",
+    "page": 22,
+    "image": "assets/part-03-ch-02/eq-020-III-2.png"
+  },
+  {
+    "n": 21,
+    "eqid": "III-2-21",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q _ { \\ell } \\ = \\ 0 . 2 3 \\ \\frac { \\left( 1 0 2 5 \\right) \\ \\left( 9 . 8 1 \\right) ^ { 1 / 2 } } { 1 6 \\ \\mathrm { ( 1 ) } \\ \\left( 2 6 5 0 \\ - \\ 1 0 2 5 \\right) \\ \\mathrm { ( 1 \\ - \\ 0 . 4 ) } } \\ \\left( 2 . 0 \\right) ^ { 5 / 2 } \\ \\sin \\ ( 2 \\times 4 . 5 ^ { o } )",
+    "page": 22,
+    "image": "assets/part-03-ch-02/eq-021-III-2.png"
+  },
+  {
+    "n": 22,
+    "eqid": "III-2-22",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = (0.042 \\text{ m}^3/\\text{sec}) (3600 \\text{ sec/hr}) (24 \\text{ hr/day})",
+    "page": 22,
+    "image": "assets/part-03-ch-02/eq-022-III-2.png"
+  },
+  {
+    "n": 23,
+    "eqid": "III-2-23",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q _ { \\ell } \\ = \\ 0 . 1 2 \\ \\frac { ( 1 0 2 5 ) \\ ( 9 . 8 1 ) ^ { 1 / 2 } } { 1 6 \\ ( 2 6 5 0 \\ - \\ 1 0 2 5 ) \\ ( 1 \\ - \\ 0 . 4 ) } \\ ( 2 . 0 ) ^ { 5 / 2 } \\ \\sin \\ ( 2 \\times 4 . 5 ^ { o } )",
+    "page": 22,
+    "image": "assets/part-03-ch-02/eq-023-III-2.png"
+  },
+  {
+    "n": 24,
+    "eqid": "III-2-24",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = (0.021 \\text{ m}^3/\\text{sec}) \\times (3600 \\text{ sec/hr}) \\times (24 \\text{ hr/day})",
+    "page": 22,
+    "image": "assets/part-03-ch-02/eq-024-III-2.png"
+  },
+  {
+    "n": 25,
+    "eqid": "III-2-25",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = 1.9 \\times 10^3 \\text{ m}^3/\\text{day} (2.5 \\times 10^3 \\text{ yd}^3/\\text{day})",
+    "page": 22,
+    "image": "assets/part-03-ch-02/eq-025-III-2.png"
+  },
+  {
+    "n": 26,
+    "eqid": "III-2-26",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "I_{\\ell} = K \\left( \\frac{\\rho g^{\\frac{3}{2}}}{16 \\kappa^{\\frac{1}{2}}} \\right) H_{b rms}^{\\frac{5}{2}} \\sin(2\\alpha_b)",
+    "page": 23,
+    "image": "assets/part-03-ch-02/eq-026-III-2.png"
+  },
+  {
+    "n": 27,
+    "eqid": "III-2-27",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "0.60 \\frac{(1025) (9.81)^{\\frac{3}{2}}}{16 (1)} (2.0)^{\\frac{5}{2}} \\sin(2 \\times 4.5^{\\circ}) \\approx 1050 \\text{ N/sec } (236 \\text{ lbf/sec})",
+    "page": 23,
+    "image": "assets/part-03-ch-02/eq-027-III-2.png"
+  },
+  {
+    "n": 28,
+    "eqid": "III-2-28",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = K \\left( \\frac{\\rho \\sqrt{g}}{16 \\kappa^{\\frac{1}{2}} (\\rho_s - \\rho)(1 - n)} \\right) H_{b rms}^{\\frac{5}{2}} \\sin(2\\alpha_b)",
+    "page": 23,
+    "image": "assets/part-03-ch-02/eq-028-III-2.png"
+  },
+  {
+    "n": 29,
+    "eqid": "III-2-29",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q _ { \\ell } \\ = \\ 0 . 6 0 \\ \\frac { \\left( 1 0 2 5 \\right) \\ \\left( 9 . 8 1 \\right) ^ { \\frac { 1 } { 2 } } } { 1 6 \\ \\mathrm { ( 1 ) } \\ \\left( 2 6 5 0 \\ - \\ 1 0 2 5 \\right) \\ \\mathrm { ( 1 \\ - \\ 0 . 4 ) } } \\ \\left( 2 . 0 \\right) ^ { \\frac { 5 } { 2 } } \\ \\sin ( 2 \\times 4 . 5 ^ { o } )",
+    "page": 23,
+    "image": "assets/part-03-ch-02/eq-029-III-2.png"
+  },
+  {
+    "n": 30,
+    "eqid": "III-2-30",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = (0.109 \\text{ m}^3/\\text{sec}) (3600 \\text{ sec/hr}) (24 \\text{ hr/day})",
+    "page": 23,
+    "image": "assets/part-03-ch-02/eq-030-III-2.png"
+  },
+  {
+    "n": 31,
+    "eqid": "III-2-31",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = 9.4 \\text{ x } 10^3 \\text{ m}^3/\\text{day} (12.3 \\text{ x } 10^3 \\text{ yd}^3/\\text{day})",
+    "page": 23,
+    "image": "assets/part-03-ch-02/eq-031-III-2.png"
+  },
+  {
+    "n": 32,
+    "eqid": "III-2-32",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "C_{go} = gT/4\\pi = 9.8 (9.4) / (4\\pi) = 7.3 \\text{ m/sec } (24.0 \\text{ ft/sec})",
+    "page": 24,
+    "image": "assets/part-03-ch-02/eq-032-III-2.png"
+  },
+  {
+    "n": 33,
+    "eqid": "III-2-33",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "(EC_g)_o \\cos \\alpha_o = (2.1 \\times 10^3)(7.3)\\cos(7.5^\\circ) = 1.5 \\times 10^4 \\text{ N/sec} (3.4 \\times 10^3 \\text{ lbf/sec})",
+    "page": 24,
+    "image": "assets/part-03-ch-02/eq-033-III-2.png"
+  },
+  {
+    "n": 34,
+    "eqid": "III-2-34",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "(EC_g)_b \\cos \\alpha_b = (EC_g)_o \\cos \\alpha_o",
+    "page": 24,
+    "image": "assets/part-03-ch-02/eq-034-III-2.png"
+  },
+  {
+    "n": 35,
+    "eqid": "III-2-35",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "P_{\\ell} = (EC_g)_b \\sin\\alpha_b \\cos\\alpha_b = [(EC_g)_o \\cos\\alpha_o] \\sin\\alpha_b = (1.5 \\times 10^4) \\sin(3.0^\\circ)",
+    "page": 24,
+    "image": "assets/part-03-ch-02/eq-035-III-2.png"
+  },
+  {
+    "n": 36,
+    "eqid": "III-2-36",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "P_{\\ell} = 800 \\ N/\\text{sec} \\ (180 \\ \\text{lbf/sec})",
+    "page": 24,
+    "image": "assets/part-03-ch-02/eq-036-III-2.png"
+  },
+  {
+    "n": 37,
+    "eqid": "III-2-37",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = \\frac{K}{(\\rho_s - \\rho) g (1 - n)} P_{\\ell}",
+    "page": 24,
+    "image": "assets/part-03-ch-02/eq-037-III-2.png"
+  },
+  {
+    "n": 38,
+    "eqid": "III-2-38",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = \\frac{0.60}{(2650 - 1025) (9.81) (1 - 0.4)} 800",
+    "page": 24,
+    "image": "assets/part-03-ch-02/eq-038-III-2.png"
+  },
+  {
+    "n": 39,
+    "eqid": "III-2-39",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = 4.3 \\times 10^3 \\text{ m}^3/\\text{day} (5.7 \\times 10^3 \\text{ yd}^3/\\text{day})",
+    "page": 24,
+    "image": "assets/part-03-ch-02/eq-039-III-2.png"
+  },
+  {
+    "n": 40,
+    "eqid": "III-2-40",
+    "tag": null,
+    "status": "resolved",
+    "verified": true,
+    "latex": "H_{b\\,\\mathrm{rms}} = 1.8\\, \\text{m} (5.9\\, \\text{ft}) \\quad \\text{and} \\quad V_\\ell = 0.25\\, \\text{m/sec} (0.82\\, \\text{ft/sec}),",
+    "page": 25,
+    "image": "assets/part-03-ch-02/eq-040-III-2.png"
+  },
+  {
+    "n": 41,
+    "eqid": "III-2-41",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "V/V_o = 0.2(37.5/75) - 0.714(37.5/75)\\ln{(37.5/75)} = 0.35",
+    "page": 25,
+    "image": "assets/part-03-ch-02/eq-041-III-2.png"
+  },
+  {
+    "n": 42,
+    "eqid": "III-2-42",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "P_{\\ell} = [(1025)(9.81)(1.8)(75)(0.25)(0.01)]/[(5\\pi/2)(0.35)] = 1234 \\text{ N/sec } (277 \\text{ lbf/sec})",
+    "page": 25,
+    "image": "assets/part-03-ch-02/eq-042-III-2.png"
+  },
+  {
+    "n": 43,
+    "eqid": "III-2-43",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{I} = (0.60)(1234)/[(2650-1025)(9.81)(1-0.4)]",
+    "page": 25,
+    "image": "assets/part-03-ch-02/eq-043-III-2.png"
+  },
+  {
+    "n": 44,
+    "eqid": "III-2-44",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "Q_{\\bullet} = 0.077 \\text{ m}^3/\\text{sec} = 6.7 \\text{ x } 10^3 \\text{ m}^3/\\text{day} (8.8 \\text{ x } 10^3 \\text{ yd}^3/\\text{day})",
+    "page": 25,
+    "image": "assets/part-03-ch-02/eq-044-III-2.png"
+  },
+  {
+    "n": 45,
+    "eqid": "III-2-12",
+    "tag": "III-2-12",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\left(\\frac{V}{V_o}\\right) = 0.2 \\left(\\frac{Y}{W}\\right) - 0.714 \\left(\\frac{Y}{W}\\right) \\ln\\left(\\frac{Y}{W}\\right)",
+    "page": 25,
+    "image": "assets/part-03-ch-02/eq-045-III-2-12.png"
+  },
+  {
+    "n": 46,
+    "eqid": "III-2-13",
+    "tag": "III-2-13",
+    "status": "agreed",
+    "verified": true,
+    "latex": "H_b = H_1^{\\frac{4}{5}} \\left[ \\frac{C_{gl} \\cos \\alpha_1}{\\sqrt{\\frac{g}{\\kappa} \\cos \\alpha_b}} \\right]^{\\frac{2}{5}}",
+    "page": 26,
+    "image": "assets/part-03-ch-02/eq-046-III-2-13.png"
+  },
+  {
+    "n": 47,
+    "eqid": "III-2-14",
+    "tag": "III-2-14",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\sin \\alpha_b = \\sqrt{g \\frac{H_b}{\\kappa}} \\frac{\\sin \\alpha_1}{C_1}",
+    "page": 26,
+    "image": "assets/part-03-ch-02/eq-047-III-2-14.png"
+  },
+  {
+    "n": 48,
+    "eqid": "III-2-15",
+    "tag": "III-2-15",
+    "status": "agreed",
+    "verified": true,
+    "latex": "C_b = C_{gb} = \\sqrt{g \\ d_b} = \\sqrt{g \\ \\frac{H_b}{\\kappa}}",
+    "page": 26,
+    "image": "assets/part-03-ch-02/eq-048-III-2-15.png"
+  },
+  {
+    "n": 49,
+    "eqid": "III-2-16",
+    "tag": "III-2-16",
+    "status": "agreed",
+    "verified": true,
+    "latex": "H_b = H_1^{\\frac{4}{5}} (C_{gI} \\cos \\alpha_1)^{\\frac{2}{5}} \\left[ \\frac{g}{\\kappa} - \\frac{H_b g^2 \\sin^2(\\alpha_1)}{\\kappa^2 C_1^2} \\right]^{-\\frac{1}{5}}",
+    "page": 26,
+    "image": "assets/part-03-ch-02/eq-049-III-2-16.png"
+  },
+  {
+    "n": 50,
+    "eqid": "III-2-17",
+    "tag": "III-2-17",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\alpha = \\theta_n - WIS \\ angle",
+    "page": 27,
+    "image": "assets/part-03-ch-02/eq-050-III-2-17.png"
+  },
+  {
+    "n": 51,
+    "eqid": "III-2-51",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "H_{mo} = \\left[\\frac{(0.5)(12858) + (1.5)(4777) + (2.5)(1133) + (3.5)(288) + (4.5)(45) + (5.5)(3) + (6.5)(2)}{19106}\\right] = 0.93 \\text{ m}",
+    "page": 28,
+    "image": "assets/part-03-ch-02/eq-051-III-2.png"
+  },
+  {
+    "n": 52,
+    "eqid": "III-2-52",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "T_{p} = [(4)(1146) + (6)(2955) + (8)(7951) + (10)(4898) + (12)(1812) + (14)(330) + (16)(14)] / 19106 = 8.4",
+    "page": 29,
+    "image": "assets/part-03-ch-02/eq-052-III-2.png"
+  },
+  {
+    "n": 53,
+    "eqid": "III-2-53",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "H_b \\cong 1.2 \\text{ m } (3.9 \\text{ ft})",
+    "page": 29,
+    "image": "assets/part-03-ch-02/eq-053-III-2.png"
+  },
+  {
+    "n": 54,
+    "eqid": "III-2-54",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\alpha_b = -8.8 \\deg",
+    "page": 29,
+    "image": "assets/part-03-ch-02/eq-054-III-2.png"
+  },
+  {
+    "n": 55,
+    "eqid": "III-2-55",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\mathrm { Q } = ( 0 . 3 9 ) \\left[ \\left( 1 0 2 5 \\right) \\left( 9 . 8 1 \\right) ^ { 0 . 5 } / \\left( 1 6 \\right) \\left( 2 6 5 0 - 1 0 2 5 \\right) \\left( 1 - 0 . 4 \\right) \\right] \\left( 1 . 2 \\right) ^ { 5 / 2 } \\sin ( 2 \\left( - 8 . 8 \\right) ) = - 0 . 0 3 8 \\mathrm { m } ^ { 3 } / \\mathrm { s } ^ { 2 }",
+    "page": 29,
+    "image": "assets/part-03-ch-02/eq-055-III-2.png"
+  },
+  {
+    "n": 56,
+    "eqid": "III-2-56",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "Q = (-0.038 \\text{ m}^3/\\text{sec}) (3600 \\text{ sec/hr}) (24 \\text{ hr/day}) (365.25 \\text{ day/yr}) (0.327) = -393,000 \\text{ m}^3/\\text{yr} (-514,000 \\text{ cy/yr}) (\\text{directed to the left})",
+    "page": 29,
+    "image": "assets/part-03-ch-02/eq-056-III-2.png"
+  },
+  {
+    "n": 57,
+    "eqid": "III-2-18",
+    "tag": "III-2-18",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell NET} = \\overline{Q}_{\\ell} = \\frac{1}{T_o} \\int_{o}^{T_o} Q_{\\ell}(t) dt",
+    "page": 31,
+    "image": "assets/part-03-ch-02/eq-057-III-2-18.png"
+  },
+  {
+    "n": 58,
+    "eqid": "III-2-19",
+    "tag": "III-2-19",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell GROSS} = \\frac{1}{T_o} \\int_{0}^{T_o} |Q_{\\ell}(t)| dt",
+    "page": 32,
+    "image": "assets/part-03-ch-02/eq-058-III-2-19.png"
+  },
+  {
+    "n": 59,
+    "eqid": "III-2-20",
+    "tag": "III-2-20",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} \\pm \\Delta Q_{\\ell} \\sim (H_b \\pm \\Delta H_b)^{\\frac{5}{2}} \\sin 2(\\alpha_b \\pm \\Delta \\alpha_b)",
+    "page": 37,
+    "image": "assets/part-03-ch-02/eq-059-III-2-20.png"
+  },
+  {
+    "n": 60,
+    "eqid": "III-2-21",
+    "tag": "III-2-21",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\Delta Q_{\\ell} \\sim \\pm Q_{\\ell} \\left( \\frac{\\Delta \\alpha_b}{\\alpha_b} + \\frac{5}{2} \\frac{\\Delta H_b}{H_b} \\right)",
+    "page": 37,
+    "image": "assets/part-03-ch-02/eq-060-III-2-21.png"
+  },
+  {
+    "n": 61,
+    "eqid": "III-2-22",
+    "tag": "III-2-22",
+    "status": "agreed",
+    "verified": true,
+    "latex": "q_x(y) = k_q \\frac{1}{d} \\frac{\\partial}{\\partial x} (E C_g) V_{\\ell}",
+    "page": 48,
+    "image": "assets/part-03-ch-02/eq-061-III-2-22.png"
+  },
+  {
+    "n": 62,
+    "eqid": "III-2-23",
+    "tag": "III-2-23",
+    "status": "agreed",
+    "verified": true,
+    "latex": "q_x(y) = k_q \\frac{1}{8} \\rho g^{\\frac{3}{2}} \\frac{H}{\\sqrt{H+d}} \\left[ 2\\frac{dH}{dy} + \\frac{H}{2(H+d)} \\frac{d}{dy} (H+d) \\right] V_{\\ell}",
+    "page": 48,
+    "image": "assets/part-03-ch-02/eq-062-III-2-23.png"
+  },
+  {
+    "n": 63,
+    "eqid": "III-2-63",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\int_{y_s}^{y_b}\\frac{q_x(y)}{k_q}\\ dy = \\frac{1}{k_q}\\int_{106}^{260} q_x(y)\\ dy \\approx \\frac{9300}{k_q}\\ \\frac{\\text{kg m}^2}{\\sec^4}",
+    "page": 52,
+    "image": "assets/part-03-ch-02/eq-063-III-2.png"
+  },
+  {
+    "n": 64,
+    "eqid": "III-2-64",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\sin \\alpha_1}{C_{gl}} = \\frac{\\sin \\alpha_b}{C_{gb}}",
+    "page": 52,
+    "image": "assets/part-03-ch-02/eq-064-III-2.png"
+  },
+  {
+    "n": 65,
+    "eqid": "III-2-65",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{\\sin 10^o}{9.0} = \\frac{\\sin \\alpha_b}{(9.81 (3.2))^{\\frac{1}{2}}}",
+    "page": 52,
+    "image": "assets/part-03-ch-02/eq-065-III-2.png"
+  },
+  {
+    "n": 66,
+    "eqid": "III-2-66",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\alpha_b = 6.2^o",
+    "page": 52,
+    "image": "assets/part-03-ch-02/eq-066-III-2.png"
+  },
+  {
+    "n": 67,
+    "eqid": "III-2-67",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = K \\left( \\frac{\\rho \\sqrt{g}}{16 \\kappa (\\rho_{s} - \\rho)(1 - n)} \\right) H_{b rms}^{\\frac{5}{2}} \\sin(2\\alpha_{b})",
+    "page": 52,
+    "image": "assets/part-03-ch-02/eq-067-III-2.png"
+  },
+  {
+    "n": 68,
+    "eqid": "III-2-68",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q _ { \\ell } \\ = \\ 0 . 6 0 \\ \\frac { \\left( 1 0 2 5 \\right) \\left( 9 . 8 1 \\right) ^ { \\frac { 1 } { 2 } } } { 1 6 \\ \\mathrm { ( 1 ) } \\ ( 2 6 5 0 \\ - \\ 1 0 2 5 ) \\ \\mathrm { ( 1 \\ - \\ 0 . 4 ) } } \\ \\left( 2 . 4 2 \\right) ^ { \\frac { 5 } { 2 } } \\ \\sin ( 2 \\mathrm { ( 6 . 2 ^ { \\circ } ) } )",
+    "page": 52,
+    "image": "assets/part-03-ch-02/eq-068-III-2.png"
+  },
+  {
+    "n": 69,
+    "eqid": "III-2-69",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = (0.242 \\text{ m}^3/\\text{sec}) (3600 \\text{ sec/hr}) (24 \\text{ hr/day})",
+    "page": 52,
+    "image": "assets/part-03-ch-02/eq-069-III-2.png"
+  },
+  {
+    "n": 70,
+    "eqid": "III-2-70",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = 20.9 \\times 10^3 \\text{ m}^3/\\text{day} (27.3 \\times 10^3 \\text{ yd}^3/\\text{day})",
+    "page": 52,
+    "image": "assets/part-03-ch-02/eq-070-III-2.png"
+  },
+  {
+    "n": 71,
+    "eqid": "III-2-71",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac { 9 3 0 0 } { k _ { q } } \\frac { k g \\ m ^ { 2 } } { \\sec ^ { 4 } } = 0 . 2 4 2 \\frac { m ^ { 3 } } { \\sec }",
+    "page": 52,
+    "image": "assets/part-03-ch-02/eq-071-III-2.png"
+  },
+  {
+    "n": 72,
+    "eqid": "III-2-24",
+    "tag": "III-2-24",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\frac{R}{R_o} = C_o + C_1 \\left(\\frac{\\beta}{\\theta}\\right) + C_2 \\left(\\frac{\\beta}{\\theta}\\right)^2",
+    "page": 59,
+    "image": "assets/part-03-ch-02/eq-072-III-2-24.png"
+  },
+  {
+    "n": 73,
+    "eqid": "III-2-25",
+    "tag": "III-2-25",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\varepsilon \\frac{\\partial^2 y}{\\partial x^2} = \\frac{\\partial y}{\\partial t}",
+    "page": 62,
+    "image": "assets/part-03-ch-02/eq-073-III-2-25.png"
+  },
+  {
+    "n": 74,
+    "eqid": "III-2-26",
+    "tag": "III-2-26",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "\\varepsilon = \\frac{KH_b^2 C_{gb}}{8} \\left(\\frac{\\rho}{\\rho_s - \\rho}\\right) \\left(\\frac{1}{1 - n}\\right) \\left(\\frac{1}{d_B + d_c}\\right)",
+    "page": 62,
+    "image": "assets/part-03-ch-02/eq-074-III-2-26.png"
+  },
+  {
+    "n": 75,
+    "eqid": "III-2-75",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\mathrm { F o r \\, } \\theta = 3 0 \\, \\mathrm { d e g } ; \\, \\mathrm { R } = [ \\, 0 . 0 5 + 1 . 1 4 ( 3 0 / 3 0 ) - 0 . 1 9 ( 3 0 / 3 0 ) ^ { 2 } \\, ] \\, ( 1 7 5 \\mathrm { m } \\, ) = 1 7 5 \\mathrm { m }",
+    "page": 63,
+    "image": "assets/part-03-ch-02/eq-075-III-2.png"
+  },
+  {
+    "n": 76,
+    "eqid": "III-2-76",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\mathrm { F o r \\, } \\theta = 7 5 \\mathrm { \\, d e g } \\colon \\mathrm { \\, R = } [ \\mathrm { \\, } 0 . 0 5 + 1 . 1 4 ( 3 0 / 7 5 ) - 0 . 1 9 ( 3 0 / 7 5 ) ^ { 2 } \\mathrm { \\, J \\, } ( 1 7 5 \\mathrm { \\, m \\, } ) = 8 3 \\mathrm { \\, m \\, }",
+    "page": 63,
+    "image": "assets/part-03-ch-02/eq-076-III-2.png"
+  },
+  {
+    "n": 77,
+    "eqid": "III-2-77",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "R = [0.05 + 1.14(30/180) - 0.19(30/180)^2](175\\text{ m}) = 41\\text{ m}",
+    "page": 63,
+    "image": "assets/part-03-ch-02/eq-077-III-2.png"
+  },
+  {
+    "n": 78,
+    "eqid": "III-2-27a",
+    "tag": "III-2-27a",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = Q_o K_a \\tan(\\alpha_b) \\quad \\text{for} \\quad 0 \\leq \\tan \\alpha_b \\leq 1.23",
+    "page": 64,
+    "image": "assets/part-03-ch-02/eq-078-III-2-27a.png"
+  },
+  {
+    "n": 79,
+    "eqid": "III-2-27b",
+    "tag": "III-2-27b",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q _ { \\ell } = Q _ { o } { \\frac { K _ { b } } { \\tan { ( \\alpha _ { b } ) } } } \\quad { \\mathrm { f o r } } \\quad 1 . 2 3 < \\tan { ( \\alpha _ { b } ) }",
+    "page": 64,
+    "image": "assets/part-03-ch-02/eq-079-III-2-27b.png"
+  },
+  {
+    "n": 80,
+    "eqid": "III-2-28",
+    "tag": "III-2-28",
+    "status": "agreed",
+    "verified": true,
+    "latex": "y = 2\\sqrt{\\varepsilon t} \\tan(\\alpha_b) \\left\\{ \\frac{1}{\\sqrt{\\pi}} \\exp\\left[ -\\left(\\frac{x}{2\\sqrt{\\varepsilon t}}\\right)^2 \\right] - \\frac{x}{2\\sqrt{\\varepsilon t}} \\operatorname{erfc}\\left(\\frac{x}{2\\sqrt{\\varepsilon t}}\\right) \\right\\}, \\text{ for } t < t_f",
+    "page": 65,
+    "image": "assets/part-03-ch-02/eq-080-III-2-28.png"
+  },
+  {
+    "n": 81,
+    "eqid": "III-2-81",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\operatorname{erf}(x) = \\frac{2}{\\sqrt{\\pi}} \\int_0^x e^{-z^2} dz",
+    "page": 65,
+    "image": "assets/part-03-ch-02/eq-081-III-2.png"
+  },
+  {
+    "n": 82,
+    "eqid": "III-2-29",
+    "tag": "III-2-29",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "t_f = \\frac{Y^2 \\pi}{4 \\epsilon \\tan^2(\\alpha_b)}",
+    "page": 68,
+    "image": "assets/part-03-ch-02/eq-082-III-2-29.png"
+  },
+  {
+    "n": 83,
+    "eqid": "III-2-30",
+    "tag": "III-2-30",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "y = Y \\operatorname{erfc}\\left(\\frac{x}{2\\sqrt{\\varepsilon t_2}}\\right) , t > t_f",
+    "page": 68,
+    "image": "assets/part-03-ch-02/eq-083-III-2-30.png"
+  },
+  {
+    "n": 84,
+    "eqid": "III-2-31",
+    "tag": "III-2-31",
+    "status": "agreed",
+    "verified": true,
+    "latex": "y = \\frac{Y}{2} \\left\\{ erf \\left[ \\left( \\frac{a}{2\\sqrt{\\epsilon t}} \\right) \\left( 1 - \\frac{x}{a} \\right) \\right] + erf \\left[ \\left( \\frac{a}{2\\sqrt{\\epsilon t}} \\right) \\left( 1 + \\frac{x}{a} \\right) \\right] \\right\\}",
+    "page": 68,
+    "image": "assets/part-03-ch-02/eq-084-III-2-31.png"
+  },
+  {
+    "n": 85,
+    "eqid": "III-2-85",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\varepsilon = \\frac{0.77 (2)^2 \\sqrt{9.81 \\cdot 2}}{8} \\cdot \\left(\\frac{1}{2.65 - 1}\\right) \\cdot \\frac{1}{(1 - 0.4)} \\left(\\frac{1}{6}\\right) = 0.287 \\frac{m^2}{\\text{sec}}",
+    "page": 70,
+    "image": "assets/part-03-ch-02/eq-085-III-2.png"
+  },
+  {
+    "n": 86,
+    "eqid": "III-2-86",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{y}{2\\sqrt{\\varepsilon t} \\tan (\\alpha_b)} = \\frac{1}{\\sqrt{\\pi}} \\approx 0.564",
+    "page": 70,
+    "image": "assets/part-03-ch-02/eq-086-III-2.png"
+  },
+  {
+    "n": 87,
+    "eqid": "III-2-87",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{300}{2\\sqrt{0.287 t} \\tan{(5^0)}} \\approx 0.564",
+    "page": 70,
+    "image": "assets/part-03-ch-02/eq-087-III-2.png"
+  },
+  {
+    "n": 88,
+    "eqid": "III-2-88",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{y}{2\\sqrt{0.287(604800)}\\tan(5^0)} = \\frac{1}{\\sqrt{\\pi}}",
+    "page": 70,
+    "image": "assets/part-03-ch-02/eq-088-III-2.png"
+  },
+  {
+    "n": 89,
+    "eqid": "III-2-89",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{x}{2\\sqrt{\\epsilon t}} = \\frac{500}{2\\sqrt{0.287(604800)}} = 0.60 \\quad ; \\quad 2\\sqrt{\\epsilon t} \\tan(\\alpha_b) = 72.9 \\text{ m}",
+    "page": 70,
+    "image": "assets/part-03-ch-02/eq-089-III-2.png"
+  },
+  {
+    "n": 90,
+    "eqid": "III-2-90",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{y}{2\\sqrt{\\varepsilon t}\\tan(\\alpha_b)} \\cong \\left[\\frac{1}{\\sqrt{\\pi}}\\exp(-0.6^2) - 0.6(0.42)\\right] = 0.14",
+    "page": 70,
+    "image": "assets/part-03-ch-02/eq-090-III-2.png"
+  },
+  {
+    "n": 91,
+    "eqid": "III-2-91",
+    "tag": null,
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "y = (0.14) (72.9 \\text{ m}) = 10.2 \\text{ m}",
+    "page": 70,
+    "image": "assets/part-03-ch-02/eq-091-III-2.png"
+  },
+  {
+    "n": 92,
+    "eqid": "III-2-92",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\frac{y}{y} = \\left[ \\exp(-u^2) - \\sqrt{\\pi} \\ u \\ erfc(u) \\right]",
+    "page": 71,
+    "image": "assets/part-03-ch-02/eq-092-III-2.png"
+  },
+  {
+    "n": 93,
+    "eqid": "III-2-93",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "u = \\frac{x}{2\\sqrt{\\varepsilon t_f}} = \\frac{x}{Y} \\frac{1}{\\sqrt{\\pi}} \\tan(\\alpha_b)",
+    "page": 71,
+    "image": "assets/part-03-ch-02/eq-093-III-2.png"
+  },
+  {
+    "n": 94,
+    "eqid": "III-2-94",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{x}{Y} = u \\frac{\\sqrt{\\pi}}{\\tan(\\alpha_b)} = 0.96 \\frac{\\sqrt{\\pi}}{\\tan(5^0)} = 19.4",
+    "page": 71,
+    "image": "assets/part-03-ch-02/eq-094-III-2.png"
+  },
+  {
+    "n": 95,
+    "eqid": "III-2-32",
+    "tag": "III-2-32",
+    "status": "agreed",
+    "verified": true,
+    "latex": "p(t) = \\frac{1}{\\sqrt{\\pi}} \\left( \\frac{\\sqrt{\\varepsilon t}}{a} \\right) \\left\\{ \\exp \\left( -\\left( \\frac{a}{\\sqrt{\\varepsilon t}} \\right)^2 \\right) - 1 \\right\\} + erf\\left( \\frac{a}{\\sqrt{\\varepsilon t}} \\right)",
+    "page": 73,
+    "image": "assets/part-03-ch-02/eq-095-III-2-32.png"
+  },
+  {
+    "n": 96,
+    "eqid": "III-2-33",
+    "tag": "III-2-33",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "y = \\frac{Y_o}{2} \\left\\{ (1-X) \\ erf (U(1-X)) + (1+X) \\ erf (U (1+X)) -2 \\ Xerf (UX) + \\frac{1}{\\sqrt{\\pi}U} \\left( e^{-U^2 (1+X)^2} + e^{-U^2 (1-X)^2} - 2e^{-(UX)^2} \\right) \\right\\}",
+    "page": 73,
+    "image": "assets/part-03-ch-02/eq-096-III-2-33.png"
+  },
+  {
+    "n": 97,
+    "eqid": "III-2-97",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "X = { \\frac { x } { a } } \\qquad a n d \\qquad U = { \\frac { a } { 2 \\ { \\sqrt { \\varepsilon t } } } }",
+    "page": 74,
+    "image": "assets/part-03-ch-02/eq-097-III-2.png"
+  },
+  {
+    "n": 98,
+    "eqid": "III-2-34",
+    "tag": "III-2-34",
+    "status": "agreed",
+    "verified": true,
+    "latex": "y = \\frac{Y}{2} \\left\\{ erfc \\left[ \\left( \\frac{a}{2\\sqrt{\\varepsilon t}} \\right) \\left( 1 - \\frac{x}{a} \\right) \\right] + erfc \\left[ \\left( \\frac{a}{2\\sqrt{\\varepsilon t}} \\right) \\left( 1 + \\frac{x}{a} \\right) \\right] \\right\\}",
+    "page": 74,
+    "image": "assets/part-03-ch-02/eq-098-III-2-34.png"
+  },
+  {
+    "n": 99,
+    "eqid": "III-2-35",
+    "tag": "III-2-35",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "y = \\frac{Y_o}{2} \\left\\{ 1 + erf\\left(\\frac{x}{2\\sqrt{\\varepsilon t}}\\right) \\right\\}",
+    "page": 74,
+    "image": "assets/part-03-ch-02/eq-099-III-2-35.png"
+  },
+  {
+    "n": 100,
+    "eqid": "III-2-100",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\mathrm { a } = 5 , 0 0 0 / 2 = 2 , 5 0 0 \\mathrm { m } ; \\mathrm { Y } _ { \\mathrm { o } } = 5 0 \\mathrm { m }",
+    "page": 75,
+    "image": "assets/part-03-ch-02/eq-100-III-2.png"
+  },
+  {
+    "n": 101,
+    "eqid": "III-2-101",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\varepsilon = \\frac{0.77 (3)^2 \\sqrt{9.81 \\cdot 3}}{8} \\left(\\frac{1}{2.65 - 1}\\right) \\left(\\frac{1}{1 - 0.4}\\right) \\left(\\frac{1}{3 + 7}\\right)",
+    "page": 75,
+    "image": "assets/part-03-ch-02/eq-101-III-2.png"
+  },
+  {
+    "n": 102,
+    "eqid": "III-2-102",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "(t = 259,200 \\text{ sec})",
+    "page": 75,
+    "image": "assets/part-03-ch-02/eq-102-III-2.png"
+  },
+  {
+    "n": 103,
+    "eqid": "III-2-103",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac { a } { 2 \\sqrt { \\varepsilon t } } \\ = \\ \\frac { 2 , 5 0 0 } { 2 \\sqrt { 0 . 4 7 \\ ( 2 5 9 , 2 0 0 ) } } \\ = \\ 3 . 5 8",
+    "page": 75,
+    "image": "assets/part-03-ch-02/eq-103-III-2.png"
+  },
+  {
+    "n": 104,
+    "eqid": "III-2-104",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "{ \\frac { x } { a } } \\ = \\ 1 . 0 \\qquad { \\frac { y } { Y _ { o } } } \\ = \\ 0 . 5 6 \\quad { \\mathrm { h e n c e } } , \\ y \\ = \\ 0 . 5 6 \\ ( 5 0 ) \\ = \\ 2 8 \\ { \\mathrm { m } }",
+    "page": 75,
+    "image": "assets/part-03-ch-02/eq-104-III-2.png"
+  },
+  {
+    "n": 105,
+    "eqid": "III-2-105",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac { a } { 2 \\sqrt { \\varepsilon t } } \\ = \\ \\frac { 2 , 5 0 0 } { 2 \\sqrt { 0 . 4 7 \\ ( 7 , 2 5 7 , 6 0 0 ) } } \\ = \\ 0 . 6 8",
+    "page": 75,
+    "image": "assets/part-03-ch-02/eq-105-III-2.png"
+  },
+  {
+    "n": 106,
+    "eqid": "III-2-106",
+    "tag": null,
+    "status": "single_verified",
+    "verified": true,
+    "latex": "{ \\frac { x } { a } } \\ = \\ 1 . 0 \\qquad { \\frac { y } { Y _ { 0 } } } \\ = \\ 0 . 4 6 \\quad { \\mathrm { h e n c e , } } \\quad y \\ = \\ 0 . 4 6 \\ ( 5 0 ) \\ = \\ 2 3 \\ { \\mathrm { m } }",
+    "page": 75,
+    "image": "assets/part-03-ch-02/eq-106-III-2.png"
+  },
+  {
+    "n": 107,
+    "eqid": "III-2-36",
+    "tag": "III-2-36",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "y = Y_o \\left( 1 + erf \\left( \\frac{x}{2\\sqrt{\\varepsilon t}} \\right) \\right)",
+    "page": 77,
+    "image": "assets/part-03-ch-02/eq-107-III-2-36.png"
+  },
+  {
+    "n": 108,
+    "eqid": "III-2-37",
+    "tag": "III-2-37",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "y = Y_o \\ erfc \\left( \\frac{x}{2\\sqrt{\\varepsilon} t} \\right)",
+    "page": 78,
+    "image": "assets/part-03-ch-02/eq-108-III-2-37.png"
+  },
+  {
+    "n": 109,
+    "eqid": "III-2-38",
+    "tag": "III-2-38",
+    "status": "agreed",
+    "verified": true,
+    "latex": "y = w - l\\left(1-\\frac{x}{l}\\right)\\tan(\\alpha_b) + \\frac{2\\tan(\\alpha_b)}{l} \\sum_{n=0}^{\\infty} \\left[\\frac{2l}{(2n+1)\\pi}\\right]^2 \\exp\\left\\{-\\varepsilon\\frac{(2n+1)^2\\pi^2t}{4l^2}\\right\\} \\cos\\left[\\frac{(2n+1)\\pi x}{2l}\\right]",
+    "page": 78,
+    "image": "assets/part-03-ch-02/eq-109-III-2-38.png"
+  },
+  {
+    "n": 110,
+    "eqid": "III-2-39",
+    "tag": "III-2-39",
+    "status": "agreed",
+    "verified": true,
+    "latex": "y = Y_o \\ erfc \\left(\\frac{x}{2\\sqrt{\\varepsilon t}}\\right) + \\left(Y_1 - Y_o\\right) \\ erfc \\left(\\frac{x}{2\\sqrt{\\varepsilon(t - t_1)}}\\right) + \\left(Y_2 - Y_1\\right) \\ erfc \\left(\\frac{x}{2\\sqrt{\\varepsilon(t - t_2)}}\\right)",
+    "page": 80,
+    "image": "assets/part-03-ch-02/eq-110-III-2-39.png"
+  },
+  {
+    "n": 111,
+    "eqid": "III-2-111",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\varepsilon = \\frac{0.77 (1)^2 \\sqrt{9.81 \\cdot 1}}{8} \\left(\\frac{1}{2.65 - 1}\\right) \\left(\\frac{1}{1 - 0.4}\\right) \\left(\\frac{1}{6}\\right)",
+    "page": 81,
+    "image": "assets/part-03-ch-02/eq-111-III-2.png"
+  },
+  {
+    "n": 112,
+    "eqid": "III-2-112",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\approx 0.0508 \\frac{\\text{m}^2}{\\text{sec}}",
+    "page": 81,
+    "image": "assets/part-03-ch-02/eq-112-III-2.png"
+  },
+  {
+    "n": 113,
+    "eqid": "III-2-113",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "y(1\\text{ mile}, 3\\text{ months}) = 50 \\cdot erfc\\left(\\frac{1609}{2\\sqrt{0.0508 \\cdot 7.78 \\times 10^6}}\\right)",
+    "page": 81,
+    "image": "assets/part-03-ch-02/eq-113-III-2.png"
+  },
+  {
+    "n": 114,
+    "eqid": "III-2-114",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\approx 50 \\cdot \\operatorname{erfc}(1.28)",
+    "page": 81,
+    "image": "assets/part-03-ch-02/eq-114-III-2.png"
+  },
+  {
+    "n": 115,
+    "eqid": "III-2-115",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\approx \\, 5 0 \\left( 0 . 0 7 \\right) \\, \\cong \\, 3 . 5 \\mathrm { \\, m \\, }",
+    "page": 81,
+    "image": "assets/part-03-ch-02/eq-115-III-2.png"
+  },
+  {
+    "n": 116,
+    "eqid": "III-2-116",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "y(x, t) = Y_o \\cdot erfc\\left(\\frac{x}{2\\sqrt{\\varepsilon t}}\\right) + (Y_1 - Y_o) \\cdot erfc\\left(\\frac{x}{2\\sqrt{\\varepsilon(t - t_1)}}\\right)",
+    "page": 82,
+    "image": "assets/part-03-ch-02/eq-116-III-2.png"
+  },
+  {
+    "n": 117,
+    "eqid": "III-2-117",
+    "tag": null,
+    "status": "agreed",
+    "verified": true,
+    "latex": "y(x,t) = 50 \\cdot \\text{erfc}\\left(\\frac{x}{2\\sqrt{\\varepsilon t}}\\right) + 50 \\, \\text{erfc}\\left(\\frac{x}{2\\sqrt{\\varepsilon t}} \\cdot \\sqrt{1 - \\frac{t_1}{t}}\\right) = \\text{term 1} + \\text{term 2}",
+    "page": 82,
+    "image": "assets/part-03-ch-02/eq-117-III-2.png"
+  },
+  {
+    "n": 118,
+    "eqid": "III-2-40",
+    "tag": "III-2-40",
+    "status": "agreed",
+    "verified": true,
+    "latex": "\\frac{\\Delta y}{\\Delta t} + \\frac{1}{d_B + d_C} \\left( \\frac{\\Delta Q_{\\ell}}{\\Delta x} \\pm q \\right) = 0",
+    "page": 84,
+    "image": "assets/part-03-ch-02/eq-118-III-2-40.png"
+  },
+  {
+    "n": 119,
+    "eqid": "III-2-41",
+    "tag": "III-2-41",
+    "status": "single_verified",
+    "verified": true,
+    "latex": "\\alpha_b = \\alpha_{bg} - \\alpha_{sg} = \\alpha_{bg} - \\tan^{-1}\\left(\\frac{dy}{dx}\\right)",
+    "page": 84,
+    "image": "assets/part-03-ch-02/eq-119-III-2-41.png"
+  },
+  {
+    "n": 120,
+    "eqid": "III-2-42",
+    "tag": "III-2-42",
+    "status": "agreed",
+    "verified": true,
+    "latex": "Q_{\\ell} = H_{b \\ sig}^2 \\ C_{gb} \\left( a_1 \\ sin2\\alpha_b - a_2 \\cos\\alpha_b \\frac{dH_{b \\ sig}}{dx} \\right)",
+    "page": 85,
+    "image": "assets/part-03-ch-02/eq-120-III-2-42.png"
+  },
+  {
+    "n": 121,
+    "eqid": "III-2-43",
+    "tag": "III-2-43",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "a_1 = \\frac{K_1}{16\\left(\\frac{\\rho_s}{\\rho} - 1\\right) (1 - n) (1.416)^{\\frac{5}{2}}}",
+    "page": 85,
+    "image": "assets/part-03-ch-02/eq-121-III-2-43.png"
+  },
+  {
+    "n": 122,
+    "eqid": "III-2-44",
+    "tag": "III-2-44",
+    "status": "agreed_gt",
+    "verified": true,
+    "latex": "a_2 = \\frac{K_2}{8\\left(\\frac{\\rho_s}{\\rho} - 1\\right) (1 - n) \\ m \\ (1.416)^{\\frac{7}{2}}}",
+    "page": 85,
+    "image": "assets/part-03-ch-02/eq-122-III-2-44.png"
+  }
+]
