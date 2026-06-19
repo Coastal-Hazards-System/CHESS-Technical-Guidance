@@ -12,7 +12,7 @@
       document.documentElement.setAttribute("data-theme",t);
       function sync(){var d=document.documentElement.getAttribute("data-theme")==="dark";
         var c=document.getElementById("modeToggle"); if(c)c.checked=d;
-        var l=document.getElementById("modeLbl"); if(l)l.textContent=d?"Dark":"Light";}
+        var l=document.getElementById("modeLbl"); if(l)l.textContent=d?"Dark mode":"Light mode";}
       window.addEventListener("DOMContentLoaded",function(){
         sync();
         var c=document.getElementById("modeToggle");
