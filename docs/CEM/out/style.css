@@ -97,6 +97,14 @@ main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
 .result .r-snip mark{background:color-mix(in srgb,var(--accent) 28%,transparent);color:inherit;
   padding:0 1px;border-radius:2px}
 #results .rcount{color:var(--muted);font-size:12px}
+/* landing: search results split into Living | Legacy */
+.results-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;text-align:left}
+@media(max-width:640px){.results-split{grid-template-columns:1fr}}
+.res-col{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px;min-height:120px}
+.res-col h3{margin:0 0 12px;color:var(--accent);font-size:16px;border-bottom:1px solid var(--border);padding-bottom:8px}
+.res-col.living{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;opacity:.85}
+.res-col.living p{color:var(--muted);font-size:13px;margin:0;max-width:26ch}
+#results-legacy{display:flex;flex-direction:column;gap:8px}
 .areas-section{margin-top:44px}
 .areas-section h2,.parts-list h2.sec{color:var(--fg);font-size:18px;margin:0 0 12px}
 .areas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}

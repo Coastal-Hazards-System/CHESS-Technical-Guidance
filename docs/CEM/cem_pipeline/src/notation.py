@@ -9,6 +9,53 @@ we rebuild the rows directly from PDF word coordinates instead.
 import re
 import fitz
 
+# WP-GreekCentury / WP-GreekHelve (WordPerfect Greek fonts) embed unnamed,
+# cmap-less subset glyphs, so PyMuPDF returns the raw byte code instead of the
+# Greek letter. The layout is the WordPerfect Greek character set: lowercase on
+# even codes from 0x22 (alpha), uppercase on the interleaved odd codes. Verified
+# glyph-by-glyph by rendering every code that appears in the Part II notation
+# sections. Latin variables use Times/Arial and are left untouched.
+WPGREEK = {
+    0x22: 'α', 0x24: 'β', 0x28: 'γ', 0x2a: 'δ', 0x2c: 'ε',
+    0x2e: 'ζ', 0x30: 'η', 0x32: 'θ', 0x34: 'ι', 0x36: 'κ',
+    0x38: 'λ', 0x3a: 'μ', 0x3c: 'ν', 0x3e: 'ξ', 0x40: 'ο',
+    0x42: 'π', 0x44: 'ρ', 0x46: 'σ', 0x48: 'ς', 0x4a: 'τ',
+    0x4c: 'υ', 0x4e: 'φ', 0x50: 'χ', 0x52: 'ψ', 0x54: 'ω',
+    0x23: 'Α', 0x25: 'Β', 0x27: 'Γ', 0x29: 'Δ', 0x2b: 'Ε',
+    0x2d: 'Ζ', 0x2f: 'Η', 0x31: 'Θ', 0x33: 'Ι', 0x35: 'Κ',
+    0x37: 'Λ', 0x39: 'Μ', 0x3b: 'Ν', 0x3d: 'Ξ', 0x3f: 'Ο',
+    0x41: 'Π', 0x43: 'Ρ', 0x45: 'Σ', 0x49: 'Τ', 0x4b: 'Υ',
+    0x4d: 'Φ', 0x4f: 'Χ', 0x51: 'Ψ', 0x53: 'Ω', 0x6e: 'φ',
+}
+
+
+def _words(page):
+    """Like page.get_text('words') but with WordPerfect-Greek-font characters
+    translated to real Unicode Greek. Returns (x0,y0,x1,y1,text) tuples."""
+    out = []
+    for b in page.get_text("rawdict")["blocks"]:
+        for ln in b.get("lines", []):
+            for sp in ln["spans"]:
+                greek = "Greek" in sp["font"]
+                cur = None
+                for c in sp.get("chars", []):
+                    ch = WPGREEK.get(ord(c["c"]), c["c"]) if greek else c["c"]
+                    if not ch.strip():                  # whitespace ends a word
+                        if cur:
+                            out.append(tuple(cur)); cur = None
+                        continue
+                    x0, y0, x1, y1 = c["bbox"]
+                    if cur is None:
+                        cur = [x0, y0, x1, y1, ch]
+                    else:
+                        cur[0] = min(cur[0], x0); cur[1] = min(cur[1], y0)
+                        cur[2] = max(cur[2], x1); cur[3] = max(cur[3], y1)
+                        cur[4] += ch
+                if cur:
+                    out.append(tuple(cur))
+    return out
+
+
 RUN_RE = re.compile(
     r'^(EM\s*1110|\(Part|Change\s+\d|[IVX]+-\d+-\d+|\d+\s*$'
     r'|\d{1,2}\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\b'
@@ -16,9 +63,10 @@ RUN_RE = re.compile(
 GROUP_RE = re.compile(r'^[^\s]{1,4}\s*\([a-zA-Z]+\)\s*$')     # e.g. "κ (kappa)"
 
 
-def _rows(page, ytol=4):
-    """Group a page's words into visual rows: [(x0, [words sorted by x])]."""
-    words = [w for w in page.get_text("words")]
+def _rows(page, ytol=4, translate=False):
+    """Group a page's words into visual rows: [(x0, [words sorted by x])].
+    translate=True remaps WordPerfect-Greek glyphs to Unicode (Part II)."""
+    words = _words(page) if translate else [w for w in page.get_text("words")]
     words.sort(key=lambda w: (round(w[1] / ytol), w[0]))
     rows, cur, cy = [], [], None
     for w in words:
@@ -84,7 +132,7 @@ def reconstruct(pdf_path, pages=None):
     pairs = []
     for pi in pages:
         page = doc[pi]
-        for x0, r in _rows(page):
+        for x0, r in _rows(page, translate=True):
             toks = [w[4] for w in r]
             line = " ".join(toks).strip()
             if not line or RUN_RE.match(line):
@@ -159,6 +207,97 @@ def fix_markdown(md_path, pdf_path):
     with open(md_path, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(new))
     return len(pairs)
+
+
+def _tokens(lines):
+    """Split a sequence of rawdict lines (a whole block/paragraph) into
+    whitespace-delimited tokens, so a Greek glyph wrapped across a line break
+    still has Latin neighbours. Each token is a list of (raw, fixed, is_wpgreek)."""
+    toks, cur = [], []
+    for ln in lines:
+        for sp in ln["spans"]:
+            greek = "Greek" in sp["font"]
+            for c in sp.get("chars", []):
+                ch = c["c"]
+                if ch.isspace():
+                    if cur:
+                        toks.append(cur); cur = []
+                    continue
+                g = greek and ord(ch) in WPGREEK
+                cur.append((ch, WPGREEK[ord(ch)] if g else ch, g))
+        if cur:                       # line break ends the current token
+            toks.append(cur); cur = []
+    if cur:
+        toks.append(cur)
+    return toks
+
+
+def _anchor(toks, lo, hi):
+    """Whitespace-flexible regex for tokens[lo:hi] used as context anchors. A
+    Greek char in an anchor token may already be fixed in the markdown (depending
+    on replacement order), so match either its raw or fixed glyph."""
+    parts = []
+    for t in toks[lo:hi]:
+        chars = [f"[{re.escape(raw)}{re.escape(fixed)}]" if g and raw != fixed else re.escape(raw)
+                 for raw, fixed, g in t]
+        if chars:                       # Marker may insert spaces inside a token too
+            parts.append(r"\s*".join(chars))
+    return r"\s+".join(parts)
+
+
+def fix_prose(md_path, pdf_path, exclude_pages=()):
+    """Repair WordPerfect-Greek glyph corruption in Part II *body* text (e.g.
+    'g/2 B' -> 'g/2 π', 'stream function Q' -> 'stream function Ψ'). For each
+    Greek-bearing token we build a regex anchored on its Latin neighbour tokens and
+    swap ONLY that token, so legitimate Latin/digits ('subscript 0', 'L_0', a real
+    'D') are never touched. Returns (patterns_applied, unmatched, distinct)."""
+    doc = fitz.open(pdf_path)
+    # WP-Greek corruption is Part II only; skip documents that never use the font.
+    if not any("Greek" in f[3] for pno in range(len(doc)) for f in doc.get_page_fonts(pno)):
+        return 0, 0, 0
+    exclude = set(exclude_pages)
+    subs, seen = [], set()
+    for pno in range(len(doc)):
+        if pno in exclude:
+            continue
+        for b in doc[pno].get_text("rawdict")["blocks"]:
+            if True:
+                toks = _tokens(b.get("lines", []))
+                for ti, t in enumerate(toks):
+                    if not any(c[2] for c in t):
+                        continue
+                    # need Latin anchors on both sides; widen short anchors
+                    if ti == 0 or ti == len(toks) - 1:
+                        continue
+                    li = ti - 2 if len(toks[ti - 1]) < 3 and ti >= 2 else ti - 1
+                    ri = ti + 3 if len(toks[ti + 1]) < 3 and ti + 2 < len(toks) else ti + 2
+                    left, right = _anchor(toks, li, ti), _anchor(toks, ti + 1, ri)
+                    if not left or not right:
+                        continue
+                    body = r"\s*".join(re.escape(c[0]) for c in t)
+                    fixed = "".join(c[1] for c in t)
+                    regex = f"({left})(\\s+)({body})(\\s+)({right})"
+                    key = (regex, fixed)
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    subs.append((regex, fixed))
+    text = open(md_path, encoding="utf-8").read().replace("\r\n", "\n")
+    applied = missed = 0
+    for regex, fixed in subs:
+        try:
+            new, n = re.subn(regex,
+                             lambda m, f=fixed: m.group(1) + m.group(2) + f + m.group(4) + m.group(5),
+                             text)
+        except re.error:
+            continue
+        if n:
+            text = new; applied += 1
+        else:
+            missed += 1
+    with open(md_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(text)
+    return applied, missed, len(subs)
 
 
 if __name__ == "__main__":

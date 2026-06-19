@@ -27,10 +27,6 @@
 </head><body>
   <header>
     <a class="title" href="index.html">CHESS-TG</a>
-    <nav class="topnav">
-      <a href="index.html">Chapters</a>
-      <a href="chapter.html?c=qa_report.md">QA report</a>
-    </nav>
     <span class="spacer"></span>
     <span class="muted" id="modeLbl"></span>
     <label class="switch" title="Light / Dark">
@@ -39,7 +35,7 @@
   </header>
 
 <main class="doc">
-  <a class="backlink" href="index.html">&larr; All chapters</a>
+  <a class="backlink" href="cem.html">&larr; All chapters</a>
   <div id="content" class="markdown"><p class="muted">Loading&hellip;</p></div>
 </main>
 <script>
@@ -66,10 +62,11 @@
       md = md.replace(/```math\n([\s\S]*?)\n```/g, function(m,t){ math.push({d:true,t:t}); return "@@M"+(math.length-1)+"@@"; });
       md = md.replace(/\$\$([\s\S]*?)\$\$/g, function(m,t){ math.push({d:true,t:t}); return "@@M"+(math.length-1)+"@@"; });
       md = md.replace(/(^|[^\\$])\$([^$\n]+?)\$/g, function(m,p,t){ math.push({d:false,t:t}); return p+"@@M"+(math.length-1)+"@@"; });
-      // wrap bare GREEK/symbol tokens the source emits un-delimited (the
-      // "Definitions of Symbols" lists), e.g. \theta, \rho_s, \xi_{0m}, \lambda_{1,2,3}.
-      // Allowlist keeps structural commands (\frac, \text, \begin) as-is.
-      md = md.replace(/\\(?:alpha|beta|gamma|delta|epsilon|varepsilon|zeta|eta|theta|vartheta|iota|kappa|lambda|mu|nu|xi|omicron|pi|varpi|rho|varrho|sigma|varsigma|tau|upsilon|phi|varphi|chi|psi|omega|Gamma|Delta|Theta|Lambda|Xi|Pi|Sigma|Upsilon|Phi|Psi|Omega|partial|nabla|infty)(?![a-zA-Z])(?:[_^](?:{[^}]*}|[A-Za-z0-9]))*/g, function(m){ math.push({d:false,t:m}); return "@@M"+(math.length-1)+"@@"; });
+      // wrap bare math tokens the source emits un-delimited, esp. in the
+      // "where:" symbol lists: a \command (\theta, \rho_s, \overline{Z}, \bar{x}),
+      // or a plain letter carrying a sub/superscript (D_n, H_s, K_D, X_i^{load}).
+      // A lone letter with no sub/sup is left alone so prose is untouched.
+      md = md.replace(/(?<![A-Za-z0-9])(?:\\(?:overline|underline|bar|hat|tilde|vec|widehat|widetilde|dot|ddot|mathbf|mathrm|mathcal|boldsymbol|breve|check|acute|grave)\s*{[^}]*}(?:\s*[_^]\s*(?:{[^}]*}|\\?[A-Za-z0-9]+))*|\\[A-Za-z]+(?:\s*[_^]\s*(?:{[^}]*}|\\?[A-Za-z0-9]+))*|[A-Za-z](?:\s*[_^]\s*(?:{[^}]*}|\\?[A-Za-z0-9]+))+)/g, function(m){ math.push({d:false,t:m}); return "@@M"+(math.length-1)+"@@"; });
       var htmlout = marked.parse(md);
       htmlout = htmlout.replace(/@@M(\d+)@@/g, function(m,i){ return '<span class="kx" data-i="'+i+'"></span>'; });
       var titleLine = (fm.match(/title:\s*"?([^"\n]+)"?/)||[])[1] || "";

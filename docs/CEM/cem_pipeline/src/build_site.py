@@ -167,30 +167,32 @@ def build(out_dir, root_dir=None):
             f'<h2 style="border-left:6px solid var(--area-{i+1})">Part {p} — {html.escape(PART_NAMES.get(p, p))}</h2>'
             f'<div class="ch-grid">{"".join(cards)}</div></section>')
 
-    index_tmpl = _INDEX
+    cem_tmpl = _CEM
     for token, val in [("{shortcuts}", "".join(shortcuts)),
                        ("{sections}", "".join(sections)),
                        ("{tot_ch}", str(tot_ch)), ("{tot_eq}", f"{tot_eq:,}"),
                        ("{tot_eqv}", f"{tot_eqv:,}"), ("{tot_tab}", f"{tot_tab:,}"),
                        ("{tot_fig}", f"{tot_fig:,}")]:
-        index_tmpl = index_tmpl.replace(token, val)
+        cem_tmpl = cem_tmpl.replace(token, val)
 
     def _fill(tmpl, base, home="index.html"):
         return tmpl.replace("@@BASE@@", base).replace("@@HOME@@", home)
 
-    # self-contained site inside out_dir (base = "")
-    open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(_fill(index_tmpl, ""))
+    # self-contained site inside out_dir (base = ""): a minimal CHESS-TG landing
+    # (Living | Legacy), and the Legacy "Coastal Engineering Manual" browse page.
+    open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(_fill(_LANDING, ""))
+    open(os.path.join(out_dir, "cem.html"), "w", encoding="utf-8").write(_fill(cem_tmpl, ""))
     open(os.path.join(out_dir, "style.css"), "w", encoding="utf-8").write(_CSS)
     open(os.path.join(out_dir, "chapter.html"), "w", encoding="utf-8").write(_fill(_CHAPTER, ""))
     sz = os.path.getsize(os.path.join(out_dir, "search-index.json")) / 1024
-    print(f"Built site in {out_dir}: index.html ({tot_ch} chapters), style.css, chapter.html, "
-          f"search-index.json ({len(search_docs)} sections, {sz:.0f} KB)")
+    print(f"Built site in {out_dir}: index.html (landing), cem.html ({tot_ch} chapters), "
+          f"style.css, chapter.html, search-index.json ({len(search_docs)} sections, {sz:.0f} KB)")
 
-    # repo-root entry point that links into the out_dir site (base = relative path)
+    # repo-root entry point: the same landing, linking into the out_dir site
     if root_dir:
         site_rel = (os.path.relpath(out_dir, root_dir).replace(os.sep, "/") + "/")
         open(os.path.join(root_dir, "index.html"), "w", encoding="utf-8").write(
-            _fill(index_tmpl, site_rel))
+            _fill(_LANDING, site_rel))
         print(f"Root index.html -> {root_dir} (links into {site_rel})")
 
 
@@ -294,6 +296,14 @@ main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
 .result .r-snip mark{background:color-mix(in srgb,var(--accent) 28%,transparent);color:inherit;
   padding:0 1px;border-radius:2px}
 #results .rcount{color:var(--muted);font-size:12px}
+/* landing: search results split into Living | Legacy */
+.results-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;text-align:left}
+@media(max-width:640px){.results-split{grid-template-columns:1fr}}
+.res-col{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px;min-height:120px}
+.res-col h3{margin:0 0 12px;color:var(--accent);font-size:16px;border-bottom:1px solid var(--border);padding-bottom:8px}
+.res-col.living{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;opacity:.85}
+.res-col.living p{color:var(--muted);font-size:13px;margin:0;max-width:26ch}
+#results-legacy{display:flex;flex-direction:column;gap:8px}
 .areas-section{margin-top:44px}
 .areas-section h2,.parts-list h2.sec{color:var(--fg);font-size:18px;margin:0 0 12px}
 .areas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
@@ -348,10 +358,6 @@ main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
 
 _HEADER = """  <header>
     <a class="title" href="@@HOME@@">CHESS-TG</a>
-    <nav class="topnav">
-      <a href="@@HOME@@">Chapters</a>
-      <a href="@@BASE@@chapter.html?c=qa_report.md">QA report</a>
-    </nav>
     <span class="spacer"></span>
     <span class="muted" id="modeLbl"></span>
     <label class="switch" title="Light / Dark">
@@ -379,10 +385,10 @@ _THEME_JS = """
     })();
 """
 
-_INDEX = """<!doctype html><html lang="en"><head>
+_LANDING = """<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CHESS-TG — Coastal Engineering Manual (EM 1110-2-1100)</title>
-<meta name="description" content="The USACE Coastal Engineering Manual (EM 1110-2-1100) as faithful, web-readable Markdown with real LaTeX equations, GFM tables and figures.">
+<title>CHESS-TG</title>
+<meta name="description" content="CHESS Technical Guidance: vetted, recommended methods for coastal engineering applications. Living and legacy guidance.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='Segoe UI,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="@@BASE@@style.css">
 <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
@@ -393,8 +399,26 @@ _INDEX = """<!doctype html><html lang="en"><head>
   <section class="hero">
     <h1 class="wordmark">CHESS-TG<span class="beta">βeta</span></h1>
     <p class="hero-sub">Coastal Hazards, Engineering, and Structures System (CHESS): Technical Guidance (TG)</p>
-    <p class="tagline">Authoritative coastal engineering guidance for the web. Living, continuously updated
-      guidance is in development; today you can browse the converted legacy reference below.</p>
+    <p class="tagline">Guidance documents provide vetted, recommended methods for coastal engineering applications.</p>
+  </section>
+
+  <section class="search-wrap">
+    <div class="search-box">
+      <input id="q" type="search" autocomplete="off" placeholder="Search guidance, e.g. storm surge, dune erosion, overtopping&hellip;">
+    </div>
+    <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
+      <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
+    <div id="results" class="results-split" hidden>
+      <div class="res-col living">
+        <h3>Living Guidance</h3>
+        <p>Continuously updated guidance is in development.</p>
+        <span class="coming">Coming soon</span>
+      </div>
+      <div class="res-col legacy">
+        <h3>Legacy Guidance</h3>
+        <div id="results-legacy"></div>
+      </div>
+    </div>
   </section>
 
   <section class="guidance-split">
@@ -403,29 +427,109 @@ _INDEX = """<!doctype html><html lang="en"><head>
       <p>Continuously updated, peer-reviewed coastal engineering guidance built for the web.</p>
       <span class="coming">Coming soon</span>
     </div>
-    <a class="guide-card legacy" href="#chapters">
+    <a class="guide-card legacy" href="@@BASE@@cem.html">
       <h2>Legacy Guidance</h2>
-      <p>The USACE Coastal Engineering Manual (EM 1110-2-1100), converted to faithful, web-readable Markdown:
-        {tot_ch} chapters with real LaTeX equations, GFM tables, extracted figures, and full-text search.</p>
-      <span class="enter">Browse the manual &rarr;</span>
+      <p>The USACE Coastal Engineering Manual (EM 1110-2-1100), as web-readable guidance with
+         searchable equations, tables, and figures.</p>
+      <span class="enter">Open the manual &rarr;</span>
     </a>
   </section>
+</main>
+<footer class="site-footer">
+  <p class="disclaimer">CHESS Technical Guidance. Living guidance is in development. Legacy guidance is a faithful
+    conversion of the USACE Coastal Engineering Manual (EM 1110-2-1100) for reading, search, and reference;
+    refer to the official USACE publication for authoritative use.</p>
+</footer>
+<script>
+(function(){
+  var q=document.getElementById("q"), out=document.getElementById("results");
+  var legacy=document.getElementById("results-legacy");
+  var gsplit=document.querySelector(".guidance-split");
+  var mini=null, ready=false;
+  function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
+  function load(){
+    if(ready) return Promise.resolve();
+    return fetch("@@BASE@@search-index.json").then(function(r){return r.json();}).then(function(data){
+      mini=new MiniSearch({fields:["heading","text","title"],
+        storeFields:["heading","href","cid","part","title","text"],
+        searchOptions:{boost:{heading:3,title:2},prefix:true,fuzzy:0.2,combineWith:"AND"}});
+      mini.addAll(data.map(function(d,i){return Object.assign({},d,{id:i});}));
+      ready=true;
+    });
+  }
+  function snippet(text,terms){
+    var low=text.toLowerCase(), pos=-1;
+    terms.forEach(function(t){var p=low.indexOf(t); if(p>=0&&(pos<0||p<pos))pos=p;});
+    if(pos<0)pos=0;
+    var start=Math.max(0,pos-70), s=text.slice(start,start+220);
+    s=(start>0?"\\u2026":"")+esc(s)+"\\u2026";
+    terms.forEach(function(t){ if(t.length>1)
+      s=s.replace(new RegExp("("+t.replace(/[.*+?^${}()|[\\]\\\\]/g,"\\\\$&")+")","ig"),"<mark>$1</mark>"); });
+    return s;
+  }
+  function render(query){
+    var terms=query.toLowerCase().split(/\\s+/).filter(Boolean);
+    var res=mini.search(query).slice(0,40);
+    if(!res.length){ legacy.innerHTML='<p class="rcount">No matches for \\u201c'+esc(query)+'\\u201d.</p>'; return; }
+    var h='<p class="rcount">'+res.length+(res.length===40?"+":"")+' result'+(res.length===1?"":"s")+'</p>';
+    res.forEach(function(r){
+      h+='<a class="result" href="@@BASE@@'+esc(r.href)+'"><div><span class="r-where">'+esc(r.cid||r.part)+
+        '</span><span class="r-head">'+esc(r.heading||r.title)+'</span></div>'+
+        '<div class="r-snip">'+snippet(r.text||"",terms)+'</div></a>';
+    });
+    legacy.innerHTML=h;
+  }
+  var t;
+  function go(){
+    clearTimeout(t);
+    var query=q.value.trim(), searching=query.length>=2;
+    if(gsplit) gsplit.style.display=searching?"none":"";
+    out.hidden=!searching;
+    if(!searching){ legacy.innerHTML=""; return; }
+    t=setTimeout(function(){ load().then(function(){ render(query); }); },120);
+  }
+  q.addEventListener("input",go);
+  document.querySelectorAll(".search-hint b").forEach(function(b){
+    b.addEventListener("click",function(){ q.value=b.textContent; go(); q.focus(); });
+  });
+  var pq=new URLSearchParams(location.search).get("q");
+  if(pq){ q.value=pq; go(); }
+})();
+</script>
+</body></html>
+""".replace("{header}", _HEADER).replace("{theme_js}", _THEME_JS)
 
-  <section class="legacy-detail">
-    <div class="search-wrap">
-      <div class="search-box">
-        <input id="q" type="search" autocomplete="off" placeholder="Search the manual, e.g. storm surge, dune erosion, overtopping&hellip;">
-      </div>
-      <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
-        <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
-      <div id="results"></div>
-    </div>
+_CEM = """<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coastal Engineering Manual (EM 1110-2-1100) — CHESS-TG</title>
+<meta name="description" content="The USACE Coastal Engineering Manual (EM 1110-2-1100) as faithful, web-readable Markdown with real LaTeX equations, GFM tables and figures.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='Segoe UI,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="@@BASE@@style.css">
+<script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
+<script>{theme_js}</script>
+</head><body>
+{header}
+<main class="landing">
+  <section class="hero" style="padding:30px 16px 16px">
+    <a class="backlink" href="@@BASE@@index.html" style="display:inline-block;margin-bottom:12px;font-weight:600;text-decoration:none">&larr; CHESS-TG home</a>
+    <h1 class="wordmark" style="font-size:clamp(26px,5vw,44px);color:var(--fg)">Coastal Engineering Manual</h1>
+    <p class="hero-sub">Legacy Guidance &middot; USACE EM 1110-2-1100</p>
+    <p class="tagline">A faithful, web-readable conversion with real LaTeX equations, GFM tables, and extracted figures.</p>
     <div class="stat-row">
       <div class="stat"><div class="num">{tot_ch}</div><div class="lbl">Chapters</div></div>
       <div class="stat"><div class="num">{tot_eqv}</div><div class="lbl">Equations (100% verified)</div></div>
       <div class="stat"><div class="num">{tot_tab}</div><div class="lbl">Tables</div></div>
       <div class="stat"><div class="num">{tot_fig}</div><div class="lbl">Figures</div></div>
     </div>
+  </section>
+
+  <section class="search-wrap">
+    <div class="search-box">
+      <input id="q" type="search" autocomplete="off" placeholder="Search the manual, e.g. storm surge, dune erosion, overtopping&hellip;">
+    </div>
+    <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
+      <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
+    <div id="results"></div>
   </section>
 
   <section class="highlights">
@@ -450,7 +554,7 @@ _INDEX = """<!doctype html><html lang="en"><head>
   </div>
 </main>
 <footer class="site-footer">
-  <div class="foot-links"><a href="#parts">Parts</a><a href="#chapters">Chapters</a><a href="@@BASE@@chapter.html?c=qa_report.md">QA report</a></div>
+  <div class="foot-links"><a href="@@BASE@@index.html">CHESS-TG home</a><a href="#parts">Parts</a><a href="#chapters">Chapters</a><a href="@@BASE@@chapter.html?c=qa_report.md">QA report</a></div>
   <p class="disclaimer">A faithful Markdown conversion of the USACE Coastal Engineering Manual (EM 1110-2-1100)
     for reading, search, and reference. Refer to the official USACE publication for authoritative use.</p>
 </footer>
@@ -460,7 +564,6 @@ _INDEX = """<!doctype html><html lang="en"><head>
   var mini=null, ready=false;
   var partsList=document.getElementById("chapters"), partsNav=document.getElementById("parts");
   var hl=document.querySelector(".highlights"), areas=document.querySelector(".areas-section");
-  var gsplit=document.querySelector(".guidance-split");
   function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
   function load(){
     if(ready) return Promise.resolve();
@@ -498,7 +601,7 @@ _INDEX = """<!doctype html><html lang="en"><head>
   function go(){
     clearTimeout(t);
     var query=q.value.trim(), searching=query.length>=2;
-    [hl,areas,partsNav,partsList,gsplit].forEach(function(e){ if(e)e.style.display=searching?"none":""; });
+    [hl,areas,partsNav,partsList].forEach(function(e){ if(e)e.style.display=searching?"none":""; });
     if(!searching){ out.innerHTML=""; return; }
     t=setTimeout(function(){ load().then(function(){ render(query); }); },120);
   }
@@ -525,7 +628,7 @@ _CHAPTER = """<!doctype html><html lang="en"><head>
 </head><body>
 {header}
 <main class="doc">
-  <a class="backlink" href="index.html">&larr; All chapters</a>
+  <a class="backlink" href="cem.html">&larr; All chapters</a>
   <div id="content" class="markdown"><p class="muted">Loading&hellip;</p></div>
 </main>
 <script>
@@ -552,10 +655,11 @@ _CHAPTER = """<!doctype html><html lang="en"><head>
       md = md.replace(/```math\\n([\\s\\S]*?)\\n```/g, function(m,t){ math.push({d:true,t:t}); return "@@M"+(math.length-1)+"@@"; });
       md = md.replace(/\\$\\$([\\s\\S]*?)\\$\\$/g, function(m,t){ math.push({d:true,t:t}); return "@@M"+(math.length-1)+"@@"; });
       md = md.replace(/(^|[^\\\\$])\\$([^$\\n]+?)\\$/g, function(m,p,t){ math.push({d:false,t:t}); return p+"@@M"+(math.length-1)+"@@"; });
-      // wrap bare GREEK/symbol tokens the source emits un-delimited (the
-      // "Definitions of Symbols" lists), e.g. \\theta, \\rho_s, \\xi_{0m}, \\lambda_{1,2,3}.
-      // Allowlist keeps structural commands (\\frac, \\text, \\begin) as-is.
-      md = md.replace(/\\\\(?:alpha|beta|gamma|delta|epsilon|varepsilon|zeta|eta|theta|vartheta|iota|kappa|lambda|mu|nu|xi|omicron|pi|varpi|rho|varrho|sigma|varsigma|tau|upsilon|phi|varphi|chi|psi|omega|Gamma|Delta|Theta|Lambda|Xi|Pi|Sigma|Upsilon|Phi|Psi|Omega|partial|nabla|infty)(?![a-zA-Z])(?:[_^](?:{[^}]*}|[A-Za-z0-9]))*/g, function(m){ math.push({d:false,t:m}); return "@@M"+(math.length-1)+"@@"; });
+      // wrap bare math tokens the source emits un-delimited, esp. in the
+      // "where:" symbol lists: a \\command (\\theta, \\rho_s, \\overline{Z}, \\bar{x}),
+      // or a plain letter carrying a sub/superscript (D_n, H_s, K_D, X_i^{load}).
+      // A lone letter with no sub/sup is left alone so prose is untouched.
+      md = md.replace(/(?<![A-Za-z0-9])(?:\\\\(?:overline|underline|bar|hat|tilde|vec|widehat|widetilde|dot|ddot|mathbf|mathrm|mathcal|boldsymbol|breve|check|acute|grave)\\s*{[^}]*}(?:\\s*[_^]\\s*(?:{[^}]*}|\\\\?[A-Za-z0-9]+))*|\\\\[A-Za-z]+(?:\\s*[_^]\\s*(?:{[^}]*}|\\\\?[A-Za-z0-9]+))*|[A-Za-z](?:\\s*[_^]\\s*(?:{[^}]*}|\\\\?[A-Za-z0-9]+))+)/g, function(m){ math.push({d:false,t:m}); return "@@M"+(math.length-1)+"@@"; });
       var htmlout = marked.parse(md);
       htmlout = htmlout.replace(/@@M(\\d+)@@/g, function(m,i){ return '<span class="kx" data-i="'+i+'"></span>'; });
       var titleLine = (fm.match(/title:\\s*"?([^"\\n]+)"?/)||[])[1] || "";
