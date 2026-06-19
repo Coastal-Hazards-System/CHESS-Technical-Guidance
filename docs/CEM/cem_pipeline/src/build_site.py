@@ -242,6 +242,21 @@ main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
 .hero .hero-sub{margin:10px 0 0;color:var(--accent);font-weight:600;font-size:clamp(15px,2.4vw,22px)}
 .hero .tagline{max-width:760px;margin:18px auto 0;color:var(--label);font-size:15px}
 .hero .hero-note{max-width:760px;margin:10px auto 0;color:var(--muted);font-size:13px;font-style:italic}
+/* Living vs Legacy guidance split */
+.guidance-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:920px;margin:8px auto 0}
+@media(max-width:640px){.guidance-split{grid-template-columns:1fr}}
+.guide-card{display:block;text-decoration:none;color:var(--fg);background:var(--panel);
+  border:1px solid var(--border);border-radius:12px;padding:26px 26px 22px;text-align:center;
+  box-shadow:0 1px 3px rgba(0,0,0,.07)}
+.guide-card h2{margin:0 0 10px;color:var(--accent);font-size:23px;border:0;padding:0}
+.guide-card p{margin:0 auto 16px;color:var(--label);font-size:14px;max-width:34ch;min-height:62px}
+.guide-card.legacy:hover{border-color:var(--accent);background:var(--btn-hover)}
+.guide-card .enter{font-weight:700;color:var(--accent)}
+.guide-card.living{opacity:.78}
+.guide-card .coming{display:inline-block;font-weight:700;font-size:12px;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--muted);background:color-mix(in srgb,var(--muted) 16%,transparent);
+  padding:5px 14px;border-radius:999px}
+.legacy-detail{margin-top:8px}
 .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
 .cta{text-decoration:none;padding:12px 22px;border-radius:6px;font-weight:700;border:1px solid var(--border)}
 .cta-primary{background:var(--accent);color:var(--on-accent);border-color:transparent}
@@ -366,7 +381,7 @@ _THEME_JS = """
 
 _INDEX = """<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CEM — Coastal Engineering Manual (EM 1110-2-1100)</title>
+<title>CHESS-TG — Coastal Engineering Manual (EM 1110-2-1100)</title>
 <meta name="description" content="The USACE Coastal Engineering Manual (EM 1110-2-1100) as faithful, web-readable Markdown with real LaTeX equations, GFM tables and figures.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='Segoe UI,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="@@BASE@@style.css">
@@ -377,15 +392,33 @@ _INDEX = """<!doctype html><html lang="en"><head>
 <main class="landing">
   <section class="hero">
     <h1 class="wordmark">CHESS-TG<span class="beta">βeta</span></h1>
-    <p class="hero-sub">Coastal Hazards, Engineering, and Structures System (CHESS) — Technical Guidance (TG)</p>
-    <p class="tagline">The U.S. Army Corps of Engineers Coastal Engineering Manual — coastal hydrodynamics,
-      sediment processes, geology, project planning, and the design of coastal structures — converted to
-      faithful, web-readable Markdown with real LaTeX equations, GitHub-flavored tables, and extracted figures.</p>
-    <p class="hero-note">Machine-converted and verified from the source PDFs: every equation is KaTeX-valid and
-      cross-checked against the document's born-digital text layer and an independent recognizer.</p>
-    <div class="cta-row">
-      <a class="cta cta-primary" href="#chapters">Browse chapters →</a>
-      <a class="cta cta-secondary" href="#parts">Jump to a Part</a>
+    <p class="hero-sub">Coastal Hazards, Engineering, and Structures System (CHESS): Technical Guidance (TG)</p>
+    <p class="tagline">Authoritative coastal engineering guidance for the web. Living, continuously updated
+      guidance is in development; today you can browse the converted legacy reference below.</p>
+  </section>
+
+  <section class="guidance-split">
+    <div class="guide-card living">
+      <h2>Living Guidance</h2>
+      <p>Continuously updated, peer-reviewed coastal engineering guidance built for the web.</p>
+      <span class="coming">Coming soon</span>
+    </div>
+    <a class="guide-card legacy" href="#chapters">
+      <h2>Legacy Guidance</h2>
+      <p>The USACE Coastal Engineering Manual (EM 1110-2-1100), converted to faithful, web-readable Markdown:
+        {tot_ch} chapters with real LaTeX equations, GFM tables, extracted figures, and full-text search.</p>
+      <span class="enter">Browse the manual &rarr;</span>
+    </a>
+  </section>
+
+  <section class="legacy-detail">
+    <div class="search-wrap">
+      <div class="search-box">
+        <input id="q" type="search" autocomplete="off" placeholder="Search the manual, e.g. storm surge, dune erosion, overtopping&hellip;">
+      </div>
+      <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
+        <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
+      <div id="results"></div>
     </div>
     <div class="stat-row">
       <div class="stat"><div class="num">{tot_ch}</div><div class="lbl">Chapters</div></div>
@@ -393,23 +426,15 @@ _INDEX = """<!doctype html><html lang="en"><head>
       <div class="stat"><div class="num">{tot_tab}</div><div class="lbl">Tables</div></div>
       <div class="stat"><div class="num">{tot_fig}</div><div class="lbl">Figures</div></div>
     </div>
-    <div class="search-wrap">
-      <div class="search-box">
-        <input id="q" type="search" autocomplete="off" placeholder="Search the manual — e.g. storm surge, dune erosion, overtopping&hellip;">
-      </div>
-      <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
-        <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
-      <div id="results"></div>
-    </div>
   </section>
 
   <section class="highlights">
-    <div class="hl-card"><h3>Real LaTeX math</h3><p>Every equation is a live KaTeX/MathJax expression, not an
-      image &mdash; selectable, searchable, and rendered crisply at any size.</p></div>
+    <div class="hl-card"><h3>Real LaTeX math</h3><p>Every equation is a live KaTeX/MathJax expression rather than
+      an image, so it is selectable, searchable, and rendered crisply at any size.</p></div>
     <div class="hl-card"><h3>Faithful tables &amp; figures</h3><p>Tables are reconstructed as pipe tables and
       figures extracted as images with their captions, preserving the source structure.</p></div>
     <div class="hl-card"><h3>Machine-verified</h3><p>Equations are confirmed by independent-engine agreement and
-      the PDF's born-digital text layer &mdash; {tot_eqv} of {tot_eq} at 100%.</p></div>
+      the document's born-digital text layer: {tot_eqv} of {tot_eq} at 100%.</p></div>
     <div class="hl-card"><h3>Open &amp; browsable</h3><p>One page per chapter, organized by the manual's six Parts,
       readable in any browser with no install.</p></div>
   </section>
@@ -435,6 +460,7 @@ _INDEX = """<!doctype html><html lang="en"><head>
   var mini=null, ready=false;
   var partsList=document.getElementById("chapters"), partsNav=document.getElementById("parts");
   var hl=document.querySelector(".highlights"), areas=document.querySelector(".areas-section");
+  var gsplit=document.querySelector(".guidance-split");
   function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
   function load(){
     if(ready) return Promise.resolve();
@@ -472,7 +498,7 @@ _INDEX = """<!doctype html><html lang="en"><head>
   function go(){
     clearTimeout(t);
     var query=q.value.trim(), searching=query.length>=2;
-    [hl,areas,partsNav,partsList].forEach(function(e){ if(e)e.style.display=searching?"none":""; });
+    [hl,areas,partsNav,partsList,gsplit].forEach(function(e){ if(e)e.style.display=searching?"none":""; });
     if(!searching){ out.innerHTML=""; return; }
     t=setTimeout(function(){ load().then(function(){ render(query); }); },120);
   }
@@ -489,7 +515,7 @@ _INDEX = """<!doctype html><html lang="en"><head>
 
 _CHAPTER = """<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CEM — chapter</title>
+<title>CHESS-TG — chapter</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
@@ -535,7 +561,7 @@ _CHAPTER = """<!doctype html><html lang="en"><head>
       var titleLine = (fm.match(/title:\\s*"?([^"\\n]+)"?/)||[])[1] || "";
       var partLine = (fm.match(/part:\\s*"?([^"\\n]+)"?/)||[])[1] || "";
       var chLine = (fm.match(/chapter:\\s*([^\\n]+)/)||[])[1] || "";
-      if(titleLine){ document.title = "CEM — " + titleLine; }
+      if(titleLine){ document.title = "CHESS-TG — " + titleLine; }
       el.innerHTML = (partLine?('<div class="fm">Part '+partLine+(chLine?', Chapter '+chLine.trim():'')+' &middot; EM 1110-2-1100</div>'):"") + htmlout;
       el.querySelectorAll(".kx").forEach(function(s){
         var e=math[+s.dataset.i];

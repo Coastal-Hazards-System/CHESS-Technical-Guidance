@@ -45,6 +45,21 @@ main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
 .hero .hero-sub{margin:10px 0 0;color:var(--accent);font-weight:600;font-size:clamp(15px,2.4vw,22px)}
 .hero .tagline{max-width:760px;margin:18px auto 0;color:var(--label);font-size:15px}
 .hero .hero-note{max-width:760px;margin:10px auto 0;color:var(--muted);font-size:13px;font-style:italic}
+/* Living vs Legacy guidance split */
+.guidance-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:920px;margin:8px auto 0}
+@media(max-width:640px){.guidance-split{grid-template-columns:1fr}}
+.guide-card{display:block;text-decoration:none;color:var(--fg);background:var(--panel);
+  border:1px solid var(--border);border-radius:12px;padding:26px 26px 22px;text-align:center;
+  box-shadow:0 1px 3px rgba(0,0,0,.07)}
+.guide-card h2{margin:0 0 10px;color:var(--accent);font-size:23px;border:0;padding:0}
+.guide-card p{margin:0 auto 16px;color:var(--label);font-size:14px;max-width:34ch;min-height:62px}
+.guide-card.legacy:hover{border-color:var(--accent);background:var(--btn-hover)}
+.guide-card .enter{font-weight:700;color:var(--accent)}
+.guide-card.living{opacity:.78}
+.guide-card .coming{display:inline-block;font-weight:700;font-size:12px;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--muted);background:color-mix(in srgb,var(--muted) 16%,transparent);
+  padding:5px 14px;border-radius:999px}
+.legacy-detail{margin-top:8px}
 .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
 .cta{text-decoration:none;padding:12px 22px;border-radius:6px;font-weight:700;border:1px solid var(--border)}
 .cta-primary{background:var(--accent);color:var(--on-accent);border-color:transparent}
