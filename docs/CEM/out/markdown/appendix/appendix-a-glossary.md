@@ -580,7 +580,7 @@ Concrete box-type structure.
 
 ### CALCAREOUS
 
-Containing calcium carbonate (CaCO3), chiefly as the minerals calcite and aragonite. When applied to rock, it implies that as much as 50 percent of the rock is carbonate (e.g., calcareous sand).
+Containing calcium carbonate $(CaCO_{3}),$ chiefly as the minerals calcite and aragonite. When applied to rock, it implies that as much as 50 percent of the rock is carbonate (e.g., calcareous sand).
 
 ### CALM
 
@@ -1053,7 +1053,7 @@ The nearly-level surface composing the landward portion of a large DELTA.
 
 ### DENSITY
 
-Mass (in kg) per unit of volume of a substance; kg/m3 . For pure water, the density is 1000 kg/m3 , for seawater the density is usually more. Density increases with increasing salinity, and decreases with increasing temperature. More information can be found in "properties of seawater". For stone and sand, usually a density of 2600 kg/m3 is assumed. Concrete is less dense, in the order of 2400 kg/m3 . Some types of basalt may reach 2800 kg/m3 . For sand, including the voids, one may use 1600 kg/m3 , while mud often has a density of 1100 - 1200 kg/m3 .
+Mass (in kg) per unit of volume of a substance; $kg/m^{3}.$ For pure water, the density is 1000 $kg/m^{3},$ for seawater the density is usually more. Density increases with increasing salinity, and decreases with increasing temperature. More information can be found in "properties of seawater". For stone and sand, usually a density of 2600 $kg/m^{3}$ is assumed. Concrete is less dense, in the order of 2400 $kg/m^{3}.$ Some types of basalt may reach 2800 $kg/m^{3}.$ For sand, including the voids, one may use 1600 $kg/m^{3},$ while mud often has a density of 1100 - 1200 $kg/m^{3}.$
 
 ### DENSITY CURRENT
 
@@ -1587,7 +1587,7 @@ In wave forecasting, the end of the generating area toward which the wind is blo
 
 ### FROUDE NUMBER
 
-The dimensionless ratio of the inertial force to the force of gravity for a given fluid flow. It may be given as Fr = V /Lg where V is a characteristic velocity, L is a characteristic length, and g the acceleration of gravity - or as the square root of this number.
+The dimensionless ratio of the inertial force to the force of gravity for a given fluid flow. It may be given as $F_{r}$ = V /Lg where V is a characteristic velocity, L is a characteristic length, and g the acceleration of gravity - or as the square root of this number.
 
 # FULLY-DEVELOPED SEA
 
@@ -2658,7 +2658,7 @@ Propagation velocity of an individual wave as opposed to the velocity of a wave 
 
 ### PHI GRADE SCALE
 
-A logarithmic transformation of the Wentworth grade scale for size classifications of sediment grains based on the negative logarithm to the base 2 of the particle diameter: = -log2d. See SOIL CLASSIFICATION.
+A logarithmic transformation of the Wentworth grade scale for size classifications of sediment grains based on the negative logarithm to the base 2 of the particle diameter: = $-\log_{2}d.$ See SOIL CLASSIFICATION.
 
 ### PHOTIC ZONE
 
@@ -2758,7 +2758,7 @@ The interstitial pressure of water within a mass of soil or rock.
 
 # POROSITY
 
-Percentage of the total volume of a soil sample not occupied by solid particles but by air and water, η = Vv/VT × 100.
+Percentage of the total volume of a soil sample not occupied by solid particles but by air and water, η = $V_{v}/V_{T}$ × 100.
 
 ## PORT
 
@@ -3466,7 +3466,7 @@ Process of selection and separation of sediment grains according to their grain 
 
 ## SORTING COEFFICIENT
 
-A coefficient used in describing the distribution of grain sizes in a sample of unconsolidated material. It is defined as So = Q1/Q3 , where Q1 is the diameter (in millimeters) which has 75 percent of the cumulative size-frequency (by weight) distribution smaller than itself and 25 percent larger than itself, and Q3 is that diameter having 25 percent smaller and 75 percent larger than itself.
+A coefficient used in describing the distribution of grain sizes in a sample of unconsolidated material. It is defined as $S_{o}$ = Q1/Q3 , where Q1 is the diameter (in millimeters) which has 75 percent of the cumulative size-frequency (by weight) distribution smaller than itself and 25 percent larger than itself, and Q3 is that diameter having 25 percent smaller and 75 percent larger than itself.
 
 ### SOUND
 
@@ -3486,7 +3486,7 @@ A line, wire, or cord used in sounding, which is weighted at one end with a plum
 
 ### SPECIFIC GRAVITY
 
-The ratio of the weight of unit volume of any material to the weight of unit volume of water at 4E C, Gs = γs/γw. Typical values of Gs for soil solids are 2.65 to 2.72.
+The ratio of the weight of unit volume of any material to the weight of unit volume of water at 4E C, $G_{s}$ = $γ_{s}/γ_{w}.$ Typical values of $G_{s}$ for soil solids are 2.65 to 2.72.
 
 ## SPILLING BREAKER
 
@@ -4125,7 +4125,7 @@ That molecular property of a fluid that enables it to support tangential stresse
 
 ### VOID RATIO
 
-For a sediment sample, defined as the ratio of the volume of the voids to the volume of the solids, Q = Vv/Vs. Typical values of Q for natural sands range from 0.5 to 0.8, for cohesive soils from 0.7 to 1.1.
+For a sediment sample, defined as the ratio of the volume of the voids to the volume of the solids, Q = $V_{v}/V_{s}.$ Typical values of Q for natural sands range from 0.5 to 0.8, for cohesive soils from 0.7 to 1.1.
 W
 
 ### WASH LOAD
@@ -4448,7 +4448,7 @@ Reed, M. 2000. Shore and Sea Boundaries, Volume 3, The Development of Internatio
 
 # Shore Protection Manual 1984
 
-Shore Protection Manual . 1984. 4th ed., 2 Vol., U.S. Army Engineer Waterways Experiment Station, U.S. Government Printing Office, Washington, D.C., 1,088 p.
+Shore Protection Manual . 1984. $4^{th}$ ed., 2 Vol., U.S. Army Engineer Waterways Experiment Station, U.S. Government Printing Office, Washington, D.C., 1,088 p.
 
 # Verhagen 1998
 

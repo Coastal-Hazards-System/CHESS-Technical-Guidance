@@ -358,6 +358,125 @@ def fix_nav(md_path):
     return fixed
 
 
+_FUNCS = ("log", "ln", "sin", "cos", "tan", "exp", "sinh", "cosh", "tanh", "max", "min")
+
+
+def _esc_tex(s):
+    return s.replace("\\", "").replace("%", "\\%").replace("&", "\\&").replace("#", "\\#")
+
+
+def _recon_carrier(t):
+    """t: [(char, role)] for one PDF token (role in n/sub/sup). Return inline LaTeX
+    (no $ delimiters), restoring sub/superscripts; a superscript lone o/0 is a
+    degree sign."""
+    out, i, n = [], 0, len(t)
+    while i < n:
+        ch, r = t[i]
+        if r in ("sub", "sup"):
+            j = i
+            while j < n and t[j][1] == r:
+                j += 1
+            run = _esc_tex("".join(c for c, _ in t[i:j]))
+            if r == "sup" and run.lower() in ("o", "0"):
+                out.append("^{\\circ}")
+            else:
+                out.append(("_" if r == "sub" else "^") + "{" + run + "}")
+            i = j
+        else:
+            out.append(_esc_tex(ch)); i += 1
+    expr = "".join(out)
+    for fn in _FUNCS:                        # function name before sub/sup -> operator
+        expr = re.sub(r"(?<![A-Za-z\\])" + fn + r"(?=[_^])", "\\\\" + fn, expr)
+    return expr
+
+
+def _token_roles(chars, base, base_cy):
+    """Split chars (each {c,size,bbox}) into space-delimited tokens of (char,role)."""
+    toks, cur = [], []
+    for c in chars:
+        if c["c"].isspace():
+            if cur:
+                toks.append(cur); cur = []
+            continue
+        sz = round(c["size"]); cy = (c["bbox"][1] + c["bbox"][3]) / 2
+        if sz <= base * 0.82 and cy > base_cy + 0.4:
+            cur.append((c["c"], "sub"))
+        elif sz <= base * 0.82 and cy < base_cy - 0.4:
+            cur.append((c["c"], "sup"))
+        else:
+            cur.append((c["c"], "n"))
+    if cur:
+        toks.append(cur)
+    return toks
+
+
+def fix_subscripts(md_path, pdf_path):
+    """Restore sub/superscripts the converter flattened (H0->H_0, 10-3->10^{-3},
+    log10->\\log_{10}, 15o->15 degrees). For every PDF token that mixes a normal base
+    with smaller, baseline-shifted glyphs, wrap a rebuilt inline-math version and
+    swap ONLY that token into the markdown (anchored on its neighbour tokens), so
+    surrounding prose is never turned into math. Returns count applied."""
+    import collections
+    doc = fitz.open(pdf_path)
+    subs, seen = [], set()
+    for pno in range(len(doc)):
+        for b in doc[pno].get_text("rawdict")["blocks"]:
+            for ln in b.get("lines", []):
+                chars = [{"c": c["c"], "size": sp["size"], "bbox": c["bbox"]}
+                         for sp in ln["spans"] for c in sp.get("chars", [])]
+                nonsp = [c for c in chars if not c["c"].isspace()]
+                if len(nonsp) < 2:
+                    continue
+                szc = collections.Counter(round(c["size"]) for c in nonsp)
+                base = max(szc, key=lambda s: (szc[s], s))
+                if base < 6 or not any(round(c["size"]) <= base * 0.82 for c in nonsp):
+                    continue
+                cys = sorted((c["bbox"][1] + c["bbox"][3]) / 2 for c in nonsp
+                             if round(c["size"]) >= base * 0.92)
+                if not cys:
+                    continue
+                toks = _token_roles(chars, base, cys[len(cys) // 2])
+                for ti, t in enumerate(toks):
+                    roles = [r for _, r in t]
+                    if not any(r in ("sub", "sup") for r in roles):
+                        continue
+                    if roles[0] != "n":   # must start with a base glyph (no leading _/^)
+                        continue
+                    body = r"\s*".join(re.escape(c) for c, _ in t)
+                    repl = "$" + _recon_carrier(t) + "$"
+                    left = re.escape("".join(c for c, _ in toks[ti - 1])) if ti > 0 else ""
+                    right = re.escape("".join(c for c, _ in toks[ti + 1])) if ti + 1 < len(toks) else ""
+                    # need an anchor; one strong side is enough for a distinctive body
+                    if left and right:
+                        rgx = f"({left})(\\s+)({body})(\\s+)({right})"
+                        rep = (lambda m, R=repl: m.group(1) + m.group(2) + R + m.group(4) + m.group(5))
+                    elif (left or right) and len(t) >= 4:
+                        if left:
+                            rgx = f"({left})(\\s+)({body})(?![\\w])"
+                            rep = (lambda m, R=repl: m.group(1) + m.group(2) + R)
+                        else:
+                            rgx = f"(?<![\\w])({body})(\\s+)({right})"
+                            rep = (lambda m, R=repl: R + m.group(2) + m.group(3))
+                    else:
+                        continue
+                    key = (rgx, repl)
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    subs.append((rgx, rep))
+    text = open(md_path, encoding="utf-8").read().replace("\r\n", "\n")
+    applied = 0
+    for rgx, rep in subs:
+        try:
+            text, n = re.subn(rgx, rep, text, count=1)
+        except re.error:
+            continue
+        applied += 1 if n else 0
+    with open(md_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(text)
+    return applied
+
+
 _DEF_RE = re.compile(r"^[\\A-Za-z][\w^{}\\*'()|.-]{0,17}\s*=\s+\S")
 
 
