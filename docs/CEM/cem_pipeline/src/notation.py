@@ -442,6 +442,8 @@ def fix_subscripts(md_path, pdf_path):
                         continue
                     if roles[0] != "n":   # must start with a base glyph (no leading _/^)
                         continue
+                    if any(0xE000 <= ord(c) <= 0xF8FF for c, _ in t):   # Symbol-font PUA -> KaTeX can't render
+                        continue
                     body = r"\s*".join(re.escape(c) for c, _ in t)
                     repl = "$" + _recon_carrier(t) + "$"
                     left = re.escape("".join(c for c, _ in toks[ti - 1])) if ti > 0 else ""
@@ -511,6 +513,22 @@ _DEGREE_RE = re.compile(r'(\d)\s*[oº°]\s*([CF])\b')
 def fix_degree(text):
     """Superscript 'o' transcribed as the letter o before C/F is a degree sign."""
     return _DEGREE_RE.sub('\\1°\\2', text)
+
+
+# Currency dollar amounts in prose ($6 billion, $1,000, $2.97 Fixed plant) collide
+# with the inline-math $...$ delimiter; escape them to literal \$ . Each pattern is
+# shaped so it never matches a math run (which is $<letter/\\> or $<digits>^/_ ...).
+_CURRENCY = [
+    re.compile(r'(?<!\\)\$(\s?\d[\d,]*(?:\.\d+)?\s*(?:million|billion|trillion|thousand)\b)', re.I),
+    re.compile(r'(?<!\\)\$(\s?\d{1,3}(?:,\d{3})+(?:\.\d+)?)'),
+    re.compile(r'(?<!\\)\$(\s?\d+\.\d{2}\s+[A-Z][a-z])'),
+]
+
+
+def fix_currency(text):
+    for rx in _CURRENCY:
+        text = rx.sub(r'\\$\1', text)
+    return text
 
 
 if __name__ == "__main__":

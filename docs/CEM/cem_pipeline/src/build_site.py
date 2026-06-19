@@ -228,10 +228,10 @@ html[data-theme="dark"]{
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg) var(--texture);color:var(--fg);
-  font:14px/1.5 var(--font)}
+  font:13px/1.45 var(--font)}
 a{color:var(--accent)}
 header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 16px;
-  border-bottom:1px solid var(--border);background:var(--header-bg);position:sticky;top:0;z-index:10}
+  border-bottom:var(--bw) solid var(--border);background:var(--header-bg);position:sticky;top:0;z-index:10}
 header .title{font-weight:800;color:var(--danger);font-size:18px;text-decoration:none;letter-spacing:.01em}
 header .spacer{flex:1}
 .topnav{display:flex;gap:4px;flex-wrap:wrap}
@@ -247,20 +247,20 @@ header .spacer{flex:1}
 .switch input:checked + .track + .thumb{transform:translateX(18px)}
 
 main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
-.hero{text-align:center;padding:54px 16px 30px}
+.hero{text-align:center;padding:56px 16px 36px}
 .hero .wordmark{margin:0;color:var(--danger);font-weight:800;letter-spacing:.01em;
   font-size:clamp(44px,8vw,84px);line-height:1.05;position:relative;display:inline-block}
 .hero .beta{position:absolute;left:100%;top:.04em;margin-left:.1em;font-size:.5em;font-weight:700;
   font-style:italic;letter-spacing:.02em;color:var(--cls-a);line-height:1}
 .hero .hero-sub{margin:10px 0 0;color:var(--accent);font-weight:600;font-size:clamp(15px,2.4vw,22px)}
-.hero .tagline{max-width:760px;margin:18px auto 0;color:var(--label);font-size:15px}
+.hero .tagline{max-width:720px;margin:18px auto 0;color:var(--label);font-size:15px}
 .hero .hero-note{max-width:760px;margin:10px auto 0;color:var(--muted);font-size:13px;font-style:italic}
 /* Living vs Legacy guidance split */
 .guidance-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:920px;margin:8px auto 0}
 @media(max-width:640px){.guidance-split{grid-template-columns:1fr}}
 .guide-card{display:block;text-decoration:none;color:var(--fg);background:var(--panel);
   border:1px solid var(--border);border-radius:12px;padding:26px 26px 22px;text-align:center;
-  box-shadow:0 1px 3px rgba(0,0,0,.07)}
+  box-shadow:var(--shadow)}
 .guide-card h2{margin:0 0 10px;color:var(--accent);font-size:23px;border:0;padding:0}
 .guide-card p{margin:0 auto 16px;color:var(--label);font-size:14px;max-width:34ch;min-height:62px}
 .guide-card.legacy:hover{border-color:var(--accent);background:var(--btn-hover)}
@@ -282,16 +282,16 @@ main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
 .stat .num{font-size:26px;font-weight:800;color:var(--accent)}
 .stat .lbl{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
 
-.highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:30px}
-.hl-card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:16px 18px;
-  box-shadow:0 1px 3px rgba(0,0,0,.07)}
+.highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:24px}
+.hl-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;
+  box-shadow:var(--shadow)}
 .hl-card h3{margin:0 0 6px;color:var(--accent);font-size:15px}
 .hl-card p{margin:0;color:var(--label);font-size:13px}
 
 /* search */
 .search-wrap{max-width:760px;margin:26px auto 0}
 .search-box{display:flex;gap:8px}
-#q{flex:1;padding:12px 16px;font-size:16px;border:1px solid var(--ctl-border);border-radius:8px;
+#q{flex:1;padding:12px 16px;font-size:16px;border:1px solid var(--ctl-border);border-radius:var(--radius);
   background:var(--panel);color:var(--fg)}
 #q:focus{outline:none;border-color:var(--accent)}
 .search-hint{margin:8px 2px 0;color:var(--muted);font-size:12px}
@@ -299,7 +299,7 @@ main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
 .search-hint b:hover{color:var(--accent)}
 #results{margin-top:14px;display:flex;flex-direction:column;gap:8px}
 .result{display:block;text-decoration:none;color:var(--fg);background:var(--panel);
-  border:1px solid var(--border);border-radius:8px;padding:10px 14px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+  border:1px solid var(--border);border-radius:var(--radius);padding:10px 14px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
 .result:hover{border-color:var(--accent);background:var(--btn-hover)}
 .result .r-head{font-weight:600}
 .result .r-where{color:var(--accent);font-size:12px;font-weight:600;margin-right:6px}
@@ -320,8 +320,8 @@ main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
 .areas-section h2,.parts-list h2.sec{color:var(--fg);font-size:18px;margin:0 0 12px}
 .areas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
 .area-card{display:flex;justify-content:space-between;align-items:center;gap:10px;text-decoration:none;
-  color:var(--fg);background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:12px 14px;
-  box-shadow:0 1px 3px rgba(0,0,0,.07)}
+  color:var(--fg);background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;
+  box-shadow:var(--shadow)}
 .area-card:hover{border-color:var(--accent);background:var(--btn-hover)}
 .area-card .area-name{font-weight:600}
 .area-card .area-count{color:var(--muted);font-size:12px;white-space:nowrap}
@@ -331,7 +331,7 @@ main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
 .part-section h2{color:var(--fg);font-size:19px;margin:0 0 12px;padding-left:12px}
 .ch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
 .ch-card{display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--fg);background:var(--panel);
-  border:1px solid var(--border);border-radius:8px;padding:11px 14px;box-shadow:0 1px 3px rgba(0,0,0,.07)}
+  border:1px solid var(--border);border-radius:var(--radius);padding:11px 14px;box-shadow:var(--shadow)}
 .ch-card:hover{border-color:var(--accent);background:var(--btn-hover)}
 .ch-card .ch-id{font-weight:700;color:var(--label);font-size:12px}
 .ch-card .ch-title{font-weight:600;font-size:14px}
@@ -430,14 +430,14 @@ _LANDING = """<!doctype html><html lang="en"><head>
 
   <section class="search-wrap">
     <form class="search-box" action="@@BASE@@search.html" method="get" role="search">
-      <input id="q" name="q" type="search" autocomplete="off" placeholder="Search guidance, e.g. storm surge, dune erosion, overtopping&hellip;">
+      <input id="q" name="q" type="search" autocomplete="off" placeholder="Search guidance, e.g., storm surge, dune erosion, overtopping&hellip;">
     </form>
     <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
       <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
   </section>
 </main>
 <footer class="site-footer">
-  <p class="disclaimer">CHESS Technical Guidance. Living guidance is in development. Legacy guidance is a faithful
+  <p class="disclaimer">CHESS-TG. Living guidance is in development. Legacy guidance is a faithful
     conversion of the USACE Coastal Engineering Manual (EM 1110-2-1100) for reading, search, and reference;
     refer to the official USACE publication for authoritative use.</p>
 </footer>
@@ -466,7 +466,7 @@ _SEARCH = """<!doctype html><html lang="en"><head>
   <section class="search-wrap" style="padding-top:24px">
     <a class="backlink" href="@@BASE@@index.html" style="display:inline-block;margin-bottom:12px;font-weight:600;text-decoration:none">&larr; CHESS-TG home</a>
     <form class="search-box" role="search" onsubmit="return false">
-      <input id="q" name="q" type="search" autocomplete="off" placeholder="Search guidance, e.g. storm surge, dune erosion, overtopping&hellip;">
+      <input id="q" name="q" type="search" autocomplete="off" placeholder="Search guidance, e.g., storm surge, dune erosion, overtopping&hellip;">
     </form>
     <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
       <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
@@ -551,7 +551,7 @@ _CEM = """<!doctype html><html lang="en"><head>
 <main class="landing">
   <section class="hero" style="padding:30px 16px 16px">
     <a class="backlink" href="@@BASE@@index.html" style="display:inline-block;margin-bottom:12px;font-weight:600;text-decoration:none">&larr; CHESS-TG home</a>
-    <h1 class="wordmark" style="font-size:clamp(26px,5vw,44px);color:var(--fg)">Coastal Engineering Manual</h1>
+    <h1 class="wordmark" style="display:block;font-size:clamp(26px,5vw,44px);color:var(--fg)">Coastal Engineering Manual</h1>
     <p class="hero-sub">Legacy Guidance &middot; USACE EM 1110-2-1100</p>
     <p class="tagline">A faithful, web-readable conversion with real LaTeX equations, GFM tables, and extracted figures.</p>
     <div class="stat-row">
@@ -564,7 +564,7 @@ _CEM = """<!doctype html><html lang="en"><head>
 
   <section class="search-wrap">
     <div class="search-box">
-      <input id="q" type="search" autocomplete="off" placeholder="Search the manual, e.g. storm surge, dune erosion, overtopping&hellip;">
+      <input id="q" type="search" autocomplete="off" placeholder="Search the manual, e.g., storm surge, dune erosion, overtopping&hellip;">
     </div>
     <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
       <b>wave overtopping</b> · <b>longshore transport</b> · <b>scour</b></p>
