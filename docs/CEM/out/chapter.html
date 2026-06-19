@@ -53,10 +53,10 @@
       md = md.replace(/^---\n([\s\S]*?)\n---\n?/, function(m,y){ fm=y; return ""; });
       // rewrite relative asset paths to be relative to the .md's directory
       md = md.replace(/\]\((assets\/)/g, "](" + base + "$1");
-      // drop navigation sections (Table of Contents / List of Tables / List of
-      // Figures) — redundant with the site nav and poorly auto-segmented from the
-      // source PDF (they otherwise render as a run-on of dotted leaders).
-      md = md.replace(/(^|\n)#{1,6}[ \t]*(Table of Contents|List of Tables|List of Figures)[^\n]*\n([\s\S]*?)(?=\n#{1,6}[ \t]|\s*$)/gi, "$1");
+      // drop the running-header pseudo-headings the PDF repeats on every page
+      // (e.g. "# EM 1110-2-1100 (Part VI) Change 3 (28 Sep 11)"); the Table of
+      // Contents / List of Figures / List of Tables are kept (rebuilt as lists).
+      md = md.replace(/(^|\n)#{1,6}[ \t]*(EM[ ]*1110-2-1100|Change[ ]+\d)[^\n]*(?=\n)/gi, "$1");
       // protect math from the markdown parser
       var math=[];
       md = md.replace(/```math\n([\s\S]*?)\n```/g, function(m,t){ math.push({d:true,t:t}); return "@@M"+(math.length-1)+"@@"; });
@@ -66,7 +66,7 @@
       // "where:" symbol lists: a \command (\theta, \rho_s, \overline{Z}, \bar{x}),
       // or a plain letter carrying a sub/superscript (D_n, H_s, K_D, X_i^{load}).
       // A lone letter with no sub/sup is left alone so prose is untouched.
-      md = md.replace(/(?<![A-Za-z0-9])(?:\\(?:overline|underline|bar|hat|tilde|vec|widehat|widetilde|dot|ddot|mathbf|mathrm|mathcal|boldsymbol|breve|check|acute|grave)\s*{[^}]*}(?:\s*[_^]\s*(?:{[^}]*}|\\?[A-Za-z0-9]+))*|\\[A-Za-z]+(?:\s*[_^]\s*(?:{[^}]*}|\\?[A-Za-z0-9]+))*|[A-Za-z](?:\s*[_^]\s*(?:{[^}]*}|\\?[A-Za-z0-9]+))+)/g, function(m){ math.push({d:false,t:m}); return "@@M"+(math.length-1)+"@@"; });
+      md = md.replace(/(?<![A-Za-z0-9])(?:\\(?:overline|underline|bar|hat|tilde|vec|widehat|widetilde|dot|ddot|mathbf|mathrm|mathcal|boldsymbol|breve|check|acute|grave)\s*{[^}]*}(?:\s*[_^]\s*(?:{[^}]*}|\\?[A-Za-z0-9]+|\*))*|\\[A-Za-z]+(?:\s*[_^]\s*(?:{[^}]*}|\\?[A-Za-z0-9]+|\*))*|(?:[A-Za-z]|\d+)(?:\s*[_^]\s*(?:{[^}]*}|\\?[A-Za-z0-9]+|\*))+)/g, function(m){ math.push({d:false,t:m}); return "@@M"+(math.length-1)+"@@"; });
       var htmlout = marked.parse(md);
       htmlout = htmlout.replace(/@@M(\d+)@@/g, function(m,i){ return '<span class="kx" data-i="'+i+'"></span>'; });
       var titleLine = (fm.match(/title:\s*"?([^"\n]+)"?/)||[])[1] || "";

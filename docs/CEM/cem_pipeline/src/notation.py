@@ -300,6 +300,100 @@ def fix_prose(md_path, pdf_path, exclude_pages=()):
     return applied, missed, len(subs)
 
 
+_NAV_HEAD = re.compile(r'^#{1,6}\s+(Table of Contents|List of Figures|List of Tables)\s*\.?\s*$', re.I)
+_PSEUDO_HEAD = re.compile(r'(EM\s*1110|Change\s+\d|\(Part)', re.I)
+
+
+def _split_nav(kind, raw):
+    """Split a run-on Table-of-Contents / List-of-Figures / List-of-Tables body
+    into one entry per item."""
+    raw = re.sub(r'\s+', ' ', raw).strip()
+    if 'figures' in kind:
+        parts = re.split(r'(?=\bFigure\s+[IVXLC]+-\d+-\d+)', raw)
+    elif 'tables' in kind:
+        parts = re.split(r'(?=\bTable\s+[IVXLC]+-\d+-\d+)', raw)
+    else:                                   # Table of Contents (Roman "VI-6-1." or arabic "2-1.")
+        raw = re.sub(r'^(?:Paragraph\s+)?Page\s+', '', raw)
+        parts = re.split(r'(?=(?<![A-Za-z0-9-])(?:[IVXLC]+-\d+-\d+|\d+-\d+)\.)', raw)
+    return [p.strip() for p in parts if p.strip()]
+
+
+def fix_nav(md_path):
+    """Rebuild the run-on front-matter navigation sections (Table of Contents,
+    List of Figures, List of Tables) as readable one-per-line lists. Content that
+    a page-break/running-header split across a pseudo-heading is merged back.
+    Returns the number of sections rebuilt."""
+    text = open(md_path, encoding='utf-8').read().replace('\r\n', '\n')
+    lines = text.split('\n')
+    out, i, fixed = [], 0, 0
+    while i < len(lines):
+        m = _NAV_HEAD.match(lines[i])
+        if not m:
+            out.append(lines[i]); i += 1; continue
+        kind = m.group(1).lower()
+        j, body, listed = i + 1, [], False
+        while j < len(lines):
+            hm = re.match(r'^#{1,6}\s+(.*)$', lines[j])
+            if hm:
+                if _PSEUDO_HEAD.search(hm.group(1)):   # running header -> drop, keep going
+                    j += 1; continue
+                break                                   # real heading -> section ends
+            if lines[j].lstrip().startswith('- '):
+                listed = True
+            if lines[j].strip():
+                body.append(lines[j].strip())
+            j += 1
+        items = [] if listed else _split_nav(kind, ' '.join(body))  # idempotent: skip if already a list
+        out.append(lines[i])
+        if listed:
+            out += lines[i + 1:j]
+        elif len(items) >= 2:
+            out += [''] + ['- ' + e for e in items] + ['']
+            fixed += 1
+        else:
+            out += lines[i + 1:j]            # could not split -> leave unchanged
+        i = j
+    with open(md_path, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('\n'.join(out))
+    return fixed
+
+
+_DEF_RE = re.compile(r"^[\\A-Za-z][\w^{}\\*'()|.-]{0,17}\s*=\s+\S")
+
+
+def fix_deflists(md_path):
+    """A "where:" block is a run of consecutive 'symbol = definition' lines that
+    Markdown collapses into one run-on paragraph. Turn each such run (>=2 lines)
+    into a bullet list so every definition renders on its own line. Returns the
+    number of runs converted."""
+    lines = open(md_path, encoding="utf-8").read().replace("\r\n", "\n").split("\n")
+    out, i, n, fence = [], 0, 0, False
+    while i < len(lines):
+        if lines[i].lstrip().startswith("```"):
+            fence = not fence
+            out.append(lines[i]); i += 1; continue
+        if not fence and _DEF_RE.match(lines[i]) and not lines[i].startswith(("-", "#", "|", ">")):
+            j = i
+            while (j < len(lines) and _DEF_RE.match(lines[j])
+                   and not lines[j].startswith(("-", "#", "|", ">", "```"))):
+                j += 1
+            if j - i >= 2:
+                out += ["- " + lines[k].strip() for k in range(i, j)]
+                n += 1; i = j; continue
+        out.append(lines[i]); i += 1
+    with open(md_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(out))
+    return n
+
+
+_DEGREE_RE = re.compile(r'(\d)\s*[oº°]\s*([CF])\b')
+
+
+def fix_degree(text):
+    """Superscript 'o' transcribed as the letter o before C/F is a degree sign."""
+    return _DEGREE_RE.sub('\\1°\\2', text)
+
+
 if __name__ == "__main__":
     import sys
     ps = find_pages(sys.argv[1])

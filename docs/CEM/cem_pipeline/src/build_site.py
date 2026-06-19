@@ -298,6 +298,7 @@ main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
 #results .rcount{color:var(--muted);font-size:12px}
 /* landing: search results split into Living | Legacy */
 .results-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;text-align:left}
+.results-split[hidden]{display:none}
 @media(max-width:640px){.results-split{grid-template-columns:1fr}}
 .res-col{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px;min-height:120px}
 .res-col h3{margin:0 0 12px;color:var(--accent);font-size:16px;border-bottom:1px solid var(--border);padding-bottom:8px}
@@ -402,6 +403,20 @@ _LANDING = """<!doctype html><html lang="en"><head>
     <p class="tagline">Guidance documents provide vetted, recommended methods for coastal engineering applications.</p>
   </section>
 
+  <section class="guidance-split">
+    <div class="guide-card living">
+      <h2>Living Guidance</h2>
+      <p>Continuously updated, peer-reviewed coastal engineering guidance built for the web.</p>
+      <span class="coming">Coming soon</span>
+    </div>
+    <a class="guide-card legacy" href="@@BASE@@cem.html">
+      <h2>Legacy Guidance</h2>
+      <p>The USACE Coastal Engineering Manual (EM 1110-2-1100), as web-readable guidance with
+         searchable equations, tables, and figures.</p>
+      <span class="enter">Open the manual &rarr;</span>
+    </a>
+  </section>
+
   <section class="search-wrap">
     <div class="search-box">
       <input id="q" type="search" autocomplete="off" placeholder="Search guidance, e.g. storm surge, dune erosion, overtopping&hellip;">
@@ -419,20 +434,6 @@ _LANDING = """<!doctype html><html lang="en"><head>
         <div id="results-legacy"></div>
       </div>
     </div>
-  </section>
-
-  <section class="guidance-split">
-    <div class="guide-card living">
-      <h2>Living Guidance</h2>
-      <p>Continuously updated, peer-reviewed coastal engineering guidance built for the web.</p>
-      <span class="coming">Coming soon</span>
-    </div>
-    <a class="guide-card legacy" href="@@BASE@@cem.html">
-      <h2>Legacy Guidance</h2>
-      <p>The USACE Coastal Engineering Manual (EM 1110-2-1100), as web-readable guidance with
-         searchable equations, tables, and figures.</p>
-      <span class="enter">Open the manual &rarr;</span>
-    </a>
   </section>
 </main>
 <footer class="site-footer">
@@ -646,10 +647,10 @@ _CHAPTER = """<!doctype html><html lang="en"><head>
       md = md.replace(/^---\\n([\\s\\S]*?)\\n---\\n?/, function(m,y){ fm=y; return ""; });
       // rewrite relative asset paths to be relative to the .md's directory
       md = md.replace(/\\]\\((assets\\/)/g, "](" + base + "$1");
-      // drop navigation sections (Table of Contents / List of Tables / List of
-      // Figures) — redundant with the site nav and poorly auto-segmented from the
-      // source PDF (they otherwise render as a run-on of dotted leaders).
-      md = md.replace(/(^|\\n)#{1,6}[ \\t]*(Table of Contents|List of Tables|List of Figures)[^\\n]*\\n([\\s\\S]*?)(?=\\n#{1,6}[ \\t]|\\s*$)/gi, "$1");
+      // drop the running-header pseudo-headings the PDF repeats on every page
+      // (e.g. "# EM 1110-2-1100 (Part VI) Change 3 (28 Sep 11)"); the Table of
+      // Contents / List of Figures / List of Tables are kept (rebuilt as lists).
+      md = md.replace(/(^|\\n)#{1,6}[ \\t]*(EM[ ]*1110-2-1100|Change[ ]+\\d)[^\\n]*(?=\\n)/gi, "$1");
       // protect math from the markdown parser
       var math=[];
       md = md.replace(/```math\\n([\\s\\S]*?)\\n```/g, function(m,t){ math.push({d:true,t:t}); return "@@M"+(math.length-1)+"@@"; });
@@ -659,7 +660,7 @@ _CHAPTER = """<!doctype html><html lang="en"><head>
       // "where:" symbol lists: a \\command (\\theta, \\rho_s, \\overline{Z}, \\bar{x}),
       // or a plain letter carrying a sub/superscript (D_n, H_s, K_D, X_i^{load}).
       // A lone letter with no sub/sup is left alone so prose is untouched.
-      md = md.replace(/(?<![A-Za-z0-9])(?:\\\\(?:overline|underline|bar|hat|tilde|vec|widehat|widetilde|dot|ddot|mathbf|mathrm|mathcal|boldsymbol|breve|check|acute|grave)\\s*{[^}]*}(?:\\s*[_^]\\s*(?:{[^}]*}|\\\\?[A-Za-z0-9]+))*|\\\\[A-Za-z]+(?:\\s*[_^]\\s*(?:{[^}]*}|\\\\?[A-Za-z0-9]+))*|[A-Za-z](?:\\s*[_^]\\s*(?:{[^}]*}|\\\\?[A-Za-z0-9]+))+)/g, function(m){ math.push({d:false,t:m}); return "@@M"+(math.length-1)+"@@"; });
+      md = md.replace(/(?<![A-Za-z0-9])(?:\\\\(?:overline|underline|bar|hat|tilde|vec|widehat|widetilde|dot|ddot|mathbf|mathrm|mathcal|boldsymbol|breve|check|acute|grave)\\s*{[^}]*}(?:\\s*[_^]\\s*(?:{[^}]*}|\\\\?[A-Za-z0-9]+|\\*))*|\\\\[A-Za-z]+(?:\\s*[_^]\\s*(?:{[^}]*}|\\\\?[A-Za-z0-9]+|\\*))*|(?:[A-Za-z]|\\d+)(?:\\s*[_^]\\s*(?:{[^}]*}|\\\\?[A-Za-z0-9]+|\\*))+)/g, function(m){ math.push({d:false,t:m}); return "@@M"+(math.length-1)+"@@"; });
       var htmlout = marked.parse(md);
       htmlout = htmlout.replace(/@@M(\\d+)@@/g, function(m,i){ return '<span class="kx" data-i="'+i+'"></span>'; });
       var titleLine = (fm.match(/title:\\s*"?([^"\\n]+)"?/)||[])[1] || "";

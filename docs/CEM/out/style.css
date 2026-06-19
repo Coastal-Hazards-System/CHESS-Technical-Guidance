@@ -99,6 +99,7 @@ main.landing{display:block;max-width:1100px;margin:0 auto;padding:16px}
 #results .rcount{color:var(--muted);font-size:12px}
 /* landing: search results split into Living | Legacy */
 .results-split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;text-align:left}
+.results-split[hidden]{display:none}
 @media(max-width:640px){.results-split{grid-template-columns:1fr}}
 .res-col{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px;min-height:120px}
 .res-col h3{margin:0 0 12px;color:var(--accent);font-size:16px;border-bottom:1px solid var(--border);padding-bottom:8px}
