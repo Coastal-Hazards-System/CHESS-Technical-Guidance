@@ -531,6 +531,40 @@ def fix_currency(text):
     return text
 
 
+# Adobe/Monotype Symbol font characters left in the Unicode Private Use Area
+# (U+F000 + symbol-byte) by the converter; render as boxes. Decode via the standard
+# Symbol encoding (verified glyph-by-glyph): A-Z/a-z -> Greek, digits/punctuation as
+# themselves, plus the math symbols that occur.
+def _build_symbol():
+    lc = [0x3b1, 0x3b2, 0x3c7, 0x3b4, 0x3b5, 0x3c6, 0x3b3, 0x3b7, 0x3b9, 0x3d5, 0x3ba,
+          0x3bb, 0x3bc, 0x3bd, 0x3bf, 0x3c0, 0x3b8, 0x3c1, 0x3c3, 0x3c4, 0x3c5, 0x3d6,
+          0x3c9, 0x3be, 0x3c8, 0x3b6]                         # a..z -> Greek
+    uc = [0x391, 0x392, 0x3a7, 0x394, 0x395, 0x3a6, 0x393, 0x397, 0x399, 0x3d1, 0x39a,
+          0x39b, 0x39c, 0x39d, 0x39f, 0x3a0, 0x398, 0x3a1, 0x3a3, 0x3a4, 0x3a5, 0x3c2,
+          0x3a9, 0x39e, 0x3a8, 0x396]                         # A..Z -> Greek
+    m = {}
+    for i, cp in enumerate(lc):
+        m[0xF061 + i] = chr(cp)
+    for i, cp in enumerate(uc):
+        m[0xF041 + i] = chr(cp)
+    for d in range(10):
+        m[0xF030 + d] = str(d)
+    m.update({0xF021: '!', 0xF023: '#', 0xF025: '%', 0xF026: '&', 0xF028: '(', 0xF029: ')',
+              0xF02B: '+', 0xF02C: ',', 0xF02D: '−', 0xF02E: '.', 0xF02F: '/',
+              0xF03A: ':', 0xF03B: ';', 0xF03C: '<', 0xF03D: '=', 0xF03E: '>',
+              0xF0A2: "'", 0xF040: '≅', 0xF0A3: '≤', 0xF0B3: '≥',
+              0xF0B9: '≠', 0xF0B1: '±', 0xF0B4: '×', 0xF0B8: '÷',
+              0xF0AE: '→'})
+    return m
+
+
+SYMBOL = _build_symbol()
+
+
+def fix_symbol(text):
+    return "".join(SYMBOL.get(ord(c), c) if 0xE000 <= ord(c) <= 0xF8FF else c for c in text)
+
+
 if __name__ == "__main__":
     import sys
     ps = find_pages(sys.argv[1])

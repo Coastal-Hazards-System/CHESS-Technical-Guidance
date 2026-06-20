@@ -410,7 +410,7 @@ _LANDING = """<!doctype html><html lang="en"><head>
 <main class="landing">
   <section class="hero">
     <h1 class="wordmark">CHESS-TG<span class="beta">βeta</span></h1>
-    <p class="hero-sub">Coastal Hazards, Engineering, and Structures System (CHESS): Technical Guidance (TG)</p>
+    <p class="hero-sub">Coastal Hazards, Engineering, and Structures System (CHESS) — Technical Guidance (TG)</p>
     <p class="tagline">Guidance documents provide vetted, recommended methods for coastal engineering applications.</p>
   </section>
 
