@@ -345,7 +345,8 @@ def _pdf_toc(pdf_path):
             # drop the page-reference token (II-1-3); not navigable on the web and its
             # column position varies by chapter. The leading section id (II-1-2.) ends
             # in '.'/letter so the negative lookahead keeps it.
-            clean = re.sub(r'\s*\b[IVXLC]+-\d+-\d+(?![.\w])', '', clean).strip()
+            clean = re.sub(r'\s*\b[IVXLC]+-\d+-\d+(?![.\w])', '', clean)
+            clean = fix_symbol(clean).strip()          # decode any Symbol-font glyphs
             if clean:
                 rows.append((round(x0), clean))
     if len(rows) < 3:
@@ -361,6 +362,52 @@ def _pdf_toc(pdf_path):
     return [(min(level[x], 3), t) for x, t in rows]
 
 
+def _pdf_list(pdf_path, kind):
+    """Rebuild the List of Figures / List of Tables from PDF coordinates. Each entry
+    starts at the left margin ('Figure X-Y-N. ...' / 'Table X-Y-N. ...'); long
+    captions wrap onto indented continuation rows that are merged in. Page footers /
+    running headers and the trailing page reference are dropped. Returns [text]."""
+    marker = "Figure" if "figures" in kind else "Table"
+    other = r'List of ' + ("Tables" if "figures" in kind else "Figures")
+    doc = fitz.open(pdf_path)
+    entries, cur, region = [], None, False
+    for pno in range(len(doc)):
+        for x0, r in _rows(doc[pno]):
+            line = " ".join(w[4] for w in r).strip()
+            mh = re.match(r'List of (Figures|Tables)\b', line, re.I)
+            if mh:
+                if cur:
+                    entries.append(cur); cur = None
+                region = bool(re.match(r'List of ' + ("Figures" if "figures" in kind else "Tables"),
+                                       line, re.I))
+                continue
+            if not region or not line:
+                continue
+            if round(x0) > 220 or _PSEUDO_HEAD.search(line) or \
+               re.match(r'[IVXLC]+-\d+-[ivxlcdm\d]+\s*$', line):   # page footer / running header
+                continue
+            if re.match(marker + r'\s+[IVXLC]+-\d+-\d+', line):    # new entry
+                if cur:
+                    entries.append(cur)
+                cur = line
+            elif round(x0) < 110 and not re.match(r'(Figure|Table)\s', line):
+                if cur:                                            # left-margin, not an entry -> body
+                    entries.append(cur); cur = None
+                region = False
+            elif cur is not None:
+                cur += " " + line                                 # wrapped caption continuation
+    if cur:
+        entries.append(cur)
+    out = []
+    for e in entries:
+        e = _LEADER.sub(" ", e)
+        e = re.sub(r'\s*\b[IVXLC]+-\d+-\d+(?![.\w])', '', e)       # drop trailing page ref
+        e = fix_symbol(re.sub(r'\s+', " ", e)).strip()            # decode any Symbol-font glyphs
+        if e:
+            out.append(e)
+    return out
+
+
 def fix_nav(md_path, pdf_path=None):
     """Rebuild the run-on front-matter navigation sections (Table of Contents,
     List of Figures, List of Tables) as readable one-per-line lists. The Table of
@@ -368,6 +415,8 @@ def fix_nav(md_path, pdf_path=None):
     the others are split from the md text. Content a page-break/running-header
     split across a pseudo-heading is merged back. Returns the number rebuilt."""
     toc_entries = _pdf_toc(pdf_path) if pdf_path else []
+    fig_entries = _pdf_list(pdf_path, "figures") if pdf_path else []
+    tab_entries = _pdf_list(pdf_path, "tables") if pdf_path else []
     text = open(md_path, encoding='utf-8').read().replace('\r\n', '\n')
     lines = text.split('\n')
     out, i, fixed = [], 0, 0
@@ -392,6 +441,12 @@ def fix_nav(md_path, pdf_path=None):
         out.append(lines[i])
         if 'contents' in kind and toc_entries:       # nested TOC rebuilt from PDF coords
             out += [''] + ['  ' * lvl + '- ' + t for lvl, t in toc_entries] + ['']  # deterministic; replaces any prior form
+            fixed += 1
+        elif 'figures' in kind and len(fig_entries) >= 2:
+            out += [''] + ['- ' + e for e in fig_entries] + ['']
+            fixed += 1
+        elif 'tables' in kind and len(tab_entries) >= 2:
+            out += [''] + ['- ' + e for e in tab_entries] + ['']
             fixed += 1
         elif listed:
             out += lines[i + 1:j]
