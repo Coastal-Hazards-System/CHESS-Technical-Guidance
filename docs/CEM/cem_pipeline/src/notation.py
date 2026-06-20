@@ -318,11 +318,56 @@ def _split_nav(kind, raw):
     return [p.strip() for p in parts if p.strip()]
 
 
-def fix_nav(md_path):
+_LEADER = re.compile(r'\s*(?:\.\s*){3,}\s*')      # dotted leader run
+
+
+def _pdf_toc(pdf_path):
+    """Rebuild the Table of Contents from PDF coordinates: each visual row is one
+    entry (the text-linearised md jumbles the id | title | page columns), with the
+    nesting level taken from the row's left margin. Returns [(level, text)]."""
+    doc = fitz.open(pdf_path)
+    rows = []
+    in_toc = False
+    for pno in range(len(doc)):
+        for x0, r in _rows(doc[pno]):
+            line = " ".join(w[4] for w in r).strip()
+            if re.match(r'Table of Contents', line, re.I):
+                in_toc = True; continue
+            if re.match(r'List of (Figures|Tables)\b', line, re.I):
+                in_toc = False; continue          # TOC ends where the lists begin
+            if not in_toc or not _LEADER.search(line):   # TOC entries have dotted leaders
+                continue
+            if re.match(r'(Figure|Table)\s', line):
+                continue
+            # the dotted leader already excludes running headers/page refs, so keep
+            # entries even when they begin with a section id (II-1-2. Regular Waves)
+            clean = _LEADER.sub(" ", line).strip()
+            # drop the page-reference token (II-1-3); not navigable on the web and its
+            # column position varies by chapter. The leading section id (II-1-2.) ends
+            # in '.'/letter so the negative lookahead keeps it.
+            clean = re.sub(r'\s*\b[IVXLC]+-\d+-\d+(?![.\w])', '', clean).strip()
+            if clean:
+                rows.append((round(x0), clean))
+    if len(rows) < 3:
+        return []
+    xs = sorted(set(x for x, _ in rows))               # cluster left margins -> levels
+    clusters = []
+    for x in xs:
+        if clusters and x - clusters[-1][-1] <= 10:
+            clusters[-1].append(x)
+        else:
+            clusters.append([x])
+    level = {x: i for i, cl in enumerate(clusters) for x in cl}
+    return [(min(level[x], 3), t) for x, t in rows]
+
+
+def fix_nav(md_path, pdf_path=None):
     """Rebuild the run-on front-matter navigation sections (Table of Contents,
-    List of Figures, List of Tables) as readable one-per-line lists. Content that
-    a page-break/running-header split across a pseudo-heading is merged back.
-    Returns the number of sections rebuilt."""
+    List of Figures, List of Tables) as readable one-per-line lists. The Table of
+    Contents is rebuilt from PDF coordinates (nested list) when pdf_path is given;
+    the others are split from the md text. Content a page-break/running-header
+    split across a pseudo-heading is merged back. Returns the number rebuilt."""
+    toc_entries = _pdf_toc(pdf_path) if pdf_path else []
     text = open(md_path, encoding='utf-8').read().replace('\r\n', '\n')
     lines = text.split('\n')
     out, i, fixed = [], 0, 0
@@ -345,7 +390,10 @@ def fix_nav(md_path):
             j += 1
         items = [] if listed else _split_nav(kind, ' '.join(body))  # idempotent: skip if already a list
         out.append(lines[i])
-        if listed:
+        if 'contents' in kind and toc_entries:       # nested TOC rebuilt from PDF coords
+            out += [''] + ['  ' * lvl + '- ' + t for lvl, t in toc_entries] + ['']  # deterministic; replaces any prior form
+            fixed += 1
+        elif listed:
             out += lines[i + 1:j]
         elif len(items) >= 2:
             out += [''] + ['- ' + e for e in items] + ['']
