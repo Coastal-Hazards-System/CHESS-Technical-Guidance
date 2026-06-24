@@ -58,13 +58,16 @@ py -3.12 -m venv .venv-mineru
 ```
 
 ## Run
+`run_all.py` is the entry point at the **cem/ root** (one level above this
+`cem_pipeline/` dir). The commands below run it from `cem_pipeline/` so the
+`.venv` relative paths still resolve; `..\` therefore points at the cem/ root.
 ```powershell
 $env:CEM_NODE = "C:\Program Files\nodejs\node.exe"
 $env:CEM_MINERU_EXE = "$PWD\.venv-mineru\Scripts\mineru.exe"
 # pilot gate first:
-.\.venv\Scripts\python src\run_all.py --src "..\" --out "..\out" --only II-1,III-1,III-2 --jobs 48
+.\.venv\Scripts\python ..\run_all.py --src "..\" --out "..\out" --only II-1,III-1,III-2 --jobs 48
 # then the full run (resumable; finished chapters skipped):
-.\.venv\Scripts\python src\run_all.py --src "..\" --out "..\out" --jobs 48
+.\.venv\Scripts\python ..\run_all.py --src "..\" --out "..\out" --jobs 48
 ```
 Outputs land in `..\out\markdown\part-XX\ch-YY.md` (+ `_flagged.md`, `.qa.json`,
 `assets/`), plus `index.md` and `qa_report.md` at the corpus root.

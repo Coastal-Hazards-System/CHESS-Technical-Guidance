@@ -5,7 +5,7 @@ Last updated: 2026-06-19.
 ## Live site
 - GitHub Pages: https://coastal-hazards-system.github.io/CHESS-Technical-Guidance/
 - Branch `main`. Pages serves the repo root (`.nojekyll` lets the viewer fetch raw `.md`).
-- Pages: `docs/CEM/out/index.html` (CHESS-TG landing: Living | Legacy + search),
+- Pages: `modules/legacy_guidance/cem/out/index.html` (CHESS-TG landing: Living | Legacy + search),
   `search.html` (split search results), `cem.html` (Coastal Engineering Manual browse:
   stats, Parts, chapters), `chapter.html` (marked.js + KaTeX viewer), and the per-chapter
   `markdown/part-XX/ch-YY.md`. Styling mirrors the sibling CHESS-QC site (Trail vibe:
@@ -20,10 +20,10 @@ by the source PDF** cleaned up glyph/format issues (chosen over training a local
 the errors are mechanical and the ground truth is in the PDF — font codes, glyph
 size/baseline).
 
-Re-run (from `docs/CEM/out`, with the `.venv`):
+Re-run (from `modules/legacy_guidance/cem/out`, with the `.venv`):
 ```
 python ../cem_pipeline/_remediate.py            # apply all passes to every chapter .md
-python ../cem_pipeline/src/build_site.py . ..\..\..   # regenerate the site + search index
+python ../cem_pipeline/src/build_site.py . ..\..\..\..   # regenerate the site + search index
 ```
 
 Passes (in `src/notation.py`, orchestrated by `_remediate.py`):

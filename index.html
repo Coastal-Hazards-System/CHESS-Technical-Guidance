@@ -3,7 +3,7 @@
 <title>CHESS-TG — Coastal Hazards, Engineering, and Structures System (Technical Guidance)</title>
 <meta name="description" content="CHESS Technical Guidance: vetted, recommended methods for coastal engineering applications. Living and legacy guidance.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='Segoe UI,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="docs/CEM/out/style.css">
+<link rel="stylesheet" href="modules/legacy_guidance/cem/out/style.css">
 <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
 <script>
     (function(){
@@ -46,7 +46,7 @@
       <p>Continuously updated, peer-reviewed coastal engineering guidance built for the web.</p>
       <span class="coming">Coming soon</span>
     </div>
-    <a class="guide-card legacy" href="docs/CEM/out/cem.html">
+    <a class="guide-card legacy" href="modules/legacy_guidance/cem/out/cem.html">
       <h2>Legacy Guidance</h2>
       <p>The USACE Coastal Engineering Manual (EM 1110-2-1100), as web-readable guidance with
          searchable equations, tables, and figures.</p>
@@ -55,7 +55,7 @@
   </section>
 
   <section class="search-wrap">
-    <form class="search-box" action="docs/CEM/out/search.html" method="get" role="search">
+    <form class="search-box" action="modules/legacy_guidance/cem/out/search.html" method="get" role="search">
       <input id="q" name="q" type="search" autocomplete="off" placeholder="Search guidance, e.g., storm surge, dune erosion, overtopping&hellip;">
     </form>
     <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
@@ -63,13 +63,12 @@
   </section>
 </main>
 <footer class="site-footer">
-  <p class="disclaimer">CHESS-TG. Living guidance is in development. Legacy guidance is a faithful
-    conversion of the USACE Coastal Engineering Manual (EM 1110-2-1100) for reading, search, and reference;
-    refer to the official USACE publication for authoritative use.</p>
+  <p class="disclaimer">CHESS-TG is still in early development. For reference and educational purposes only.
+    Refer to official USACE publications for authoritative use.</p>
 </footer>
 <script>
 (function(){
-  var base="docs/CEM/out/";
+  var base="modules/legacy_guidance/cem/out/";
   document.querySelectorAll(".search-hint b").forEach(function(b){
     b.addEventListener("click",function(){ location.href=base+"search.html?q="+encodeURIComponent(b.textContent); });
   });

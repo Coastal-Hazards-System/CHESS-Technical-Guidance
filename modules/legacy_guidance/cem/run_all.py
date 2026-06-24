@@ -21,10 +21,14 @@ try:
 except Exception:
     pass
 
+# run_all.py lives at the cem/ root; the pipeline modules it imports live under
+# cem_pipeline/src (with engines/ and equations/ subpackages on the path).
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, HERE)
-sys.path.insert(0, os.path.join(HERE, "engines"))
-sys.path.insert(0, os.path.join(HERE, "equations"))
+PIPELINE = os.path.join(HERE, "cem_pipeline")
+SRC = os.path.join(PIPELINE, "src")
+sys.path.insert(0, SRC)
+sys.path.insert(0, os.path.join(SRC, "engines"))
+sys.path.insert(0, os.path.join(SRC, "equations"))
 
 import fitz  # noqa: E402
 import groundtruth as GT  # noqa: E402
@@ -39,7 +43,7 @@ _TAG_RE = re.compile(r'\(([IVXLC]+-\d+-\d+[a-z]?)\)')
 
 def load_cfg(out_dir):
     cfg = {}
-    p = os.path.join(os.path.dirname(HERE), "config.yaml")
+    p = os.path.join(PIPELINE, "config.yaml")
     if os.path.exists(p):
         try:
             import yaml
