@@ -1,6 +1,0 @@
-pymupdf>=1.24
-pymupdf4llm
-pillow
-pix2tex
-torch
-torchvision

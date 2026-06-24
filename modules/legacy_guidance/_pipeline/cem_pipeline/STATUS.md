@@ -5,12 +5,18 @@ Last updated: 2026-06-19.
 ## Live site
 - GitHub Pages: https://coastal-hazards-system.github.io/CHESS-Technical-Guidance/
 - Branch `main`. Pages serves the repo root (`.nojekyll` lets the viewer fetch raw `.md`).
-- Pages: `modules/legacy_guidance/cem/out/index.html` (CHESS-TG landing: Living | Legacy + search),
-  `search.html` (split search results), `cem.html` (Coastal Engineering Manual browse:
-  stats, Parts, chapters), `chapter.html` (marked.js + KaTeX viewer), and the per-chapter
-  `markdown/part-XX/ch-YY.md`. Styling mirrors the sibling CHESS-QC site (Trail vibe:
-  13px/1.45 type, amber diagonal texture, Original palette).
-- Site generator: `python src/build_site.py <out_dir> <repo_root>`.
+- Layout (Pages serves repo root):
+  - `index.html` — shared CHESS-TG landing (Living | Legacy + search box).
+  - `search.html` — shared search results (Legacy index today; Living to come).
+  - `common/style.css` — shared stylesheet for every page.
+  - `modules/living_guidance/index.html` — Living module (placeholder, in development).
+  - `modules/legacy_guidance/index.html` — Legacy "Coastal Engineering Manual" browse
+    (stats, Parts, chapters), `chapter.html` (marked.js + KaTeX viewer),
+    `search-index.json`, and content under `manuals/cem/markdown/part-XX/ch-YY.md`.
+  Styling mirrors the sibling CHESS-QC site (Trail vibe: 13px/1.45 type, amber diagonal
+  texture, Original palette).
+- Site generator (run from repo root):
+  `python modules/legacy_guidance/_pipeline/cem_pipeline/src/build_site.py modules/legacy_guidance .`
 
 ## Conversion + remediation (all deployed)
 The manual was converted with an ensemble pipeline (Marker + MinerU, KaTeX validation,
@@ -20,10 +26,13 @@ by the source PDF** cleaned up glyph/format issues (chosen over training a local
 the errors are mechanical and the ground truth is in the PDF — font codes, glyph
 size/baseline).
 
-Re-run (from `modules/legacy_guidance/cem/out`, with the `.venv`):
+Re-run (remediate from the content dir `modules/legacy_guidance/manuals/cem`, with the `.venv`;
+then regenerate the site from the repo root):
 ```
-python ../cem_pipeline/_remediate.py            # apply all passes to every chapter .md
-python ../cem_pipeline/src/build_site.py . ..\..\..\..   # regenerate the site + search index
+# from modules/legacy_guidance/manuals/cem:
+python ../../_pipeline/cem_pipeline/_remediate.py     # apply all passes to every chapter .md
+# from the repo root:
+python modules/legacy_guidance/_pipeline/cem_pipeline/src/build_site.py modules/legacy_guidance .
 ```
 
 Passes (in `src/notation.py`, orchestrated by `_remediate.py`):

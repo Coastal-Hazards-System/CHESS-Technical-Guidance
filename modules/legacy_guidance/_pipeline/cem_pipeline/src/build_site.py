@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Build a self-contained GitHub Pages site for the converted CEM:
-  out/index.html      landing page (WaveMaker-styled): hero, highlights,
-                      Part shortcuts grid, and the complete chapter listing.
-  out/style.css       adapted WaveMaker palette (light/dark, original palette).
-  out/chapter.html    markdown chapter viewer (marked.js + KaTeX), renders the
-                      ch-YY.md files with real equations, tables and figures.
-Run: python build_site.py <out_dir>
+"""Build the CHESS-TG GitHub Pages site (shared landing + per-module pages):
+  <root>/index.html          shared CHESS-TG landing (Living | Legacy).
+  <root>/search.html         shared search (Legacy index today; Living to come).
+  <root>/common/style.css    shared WaveMaker palette (light/dark).
+  <module>/index.html        Legacy "Coastal Engineering Manual" browse page.
+  <module>/chapter.html      markdown chapter viewer (marked.js + KaTeX), renders
+                             the ch-YY.md files with real equations/tables/figures.
+  <module>/search-index.json the manual's per-section search documents.
+Chapter content is read from <module>/manuals/cem.
+Run: python build_site.py <module_dir> <root_dir>
 """
 import os
 import sys
@@ -26,13 +29,17 @@ PART_NAMES = {
 PART_ORDER = ["I", "II", "III", "IV", "V", "VI", "App-A"]
 
 
-def _collect(out_dir):
-    """Return {part_roman: [ {num,title,pages,eq,eqv,tables,figs,href} ... ]}."""
+def _collect(content_dir, link_base):
+    """Return {part_roman: [ {num,title,pages,eq,eqv,tables,figs,href} ... ]}.
+
+    Chapters live under content_dir/markdown; the returned cpath is relative to
+    link_base (the module dir that hosts chapter.html), so it is the exact `c=`
+    value chapter.html fetches."""
     chapters = {}
-    qas = glob.glob(os.path.join(out_dir, "markdown", "**", "*.qa.json"), recursive=True)
+    qas = glob.glob(os.path.join(content_dir, "markdown", "**", "*.qa.json"), recursive=True)
     for q in qas:
         d = json.load(open(q, encoding="utf-8"))
-        md_rel = os.path.relpath(q[:-len(".qa.json")] + ".md", out_dir).replace(os.sep, "/")
+        md_rel = os.path.relpath(q[:-len(".qa.json")] + ".md", link_base).replace(os.sep, "/")
         part = str(d.get("part") or "App-A")
         chapters.setdefault(part, []).append({
             "num": d.get("chapter") or 0,
@@ -67,13 +74,14 @@ def _clean_text(s):
     return s.strip()
 
 
-def _extract_sections(out_dir):
-    """One search document per heading-delimited section across all chapters."""
+def _extract_sections(content_dir, link_base):
+    """One search document per heading-delimited section across all chapters.
+    Hrefs are relative to link_base (the module dir hosting chapter.html)."""
     docs = []
-    mds = [m for m in glob.glob(os.path.join(out_dir, "markdown", "**", "*.md"), recursive=True)
+    mds = [m for m in glob.glob(os.path.join(content_dir, "markdown", "**", "*.md"), recursive=True)
            if "_flagged" not in m]
     for md in sorted(mds):
-        rel = os.path.relpath(md, out_dir).replace(os.sep, "/")
+        rel = os.path.relpath(md, link_base).replace(os.sep, "/")
         txt = open(md, encoding="utf-8").read().replace("\r\n", "\n")
         fm = {}
         m = re.match(r'^---\n([\s\S]*?)\n---\n?', txt)
@@ -121,10 +129,25 @@ def _extract_sections(out_dir):
     return docs
 
 
-def build(out_dir, root_dir=None):
-    chapters = _collect(out_dir)
-    search_docs = _extract_sections(out_dir)
-    json.dump(search_docs, open(os.path.join(out_dir, "search-index.json"), "w", encoding="utf-8"),
+def build(module_dir, root_dir, manual_rel="manuals/cem"):
+    """Emit the multi-module site:
+      <root>/index.html           shared CHESS-TG landing (Living | Legacy)
+      <root>/search.html          shared search (currently Legacy only)
+      <root>/common/style.css     shared stylesheet
+      <module>/index.html         Legacy "Coastal Engineering Manual" browse
+      <module>/chapter.html       markdown chapter viewer (marked.js + KaTeX)
+      <module>/search-index.json  the manual's per-section search docs
+    Chapter content lives under <module>/<manual_rel> (default manuals/cem)."""
+    content_dir = os.path.join(module_dir, manual_rel)
+    common_dir = os.path.join(root_dir, "common")
+    os.makedirs(common_dir, exist_ok=True)
+    # relative links between the emitted files
+    module_rel = os.path.relpath(module_dir, root_dir).replace(os.sep, "/").rstrip("/") + "/"
+    css_from_module = os.path.relpath(common_dir, module_dir).replace(os.sep, "/") + "/style.css"
+    home_from_module = os.path.relpath(root_dir, module_dir).replace(os.sep, "/") + "/index.html"
+    chapters = _collect(content_dir, module_dir)
+    search_docs = _extract_sections(content_dir, module_dir)
+    json.dump(search_docs, open(os.path.join(module_dir, "search-index.json"), "w", encoding="utf-8"),
               ensure_ascii=False, separators=(",", ":"))
     parts = [p for p in PART_ORDER if p in chapters] + \
             [p for p in chapters if p not in PART_ORDER]
@@ -158,7 +181,7 @@ def build(out_dir, root_dir=None):
                 stats.append(f"{c['figs']} figs")
             stats.append(f"{c['pages']} pp")
             cards.append(
-                f'<a class="ch-card" href="@@BASE@@chapter.html?c={html.escape(c["cpath"])}">'
+                f'<a class="ch-card" href="chapter.html?c={html.escape(c["cpath"])}">'
                 f'<span class="ch-id">{label}</span>'
                 f'<span class="ch-title">{html.escape(c["title"])}</span>'
                 f'<span class="ch-stats">{" · ".join(stats)}</span></a>')
@@ -175,26 +198,31 @@ def build(out_dir, root_dir=None):
                        ("{tot_fig}", f"{tot_fig:,}")]:
         cem_tmpl = cem_tmpl.replace(token, val)
 
-    def _fill(tmpl, base, home="index.html"):
-        return tmpl.replace("@@BASE@@", base).replace("@@HOME@@", home)
+    def _fill(tmpl, **tok):
+        for k, v in tok.items():
+            tmpl = tmpl.replace("@@" + k + "@@", v)
+        return tmpl
 
-    # self-contained site inside out_dir (base = ""): a minimal CHESS-TG landing
-    # (Living | Legacy), and the Legacy "Coastal Engineering Manual" browse page.
-    open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8").write(_fill(_LANDING, ""))
-    open(os.path.join(out_dir, "cem.html"), "w", encoding="utf-8").write(_fill(cem_tmpl, ""))
-    open(os.path.join(out_dir, "search.html"), "w", encoding="utf-8").write(_fill(_SEARCH, ""))
-    open(os.path.join(out_dir, "style.css"), "w", encoding="utf-8").write(_CSS)
-    open(os.path.join(out_dir, "chapter.html"), "w", encoding="utf-8").write(_fill(_CHAPTER, ""))
-    sz = os.path.getsize(os.path.join(out_dir, "search-index.json")) / 1024
-    print(f"Built site in {out_dir}: index.html (landing), cem.html ({tot_ch} chapters), "
-          f"style.css, chapter.html, search-index.json ({len(search_docs)} sections, {sz:.0f} KB)")
+    # --- Legacy module: browse page, chapter viewer, and its own search index ---
+    open(os.path.join(module_dir, "index.html"), "w", encoding="utf-8").write(
+        _fill(cem_tmpl, CSS=css_from_module, HOME=home_from_module,
+              INDEX_JSON="search-index.json", RESULT_BASE=""))
+    open(os.path.join(module_dir, "chapter.html"), "w", encoding="utf-8").write(
+        _fill(_CHAPTER, CSS=css_from_module, HOME=home_from_module))
 
-    # repo-root entry point: the same landing, linking into the out_dir site
-    if root_dir:
-        site_rel = (os.path.relpath(out_dir, root_dir).replace(os.sep, "/") + "/")
-        open(os.path.join(root_dir, "index.html"), "w", encoding="utf-8").write(
-            _fill(_LANDING, site_rel))
-        print(f"Root index.html -> {root_dir} (links into {site_rel})")
+    # --- shared root: stylesheet, CHESS-TG landing home, cross-module search ---
+    open(os.path.join(common_dir, "style.css"), "w", encoding="utf-8").write(_CSS)
+    open(os.path.join(root_dir, "index.html"), "w", encoding="utf-8").write(
+        _fill(_LANDING, CSS="common/style.css", HOME="index.html", SEARCH="search.html",
+              LEGACY_INDEX=module_rel + "index.html"))
+    open(os.path.join(root_dir, "search.html"), "w", encoding="utf-8").write(
+        _fill(_SEARCH, CSS="common/style.css", HOME="index.html",
+              INDEX_JSON=module_rel + "search-index.json", RESULT_BASE=module_rel))
+
+    sz = os.path.getsize(os.path.join(module_dir, "search-index.json")) / 1024
+    print(f"Built site: {root_dir}/index.html + search.html + common/style.css; "
+          f"{module_dir}/index.html ({tot_ch} chapters) + chapter.html + "
+          f"search-index.json ({len(search_docs)} sections, {sz:.0f} KB)")
 
 
 # ============================== templates ==================================
@@ -402,7 +430,7 @@ _LANDING = """<!doctype html><html lang="en"><head>
 <title>CHESS-TG — Coastal Hazards, Engineering, and Structures System (Technical Guidance)</title>
 <meta name="description" content="CHESS Technical Guidance: vetted, recommended methods for coastal engineering applications. Living and legacy guidance.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='Segoe UI,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="@@BASE@@style.css">
+<link rel="stylesheet" href="@@CSS@@">
 <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
 <script>{theme_js}</script>
 </head><body>
@@ -420,7 +448,7 @@ _LANDING = """<!doctype html><html lang="en"><head>
       <p>Continuously updated, peer-reviewed coastal engineering guidance built for the web.</p>
       <span class="coming">Coming soon</span>
     </div>
-    <a class="guide-card legacy" href="@@BASE@@cem.html">
+    <a class="guide-card legacy" href="@@LEGACY_INDEX@@">
       <h2>Legacy Guidance</h2>
       <p>The USACE Coastal Engineering Manual (EM 1110-2-1100), as web-readable guidance with
          searchable equations, tables, and figures.</p>
@@ -429,7 +457,7 @@ _LANDING = """<!doctype html><html lang="en"><head>
   </section>
 
   <section class="search-wrap">
-    <form class="search-box" action="@@BASE@@search.html" method="get" role="search">
+    <form class="search-box" action="@@SEARCH@@" method="get" role="search">
       <input id="q" name="q" type="search" autocomplete="off" placeholder="Search guidance, e.g., storm surge, dune erosion, overtopping&hellip;">
     </form>
     <p class="search-hint">Try: <b>storm surge</b> · <b>hurricane</b> · <b>dune erosion</b> ·
@@ -437,15 +465,13 @@ _LANDING = """<!doctype html><html lang="en"><head>
   </section>
 </main>
 <footer class="site-footer">
-  <p class="disclaimer">CHESS-TG. Living guidance is in development. Legacy guidance is a faithful
-    conversion of the USACE Coastal Engineering Manual (EM 1110-2-1100) for reading, search, and reference;
-    refer to the official USACE publication for authoritative use.</p>
+  <p class="disclaimer">CHESS-TG is still in early development. For reference and educational purposes only.
+    Refer to official USACE publications for authoritative use.</p>
 </footer>
 <script>
 (function(){
-  var base="@@BASE@@";
   document.querySelectorAll(".search-hint b").forEach(function(b){
-    b.addEventListener("click",function(){ location.href=base+"search.html?q="+encodeURIComponent(b.textContent); });
+    b.addEventListener("click",function(){ location.href="@@SEARCH@@?q="+encodeURIComponent(b.textContent); });
   });
 })();
 </script>
@@ -457,14 +483,14 @@ _SEARCH = """<!doctype html><html lang="en"><head>
 <title>Search — CHESS-TG</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='Segoe UI,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="@@BASE@@style.css">
+<link rel="stylesheet" href="@@CSS@@">
 <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
 <script>{theme_js}</script>
 </head><body>
 {header}
 <main class="landing">
   <section class="search-wrap" style="padding-top:24px">
-    <a class="backlink" href="@@BASE@@index.html" style="display:inline-block;margin-bottom:12px;font-weight:600;text-decoration:none">&larr; CHESS-TG home</a>
+    <a class="backlink" href="@@HOME@@" style="display:inline-block;margin-bottom:12px;font-weight:600;text-decoration:none">&larr; CHESS-TG home</a>
     <form class="search-box" role="search" onsubmit="return false">
       <input id="q" name="q" type="search" autocomplete="off" placeholder="Search guidance, e.g., storm surge, dune erosion, overtopping&hellip;">
     </form>
@@ -490,7 +516,7 @@ _SEARCH = """<!doctype html><html lang="en"><head>
   function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
   function load(){
     if(ready) return Promise.resolve();
-    return fetch("@@BASE@@search-index.json").then(function(r){return r.json();}).then(function(data){
+    return fetch("@@INDEX_JSON@@").then(function(r){return r.json();}).then(function(data){
       mini=new MiniSearch({fields:["heading","text","title"],
         storeFields:["heading","href","cid","part","title","text"],
         searchOptions:{boost:{heading:3,title:2},prefix:true,fuzzy:0.2,combineWith:"AND"}});
@@ -514,7 +540,7 @@ _SEARCH = """<!doctype html><html lang="en"><head>
     if(!res.length){ legacy.innerHTML='<p class="rcount">No matches for \\u201c'+esc(query)+'\\u201d.</p>'; return; }
     var h='<p class="rcount">'+res.length+(res.length===40?"+":"")+' result'+(res.length===1?"":"s")+'</p>';
     res.forEach(function(r){
-      h+='<a class="result" href="@@BASE@@'+esc(r.href)+'"><div><span class="r-where">'+esc(r.cid||r.part)+
+      h+='<a class="result" href="@@RESULT_BASE@@'+esc(r.href)+'"><div><span class="r-where">'+esc(r.cid||r.part)+
         '</span><span class="r-head">'+esc(r.heading||r.title)+'</span></div>'+
         '<div class="r-snip">'+snippet(r.text||"",terms)+'</div></a>';
     });
@@ -543,14 +569,14 @@ _CEM = """<!doctype html><html lang="en"><head>
 <title>Coastal Engineering Manual (EM 1110-2-1100) — CHESS-TG</title>
 <meta name="description" content="The USACE Coastal Engineering Manual (EM 1110-2-1100) as faithful, web-readable Markdown with real LaTeX equations, GFM tables and figures.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='Segoe UI,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="@@BASE@@style.css">
+<link rel="stylesheet" href="@@CSS@@">
 <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
 <script>{theme_js}</script>
 </head><body>
 {header}
 <main class="landing">
   <section class="hero" style="padding:30px 16px 16px">
-    <a class="backlink" href="@@BASE@@index.html" style="display:inline-block;margin-bottom:12px;font-weight:600;text-decoration:none">&larr; CHESS-TG home</a>
+    <a class="backlink" href="@@HOME@@" style="display:inline-block;margin-bottom:12px;font-weight:600;text-decoration:none">&larr; CHESS-TG home</a>
     <h1 class="wordmark" style="display:block;font-size:clamp(26px,5vw,44px);color:var(--fg)">Coastal Engineering Manual</h1>
     <p class="hero-sub">Legacy Guidance &middot; USACE EM 1110-2-1100</p>
     <p class="tagline">A faithful, web-readable conversion with real LaTeX equations, GFM tables, and extracted figures.</p>
@@ -593,7 +619,7 @@ _CEM = """<!doctype html><html lang="en"><head>
   </div>
 </main>
 <footer class="site-footer">
-  <div class="foot-links"><a href="@@BASE@@index.html">CHESS-TG home</a><a href="#parts">Parts</a><a href="#chapters">Chapters</a><a href="@@BASE@@chapter.html?c=qa_report.md">QA report</a></div>
+  <div class="foot-links"><a href="@@HOME@@">CHESS-TG home</a><a href="#parts">Parts</a><a href="#chapters">Chapters</a><a href="chapter.html?c=manuals/cem/qa_report.md">QA report</a></div>
   <p class="disclaimer">A faithful Markdown conversion of the USACE Coastal Engineering Manual (EM 1110-2-1100)
     for reading, search, and reference. Refer to the official USACE publication for authoritative use.</p>
 </footer>
@@ -606,7 +632,7 @@ _CEM = """<!doctype html><html lang="en"><head>
   function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
   function load(){
     if(ready) return Promise.resolve();
-    return fetch("@@BASE@@search-index.json").then(function(r){return r.json();}).then(function(data){
+    return fetch("@@INDEX_JSON@@").then(function(r){return r.json();}).then(function(data){
       mini=new MiniSearch({fields:["heading","text","title"],
         storeFields:["heading","href","cid","part","title","text"],
         searchOptions:{boost:{heading:3,title:2},prefix:true,fuzzy:0.2,combineWith:"AND"}});
@@ -630,7 +656,7 @@ _CEM = """<!doctype html><html lang="en"><head>
     if(!res.length){ out.innerHTML='<p class="rcount">No matches for \\u201c'+esc(query)+'\\u201d.</p>'; return; }
     var h='<p class="rcount">'+res.length+(res.length===40?"+":"")+' result'+(res.length===1?"":"s")+'</p>';
     res.forEach(function(r){
-      h+='<a class="result" href="@@BASE@@'+esc(r.href)+'"><div><span class="r-where">'+esc(r.cid||r.part)+
+      h+='<a class="result" href="@@RESULT_BASE@@'+esc(r.href)+'"><div><span class="r-where">'+esc(r.cid||r.part)+
         '</span><span class="r-head">'+esc(r.heading||r.title)+'</span></div>'+
         '<div class="r-snip">'+snippet(r.text||"",terms)+'</div></a>';
     });
@@ -659,7 +685,7 @@ _CHAPTER = """<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CHESS-TG — chapter</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="@@CSS@@">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
@@ -667,7 +693,7 @@ _CHAPTER = """<!doctype html><html lang="en"><head>
 </head><body>
 {header}
 <main class="doc">
-  <a class="backlink" href="cem.html">&larr; All chapters</a>
+  <a class="backlink" href="index.html">&larr; All chapters</a>
   <div id="content" class="markdown"><p class="muted">Loading&hellip;</p></div>
 </main>
 <script>
@@ -727,5 +753,6 @@ _CHAPTER = """<!doctype html><html lang="en"><head>
 
 
 if __name__ == "__main__":
+    # build_site.py <module_dir> <root_dir>   (content under <module_dir>/manuals/cem)
     build(sys.argv[1] if len(sys.argv) > 1 else ".",
-          sys.argv[2] if len(sys.argv) > 2 else None)
+          sys.argv[2] if len(sys.argv) > 2 else ".")

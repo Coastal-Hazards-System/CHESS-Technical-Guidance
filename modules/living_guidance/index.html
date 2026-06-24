@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Living Guidance — CHESS-TG</title>
+<meta name="description" content="CHESS-TG Living Guidance: continuously updated, peer-reviewed coastal engineering guidance built for the web. In development.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230a82a2'/%3E%3Ctext x='8' y='12' font-size='9' font-family='Segoe UI,sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../common/style.css">
+<script>
+    (function(){
+      var KEY="cem-theme";
+      var t=localStorage.getItem(KEY)|| (matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+      document.documentElement.setAttribute("data-theme",t);
+      function sync(){var d=document.documentElement.getAttribute("data-theme")==="dark";
+        var c=document.getElementById("modeToggle"); if(c)c.checked=d;
+        var l=document.getElementById("modeLbl"); if(l)l.textContent=d?"Dark mode":"Light mode";}
+      window.addEventListener("DOMContentLoaded",function(){
+        sync();
+        var c=document.getElementById("modeToggle");
+        if(c)c.addEventListener("change",function(){
+          var t=c.checked?"dark":"light";
+          document.documentElement.setAttribute("data-theme",t);
+          localStorage.setItem(KEY,t); sync();});
+      });
+    })();
+</script>
+</head><body>
+  <header>
+    <a class="title" href="../../index.html">CHESS-TG</a>
+    <span class="spacer"></span>
+    <span class="muted" id="modeLbl"></span>
+    <label class="switch" title="Light / Dark">
+      <input type="checkbox" id="modeToggle"><span class="track"></span><span class="thumb"></span>
+    </label>
+  </header>
+<main class="landing">
+  <section class="hero" style="padding:48px 16px 24px">
+    <a class="backlink" href="../../index.html" style="display:inline-block;margin-bottom:12px;font-weight:600;text-decoration:none">&larr; CHESS-TG home</a>
+    <h1 class="wordmark" style="display:block;font-size:clamp(26px,5vw,44px);color:var(--fg)">Living Guidance</h1>
+    <p class="hero-sub">Continuously updated, peer-reviewed coastal engineering guidance</p>
+    <p class="tagline">This module is in development. Living guidance will provide vetted, web-native
+      methods for coastal engineering applications, maintained and updated over time.</p>
+    <div class="cta-row">
+      <span class="coming">Coming soon</span>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <p class="disclaimer">CHESS-TG is still in early development. For reference and educational purposes only.
+    Refer to official USACE publications for authoritative use.</p>
+</footer>
+</body></html>

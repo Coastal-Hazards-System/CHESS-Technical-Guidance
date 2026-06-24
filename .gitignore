@@ -8,13 +8,12 @@
 **/node_modules/
 
 # Large source inputs and extracted/intermediate PDFs
-modules/legacy_guidance/cem/EM_1110-2-1100_*.pdf
-modules/legacy_guidance/cem/out/chapters/
+modules/legacy_guidance/_pipeline/EM_1110-2-1100_*.pdf
+modules/legacy_guidance/manuals/cem/chapters/
 
 # Pipeline caches & intermediate work / scratch
-modules/legacy_guidance/cem/out/_work/
-modules/legacy_guidance/cem/_work/
-modules/legacy_guidance/cem/cem_pipeline/_*
+modules/legacy_guidance/manuals/cem/_work/
+modules/legacy_guidance/_pipeline/cem_pipeline/_*
 
 # IDE
 .idea/
