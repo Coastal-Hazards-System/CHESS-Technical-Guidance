@@ -63,6 +63,15 @@ QA review remediation: the first deterministic pass over the `CEM_Review_Finding
 findings cleared the mechanical classes (running headers/footers, `í`-apostrophes, word
 merges). Status and the open expert-sign-off queue are in `docs/CEM_Remediation_Status.md`.
 
+Merge-based equation correction (`src/eq_merge.py`): re-reads a numbered equation's
+*precise source crop* (`assets/.../eq-NNN-<tag>.png`, made from the Marker/MinerU bbox
+during conversion; indexed in `ch-YY.equations.json`) with the local vision-LLM, compares
+it to the equation in the `.md` at the symbol level (`normalize.agree`), and can merge a
+corrected line back in with `--apply` — no full re-conversion, so other fixes are kept.
+Default mode is review-only: a single VLM read is noisy (drops overbars, reflows brackets),
+so a flagged DIFFERS is verified by viewing the crop before merging. Run from `manuals/cem`:
+`python ../../_pipeline/cem_pipeline/src/eq_merge.py markdown/part-02/ch-01.md --tags II-1-142,II-1-146`.
+
 ## Open TODOs / known limitations
 1. A few chapters' source TOCs have no dotted leaders / a title-first column order
    (e.g. II-2): they fall back to the text split — readable and one-per-line, but not
