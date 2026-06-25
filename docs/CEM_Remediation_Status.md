@@ -22,17 +22,23 @@ having shifted after the header cleanup), assessed against the surrounding
 equations, and, where the correction was self-evident, applied and
 KaTeX-validated (every edited chapter re-checks at 0 render failures).
 
-- **52 applied** — density/symbol glyph errors (`p`/`p_a`→`ρ`/`ρ_a`,
+- **55 applied** — density/symbol glyph errors (`p`/`p_a`→`ρ`/`ρ_a`,
   `\propto`/`\infty`→`\alpha`, `\square`/`\Box`→`\times`, literal "arrow"→
   `\rightarrow`, `\&`→`\dot{\varepsilon}`), subscript and exponent typos
   (`H_3`→`H_s`, `H_{m_*}`→`H_{m0}`, `H_b^{25}`→`H_b^{2.5}`), missing terms or
   operators (the `/L` prefactor, `= 1`, `g ≤ 0`, dropped `x,y` in a phase
   function), wrong units (`m^3/s^2`→`m^3/s`), stray tokens and merged equation
   numbers (`- 5 - 71)`→`\tag{VI-5-71}`), `\text{}` wrapping, math/text-boundary
-  fixes, and worked-example terms confirmed by their own arithmetic.
-- **30 deferred** to expert sign-off — heavily garbled OCR of image-equations
-  needing full re-typesetting, inconsistent worked-example numerics that need
-  the source PDF, cross-reference checks, and a few unlocatable fragments.
+  fixes, worked-example terms confirmed by their own arithmetic, where-clause
+  symbol reconstructions confirmed by the equation (`\sigma_\varphi`/`M_\varphi`,
+  `s`/`n`/`h_*`/`B`), and the Longuet-Higgins `\log N`→`\ln N`.
+- **27 deferred** to expert sign-off — heavily garbled OCR of image / vector
+  equations (worked-example iterations, distribution PDFs) needing full
+  re-typesetting from the source PDF, inconsistent worked-example numerics that
+  need the source value, cross-reference checks, and a few unlocatable fragments.
+  The source Part portfolios are present under `_pipeline/`, so these are best
+  resolved with the source equation in hand (the vision-LLM pipeline path or an
+  expert).
 
 The review pass also caught **two incorrect findings**: an "Eckart argument"
 correction that was algebraically identical to the original (no change made),
@@ -40,7 +46,7 @@ and a wind-stress "fix" that would have deleted a correct term (a likely
 `u_*` vs `U_z` misread, deferred rather than deleted). These are why the pass
 reviews each item rather than bulk-applying the suggested fixes.
 
-The remaining 30 high-severity equation items are folded into the open counts
+The remaining 27 high-severity equation items are folded into the open counts
 below.
 
 ## Open — requires expert sign-off
