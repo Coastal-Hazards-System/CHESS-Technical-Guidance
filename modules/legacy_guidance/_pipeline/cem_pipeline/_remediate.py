@@ -18,6 +18,10 @@ import notation  # noqa: E402
 MATHCAL_FT = re.compile(r"\\mathcal\s*\{\s*H\s*\}")
 MATHCAL = re.compile(r"\\mathcal\s*\{\s*(\\?[A-Za-z]+)\s*\}")
 SPLIT_COLON = re.compile(r"\\ :")
+# Misread math fonts found by the corpus equation audit: a sans-serif 'p' is the
+# mass density rho (always in a "p g (...)" term), and a fraktur 'n' is eta.
+MATHSF_P = re.compile(r"\\mathsf\s*\{\s*p\s*\}")
+MATHFRAK_N = re.compile(r"\\mathfrak\s*\{\s*n\s*\}")
 
 
 def fix_equations(text):
@@ -25,6 +29,8 @@ def fix_equations(text):
     text = MATHCAL_FT.sub(r"\\mathrm{ft}", text)
     text = MATHCAL.sub(r"\1", text)
     text = SPLIT_COLON.sub(r"\\:", text)
+    text = MATHSF_P.sub(r"\\rho", text)     # \mathsf{p} -> \rho (density)
+    text = MATHFRAK_N.sub(r"\\eta", text)   # \mathfrak{n} (eta) misread
     text = notation.fix_degree(text)
     text = notation.fix_currency(text)
     text = notation.fix_apostrophe(text)    # 'í' -> apostrophe in contractions/possessives
