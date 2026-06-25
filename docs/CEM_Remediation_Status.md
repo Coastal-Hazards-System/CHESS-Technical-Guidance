@@ -14,6 +14,35 @@ A set of deterministic, idempotent passes (in `notation.py`, run by `_remediate.
 
 This resolves **56** of the review findings (primarily the running-header / page-footer class, plus the listed apostrophe and word-merge items).
 
+## High-severity equation review pass
+
+A manual review-and-apply pass was then run over the **82 high-severity
+equation-semantic** findings. Each item was located by content (line numbers
+having shifted after the header cleanup), assessed against the surrounding
+equations, and, where the correction was self-evident, applied and
+KaTeX-validated (every edited chapter re-checks at 0 render failures).
+
+- **52 applied** — density/symbol glyph errors (`p`/`p_a`→`ρ`/`ρ_a`,
+  `\propto`/`\infty`→`\alpha`, `\square`/`\Box`→`\times`, literal "arrow"→
+  `\rightarrow`, `\&`→`\dot{\varepsilon}`), subscript and exponent typos
+  (`H_3`→`H_s`, `H_{m_*}`→`H_{m0}`, `H_b^{25}`→`H_b^{2.5}`), missing terms or
+  operators (the `/L` prefactor, `= 1`, `g ≤ 0`, dropped `x,y` in a phase
+  function), wrong units (`m^3/s^2`→`m^3/s`), stray tokens and merged equation
+  numbers (`- 5 - 71)`→`\tag{VI-5-71}`), `\text{}` wrapping, math/text-boundary
+  fixes, and worked-example terms confirmed by their own arithmetic.
+- **30 deferred** to expert sign-off — heavily garbled OCR of image-equations
+  needing full re-typesetting, inconsistent worked-example numerics that need
+  the source PDF, cross-reference checks, and a few unlocatable fragments.
+
+The review pass also caught **two incorrect findings**: an "Eckart argument"
+correction that was algebraically identical to the original (no change made),
+and a wind-stress "fix" that would have deleted a correct term (a likely
+`u_*` vs `U_z` misread, deferred rather than deleted). These are why the pass
+reviews each item rather than bulk-applying the suggested fixes.
+
+The remaining 30 high-severity equation items are folded into the open counts
+below.
+
 ## Open — requires expert sign-off
 
 **656** text findings remain open. They need engineering or editorial judgment and were intentionally not auto-fixed (a wrong subscript that still renders, a grammar rewrite, a table re-layout, or a real-word typo cannot be corrected mechanically without risk). Counts by category:
