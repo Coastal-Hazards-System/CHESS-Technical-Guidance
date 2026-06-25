@@ -46,12 +46,22 @@ Passes (in `src/notation.py`, orchestrated by `_remediate.py`):
   Figures, and List of Tables from PDF row coordinates; text-split fallback when a
   chapter's source list has no dotted leaders.
 - `fix_deflists` — "where:" definition runs → bullet lists.
+- `fix_headers` — strip PDF running-header / page-footer text that leaked into the body
+  (chapter-start `Chapter N EM 1110-2-1100 …`, `EM 1110-2-1100 (Part X) … (Change N)` and
+  `Change N (date)` pseudo-headings, and `<title> <page-id>` footers); anchored on each
+  chapter's front-matter so real cross-references are never touched. Removed 595 lines.
+- `fix_apostrophe` — `í`-as-apostrophe glyph → `'` in contractions/possessives (Part I-3).
+- `fix_merges` — specific non-word line-break merges (`masstransport` → `mass transport`, …).
 - `fix_degree`, `fix_currency`, and equation-LaTeX cleanup (`\:`, `\mathcal{X}`, ft unit).
 - Chapter viewer wraps bare in-text math (letter/digit base + sub/superscripts, accents,
   `\command`s) and drops repeated running-header pseudo-headings.
 
 Verification (whole corpus): every display-math block and inline `$…$` expression
 validates in KaTeX with **0 failures**; **0 Private-Use glyphs** remain.
+
+QA review remediation: the first deterministic pass over the `CEM_Review_Findings.md`
+findings cleared the mechanical classes (running headers/footers, `í`-apostrophes, word
+merges). Status and the open expert-sign-off queue are in `docs/CEM_Remediation_Status.md`.
 
 ## Open TODOs / known limitations
 1. A few chapters' source TOCs have no dotted leaders / a title-first column order

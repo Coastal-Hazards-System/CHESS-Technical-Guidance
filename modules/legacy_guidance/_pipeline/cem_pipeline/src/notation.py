@@ -610,6 +610,84 @@ def fix_deflists(md_path):
     return n
 
 
+def _frontmatter(text):
+    fm = {}
+    m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
+    if m:
+        for ln in m.group(1).split("\n"):
+            k, _, v = ln.partition(":")
+            fm[k.strip()] = v.strip().strip('"')
+    return fm
+
+
+def fix_headers(md_path):
+    """Remove PDF running-header / page-footer text that leaked into the body as
+    standalone lines: the chapter-start 'Chapter N EM 1110-2-1100 ...' line, the
+    repeated 'EM 1110-2-1100 (Part X) ... (Change N)' / 'Change N (date)'
+    pseudo-headings, and the running footers '<title> <part-ch-page>' /
+    '<part-ch-page> <title>' (and a bare page id). Detection is anchored on the
+    chapter's own front-matter (part, chapter, title), so real cross-references in
+    running text are never matched (those lines carry other words). Returns the
+    number of lines removed. Idempotent."""
+    text = open(md_path, encoding="utf-8").read().replace("\r\n", "\n")
+    fm = _frontmatter(text)
+    part, ch, title = fm.get("part", ""), fm.get("chapter", ""), fm.get("title", "")
+    if not (part and ch):
+        return 0
+    idpfx = rf"{re.escape(part)}-{re.escape(ch)}-[A-Za-z0-9]+"
+    tw = [w for w in re.split(r"\s+", title) if w]
+    titlepat = r"\s+".join(re.escape(w) for w in tw) if tw else r"(?!x)x"
+    chapstart = re.compile(r"^Chapter\s+\d+\s+EM\s*1110-2-1100\b.*$", re.I)
+    pseudo = re.compile(
+        r"^#{0,6}\s*(?:EM\s*1110-2-1100\s*\(Part\b.*|Change\s+\d+\s*(?:\([^)]*\))?)\s*$", re.I)
+    foot = re.compile(rf"^(?:{titlepat}\s+{idpfx}|{idpfx}\s+{titlepat}|{idpfx})\s*$", re.I)
+    out, removed, fence = [], 0, False
+    for ln in text.split("\n"):
+        if ln.lstrip().startswith("```"):
+            fence = not fence
+            out.append(ln)
+            continue
+        s = ln.strip()
+        if not fence and s and (chapstart.match(s) or pseudo.match(s) or foot.match(s)):
+            removed += 1
+            continue
+        out.append(ln)
+    if removed:
+        joined = re.sub(r"\n{3,}", "\n\n", "\n".join(out))   # squeeze blanks left behind
+        with open(md_path, "w", encoding="utf-8", newline="\n") as f:
+            f.write(joined)
+    return removed
+
+
+def fix_apostrophe(text):
+    """A right single quote saved as 'í' (Latin i-acute) in some chapters: restore
+    the apostrophe in English contractions and possessives. Anchored so an accented
+    letter inside a word (í followed by another letter) is left untouched."""
+    text = re.sub(r"([A-Za-z])í(s|t|d|m|ll|re|ve)\b", r"\1'\2", text)
+    text = re.sub(r"([A-Za-z])í\b", r"\1'", text)
+    return text
+
+
+# Specific line-break word merges flagged in QA. Each target is a non-word, so a
+# whole-word replacement cannot affect any real token.
+_MERGES = {
+    "wellestablished": "well-established",
+    "welldefined": "well-defined",
+    "masstransport": "mass transport",
+    "ofthe": "of the",
+    "Crossshore": "Cross-shore",
+    "crossshore": "cross-shore",
+    "wedgeshaped": "wedge-shaped",
+    "navigationrelated": "navigation-related",
+}
+
+
+def fix_merges(text):
+    for wrong, right in _MERGES.items():
+        text = re.sub(r"\b" + wrong + r"\b", right, text)
+    return text
+
+
 _DEGREE_RE = re.compile(r'(\d)\s*[oº°]\s*([CF])\b')
 
 
