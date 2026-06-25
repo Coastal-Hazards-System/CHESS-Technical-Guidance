@@ -114,12 +114,12 @@ manual. Table 1 summarizes the encoding failure modes by Part.
 
 **Table 1. Mathematical encoding failure modes by Part.**
 
-| Part | Equation encoding | Observed corruption |
-|---|---|---|
-| I, III | Legacy math font in the text layer | Operator code points are substituted: `=` stored as `'`, minus as `&`, plus as `%`, and a subscript script-l as `R`. |
-| II | Vector drawings, no text layer | Only the equation number is real text; the equation body has no recoverable characters. |
-| II (prose) | WordPerfect Greek font | Greek letters return as the wrong Latin letters; the velocity-potential symbol reads as "M," with further letters reading as "Q," "0," "B," and "T." |
-| Several | Adobe Symbol font in a private code range | Greek letters and operators are stranded in the Unicode Private Use Area and return as unreadable boxes. |
+| Part       | Equation encoding                         | Observed corruption                                                                                                                                  |
+| ---------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| I, III     | Legacy math font in the text layer        | Operator code points are substituted: `=` stored as `'`, minus as `&`, plus as `%`, and a subscript script-l as `R`.                                 |
+| II         | Vector drawings, no text layer            | Only the equation number is real text; the equation body has no recoverable characters.                                                              |
+| II (prose) | WordPerfect Greek font                    | Greek letters return as the wrong Latin letters; the velocity-potential symbol reads as "M," with further letters reading as "Q," "0," "B," and "T." |
+| Several    | Adobe Symbol font in a private code range | Greek letters and operators are stranded in the Unicode Private Use Area and return as unreadable boxes.                                             |
 
 The central consequence is that the text layer is not a trustworthy source of truth for the
 mathematics. A pipeline that reads the stored characters and emits them verbatim would
@@ -168,16 +168,16 @@ stages; Sections 5 through 7 detail the parts that carry the most engineering ri
 
 **Table 2. Pipeline stages.**
 
-| # | Stage | Function |
-|---|---|---|
-| 1 | Extract | Recover embedded chapter PDFs from the Part containers, de-duplicate by hash, copy the glossary, write an index. |
-| 2 | Two-engine read | Marker reads layout, reading order, headings, tables, figures, and a first LaTeX reading of each equation; MinerU re-reads the equations independently. |
-| 3 | Reference fingerprint | For each equation, reduce the source text-layer characters to a normalized symbol set. |
-| 4 | Verify | Admit a candidate only if it renders under KaTeX and its symbol set matches the reference within tolerance; record a structural-similarity score as a soft signal. |
-| 5 | Decide | If both engines agree and verify, accept with highest confidence; else accept a single verified candidate; else escalate. |
-| 6 | Self-correct | Add a third recognizer, then a vision-language transcription, then a targeted repair; accept the first that verifies, otherwise flag with evidence. |
-| 7 | Tables and figures | Reconstruct tables as Markdown with a region-constrained fallback; export figures and pair them with captions. |
-| 8 | Assemble | Emit one Markdown file per chapter with front-matter, a flagged-items file, and a machine-readable quality record. |
+| #   | Stage                 | Function                                                                                                                                                           |
+| --- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | Extract               | Recover embedded chapter PDFs from the Part containers, de-duplicate by hash, copy the glossary, write an index.                                                   |
+| 2   | Two-engine read       | Marker reads layout, reading order, headings, tables, figures, and a first LaTeX reading of each equation; MinerU re-reads the equations independently.            |
+| 3   | Reference fingerprint | For each equation, reduce the source text-layer characters to a normalized symbol set.                                                                             |
+| 4   | Verify                | Admit a candidate only if it renders under KaTeX and its symbol set matches the reference within tolerance; record a structural-similarity score as a soft signal. |
+| 5   | Decide                | If both engines agree and verify, accept with highest confidence; else accept a single verified candidate; else escalate.                                          |
+| 6   | Self-correct          | Add a third recognizer, then a vision-language transcription, then a targeted repair; accept the first that verifies, otherwise flag with evidence.                |
+| 7   | Tables and figures    | Reconstruct tables as Markdown with a region-constrained fallback; export figures and pair them with captions.                                                     |
+| 8   | Assemble              | Emit one Markdown file per chapter with front-matter, a flagged-items file, and a machine-readable quality record.                                                 |
 
 The guiding rule across all stages is that only LaTeX which has passed the render gate is
 ever written into a chapter, and that unresolved expressions are recorded, with evidence, in
@@ -374,13 +374,13 @@ introduce an error.
 
 **Table 5. Quality layers.**
 
-| Layer | When | Scope |
-|---|---|---|
-| A. Inline | Every step | Render check per equation; table row and header sanity; text-coverage ratio against the source; link resolution. |
-| B. Checkpoint | After each major step | Focused review of one element type, for example a gallery of all equations against their source crops. |
-| C. Whole chapter | After assembly | Side-by-side read of PDF against rendered HTML for flow, ordering, and orphaned captions. |
-| D. Corpus | After the full run | Cross-chapter consistency of headings, notation, and cross-references; master-index link integrity. |
-| E. Sampling audit | Final gate | Random, math-weighted sample scored against the PDF; any failing chapter recycles through B and C. |
+| Layer             | When                  | Scope                                                                                                            |
+| ----------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| A. Inline         | Every step            | Render check per equation; table row and header sanity; text-coverage ratio against the source; link resolution. |
+| B. Checkpoint     | After each major step | Focused review of one element type, for example a gallery of all equations against their source crops.           |
+| C. Whole chapter  | After assembly        | Side-by-side read of PDF against rendered HTML for flow, ordering, and orphaned captions.                        |
+| D. Corpus         | After the full run    | Cross-chapter consistency of headings, notation, and cross-references; master-index link integrity.              |
+| E. Sampling audit | Final gate            | Random, math-weighted sample scored against the PDF; any failing chapter recycles through B and C.               |
 
 ### 8.2 Corpus-level outcomes
 
@@ -388,17 +388,17 @@ Table 3 reports the published outcome over the full manual.
 
 **Table 3. Corpus-level results.**
 
-| Metric | Value |
-|---|---|
-| Numbered equations verified | 2,377 of 2,377 (100%) |
-| Equations left flagged | 0 |
-| Display or inline expressions failing to render | 0 |
-| Residual Private-Use / unreadable font codes | 0 |
-| Tables reconstructed as Markdown | 444 |
-| Tables falling back to images | 0 |
-| Figures exported and linked | 1,161 |
-| Broken figure or cross-reference links | 0 |
-| Chapters published | 37 |
+| Metric                                          | Value                 |
+| ----------------------------------------------- | --------------------- |
+| Numbered equations verified                     | 2,377 of 2,377 (100%) |
+| Equations left flagged                          | 0                     |
+| Display or inline expressions failing to render | 0                     |
+| Residual Private-Use / unreadable font codes    | 0                     |
+| Tables reconstructed as Markdown                | 444                   |
+| Tables falling back to images                   | 0                     |
+| Figures exported and linked                     | 1,161                 |
+| Broken figure or cross-reference links          | 0                     |
+| Chapters published                              | 37                    |
 
 ### 8.3 Acceptance-path distribution
 
@@ -412,12 +412,12 @@ distribution.
 
 **Table 4. Approximate acceptance-path distribution.**
 
-| Path | Share |
-|---|---|
-| Two engines agree and verify | ~66% |
-| Single verified candidate (clean modern encoding) | ~22% |
-| Agreement plus clean source-text match | ~12% |
-| Resolved via self-correction | <1% |
+| Path                                              | Share |
+| ------------------------------------------------- | ----- |
+| Two engines agree and verify                      | ~66%  |
+| Single verified candidate (clean modern encoding) | ~22%  |
+| Agreement plus clean source-text match            | ~12%  |
+| Resolved via self-correction                      | <1%   |
 
 ### 8.4 Generalization
 
