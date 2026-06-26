@@ -12,6 +12,16 @@ _Every numbered (tagged) display equation re-read from its precise source crop w
 > few cases where the single VLM read was itself garbled (the Markdown is correct).
 >
 > The three source-error corrections are recorded in `CEM_Errata.md`.
+>
+> **Untagged equations (1,194) also audited.** The ~1,208 unnumbered display equations (no
+> `\tag`) were re-read the same way, comparing each crop against the conversion's own LaTeX:
+> **999 matched, 209 flagged**, and the flags were dominated by benign cases — worked-example
+> crops whose bounding box captured the whole multi-step calculation, single-VLM truncation, unit
+> markup, and the κ^{1/2} longshore-transport form where the Markdown is correct and the VLM
+> misread. Genuine catches fixed: VI-5-340 `i_{γ_h}^{δ}` → `i_{γ_b}^{5}` (crop-verified),
+> VI-6-78 / VI-6-80 garbled `\cot` (`co\hat{t}\,α` → `\cot\hat{α}`), VI-7-176 `D_{v,50}` → `D_{n50}`,
+> and two text labels (III-5-1/2 `SHEAR + LIFT + DRAG …`, II-7-44 `Load`). The untagged set is
+> otherwise clean, which corroborates the low error rate found on the numbered equations.
 
 ## Summary
 
