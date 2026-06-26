@@ -2,7 +2,16 @@
 
 _Every numbered (tagged) display equation re-read from its precise source crop with a local vision-LLM (qwen2.5-VL) and compared to the published Markdown at the symbol level. Generated 2026-06-25._
 
-> **Resolved since this audit:** the three real errors below were corrected (III-3-21 reverted from a wrong `= 1` to the source's sign-cases form; II-7-33 `F_{c,fric}` duplicate → `F_{c,form}`; II-1-62 `C_\sigma` → `C_g`), and a systematic glyph class the audit surfaced in the review list was cleared by a deterministic remediation pass: `\mathsf{p}` → `\rho` (density) and `\mathfrak{n}` → `\eta` (e.g. II-1-82/96/121/145). The remaining review items below still stand.
+> **Resolved since this audit:** the three real errors below were corrected (III-3-21 reverted from a wrong `= 1` to the source's sign-cases form; II-7-33 `F_{c,fric}` duplicate → `F_{c,form}`; II-1-62 `C_\sigma` → `C_g`), and a systematic glyph class the audit surfaced in the review list was cleared by a deterministic remediation pass: `\mathsf{p}` → `\rho` (density) and `\mathfrak{n}` → `\eta` (e.g. II-1-82/96/121/145).
+>
+> **Review bucket triaged (all 85):** four further real errors were crop-verified and fixed —
+> III-3-8 `∂E/∂v`→`∂E/∂y`, III-3-45 `q_v`→`q_y`, and VI-5-268 / VI-5-269 `for KC = …`→`for KC > …`.
+> Two were dismissed on the crop (II-3-21 is correct in the Markdown — the VLM misgrouped it;
+> VI-5-242's operator glyph is corrupted in the source itself, deferred to expert). The remaining
+> review flags are benign: `v`/`ν` ambiguity, descriptive labels not wrapped in `\text{}`, and a
+> few cases where the single VLM read was itself garbled (the Markdown is correct).
+>
+> The three source-error corrections are recorded in `CEM_Errata.md`.
 
 ## Summary
 
